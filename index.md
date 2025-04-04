@@ -30,7 +30,7 @@ Hey there! i'm documenting my **Capture The Flag (CTF)** journey here, focusing 
 ## 📅 Latest Updates
 {% for post in site.posts limit:3 %}
 - **{{ post.date | date: "%b %d" }}**: [{{ post.title }}]({{ post.url }})
-(% endfor %)
+{% endfor %}
 [View all notes ->](/notes)
 
 ---
