@@ -4,5 +4,7 @@ description: My ctf journey and writeups
 theme: minima
 plugins:
   - jekyll-feed
+include:
+  - _includes
 ---
 
