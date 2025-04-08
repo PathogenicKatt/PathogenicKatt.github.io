@@ -2,3 +2,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{{ page.title }}</title>
 <link rel="stylesheet" href="/assets/css/styles.css">
+{% if page.custom_css %}
+<link rel="stylesheet" href="/assets/css/custom.css">
+{% endif %}
