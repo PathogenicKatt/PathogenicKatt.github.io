@@ -2,5 +2,7 @@
 title: My CTF Blog
 description: My ctf journey and writeups
 theme: minima
+plugins:
+  - jekyll-feed
 ---
 
