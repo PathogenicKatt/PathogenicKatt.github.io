@@ -182,17 +182,36 @@
   }
   
   /*  CONSTRUCTION PAGES */
-  .construction {
-    text-align: center;
-    padding: 4rem 2rem;
-    max-width: 600px;
-    margin: 4rem auto;
+
+.construction-container {
+    min-height: 60vh;
+    display: grid;
+    place-items: center;
+    padding: 2rem;
   }
   
-  .construction h2 {
-    font-size: 2.5rem;
+  .construction-card {
+    background: var(--card-bg);
+    border-radius: 12px;
+    padding: 3rem 2rem;
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+    box-shadow: var(--card-shadow);
+  }
+  
+  .construction-card h2 {
     color: var(--accent);
+    font-size: 2.5rem;
     margin-bottom: 1.5rem;
+  }
+  
+  .construction-links {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 2rem;
+    flex-wrap: wrap;
   }
   
   /* RESPONSIVE ADJUSTMENTS  */

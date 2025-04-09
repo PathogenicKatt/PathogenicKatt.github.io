@@ -29,16 +29,16 @@ custom_css: true
       <ul>
         <li><strong>Attack/Defense</strong> challenges</li>
         <li><strong>Microcorruption</strong> embedded security</li>
-        <li><strong>Crypto analysis</strong> (my toughest but favorite category)</li>
+        <li><strong>CTF</strong> challenges</li>
       </ul>
     </section>
 
     <section class="about-card">
       <h2>🔍 Current Focus</h2>
-      <p>Preparing for <strong>National CTF 2024</strong> while:</p>
+      <p>Preparing for <strong>National CTF 2025</strong> while:</p>
       <ul>
-        <li>Mastering cryptographic algorithms</li>
-        <li>Developing exploit writing skills</li>
+        <li>Competing in weekly ctf(CTFtime)</li>
+        <li>Developing exploit writing skills using python</li>
         <li>Contributing to TryHackMe rooms</li>
       </ul>
     </section>

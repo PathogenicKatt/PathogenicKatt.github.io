@@ -1,0 +1,15 @@
+---
+layout: default
+---
+<div class="construction-container">
+  <div class="construction-card">
+    <h2>🚧 Under Construction</h2>
+    <p>{{ page.construction_message | default: "This page is currently being built. Check back soon!" }}</p>
+    <div class="construction-links">
+      <a href="/" class="bubble">🏠 Return Home</a>
+      {% if page.additional_link %}
+        <a href="{{ page.additional_link.url }}" class="bubble">{{ page.additional_link.text }}</a>
+      {% endif %}
+    </div>
+  </div>
+</div>
