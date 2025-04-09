@@ -21,9 +21,9 @@ custom_css: true
     <section class="about-card">
       <h2>🚩 CTF Experience</h2>
       <div class="ctf-logos">
-        <img src="/assets/img/ctf/pico.png" alt="PicoCTF">
-        <img src="/assets/img/ctf/htb.png" alt="HackTheBox">
-        <img src="/assets/img/ctf/otw.png" alt="OverTheWire">
+        <img src="/assets/img/pico.png" alt="PicoCTF">
+        <img src="/assets/img/htb.png" alt="HackTheBox">
+        <img src="/assets/img/otw.png" alt="OverTheWire">
       </div>
       <p>I actively compete on:</p>
       <ul>
