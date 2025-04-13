@@ -11,16 +11,6 @@ custom_css: true
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 1.5rem;
   }
-  .ctf-card {
-    background: rgba(255,255,255,0.1);
-    backdrop-filter: blur(10px);
-    border-radius: 12px;
-    padding: 1.5rem;
-    transition: transform 0.2s;
-  }
-  .ctf-card:hover {
-    transform: translateY(-5px);
-  }
 </style>
 
 <div class="header-animation">
@@ -41,12 +31,13 @@ custom_css: true
   </div>
 
   <div class="ctf-card">
-    <h2>📌 Quick Jumps</h2>
+    <h2>🌐 Site Navigation</h2>
     <div class="link-bubbles">
-      <a href="/notes" class="bubble">📝 Notes</a>
-      <a href="/writeups" class="bubble">📖 Writeups</a>
-      <a href="/resources" class="bubble">🧰 Toolbox</a>
-      <a href="/about" class="bubble">🤔 About</a>
+      <a href="/" class="bubble {% if page.url == '/' %}active{% endif %}">🏠 Home</a>
+      <a href="/writeups" class="bubble {% if page.url == '/writeups' %}active{% endif %}">📖 Writeups</a>
+      <a href="/notes" class="bubble {% if page.url == '/notes' %}active{% endif %}">📝 Notes</a>
+      <a href="/resources" class="bubble {% if page.url == '/resources' %}active{% endif %}">🧰 Toolbox</a>
+      <a href="/about" class="bubble {% if page.url == '/about' %}active{% endif %}">🤔 About</a>
     </div>
   </div>
 </div>
