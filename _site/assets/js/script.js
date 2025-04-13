@@ -21,6 +21,4 @@ function setTheme(theme) {
     });
     document.body.appendChild(toggle);
   }
-  
-  // Start everything
   document.addEventListener('DOMContentLoaded', initTheme);

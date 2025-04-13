@@ -24,8 +24,8 @@ custom_css: true
 </style>
 
 <div class="header-animation">
-  <h1>🚩 Welcome to My CTF Playground!</h1>
-  <p class="subtitle">Documenting my hacking adventures - one flag at a time</p>
+  <h1>Welcome to My Cybersecurity Journey!</h1>
+  <p class="subtitle">"A sluggard's appetite is never filled, but the desires of the diligent are fully satisfied."-<strong>Proverbs 13:4</strong></p>
 </div>
 
 <div class="ctf-grid">

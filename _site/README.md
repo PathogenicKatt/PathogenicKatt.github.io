@@ -5,6 +5,8 @@
 
 A personal knowledge base for documenting CTF challenges, solutions, and cybersecurity learnings.
 
+🔗 **Live Site:** [https://pathogenickatt.github.io](https://pathogenickatt.github.io)
+
 ## ✨ Features
 
 - **Writeups**: Detailed solutions for CTF challenges
@@ -12,8 +14,12 @@ A personal knowledge base for documenting CTF challenges, solutions, and cyberse
 - **Responsive**: Works on all devices
 
 
-## 🛠 Setup
+## 🚀 Getting Started
 
-1. Install dependencies:
-   ```sh
-   bundle install
+### Local Development
+```bash
+# Install dependencies
+bundle install
+
+# Run locally
+bundle exec jekyll serve --livereload
