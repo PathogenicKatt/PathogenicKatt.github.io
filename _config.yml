@@ -4,8 +4,7 @@ description: My ctf journey and writeups
 theme: minima
 plugins:
   - jekyll-feed
-include:
-  - _includes
+
 
 defaults:
   - scope:
@@ -15,3 +14,8 @@ defaults:
       custom_css: true
 ---
 
+include:
+  - _includes
+  - _layouts
+  - assets/css
+  - assets/js

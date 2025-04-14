@@ -1,75 +1,93 @@
 <!DOCTYPE html>
-<html data-theme="light">
-<head> 
-  <title>About Me</title>
-</head>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>About Me</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/custom.css">
+    <script src="/assets/js/script.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  </head>
+  
+<link rel="stylesheet" href="/assets/css/custom.css">
+
+  
 <body>
-  <header class="site-header" role="banner">
-
-  <div class="wrapper"><a class="site-title" rel="author" href="/">My CTF Blog</a><nav class="site-nav">
-        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
-        <label for="nav-trigger">
-          <span class="menu-icon">
-            <svg viewBox="0 0 18 15" width="18px" height="15px">
-              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
-            </svg>
-          </span>
-        </label>
-
-        <div class="trigger"><a class="page-link" href="/about.html">About Me</a><a class="page-link" href="/">home | My CTF Journey</a><a class="page-link" href="/notes.html">CTF Notes</a><a class="page-link" href="/notes/notes.html">CTF Notes</a><a class="page-link" href="/resources.html">Resources</a><a class="page-link" href="/writeups/writeups.html">Writeups</a></div>
-      </nav></div>
-</header>
- 
   <main class="page-content">
     <div class="about-container">
   <section class="about-header">
-    <h1>👨‍💻 Hii, Katleho here</h1>
-    <p class="subtitle">BSc Computer Science &amp; Mathematics | CTF Enthusiast</p>
+    <h1> Hi, I'm Katleho</h1>
+    <p class="subtitle">BSc Computer Science &amp; Mathematics | CTF Player | Security Researcher</p>
   </section>
 
   <div class="about-grid">
     <section class="about-card">
-      <h2>📚 My Journey</h2>
-      <p>I discovered cybersecurity during my first year studying <strong>ICT at University of Mpumalanga (2022)</strong>. Seeking deeper technical challenges, I transferred to <strong>North West University(NWU) 2023</strong> for Computer Science and Mathematics.</p>
+      <h2>📚 Academic Journey</h2>
+      <p>My cybersecurity journey began in 2022 while studying <strong>ICT at University of Mpumalanga (UMP)</strong>. Seeking deeper technical challenges, I transferred to <strong>North West University (NWU)</strong> in 2023 to pursue Computer Science and Mathematics.</p>
       
-      <p>Though NWU lacks formal cybersecurity modules, their <a href="https://www.csc.ac.za/" target="_blank">SANReN CTF program</a> became my training ground. This exclusive competition (not available at UMP) ignited my passion for security research.</p>
+      <p>Though NWU doesn't offer formal cybersecurity courses, their participation in the <strong>SANReN CTF </strong>&gt;program became my hands-on training ground. This exclusive competition (not available at UMP) ignited my passion for security research.</p>
+      
+      <div class="university-logos">
+        <img src="/assets/img/ump-logo.png" alt="University of Mpumalanga logo" loading="lazy" />
+        <img src="/assets/img/nwu-logo.png" alt="North West University logo" loading="lazy" />
+      </div>
     </section>
 
     <section class="about-card">
       <h2>🚩 CTF Experience</h2>
       <div class="ctf-logos">
-        <img src="/assets/img/pico.png" alt="PicoCTF" />
-        <img src="/assets/img/htb.png" alt="HackTheBox" />
-        <img src="/assets/img/otw.png" alt="OverTheWire" />
+        <img src="/assets/img/pico.png" alt="PicoCTF" loading="lazy" />
+        <img src="/assets/img/htb.png" alt="HackTheBox" loading="lazy" />
+        <img src="/assets/img/otw.png" alt="OverTheWire" loading="lazy" />
       </div>
-      <p>I actively compete on:</p>
-      <ul>
-        <li><strong>Attack/Defense</strong> challenges</li>
-        <li><strong>Microcorruption</strong> embedded security</li>
-        <li><strong>CTF</strong> challenges</li>
+      <ul class="ctf-skills">
+        <li>Regular competitor on <a href="https://www.csc.ac.za/" target="_blank" rel="noopener noreferrer">CTFtime</a> events</li>
+        <li>Specializing in <strong>forensics</strong> and <strong>web security</strong></li>
+        <li>Little experience with <strong>Microcorruption</strong> embedded systems</li>
+        <li>Currently Preparing for <strong>National CTF 2025</strong>: <a href="https://www.csc.ac.za/" target="_blank" rel="noopener noreferrer">SANReN CTF</a></li>
       </ul>
     </section>
 
+
     <section class="about-card">
-      <h2>🔍 Current Focus</h2>
-      <p>Preparing for <strong>National CTF 2025</strong> while:</p>
-      <ul>
-        <li>Competing in weekly ctf(CTFtime)</li>
-        <li>Developing exploit writing skills using python</li>
-        <li>Contributing to TryHackMe rooms</li>
-      </ul>
+      <h2>💻 Technical Skills</h2>
+      <div class="skill-cloud">
+        <span>Python</span>
+        <span>C</span>
+        <span>C++</span>
+        <span>Java</span>
+        <span>Web Exploitation</span>
+        <span>Reverse Engineering</span>
+        <span>Cryptography</span>
+        <span>Linux</span>
+        <span>Forensics</span>
+        <span>SQL</span>
+      </div>
+      
     </section>
-    <section class="connect">
-    <h2>💬 Let's Connect</h2>
-    <div class="social-links">
-      <a href="https://github.com/PathogenicKatt" class="social-github">
-        <i class="fab fa-github"></i> GitHub
-      </a>
-    </div>
-  </section>
+
+    <!-- Connect Section -->
+    <section class="about-card connect">
+      <h2>💬 Let's Connect</h2>
+      <div class="social-links">
+        <a href="https://github.com/PathogenicKatt" class="social-link github" target="_blank" rel="noopener noreferrer">
+          <i class="fab fa-github"></i> GitHub
+        </a>
+        <a href="https://ctftime.org/profile/PathogenicKatt" class="social-link ctftime" target="_blank" rel="noopener noreferrer">
+          <i class="fas fa-flag"></i> CTFTime
+        </a>
+        <a href="mailto:katlehom814@gmai.com" class="social-link email">
+          <i class="fas fa-envelope"></i> Email
+        </a>
+      </div>
+    </section>
+ 
   </div>
 </div>
- 
+
   </main>
+  <script src="/assets/js/script.js"></script>
 </body>
 </html>

@@ -1,242 +1,220 @@
 /* ROOT VARIABLES */
 :root {
-    /* Light Theme */
-    --bg-color: #f5f7fa;
-    --text-color: #2d3748;
-    --card-bg: rgba(255, 255, 255, 0.95);
-    --card-border: 1px solid rgba(0, 0, 0, 0.08);
-    --card-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-    --accent: #4ecdc4;
-    --accent-dark: #3aa89f;
-    --link-color: #3182ce;
-  }
-  
-  [data-theme="dark"] {
-    /* Dark Theme */
-    --bg-color: #121212;
-    --text-color: #e2e8f0;
-    --card-bg: rgba(30, 30, 30, 0.95);
-    --card-border: 1px solid rgba(255, 255, 255, 0.08);
-    --card-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-    --accent: #ff6b6b;
-    --accent-dark: #e05555;
-    --link-color: #63b3ed;
-  }
-  
-  
-  body {
-    background: var(--bg-color);
-    color: var(--text-color);
-    font-family: 'Fira Code', 'Courier New', monospace;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-    transition: background 0.3s ease, color 0.3s ease;
-  }
-  
-  a {
-    color: var(--link-color);
-    text-decoration: none;
-  }
-  
-  
-  .theme-toggle {
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    background: var(--accent);
-    color: white;
-    border: none;
-    width: 42px;
-    height: 42px;
-    border-radius: 50%;
-    display: grid;
-    place-items: center;
-    cursor: pointer;
-    box-shadow: var(--card-shadow);
-    z-index: 100;
-    transition: all 0.3s ease;
-    font-size: 1.2rem;
-  }
-  
-  .theme-toggle:hover {
-    transform: scale(1.1);
-    background: var(--accent-dark);
-  }
-  
+  /* Light Theme */
+  --bg-color: #f5f7fa;
+  --text-color: #2d3748;
+  --card-bg: rgba(255, 255, 255, 0.95);
+  --card-border: 1px solid rgba(0, 0, 0, 0.08);
+  --card-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  --accent: #4ecdc4;
+  --accent-dark: #3aa89f;
+  --link-color: #3182ce;
+}
 
-  .ctf-card {
-    background: var(--card-bg);
-    border: var(--card-border);
-    border-radius: 12px;
-    padding: 1.8rem;
-    margin: 1.5rem 0;
-    box-shadow: var(--card-shadow);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    backdrop-filter: blur(8px);
-  }
-  
-  .ctf-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
-  }
-  
+[data-theme="dark"] {
+  /* Dark Theme */
+  --bg-color: #121212;
+  --text-color: #e2e8f0;
+  --card-bg: rgba(30, 30, 30, 0.95);
+  --card-border: 1px solid rgba(255, 255, 255, 0.08);
+  --card-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  --accent: #ff6b6b;
+  --accent-dark: #e05555;
+  --link-color: #63b3ed;
+}
 
-  .header-animation h1 {
-    font-size: 2.8rem;
-    background: linear-gradient(90deg, var(--accent), var(--accent-dark));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    margin-bottom: 0.5rem;
-  }
-  
-  .subtitle {
-    font-size: 1.2rem;
-    opacity: 0.9;
-    margin-top: 0;
-  }
-  
+/* BASE STYLES */
+body {
+  background: var(--bg-color);
+  color: var(--text-color);
+  font-family: 'Fira Code', 'Courier New', monospace;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  transition: background 0.3s ease, color 0.3s ease;
+}
 
-  .skill-cloud {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.8rem;
-    list-style: none;
-    padding: 0;
-  }
-  
-  .skill-cloud li {
-    background: rgba(78, 205, 196, 0.15);
-    padding: 0.5rem 1rem;
-    border-radius: 50px;
-    font-size: 0.9rem;
-    transition: transform 0.2s;
-  }
-  
-  .skill-cloud li:hover {
-    transform: scale(1.05);
-  }
-  
-  
-  .link-bubbles {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    margin: 1.5rem 0;
-  }
-  
-  .bubble {
-    background: var(--accent);
-    color: white;
-    padding: 0.8rem 1.5rem;
-    border-radius: 50px;
-    text-decoration: none;
-    transition: all 0.3s;
-    font-weight: 500;
-    display: inline-block;
-  }
-  
-  .bubble:hover {
-    background: var(--accent-dark);
-    transform: translateY(-2px);
-  }
-  
-  /*  ABOUT PAGE  */
-  .about-container {
-    max-width: 1200px;
-    margin: 2rem auto;
-    padding: 0 1.5rem;
-  }
-  
-  .about-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-    margin: 3rem 0;
-  }
-  
-  .about-card {
-    background: var(--card-bg);
-    border-radius: 12px;
-    padding: 2rem;
-    box-shadow: var(--card-shadow);
-  }
-  
-  .ctf-logos {
-    display: flex;
-    gap: 1.5rem;
-    flex-wrap: wrap;
-    margin: 1.5rem 0;
-    align-items: center;
-  }
-  
-  .ctf-logos img {
-    height: 40px;
-    opacity: 0.8;
-    transition: all 0.3s;
-  }
-  
-  .ctf-logos img:hover {
-    opacity: 1;
-    transform: scale(1.1);
-  }
-  
-  /*  CONSTRUCTION PAGES */
+a {
+  color: var(--link-color);
+  text-decoration: none;
+}
 
+pre, code {
+  font-family: 'Fira Code', monospace;
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+  padding: 0.2rem 0.4rem;
+}
+
+[data-theme="dark"] pre,
+[data-theme="dark"] code {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/* COMPONENT STYLES */
+/* Cards */
+.ctf-card,
+.about-card,
+.construction-card {
+  background: var(--card-bg);
+  border: var(--card-border);
+  border-radius: 12px;
+  padding: 1.8rem;
+  margin: 1.5rem 0;
+  box-shadow: var(--card-shadow);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  backdrop-filter: blur(8px);
+}
+
+.ctf-card:hover,
+.about-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Buttons & Links */
+.bubble,
+.nav-button,
+.theme-toggle,
+.social-link {
+  background: var(--accent);
+  color: white;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bubble,
+.social-link {
+  padding: 0.7rem 1.2rem;
+  font-weight: 500;
+}
+
+.bubble:hover,
+.nav-button:hover,
+.theme-toggle:hover,
+.social-link:hover {
+  background: var(--accent-dark);
+  transform: translateY(-2px);
+}
+
+/* Navigation */
+.top-nav-container {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  gap: 12px;
+  z-index: 1000;
+}
+
+.nav-button,
+.theme-toggle {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  font-size: 1.2rem;
+}
+
+.theme-toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+}
+
+/* Specific Components */
+.header-animation h1,
+.about-header h1 {
+  font-size: 2.5rem;
+  background: linear-gradient(90deg, var(--accent), var(--accent-dark));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 0.5rem;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  opacity: 0.9;
+  margin-top: 0;
+}
+
+/* Layouts */
+.about-container,
 .construction-container {
-    min-height: 60vh;
-    display: grid;
-    place-items: center;
-    padding: 2rem;
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1.5rem;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin: 3rem 0;
+}
+
+/* Lists */
+.skill-cloud,
+.link-bubbles,
+.construction-links,
+.social-links,
+.ctf-logos,
+.university-logos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 1.5rem 0;
+  padding: 0;
+  list-style: none;
+}
+
+.skill-cloud li,
+.skill-cloud span {
+  background: rgba(78, 205, 196, 0.15);
+  padding: 0.5rem 1rem;
+  border-radius: 50px;
+  font-size: 0.9rem;
+  transition: transform 0.2s;
+}
+
+.skill-cloud li:hover {
+  transform: scale(1.05);
+}
+
+/* Images */
+.ctf-logos img,
+.university-logos img {
+  height: 40px;
+  opacity: 0.8;
+  transition: all 0.3s;
+}
+
+.ctf-logos img:hover,
+.university-logos img:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+/* Social Links */
+.social-link.github { background: #333; }
+.social-link.ctftime { background: #4b6cb3; }
+.social-link.email { background: #d44638; }
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .header-animation h1,
+  .about-header h1 {
+    font-size: 2.2rem;
   }
   
-  .construction-card {
-    background: var(--card-bg);
-    border-radius: 12px;
-    padding: 3rem 2rem;
-    text-align: center;
-    max-width: 600px;
-    margin: 0 auto;
-    box-shadow: var(--card-shadow);
+  .theme-toggle,
+  .nav-button {
+    width: 36px;
+    height: 36px;
+    top: 15px;
+    right: 15px;
   }
-  
-  .construction-card h2 {
-    color: var(--accent);
-    font-size: 2.5rem;
-    margin-bottom: 1.5rem;
-  }
-  
-  .construction-links {
-    display: flex;
-    gap: 1rem;
-    justify-content: center;
-    margin-top: 2rem;
-    flex-wrap: wrap;
-  }
-  
-  /* RESPONSIVE ADJUSTMENTS  */
-  @media (max-width: 768px) {
-    .header-animation h1 {
-      font-size: 2.2rem;
-    }
-    
-    .theme-toggle {
-      top: 15px;
-      right: 15px;
-      width: 36px;
-      height: 36px;
-    }
-  }
-  
-  
-  pre, code {
-    font-family: 'Fira Code', monospace;
-    background: rgba(0, 0, 0, 0.1);
-    border-radius: 6px;
-    padding: 0.2rem 0.4rem;
-  }
-  
-  [data-theme="dark"] pre,
-  [data-theme="dark"] code {
-    background: rgba(255, 255, 255, 0.1);
-  }
+}
