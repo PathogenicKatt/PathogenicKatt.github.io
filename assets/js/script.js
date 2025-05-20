@@ -42,6 +42,21 @@ function toggleTheme() {
     themeBtn.title = newTheme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode';
   }
 }
+// Simple notes search
+document.addEventListener('DOMContentLoaded', function() {
+  const searchInput = document.getElementById('notesSearch');
+  if (searchInput) {
+    searchInput.addEventListener('input', function() {
+      const searchTerm = this.value.toLowerCase();
+      const noteCards = document.querySelectorAll('.note-card');
+      
+      noteCards.forEach(card => {
+        const text = card.textContent.toLowerCase();
+        card.style.display = text.includes(searchTerm) ? 'block' : 'none';
+      });
+    });
+  }
+});
 
 // Initialize when DOM loads
 document.addEventListener('DOMContentLoaded', initNavigation);
