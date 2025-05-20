@@ -19,3 +19,8 @@ include:
   - _layouts
   - assets/css
   - assets/js
+
+collections:
+  notes:
+    output: true
+    permalink: /notes/:path/
