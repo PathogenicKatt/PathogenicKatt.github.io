@@ -42,21 +42,37 @@ function toggleTheme() {
     themeBtn.title = newTheme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode';
   }
 }
-// Simple notes search
-document.addEventListener('DOMContentLoaded', function() {
+
+// Enhanced notes search
+function setupNotesSearch() {
   const searchInput = document.getElementById('notesSearch');
-  if (searchInput) {
-    searchInput.addEventListener('input', function() {
-      const searchTerm = this.value.toLowerCase();
-      const noteCards = document.querySelectorAll('.note-card');
+  if (!searchInput) return;
+
+  searchInput.addEventListener('input', function() {
+    const searchTerm = this.value.trim().toLowerCase();
+    const noteCards = document.querySelectorAll('.note-card');
+    
+    noteCards.forEach(card => {
+      const title = card.querySelector('h3')?.textContent.toLowerCase() || '';
+      const desc = card.querySelector('p')?.textContent.toLowerCase() || '';
+      const tags = card.querySelector('.note-tags')?.textContent.toLowerCase() || '';
       
-      noteCards.forEach(card => {
-        const text = card.textContent.toLowerCase();
-        card.style.display = text.includes(searchTerm) ? 'block' : 'none';
-      });
+      const match = title.includes(searchTerm) || 
+                   desc.includes(searchTerm) || 
+                   tags.includes(searchTerm);
+      
+      card.style.display = match ? 'block' : 'none';
     });
+  });
+}
+
+// Initialize everything when DOM loads
+document.addEventListener('DOMContentLoaded', function() {
+  initNavigation();
+  setupNotesSearch();
+  
+  // Add syntax highlighting if needed
+  if (typeof hljs !== 'undefined') {
+    hljs.highlightAll();
   }
 });
-
-// Initialize when DOM loads
-document.addEventListener('DOMContentLoaded', initNavigation);
