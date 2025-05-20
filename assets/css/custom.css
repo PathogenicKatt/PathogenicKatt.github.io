@@ -261,7 +261,7 @@ pre, code {
 .note-meta {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   gap: 1rem;
   margin-bottom: 2rem;
