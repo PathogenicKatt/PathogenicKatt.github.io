@@ -6,7 +6,7 @@ custom_css: true
 ---
 
 <div class="notes-header">
-  <h1>📚 CTF Notes Repository</h1>
+  <h1>CTF Notes Repository</h1>
   <p class="subtitle">Organized knowledge</p>
 </div>
 
