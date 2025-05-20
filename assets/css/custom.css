@@ -30,7 +30,7 @@ body {
   font-family: 'Fira Code', 'Courier New', monospace;
   line-height: 1.6;
   margin: 0;
-  padding: 0;
+  padding: 20px;
   transition: background 0.3s ease, color 0.3s ease;
 }
 
@@ -55,7 +55,8 @@ pre, code {
 /* Cards */
 .ctf-card,
 .about-card,
-.construction-card {
+.construction-card,
+.note-card {
   background: var(--card-bg);
   border: var(--card-border);
   border-radius: 12px;
@@ -67,7 +68,8 @@ pre, code {
 }
 
 .ctf-card:hover,
-.about-card:hover {
+.about-card:hover,
+.note-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
 }
@@ -76,7 +78,8 @@ pre, code {
 .bubble,
 .nav-button,
 .theme-toggle,
-.social-link {
+.social-link,
+.back-link {
   background: var(--accent);
   color: white;
   border-radius: 50px;
@@ -96,7 +99,8 @@ pre, code {
 .bubble:hover,
 .nav-button:hover,
 .theme-toggle:hover,
-.social-link:hover {
+.social-link:hover,
+.back-link:hover {
   background: var(--accent-dark);
   transform: translateY(-2px);
 }
@@ -127,7 +131,8 @@ pre, code {
 
 /* Specific Components */
 .header-animation h1,
-.about-header h1 {
+.about-header h1,
+.notes-header h1 {
   font-size: 2.5rem;
   background: linear-gradient(90deg, var(--accent), var(--accent-dark));
   -webkit-background-clip: text;
@@ -143,13 +148,15 @@ pre, code {
 
 /* Layouts */
 .about-container,
-.construction-container {
+.construction-container,
+.note-content {
   max-width: 1200px;
   margin: 2rem auto;
   padding: 0 1.5rem;
 }
 
-.about-grid {
+.about-grid,
+.notes-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2rem;
@@ -162,7 +169,8 @@ pre, code {
 .construction-links,
 .social-links,
 .ctf-logos,
-.university-logos {
+.university-logos,
+.note-tags {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
@@ -172,7 +180,8 @@ pre, code {
 }
 
 .skill-cloud li,
-.skill-cloud span {
+.skill-cloud span,
+.tag {
   background: rgba(78, 205, 196, 0.15);
   padding: 0.5rem 1rem;
   border-radius: 50px;
@@ -180,31 +189,30 @@ pre, code {
   transition: transform 0.2s;
 }
 
-.skill-cloud li:hover {
+.skill-cloud li:hover,
+.tag:hover {
   transform: scale(1.05);
 }
 
 /* Notes System */
-.notes-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 1.5rem;
-  margin: 2rem 0;
+.notes-header {
+  text-align: center;
+  margin-bottom: 2rem;
 }
 
-.note-card {
+.notes-search {
+  margin: 2rem auto;
+  max-width: 600px;
+}
+
+#notesSearch {
+  width: 100%;
+  padding: 12px 20px;
+  border: 2px solid var(--accent);
+  border-radius: 8px;
   background: var(--card-bg);
-  border: var(--card-border);
-  border-radius: 12px;
-  padding: 1.5rem;
-  transition: all 0.3s ease;
   color: var(--text-color);
-  text-decoration: none;
-}
-
-.note-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  font-size: 1rem;
 }
 
 .note-card h3 {
@@ -212,31 +220,33 @@ pre, code {
   color: var(--accent);
 }
 
-.note-tags {
+.note-meta {
   display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
+  gap: 1rem;
+  align-items: center;
   margin-top: 1rem;
+  color: var(--accent-dark);
+  font-size: 0.9rem;
 }
 
-.tag {
-  background: rgba(78, 205, 196, 0.2);
-  padding: 0.3rem 0.8rem;
-  border-radius: 50px;
-  font-size: 0.8rem;
+/* Individual Note Page */
+.note-content {
+  max-width: 800px;
 }
 
-.notes-search {
-  margin: 2rem 0;
+.note-header {
+  margin-bottom: 2rem;
 }
 
-#notesSearch {
-  width: 100%;
-  padding: 0.8rem;
-  border: 2px solid var(--accent);
-  border-radius: 8px;
-  background: var(--card-bg);
-  color: var(--text-color);
+.back-link {
+  padding: 0.5rem 1rem;
+  margin-top: 2rem;
+  display: inline-block;
+}
+
+/* Hide/show for search */
+.note-card[style*="display: none"] {
+  display: none !important;
 }
 
 /* Images */
@@ -261,7 +271,8 @@ pre, code {
 /* Responsive Adjustments */
 @media (max-width: 768px) {
   .header-animation h1,
-  .about-header h1 {
+  .about-header h1,
+  .notes-header h1 {
     font-size: 2.2rem;
   }
   
@@ -271,5 +282,10 @@ pre, code {
     height: 36px;
     top: 15px;
     right: 15px;
+  }
+  
+  .about-grid,
+  .notes-grid {
+    grid-template-columns: 1fr;
   }
 }
