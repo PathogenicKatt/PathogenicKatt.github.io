@@ -184,6 +184,61 @@ pre, code {
   transform: scale(1.05);
 }
 
+/* Notes System */
+.notes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.note-card {
+  background: var(--card-bg);
+  border: var(--card-border);
+  border-radius: 12px;
+  padding: 1.5rem;
+  transition: all 0.3s ease;
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+.note-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.note-card h3 {
+  margin-top: 0;
+  color: var(--accent);
+}
+
+.note-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.tag {
+  background: rgba(78, 205, 196, 0.2);
+  padding: 0.3rem 0.8rem;
+  border-radius: 50px;
+  font-size: 0.8rem;
+}
+
+.notes-search {
+  margin: 2rem 0;
+}
+
+#notesSearch {
+  width: 100%;
+  padding: 0.8rem;
+  border: 2px solid var(--accent);
+  border-radius: 8px;
+  background: var(--card-bg);
+  color: var(--text-color);
+}
+
 /* Images */
 .ctf-logos img,
 .university-logos img {
