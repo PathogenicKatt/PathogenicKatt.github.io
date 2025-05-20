@@ -1,26 +1,30 @@
----
 title: My CTF Blog
-description: My ctf journey and writeups
+description: My CTF journey and writeups
 theme: minima
 plugins:
   - jekyll-feed
-
-
-defaults:
-  - scope:
-      path: "about.md"
-    values:
-      layout: "default"
-      custom_css: true
----
-
-include:
-  - _includes
-  - _layouts
-  - assets/css
-  - assets/js
 
 collections:
   notes:
     output: true
     permalink: /notes/:path/
+    sort_by: date
+    sort_order: descending
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+      custom_css: true
+  - scope:
+      path: "_notes"
+    values:
+      layout: "note"
+
+include:
+  - _notes
+  - _includes
+  - _layouts
+  - assets/css
+  - assets/js
