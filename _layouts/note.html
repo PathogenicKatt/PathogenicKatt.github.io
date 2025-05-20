@@ -1,22 +1,37 @@
 ---
 layout: default
 ---
-<article class="note-content">
-  <header class="note-header">
-    <h1>{{ page.title }}</h1>
-    <div class="note-meta">
-      <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %d, %Y" }}</time>
-      <div class="note-tags">
-        {% for tag in page.tags %}
+<main class="note-container">
+  <article class="note-content">
+    <header class="note-header">
+      <h1 class="note-title">{{ page.title }}</h1>
+      {% if page.date or page.tags %}
+      <div class="note-meta">
+        {% if page.date %}
+        <time datetime="{{ page.date | date_to_xmlschema }}" class="note-date">
+          {{ page.date | date: "%B %d, %Y" }}
+        </time>
+        {% endif %}
+        
+        {% if page.tags %}
+        <div class="note-tags">
+          {% for tag in page.tags %}
           <span class="tag">{{ tag }}</span>
-        {% endfor %}
+          {% endfor %}
+        </div>
+        {% endif %}
       </div>
+      {% endif %}
+    </header>
+
+    <div class="note-body">
+      {{ content }}
     </div>
-  </header>
 
-  <div class="note-body">
-    {{ content }}
-  </div>
-</article>
-
-<a href="/notes" class="back-link">← Back to all notes</a>
+    <footer class="note-footer">
+      <a href="/notes" class="back-link">
+        <i class="fas fa-arrow-left"></i> Back to all notes
+      </a>
+    </footer>
+  </article>
+</main>
