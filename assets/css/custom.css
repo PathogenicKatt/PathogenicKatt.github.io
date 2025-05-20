@@ -220,14 +220,6 @@ pre, code {
   color: var(--accent);
 }
 
-.note-meta {
-  display: flex;
-  gap: 1rem;
-  align-items: center;
-  margin-top: 1rem;
-  color: var(--accent-dark);
-  font-size: 0.9rem;
-}
 
 /* Individual Note Page */
 .note-content {
