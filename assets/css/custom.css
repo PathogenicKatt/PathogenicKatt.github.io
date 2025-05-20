@@ -337,6 +337,18 @@ pre, code {
   transform: translateX(-3px);
 }
 
+/* Ensure only the note title is centered, everything else left-aligned */
+.note-title {
+  text-align: center;
+}
+
+.note-meta,
+.note-tags,
+.note-body,
+.note-footer {
+  text-align: left !important;
+}
+
 /* Hide/show for search */
 .note-card[style*="display: none"] {
   display: none !important;
