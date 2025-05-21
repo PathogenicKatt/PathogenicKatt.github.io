@@ -227,7 +227,8 @@ pre, code {
 }
 
 .note-page-wrapper {
-  margin-left: 2rem; /* Adjust this value to move content left */
+  margin-left: 0;
+  padding-left: 2rem;
 }
 
 .note-header {
@@ -242,9 +243,8 @@ pre, code {
 
 /* Note Layout Improvements */
 .note-container {
-  max-width: 1500px;
-  margin: 2rem 0;
-  padding: 0 1.5rem;
+  max-width: none;
+  margin-right: 2rem;
 }
 
 .note-title {
