@@ -14,14 +14,13 @@ custom_css: true
   <div class="ctf-card">
     <h2>🌐 Site Navigation</h2>
     <div class="link-bubbles">
-      <a href="/" class="bubble active">🏠 Home</a>
-      <a href="/writeups" class="bubble">📖 Writeups</a>
       <a href="/notes" class="bubble">📝 Notes</a>
+      <a href="/writeups" class="bubble">📖 Writeups</a>
       <a href="/resources" class="bubble">🧰 Toolbox</a>
       <a href="/about" class="bubble">🤔 About</a>
     </div>
   </div>
-</div>
+
 
 <div class="ctf-grid">
   <div class="ctf-card">
