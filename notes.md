@@ -7,7 +7,7 @@ custom_css: true
 
 <div class="notes-header">
   <h1>Notes 📄</h1>
-  <p class="subtitle">"An investment in knowledge pays the best interest." - Benjamin Franklin </p>
+  <p class="subtitle">"An investment in knowledge pays the best interest." - <strong>Benjamin Franklin</strong> </p>
 </div>
 
 <div class="notes-search">
