@@ -242,9 +242,9 @@ pre, code {
 
 /* Note Layout Improvements */
 .note-container {
-  max-width: 2500px;
+  max-width: 200px;
   margin: 2rem 0;
-  padding: 0 1.5rem;
+  padding: 0 1.0rem;
 }
 
 .note-title {
