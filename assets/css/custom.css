@@ -130,15 +130,13 @@ pre, code {
 }
 
 /* Specific Components */
-.header-animation h1,
-.about-header h1,
-.notes-header h1 {
-  font-size: 2.5rem;
-  background: linear-gradient(90deg, var(--accent), var(--accent-dark));
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  margin-bottom: 0.5rem;
+/* Override header-animation h1 to use default text color */
+.header-animation h1 {
+  background: none !important;
+  -webkit-background-clip: initial !important;
+  background-clip: initial !important;
+  -webkit-text-fill-color: initial !important;
+  color: var(--text-color) !important;
 }
 
 .subtitle {
