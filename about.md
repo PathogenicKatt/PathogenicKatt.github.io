@@ -7,7 +7,7 @@ custom_css: true
 
 <div class="about-container">
   <section class="about-header">
-    <h1> Hi, I'm Katleho</h1>
+    <h1> Hi, I'm Katleho 🙋‍♂️</h1>
     <p class="subtitle">BSc Computer Science & Mathematics | CTF Player | Security Researcher</p>
   </section>
 
@@ -16,7 +16,7 @@ custom_css: true
       <h2>📚 Academic Journey</h2>
       <p>My cybersecurity journey began in 2022 while studying <strong>ICT at University of Mpumalanga (UMP)</strong>. Seeking deeper technical challenges, I transferred to <strong>North West University (NWU)</strong> in 2023 to pursue Computer Science and Mathematics.</p>
       
-      <p>Though NWU doesn't offer formal cybersecurity courses, their participation in the <strong>SANReN CTF </strong>>program became my hands-on training ground. This exclusive competition (not available at UMP) ignited my passion for security research.</p>
+      <p>Though NWU doesn't offer formal cybersecurity courses, their participation in the <strong> SANReN CTF </strong> program became my hands-on training ground. This exclusive competition (not available at UMP) ignited my passion for security research.</p>
       
       <div class="university-logos">
         <img src="{{ '/assets/img/ump-logo.png' | relative_url }}" alt="University of Mpumalanga logo" loading="lazy">
@@ -53,6 +53,10 @@ custom_css: true
         <span>Linux</span>
         <span>Forensics</span>
         <span>SQL</span>
+        <span>Assembly(x86)</span>
+        <span>Git</span>
+
+
       </div>
       
     </section>
