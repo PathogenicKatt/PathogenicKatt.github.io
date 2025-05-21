@@ -11,6 +11,18 @@ custom_css: true
   <p class="subtitle">"A sluggard's appetite is never filled, but the desires of the diligent are fully satisfied."-<strong>Proverbs 13:4</strong></p>
 </div>
 
+  <div class="ctf-card">
+    <h2>🌐 Site Navigation</h2>
+    <div class="link-bubbles">
+      <a href="/" class="bubble active">🏠 Home</a>
+      <a href="/writeups" class="bubble">📖 Writeups</a>
+      <a href="/notes" class="bubble">📝 Notes</a>
+      <a href="/resources" class="bubble">🧰 Toolbox</a>
+      <a href="/about" class="bubble">🤔 About</a>
+    </div>
+  </div>
+</div>
+
 <div class="ctf-grid">
   <div class="ctf-card">
     <h2>🔍 Focus Areas</h2>
@@ -24,18 +36,6 @@ custom_css: true
 
     </ul>
   </div>
-
-  <div class="ctf-card">
-    <h2>🌐 Site Navigation</h2>
-    <div class="link-bubbles">
-      <a href="/" class="bubble active">🏠 Home</a>
-      <a href="/writeups" class="bubble">📖 Writeups</a>
-      <a href="/notes" class="bubble">📝 Notes</a>
-      <a href="/resources" class="bubble">🧰 Toolbox</a>
-      <a href="/about" class="bubble">🤔 About</a>
-    </div>
-  </div>
-</div>
 
 <h2>🔥 Recent Activity</h2>
 <div class="post-feed">
