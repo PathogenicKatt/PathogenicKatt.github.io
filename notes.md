@@ -6,8 +6,8 @@ custom_css: true
 ---
 
 <div class="notes-header">
-  <h1>CTF Notes Repository</h1>
-  <p class="subtitle">Organized knowledge</p>
+  <h1>Notes 📄</h1>
+  <p class="subtitle">"An investment in knowledge pays the best interest." - Benjamin Franklin </p>
 </div>
 
 <div class="notes-search">
