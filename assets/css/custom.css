@@ -242,7 +242,7 @@ pre, code {
 
 /* Note Layout Improvements */
 .note-container {
-  max-width: 200px;
+  max-width: 2000px;
   margin: 2rem 0;
   padding: 0 1.5rem;
 }
@@ -258,7 +258,7 @@ pre, code {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
-  align-items: center;
+  align-items: left;
   gap: 1rem;
   margin-bottom: 2rem;
   color: var(--accent-dark);
