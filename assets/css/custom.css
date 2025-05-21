@@ -258,7 +258,7 @@ pre, code {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
-  align-items: left;
+  align-items: center;
   gap: 1rem;
   margin-bottom: 2rem;
   color: var(--accent-dark);
