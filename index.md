@@ -59,14 +59,14 @@ custom_css: true
 <div class="ctf-card">
   <h2>📬 Connect</h2>
   <div class="link-bubbles">
-    <a href="https://github.com/PathogenicKatt" class="bubble">🐱 GitHub</a>
-    <a href="mailto:katlehom814@gmail.com" class="bubble">✉️ Email</a>
+    <a href="https://github.com/PathogenicKatt" class="bubble" rel="noopener noreferrer">🐱 GitHub</a>
+    <a href="mailto:katlehom814@gmail.com" class="bubble" rel="noopener noreferrer">✉️ Email</a>
   </div>
 </div>
 
 
 <div class="ctf-badge">
-  <a href="https://ctftime.org/profile/PathogenicKatt" target="_blank">
+  <a href="https://ctftime.org/profile/PathogenicKatt" target="_blank" rel="noopener noreferrer">
     <img src="https://img.shields.io/badge/CTFTime-Profile-blue?style=for-the-badge" alt="CTFTime Profile">
   </a>
 </div>
