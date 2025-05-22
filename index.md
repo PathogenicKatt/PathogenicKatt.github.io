@@ -17,6 +17,7 @@ custom_css: true
       <a href="/notes" class="bubble">📝 Notes</a>
       <a href="/writeups" class="bubble">📖 Writeups</a>
       <a href="/resources" class="bubble">🧰 Toolbox</a>
+      <a href="/CV" class="bubble">🙋‍♂️ CV</a>
       <a href="/about" class="bubble">🤔 About</a>
     </div>
   </div>
