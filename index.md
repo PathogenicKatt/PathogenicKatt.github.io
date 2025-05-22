@@ -23,7 +23,6 @@ custom_css: true
 
 
 <div class="ctf-grid">
-  <div class="ctf-card">
     <h2>🔍 Focus Areas</h2>
     <ul class="skill-cloud">
       <li>Web Hacking</li>
@@ -32,9 +31,8 @@ custom_css: true
       <li>Mobile Security</li>
       <li>Binary Exploits</li>
       <li>Forensics</li>
-
     </ul>
-  </div>
+</div>
 
 <h2>🔥 Recent Activity</h2>
 <div class="post-feed">
