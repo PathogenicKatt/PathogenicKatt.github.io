@@ -28,3 +28,7 @@ include:
   - _layouts
   - assets/css
   - assets/js
+
+markdown: kramdown
+kramdown:
+  input: GFM
