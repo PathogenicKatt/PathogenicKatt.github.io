@@ -357,6 +357,35 @@ pre, code {
   transform: translateX(-4px) scale(1.03);
 }
 
+/* Tables */
+.note-body table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+  font-family: 'Fira Code', monospace;
+}
+
+.note-body th,
+.note-body td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid var(--accent);
+}
+
+.note-body th {
+  background-color: rgba(78, 205, 196, 0.2);
+  font-weight: 600;
+}
+
+.note-body tr:hover {
+  background-color: rgba(78, 205, 196, 0.05);
+}
+
+/* Fix for kramdown table rendering */
+.note-body table {
+  display: table !important;
+}
+
 
 /* Hide/show for search */
 .note-card[style*="display: none"] {
