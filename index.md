@@ -22,14 +22,26 @@ custom_css: true
   </div>
 
 
-<div class="ctf-grid">
+<div class="ctf-card">
     <h2>🔍 Focus Areas</h2>
+    <ul>
       <li>Web Hacking</li>
       <li>Reverse Engineering</li>
       <li>Crypto Challenges</li>
       <li>Mobile Security</li>
       <li>Binary Exploits</li>
       <li>Forensics</li>
+    </ul>
+</div>
+
+
+<div class="ctf-card">
+  <h2>🎯 Currently Learning</h2>
+  <ul>
+    <li>Advanced Binary Exploitation</li>
+    <li>Binary Analysis with GDB</li>
+    <li>Crackme programs</li>
+  </ul>
 </div>
 
 <h2>🔥 Recent Activity</h2>
@@ -42,6 +54,16 @@ custom_css: true
     </article>
   {% endfor %}
 </div>
+
+
+<div class="ctf-card">
+  <h2>📬 Connect</h2>
+  <div class="link-bubbles">
+    <a href="https://github.com/PathogenicKatt" class="bubble">🐱 GitHub</a>
+    <a href="mailto:katlehom814@gmail.com" class="bubble">✉️ Email</a>
+  </div>
+</div>
+
 
 <div class="ctf-badge">
   <a href="https://ctftime.org/profile/PathogenicKatt" target="_blank">
