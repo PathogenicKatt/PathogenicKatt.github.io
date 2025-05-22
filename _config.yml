@@ -3,6 +3,9 @@ description: My CTF journey and writeups
 theme: minima
 plugins:
   - jekyll-feed
+markdown: kramdown
+kramdown:
+  input: GFM
 
 collections:
   notes:
@@ -29,6 +32,3 @@ include:
   - assets/css
   - assets/js
 
-markdown: kramdown
-kramdown:
-  input: GFM
