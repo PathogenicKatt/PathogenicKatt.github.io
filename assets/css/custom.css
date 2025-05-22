@@ -60,8 +60,8 @@ pre, code {
   background: var(--card-bg);
   border: var(--card-border);
   border-radius: 12px;
-  padding: 1.8rem;
-  margin: 1.5rem 0;
+  padding: 1rem;
+  margin: 1rem 0;
   box-shadow: var(--card-shadow);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   backdrop-filter: blur(8px);
