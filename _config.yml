@@ -20,6 +20,9 @@ collections:
     permalink: /notes/:path/
     sort_by: date
     sort_order: descending
+  posts:
+    output: true
+    permalink: /:year/:month/:title/
 
 defaults:
   - scope:
@@ -31,6 +34,10 @@ defaults:
       path: "_notes"
     values:
       layout: "note"
+  - scope:
+      path: "_posts"
+    values:
+      layout: "post"
 
 include:
   - _notes
