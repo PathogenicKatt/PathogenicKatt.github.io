@@ -439,7 +439,7 @@ pre, code {
 
 /* Post Styles */
 .post {
-  max-width: 800px;
+  max-width: none;
   margin: 2rem auto;
   padding: 0 1.5rem;
 }
