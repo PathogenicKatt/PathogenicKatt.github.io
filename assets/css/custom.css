@@ -437,6 +437,22 @@ pre, code {
   transform: translateY(-2px);
 }
 
+/* Post Styles */
+.post {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 0 1.5rem;
+}
+
+.post-header {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.post-content {
+  line-height: 1.8;
+}
+
 /* Hide/show for search */
 .note-card[style*="display: none"] {
   display: none !important;
