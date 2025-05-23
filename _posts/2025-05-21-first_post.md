@@ -1,4 +1,5 @@
 ---
+layout: post
 title: "Joined the ladies CTF: Cyberquest 2025"
 date: 2025-05-23
 ---
