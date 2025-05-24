@@ -1,5 +1,6 @@
-// Initialize theme and navigation
+// Theme and Navigation System
 function initNavigation() {
+  // Set initial theme
   const currentTheme = localStorage.getItem('theme') || 
                      (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
   document.documentElement.setAttribute('data-theme', currentTheme);
@@ -28,7 +29,6 @@ function initNavigation() {
   document.body.prepend(navContainer);
 }
 
-// Theme toggle function
 function toggleTheme() {
   const currentTheme = document.documentElement.getAttribute('data-theme');
   const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
@@ -43,7 +43,7 @@ function toggleTheme() {
   }
 }
 
-// Enhanced notes search
+// Notes Search System
 function setupNotesSearch() {
   const searchInput = document.getElementById('notesSearch');
   if (!searchInput) return;
@@ -66,13 +66,129 @@ function setupNotesSearch() {
   });
 }
 
+// Writeups Search and Filter System
+function setupWriteupsSearch() {
+  const searchInput = document.getElementById('writeupsSearch');
+  const difficultyBtns = document.querySelectorAll('.difficulty-btn');
+  
+  if (!searchInput) return;
+
+  const filterWriteups = () => {
+    const searchTerm = searchInput.value.trim().toLowerCase();
+    const difficulty = document.querySelector('.difficulty-btn.active')?.dataset.difficulty || 'all';
+    
+    document.querySelectorAll('.writeup-card').forEach(card => {
+      const title = card.querySelector('h3')?.textContent.toLowerCase() || '';
+      const desc = card.querySelector('p')?.textContent.toLowerCase() || '';
+      const tags = card.querySelector('.writeup-tags')?.textContent.toLowerCase() || '';
+      const event = card.querySelector('.event')?.textContent.toLowerCase() || '';
+      const cardDifficulty = card.dataset.difficulty || 'easy';
+      
+      const matchesSearch = title.includes(searchTerm) || 
+                          desc.includes(searchTerm) || 
+                          tags.includes(searchTerm) ||
+                          event.includes(searchTerm);
+      const matchesDifficulty = difficulty === 'all' || cardDifficulty === difficulty;
+      
+      card.style.display = (matchesSearch && matchesDifficulty) ? 'block' : 'none';
+    });
+  };
+
+  // Search input handler
+  searchInput.addEventListener('input', filterWriteups);
+  
+  // Difficulty filter buttons
+  difficultyBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      difficultyBtns.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      filterWriteups();
+    });
+  });
+
+  // Trigger initial filter
+  filterWriteups();
+}
+
+// Image Zoom Functionality
+function setupImageZoom() {
+  document.querySelectorAll('.writeup-content img').forEach(img => {
+    img.style.cursor = 'zoom-in';
+    img.addEventListener('click', () => {
+      if (img.style.cursor === 'zoom-in') {
+        img.style.maxWidth = '100%';
+        img.style.cursor = 'zoom-out';
+      } else {
+        img.style.maxWidth = '100%';
+        img.style.cursor = 'zoom-in';
+      }
+    });
+  });
+}
+
 // Initialize everything when DOM loads
 document.addEventListener('DOMContentLoaded', function() {
   initNavigation();
   setupNotesSearch();
+  setupWriteupsSearch();
+  setupImageZoom();
   
-  // Add syntax highlighting if needed
+  // Syntax highlighting
   if (typeof hljs !== 'undefined') {
     hljs.highlightAll();
   }
+
+  // Add copy buttons to code blocks
+  document.querySelectorAll('pre code').forEach(codeBlock => {
+    const copyBtn = document.createElement('button');
+    copyBtn.className = 'copy-btn';
+    copyBtn.innerHTML = '<i class="far fa-copy"></i>';
+    copyBtn.title = 'Copy to clipboard';
+    
+    copyBtn.addEventListener('click', () => {
+      navigator.clipboard.writeText(codeBlock.textContent)
+        .then(() => {
+          copyBtn.innerHTML = '<i class="fas fa-check"></i>';
+          setTimeout(() => {
+            copyBtn.innerHTML = '<i class="far fa-copy"></i>';
+          }, 2000);
+        });
+    });
+    
+    const pre = codeBlock.parentElement;
+    if (pre) {
+      pre.style.position = 'relative';
+      pre.appendChild(copyBtn);
+    }
+  });
 });
+
+// Error handling for CV password system
+if (typeof checkPassword === 'undefined') {
+  window.checkPassword = function(e) {
+    if (e) e.preventDefault();
+    const input = document.getElementById('cv-password')?.value;
+    const errorMsg = document.getElementById('error-message');
+    
+    if (!input) return;
+    
+    try {
+      // Your existing password check logic
+      const xorKey = getXorKey();
+      const correct = decodePassword(OBFUSCATED_PASSWORD, xorKey);
+      
+      if (input === correct) {
+        const decoded = decodeCV(OBFUSCATED_CV, xorKey);
+        document.getElementById('protected-content').innerHTML = marked.parse(decoded);
+        document.getElementById('protected-content').style.display = 'block';
+        document.getElementById('password-prompt').style.display = 'none';
+      } else {
+        errorMsg.style.display = 'block';
+      }
+    } catch (err) {
+      console.error('Password check failed:', err);
+      errorMsg.textContent = 'System error - please refresh';
+      errorMsg.style.display = 'block';
+    }
+  };
+}
