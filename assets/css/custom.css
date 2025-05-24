@@ -453,6 +453,109 @@ pre, code {
   line-height: 1.8;
 }
 
+/* Writeups Grid */
+.writeups-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.writeup-card {
+  background: var(--card-bg);
+  border-radius: 12px;
+  padding: 1.5rem;
+  transition: all 0.3s ease;
+  border-left: 4px solid var(--accent);
+  box-shadow: var(--card-shadow);
+}
+
+.writeup-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.writeup-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.difficulty-badge {
+  padding: 0.3rem 0.8rem;
+  border-radius: 50px;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.difficulty-badge.easy {
+  background: rgba(46, 204, 113, 0.2);
+  color: #2ecc71;
+}
+.difficulty-badge.medium {
+  background: rgba(241, 196, 15, 0.2);
+  color: #f1c40f;
+}
+.difficulty-badge.hard {
+  background: rgba(231, 76, 60, 0.2);
+  color: #e74c3c;
+}
+
+.writeup-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+}
+
+.event {
+  background: rgba(78, 205, 196, 0.15);
+  padding: 0.3rem 0.8rem;
+  border-radius: 50px;
+}
+
+/* Writeup Page Styles */
+.writeup-content img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin: 1.5rem 0;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.writeup-content .image-caption {
+  text-align: center;
+  font-style: italic;
+  margin-top: -1rem;
+  margin-bottom: 1.5rem;
+  color: var(--text-color);
+  opacity: 0.8;
+}
+
+/* Difficulty Filter */
+.difficulty-filter {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.difficulty-btn {
+  padding: 0.3rem 0.8rem;
+  border-radius: 50px;
+  border: none;
+  background: rgba(78, 205, 196, 0.15);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.difficulty-btn.active {
+  background: var(--accent);
+  color: white;
+}
+
 /* Hide/show for search */
 .note-card[style*="display: none"] {
   display: none !important;
