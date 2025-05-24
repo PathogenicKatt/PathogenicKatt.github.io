@@ -23,6 +23,11 @@ collections:
   posts:
     output: true
     permalink: /:year/:month/:title/
+  writeups:
+    output: true
+    permalink: /writeups/:path/
+    sort_by: date
+    sort_order: descending
 
 defaults:
   - scope:
@@ -38,6 +43,10 @@ defaults:
       path: "_posts"
     values:
       layout: "post"
+  - scope:
+      path: "_writeups"
+    values:
+      layout: "writeup"
 
 include:
   - _notes
