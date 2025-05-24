@@ -555,6 +555,32 @@ pre, code {
   background: var(--accent);
   color: white;
 }
+/* Copy buttons for code blocks */
+.copy-btn {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  background: rgba(255,255,255,0.2);
+  border: none;
+  border-radius: 4px;
+  padding: 0.3rem 0.6rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.copy-btn:hover {
+  background: var(--accent);
+  color: white;
+}
+
+/* Writeup image zoom */
+.writeup-content img {
+  transition: transform 0.3s ease;
+}
+
+.writeup-content img:hover {
+  transform: scale(1.02);
+}
 
 /* Hide/show for search */
 .note-card[style*="display: none"] {
