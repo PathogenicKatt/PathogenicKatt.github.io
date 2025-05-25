@@ -462,6 +462,7 @@ pre, code {
 }
 
 .writeup-card {
+  max-width: none;
   background: var(--card-bg);
   border-radius: 12px;
   padding: 1.5rem;
@@ -476,7 +477,7 @@ pre, code {
 }
 
 .writeup-card-header {
-  display: flex;
+  display: center;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 1rem;
@@ -507,7 +508,7 @@ pre, code {
   flex-wrap: wrap;
   gap: 0.8rem;
   margin-top: 1rem;
-  font-size: 0.9rem;
+  font-size: 1.6rem;
 }
 
 .event {
