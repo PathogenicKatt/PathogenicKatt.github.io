@@ -56,7 +56,7 @@ date: 2025-05-24
       - Other way, you can use the `exiftool` again, like as shown above. <br>
    - You can scan the QR code, and what you see, is what is called *Morse Code*(dots and dashes) encryption. Well, i know this through exprience. It is very common to come across a *Morse Code* encryption whenever you solve CTF Challenges.
    - Again there are many tools you could use to decrypt the *Morse Code*:
-      - I like to use the following tool ![dcode](https://www.dcode.fr/en), great tool!
+      - I like to use the following tool [dcode](https://www.dcode.fr/en), great tool!
       - Type in "morse code", in the search bar, and paste the morse code.
       - You should see the flag.
    
