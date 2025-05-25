@@ -9,12 +9,21 @@ date: 2025-05-24
 ---
 
 ## Challenge Overview
+---
 ![Challenge Screenshot](/assets/img/CipherQR(1).PNG){: .writeup-image }
-*Fig 1: Challenge interface*
+
+---
 
 ## Approach
+---
+![Recon Screenshot](/assets/img/CipherQR(2).PNG){: .writeup-image }
 
-1. **Initial Recon**:
+---
+1. **File Check**: This is important to check what type of a file is it.
    ```bash
    file Q.rrrr.png
    ```
+2. **Meta-Data**: "Data about data",tells us crucial info about the image. As you can see from the screenshot that there is an error with the file, by using the following command.
+   ```bash
+   exiftool Q.rrrr.png
+   ``` 
