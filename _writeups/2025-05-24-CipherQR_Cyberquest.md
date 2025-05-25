@@ -12,7 +12,7 @@ date: 2025-05-24
 <br>
 
 ## Challenge Overview
-- This was the following description for the challeng:
+- This was the following description for the challenge:
 <br>
 
 ![Challenge Screenshot](/assets/img/CipherQR(1).PNG){: .writeup-image }
@@ -34,13 +34,11 @@ date: 2025-05-24
    exiftool Q.rrrr.png
    ``` 
 - By comparing the first 8 bytes(called the *Magic number*), of the normal png and the one that we have. <br>
-- Starting with the normal png(every png must have the correct first 8 bytes), just like so:
-   
+- Starting with the normal png(every png must have the correct first 8 bytes), just like so: <br>
    ![Recon Screenshot](/assets/img/PNG-Gradient_hex.png){: .writeup-image }
 <br>
 
-- But if we look at our given png(Q.rrrr.png):
-   
+- But if we look at our given png(Q.rrrr.png): <br>
    ![Recon Screenshot](/assets/img/CipherQR(3).PNG){: .writeup-image }
 
    - That output, is shown using the following command(*You should see more than what i have shown*):
@@ -60,7 +58,7 @@ date: 2025-05-24
    - Again there are many tools you could use to decrypt the *Morse Code*:
       - I like to use the following tool [dcode](https://www.dcode.fr/en), great tool!
       - Type in "morse code", in the search bar, and paste the morse code.
-      - You should see the flag. <br>
+      - You should see the flag(the first string). <br>
          ![Recon Screenshot](/assets/img/CipherQR(5).PNG){: .writeup-image }
 
 
