@@ -8,11 +8,13 @@ layout: default
         <h1 class="writeup-title">{{ page.title }}</h1>
         <div class="writeup-meta">
           {% if page.date %}
-          <time datetime="{{ page.date | date_to_xmlschema }}" class="writeup-date">
+          <span class="writeup-date">
             {{ page.date | date: "%B %d, %Y" }}
-          </time>
+          </span>
           {% endif %}
+          {% if page.event %}
           <span class="event">{{ page.event }}</span>
+          {% endif %}
           <span class="difficulty-badge {{ page.difficulty | default: 'easy' }}">
             {{ page.difficulty | capitalize | default: "Easy" }}
           </span>
