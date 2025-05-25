@@ -7,7 +7,7 @@ custom_css: true
 
 
 <div class="header-animation">
-  <h1 style="text-align: center;"> ❤ Welcome to My Cybersecurity Journey! ❤</h1>
+  <h1 style="text-align: center;">🥶 Welcome to My Cybersecurity Journey! 🥶</h1>
   <p class="subtitle">"A sluggard's appetite is never filled, but the desires of the diligent are fully satisfied."-<strong>Proverbs 13:4</strong></p>
 </div>
 
