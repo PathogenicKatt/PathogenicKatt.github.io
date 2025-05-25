@@ -163,32 +163,3 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 });
 
-// Error handling for CV password system
-if (typeof checkPassword === 'undefined') {
-  window.checkPassword = function(e) {
-    if (e) e.preventDefault();
-    const input = document.getElementById('cv-password')?.value;
-    const errorMsg = document.getElementById('error-message');
-    
-    if (!input) return;
-    
-    try {
-      // Your existing password check logic
-      const xorKey = getXorKey();
-      const correct = decodePassword(OBFUSCATED_PASSWORD, xorKey);
-      
-      if (input === correct) {
-        const decoded = decodeCV(OBFUSCATED_CV, xorKey);
-        document.getElementById('protected-content').innerHTML = marked.parse(decoded);
-        document.getElementById('protected-content').style.display = 'block';
-        document.getElementById('password-prompt').style.display = 'none';
-      } else {
-        errorMsg.style.display = 'block';
-      }
-    } catch (err) {
-      console.error('Password check failed:', err);
-      errorMsg.textContent = 'System error - please refresh';
-      errorMsg.style.display = 'block';
-    }
-  };
-}
