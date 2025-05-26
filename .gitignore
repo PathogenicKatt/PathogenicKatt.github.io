@@ -1,3 +1,4 @@
 _site/
 /encryption.py
 /encryption2.py
+/hash.js
