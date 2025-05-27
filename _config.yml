@@ -28,11 +28,8 @@ collections:
     permalink: /writeups/:path/
     sort_by: date
     sort_order: descending
-  cv:
-    output: false
 
-exclude:
-  - _cv 
+
 
 defaults:
   - scope:
@@ -52,10 +49,6 @@ defaults:
       path: "_writeups"
     values:
       layout: "writeup"
-  - scope:
-      path: "_cv/CV.md"
-    values:
-      layout: "cv"
 
 include:
   - _notes
