@@ -657,6 +657,38 @@ pre, code {
   .notes-header h1 {
     font-size: 2.2rem;
   }
+  .about-grid,
+  .notes-grid,
+  .writeups-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .writeup-card {
+    padding: 1rem;
+    margin: 0 0 1.2rem 0;
+    border-radius: 10px;
+    font-size: 1rem;
+  }
+
+  .writeup-title {
+    font-size: 1.5rem;
+  }
+
+  .theme-toggle,
+  .nav-button {
+    width: 36px;
+    height: 36px;
+    top: 15px;
+    right: 15px;
+  }
+
+  .writeup-content img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+  
 @media (min-width: 1200px) {
   .note-container {
     max-width: 1000px;
@@ -668,16 +700,3 @@ pre, code {
   }
 }
   
-  .theme-toggle,
-  .nav-button {
-    width: 36px;
-    height: 36px;
-    top: 15px;
-    right: 15px;
-  }
-  
-  .about-grid,
-  .notes-grid {
-    grid-template-columns: 1fr;
-  }
-}
