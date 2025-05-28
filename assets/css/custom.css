@@ -737,9 +737,6 @@ body[data-page="tools"] .resource-card {
 }
 
 /* Always-green nav buttons for resources and tools pages */
-body[data-page="resources"], 
-body[data-page="tools"] {
-}
 body[data-page="resources"] .nav-button,
 body[data-page="resources"] .theme-toggle,
 body[data-page="tools"] .nav-button,
