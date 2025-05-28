@@ -3,7 +3,7 @@
   {% include head.html %}
   {% if page.custom_css %}{% include css.html %}{% endif %}
   
-<body>
+<body data-page="{{ page.data_page | default: page.collection | default: page.title | downcase }}">
   <main class="page-content">
     {{ content }}
   </main>
