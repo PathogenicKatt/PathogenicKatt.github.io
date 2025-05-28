@@ -649,6 +649,86 @@ pre, code {
   transform: scale(1.1);
 }
 
+/* Terminal-style header */
+.terminal-header {
+  background: #23272e;
+  color: #39ff14;
+  font-family: 'Fira Mono', 'Consolas', monospace;
+  padding: 0.5em 1em;
+  border-radius: 8px 8px 0 0;
+  margin-bottom: 1em;
+  font-size: 1.1em;
+}
+.terminal-header .prompt { color: #39ff14; }
+.terminal-header .cmd { color: #fff; }
+
+/* Hacker intro */
+.hacker-intro {
+  background: #181c20;
+  color: #baffc9;
+  font-family: 'Fira Mono', 'Consolas', monospace;
+  padding: 1em;
+  border-radius: 0 0 8px 8px;
+  margin-bottom: 2em;
+  font-size: 1.1em;
+}
+.hacker-green { color: #39ff14; }
+.hacker-blink {
+  animation: blink 1s steps(2, start) infinite;
+  color: #39ff14;
+}
+@keyframes blink {
+  to { visibility: hidden; }
+}
+
+/* Resources grid */
+.resources-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5em;
+  justify-content: flex-start;
+}
+.resource-card {
+  background: #23272e;
+  border: 1px solid #39ff14;
+  border-radius: 10px;
+  padding: 1.2em 1.5em;
+  min-width: 220px;
+  max-width: 300px;
+  margin-bottom: 1em;
+  box-shadow: 0 2px 12px #000a;
+  font-family: 'Fira Mono', 'Consolas', monospace;
+}
+.resource-card h2 {
+  margin-top: 0;
+  color: #39ff14;
+  font-size: 1.2em;
+}
+.resource-card ul {
+  list-style: none;
+  padding-left: 0;
+}
+.resource-card li {
+  margin: 0.5em 0;
+}
+.resource-card a {
+  color: #baffc9;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.2s;
+}
+.resource-card a:hover {
+  color: #39ff14;
+  text-shadow: 0 0 4px #39ff14;
+}
+.resource-card code {
+  background: #181c20;
+  color: #baffc9;
+  padding: 0.1em 0.4em;
+  border-radius: 4px;
+  font-size: 1em;
+}
+
 /* Social Links */
 .social-link.github { background: #333; }
 .social-link.ctftime { background: #4b6cb3; }
