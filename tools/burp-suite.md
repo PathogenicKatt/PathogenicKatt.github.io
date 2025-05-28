@@ -1,6 +1,7 @@
 ---
 title: "Burp Suite"
 layout: default
+data_page: tools
 ---
 
 <div class="terminal-header">
