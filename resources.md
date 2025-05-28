@@ -3,20 +3,43 @@ layout: default
 title: "Resources & Tools"
 ---
 
-# 🧰 CTF Resources & Tools
+<div class="terminal-header">
+  <span class="prompt">$</span> <span class="cmd">cat resources.md</span>
+</div>
 
-Welcome! Here you'll find categorized lists of tools, commands, and resources I use for CTFs.
+# 🧰 <span style="font-family: 'Fira Mono', monospace;">CTF Resources & Tools</span>
 
-## Web Exploitation
-- [Burp Suite](./tools/burp-suite.md)
-- [ffuf](./tools/ffuf.md)
-- [SQLMap](./tools/sqlmap.md)
+<div class="hacker-intro">
+  <p>Welcome, <span class="hacker-green">operator</span>! Here you'll find my personal arsenal of tools, commands, and resources for CTFs.<br>
+  <span class="hacker-blink">_</span></p>
+</div>
 
-## Forensics
-- [binwalk](./tools/binwalk.md)
-- [foremost](./tools/foremost.md)
+<div class="resources-grid">
 
-## Cryptography
-- [CyberChef](./tools/cyberchef.md)
-- [hashcat](./tools/hashcat.md)
+  <div class="resource-card">
+    <h2>🌐 Web Exploitation</h2>
+    <ul>
+      <li><a href="./tools/burp-suite.md"><code>Burp Suite</code></a></li>
+      <li><a href="./tools/ffuf.md"><code>ffuf</code></a></li>
+      <li><a href="./tools/sqlmap.md"><code>SQLMap</code></a></li>
+    </ul>
+  </div>
+
+  <div class="resource-card">
+    <h2>🕵️ Forensics</h2>
+    <ul>
+      <li><a href="./tools/binwalk.md"><code>binwalk</code></a></li>
+      <li><a href="./tools/foremost.md"><code>foremost</code></a></li>
+    </ul>
+  </div>
+
+  <div class="resource-card">
+    <h2>🔐 Cryptography</h2>
+    <ul>
+      <li><a href="./tools/cyberchef.md"><code>CyberChef</code></a></li>
+      <li><a href="./tools/hashcat.md"><code>hashcat</code></a></li>
+    </ul>
+  </div>
+
+</div>
 
