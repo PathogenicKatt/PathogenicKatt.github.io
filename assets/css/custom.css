@@ -96,6 +96,10 @@ pre, code {
   font-weight: 500;
 }
 
+.social-link i {
+  margin-right: 0.5em;
+}
+
 .bubble:hover,
 .nav-button:hover,
 .theme-toggle:hover,
