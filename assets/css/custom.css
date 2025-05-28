@@ -729,6 +729,13 @@ pre, code {
   font-size: 1em;
 }
 
+body[data-page="tools"] .resource-card {
+  max-width: 100%;
+  width: 100%;
+  margin: 2em 0;
+  box-sizing: border-box;
+}
+
 /* Always-green nav buttons for resources and tools pages */
 body[data-page="resources"], 
 body[data-page="tools"] {
