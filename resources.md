@@ -20,7 +20,7 @@ data_page: resources
   <div class="resource-card">
     <h2>🌐 Web Exploitation</h2>
     <ul>
-      <li><a href="./tools/burp-suite.md"><code>Burp Suite</code></a></li>
+      <li><a href="{% link tools/burp-suite.md %}"><code>Burp Suite</code></a></li>
       <li><a href="./tools/ffuf.md"><code>ffuf</code></a></li>
       <li><a href="./tools/sqlmap.md"><code>SQLMap</code></a></li>
     </ul>
