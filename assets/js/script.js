@@ -1,31 +1,51 @@
-// Theme and Navigation System
 function initNavigation() {
-  // Set initial theme
-  const currentTheme = localStorage.getItem('theme') || 
-                     (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
-  document.documentElement.setAttribute('data-theme', currentTheme);
+  // Detect page type from body attribute
+  const pageType = document.body.getAttribute('data-page');
+
+  // Force dark mode for resources and tools pages
+  if (pageType === 'resources' || pageType === 'tools') {
+    document.documentElement.setAttribute('data-theme', 'dark');
+    localStorage.setItem('theme', 'dark');
+  } else {
+    // Set initial theme for other pages
+    const currentTheme = localStorage.getItem('theme') ||
+      (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+    document.documentElement.setAttribute('data-theme', currentTheme);
+  }
 
   // Create navigation container
   const navContainer = document.createElement('div');
   navContainer.className = 'top-nav-container';
 
-  // Home button
+  // Home button (always present)
   const homeBtn = document.createElement('a');
   homeBtn.href = '/';
   homeBtn.className = 'nav-button home-button';
   homeBtn.innerHTML = '🏠';
   homeBtn.title = 'Return home';
-
-  // Theme toggle button
-  const themeBtn = document.createElement('button');
-  themeBtn.className = 'nav-button theme-button';
-  themeBtn.innerHTML = currentTheme === 'dark' ? '☀️' : '🌙';
-  themeBtn.title = 'Toggle theme';
-  themeBtn.addEventListener('click', toggleTheme);
-
-  // Add buttons to container
   navContainer.appendChild(homeBtn);
-  navContainer.appendChild(themeBtn);
+
+  // "Back to Resources" button for tool pages
+  if (pageType === 'tools') {
+    const backBtn = document.createElement('a');
+    backBtn.href = '/resources';
+    backBtn.className = 'nav-button back-button';
+    backBtn.innerHTML = '<i class="fas fa-arrow-left"></i> Back to Resources';
+    backBtn.title = 'Back to Resources';
+    navContainer.appendChild(backBtn);
+  }
+
+  // Theme toggle button (only for non-resources/tools pages)
+  if (pageType !== 'resources' && pageType !== 'tools') {
+    const currentTheme = document.documentElement.getAttribute('data-theme');
+    const themeBtn = document.createElement('button');
+    themeBtn.className = 'nav-button theme-button';
+    themeBtn.innerHTML = currentTheme === 'dark' ? '☀️' : '🌙';
+    themeBtn.title = 'Toggle theme';
+    themeBtn.addEventListener('click', toggleTheme);
+    navContainer.appendChild(themeBtn);
+  }
+
   document.body.prepend(navContainer);
 }
 
