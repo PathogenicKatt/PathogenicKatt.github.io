@@ -24,7 +24,9 @@ custom_css: true
 
 <div class="ctf-card">
     <h2>🔍 My Focus Areas</h2>
-    <h3>Disclaimer: All this is done, ethically, i do not attempt or break systems without any approval to do so.</h3>
+    <h3 style="color: #1976d2;">
+  <strong>Disclaimer:</strong> All activities described here are conducted with the highest ethical standards and proper authorization. I never attempt to access or test systems without explicit permission.
+</h3>
     <ul>
       <li>
         <strong>Web Exploitation</strong>
