@@ -1,6 +1,7 @@
 ---
 layout: default
 title: "Resources & Tools"
+data_page: resources
 ---
 
 <div class="terminal-header">
