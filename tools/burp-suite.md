@@ -1,6 +1,6 @@
 ---
-title: "Burp Suite"
 layout: default
+title: "Burp Suite"
 data_page: tools
 ---
 
