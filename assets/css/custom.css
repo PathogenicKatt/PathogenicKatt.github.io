@@ -729,6 +729,28 @@ pre, code {
   font-size: 1em;
 }
 
+/* Always-green nav buttons for resources and tools pages */
+body[data-page="resources"], 
+body[data-page="tools"] {
+}
+body[data-page="resources"] .nav-button,
+body[data-page="resources"] .theme-toggle,
+body[data-page="tools"] .nav-button,
+body[data-page="tools"] .theme-toggle {
+  background: #39ff14 !important;
+  color: #181c20 !important;
+  border: 1px solid #39ff14 !important;
+  box-shadow: 0 0 8px #39ff1455;
+}
+body[data-page="resources"] .nav-button:hover,
+body[data-page="resources"] .theme-toggle:hover,
+body[data-page="tools"] .nav-button:hover,
+body[data-page="tools"] .theme-toggle:hover {
+  background: #181c20 !important;
+  color: #39ff14 !important;
+  border: 1px solid #39ff14 !important;
+}
+
 /* Social Links */
 .social-link.github { background: #333; }
 .social-link.ctftime { background: #4b6cb3; }
