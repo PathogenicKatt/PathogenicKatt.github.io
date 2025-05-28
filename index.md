@@ -8,7 +8,7 @@ custom_css: true
 
 <div class="header-animation">
   <h1 style="text-align: center;">Welcome to "My Cybersecurity Journey"! ✨</h1>
-  <p class="subtitle">"With Great Power Comes Great Responsibility!"-<strong>Acts 13</strong></p>
+  <p style="text-align: center;" class="subtitle">"With Great Power Comes Great Responsibility!"-<strong>Acts 13</strong></p>
 </div>
 
   <div class="ctf-card">
@@ -27,37 +27,37 @@ custom_css: true
     <h3>Disclaimer: All this is done, ethically, i do not attempt or break systems without any approval to do so.</h3>
     <ul>
       <li>
-        Web Exploitation
+        <strong>Web Exploitation</strong>
         <ul>
           <li>Finding and exploiting vulnerabilities in web applications, and authentication flaws.</li>
         </ul>
       </li>
       <li>
-        Reverse Engineering
+        <strong>Reverse Engineering</strong>
         <ul>
           <li>Analyzing binaries or software to understand their inner workings or to find vulnerabilities.</li>
         </ul>
       </li>
       <li>
-        Cryptography
+        <strong>Cryptography</strong>
         <ul>
           <li>Breaking or designing secure cryptographic systems, and solving crypto-based CTF challenges.</li>
         </ul>
       </li>
       <li>
-        Mobile Security
+        <strong>Mobile Security</strong>
         <ul>
           <li>Assessing and exploiting security flaws in Android-for now.</li>
         </ul>
       </li>
       <li>
-        Binary Exploitation
+        <strong>Binary Exploitation</strong>
         <ul>
           <li>Exploiting memory corruption bugs (like buffer overflows) in compiled programs to gain control or leak data.</li>
         </ul>
       </li>
       <li>
-        Forensics
+        <strong>Forensics</strong>
         <ul>
           <li>Recovering and analyzing digital evidence from files, memory dumps, or network traffic.</li>
         </ul>
