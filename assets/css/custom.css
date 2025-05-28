@@ -755,6 +755,33 @@ body[data-page="tools"] .theme-toggle:hover {
   border: 1px solid #39ff14 !important;
 }
 
+/* Style for the back button on tools pages */
+body[data-page="tools"] .back-button {
+  background: #23272e !important;
+  color: #39ff14 !important;
+  border: 1px solid #39ff14 !important;
+  border-radius: 8px;
+  padding: 0.7rem 1.3rem;
+  font-family: 'Fira Mono', 'Consolas', monospace;
+  font-weight: bold;
+  margin-left: 1em;
+  margin-top: 0.5em;
+  box-shadow: 0 2px 8px #000a;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5em;
+  transition: background 0.2s, color 0.2s, border 0.2s, box-shadow 0.2s, transform 0.2s;
+  text-decoration: none;
+}
+
+body[data-page="tools"] .back-button:hover {
+  background: #181c20 !important;
+  color: #fff !important;
+  border-color: #39ff14 !important;
+  box-shadow: 0 4px 16px #39ff1455;
+  transform: translateX(-4px) scale(1.03);
+}
+
 /* Social Links */
 .social-link.github { background: #333; }
 .social-link.ctftime { background: #4b6cb3; }
