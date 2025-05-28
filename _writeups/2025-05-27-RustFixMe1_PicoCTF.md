@@ -3,7 +3,7 @@ layout: writeup
 title: "CTF Challenge: RustFixMe1"
 description: "How I solved the RustFixMe1 challenge"
 difficulty: easy
-event: "CyberQuest 2025"
+event: "PicoCTF"
 tags: [programming, misc, general]
 date: 2025-05-24
 ---
