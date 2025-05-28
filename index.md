@@ -23,10 +23,10 @@ custom_css: true
 
 
 <div class="ctf-card">
-    <h2>🔍 My Focus Areas</h2>
     <h4 style="color:rgb(238, 133, 114);">
   <strong>Disclaimer:</strong> All activities described here are conducted with the highest ethical standards and proper authorization. I never attempt to access or test systems without explicit permission.
 </h4>
+    <h2>🔍 My Focus Areas</h2>
     <ul>
       <li>
         <strong>Web Exploitation</strong>
