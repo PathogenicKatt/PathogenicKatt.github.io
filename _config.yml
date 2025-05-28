@@ -49,6 +49,10 @@ defaults:
       path: "_writeups"
     values:
       layout: "writeup"
+  - scope:
+      path: "tools"
+    values:
+      layout: "default"
 
 include:
   - _notes
