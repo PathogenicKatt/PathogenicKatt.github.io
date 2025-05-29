@@ -16,3 +16,15 @@ date: 2025-05-24
 <br>
 
 ![Challenge screenshot](/assets/img/rustFixMe1(1).PNG){: .writeup-image }
+
+<br>
+
+## Aproach:
+<br>
+
+![Challenge screenshot](/assets/img/rustFixMe1(2).PNG){: .writeup-image }
+
+<br>
+
+1. 
+
