@@ -736,6 +736,26 @@ body[data-page="tools"] .resource-card {
   box-sizing: border-box;
 }
 
+/* Make only the "🧰 Toolbox" button green on hover from the home page */
+body[data-page="home"] .link-bubbles a.bubble:hover {
+  background: #39ff14;
+  color: #181c20;
+  box-shadow: 0 0 8px #39ff1455;
+}
+
+
+body[data-page="home"] .link-bubbles a.bubble:contains('🧰 Toolbox'):hover {
+  background: #39ff14;
+  color: #181c20;
+  box-shadow: 0 0 8px #39ff1455;
+}
+
+body[data-page="home"] .toolbox-bubble:hover {
+  background: #39ff14;
+  color: #181c20;
+  box-shadow: 0 0 8px #39ff1455;
+}
+
 /* Always-green nav buttons for resources and tools pages */
 body[data-page="resources"] .nav-button,
 body[data-page="resources"] .theme-toggle,
@@ -780,6 +800,32 @@ body[data-page="tools"] .back-button:hover {
   border-color: #39ff14 !important;
   box-shadow: 0 4px 16px #39ff1455;
   transform: translateX(-4px) scale(1.03);
+}
+
+body[data-page="tools"] .back-button {
+  background: #23272e !important;
+  color: #39ff14 !important;
+  border: 2px solid #39ff14 !important;
+  border-radius: 12px;
+  padding: 1.2rem 2.2rem;
+  font-family: 'Fira Mono', 'Consolas', monospace;
+  font-weight: bold;
+  font-size: 1.25rem;
+  margin: 0 auto;
+  box-shadow: 0 2px 8px #000a;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.7em;
+  transition: background 0.2s, color 0.2s, border 0.2s, box-shadow 0.2s, transform 0.2s;
+  text-decoration: none;
+}
+
+body[data-page="tools"] .back-button:hover {
+  background: #181c20 !important;
+  color: #fff !important;
+  border-color: #39ff14 !important;
+  box-shadow: 0 4px 16px #39ff1455;
+  transform: translateY(-2px) scale(1.05);
 }
 
 /* Social Links */
