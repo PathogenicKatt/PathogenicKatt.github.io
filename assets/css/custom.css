@@ -737,11 +737,13 @@ body[data-page="tools"] .resource-card {
 }
 
 /* Make only the "🧰 Toolbox" button green on hover from the home page */
+/*
 body[data-page="home"] .link-bubbles a.bubble:hover {
   background: #39ff14;
   color: #181c20;
   box-shadow: 0 0 8px #39ff1455;
 }
+  */
 
 
 body[data-page="home"] .link-bubbles a.bubble:contains('🧰 Toolbox'):hover {
