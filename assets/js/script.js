@@ -25,23 +25,6 @@ function initNavigation() {
   homeBtn.title = 'Return home';
   navContainer.appendChild(homeBtn);
 
-  // "Back to Resources" button for tool pages
-  if (pageType === 'tools') {
-  document.addEventListener('DOMContentLoaded', function() {
-    const backBtn = document.createElement('a');
-    backBtn.href = '/resources';
-    backBtn.className = 'nav-button back-button';
-    backBtn.innerHTML = '<i class="fas fa-arrow-left"></i> Back to Resources';
-    backBtn.title = 'Back to Resources';
-    const wrapper = document.createElement('div');
-    wrapper.style.display = 'flex';
-    wrapper.style.justifyContent = 'center';
-    wrapper.style.margin = '3em 0 2em 0';
-    wrapper.appendChild(backBtn);
-    document.body.appendChild(wrapper);
-  });
-}
-
   // Theme toggle button (only for non-resources/tools pages)
   if (pageType !== 'resources' && pageType !== 'tools') {
     const currentTheme = document.documentElement.getAttribute('data-theme');
@@ -54,6 +37,23 @@ function initNavigation() {
   }
 
   document.body.prepend(navContainer);
+
+  // "Back to Resources" button for tool pages (at the bottom)
+  if (pageType === 'tools') {
+    document.addEventListener('DOMContentLoaded', function() {
+      const backBtn = document.createElement('a');
+      backBtn.href = '/resources';
+      backBtn.className = 'nav-button back-button';
+      backBtn.innerHTML = '<i class="fas fa-arrow-left"></i> Back to Resources';
+      backBtn.title = 'Back to Resources';
+      const wrapper = document.createElement('div');
+      wrapper.style.display = 'flex';
+      wrapper.style.justifyContent = 'center';
+      wrapper.style.margin = '3em 0 2em 0';
+      wrapper.appendChild(backBtn);
+      document.body.appendChild(wrapper);
+    });
+  }
 }
 
 function toggleTheme() {
