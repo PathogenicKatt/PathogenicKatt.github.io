@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: under_construction
 title: "Resources & Tools"
 data_page: resources
 ---
