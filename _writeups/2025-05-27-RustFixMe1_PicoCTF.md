@@ -1,7 +1,7 @@
 ---
 layout: writeup
 title: "CTF Challenge: RustFixMe1"
-description: "How I solved the RustFixMe1 challenge"
+description: "Have you heard of Rust? Fix the syntax errors in this Rust file to print the flag!"
 difficulty: easy
 event: "PicoCTF"
 tags: [programming, misc]
