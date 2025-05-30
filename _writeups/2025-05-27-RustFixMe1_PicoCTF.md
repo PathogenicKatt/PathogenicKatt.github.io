@@ -60,4 +60,9 @@ It was fun, playing around with it to find to the correct syntax. But, honestly 
     ```bash
     rustc main.rs
     ```
+    - Yeah unfortunately this is wrong!, after thorough research i learnt that, you have to run the file, as a project.
+    - Basically after compiling, it will generate necessary files for you.
+    ![Challenge screenshot](/assets/img/rustFixMe1(5).PNG){: .writeup-image }
+
+
 
