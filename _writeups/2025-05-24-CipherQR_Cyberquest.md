@@ -4,7 +4,7 @@ title: "CTF Challenge: CipherQR"
 description: "How I solved the CipherQR challenge"
 difficulty: easy
 event: "CyberQuest 2025"
-tags: [forensics, misc, crypto]
+tags: [forensics, crypto]
 date: 2025-05-24
 ---
 
