@@ -70,7 +70,8 @@ date: 2025-05-24
         ![Challenge screenshot](/assets/img/rustFixMe1(7).PNG){: .writeup-image }
 
 6. **The Flag:**Thus, we get our flag!
-    ![Challenge screenshot](/assets/img/rustFixMe1(8).PNG){: .writeup-image }
+
+![Challenge screenshot](/assets/img/rustFixMe1(8).PNG){: .writeup-image }
     - In simple, this is how you compile:
     ```bash
     cargo build
