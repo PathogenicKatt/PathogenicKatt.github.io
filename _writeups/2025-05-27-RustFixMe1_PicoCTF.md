@@ -62,11 +62,16 @@ date: 2025-05-24
     ```bash
     rustc main.rs
     ```
-    - As you can see(initially i though the problem was in the source code):
+    - As you can see(initially i though the problem was in the source code), read where it says `help: you might be...`:
         ![Challenge screenshot](/assets/img/rustFixMe1(6).PNG){: .writeup-image }
 
-    - Yeah unfortunately this is wrong!, after thorough research i learnt that, you have to run the file, as a project(folder). But, in this case the necessary files were already in the folder when we unzipped it. So you have to go back to the folder.
-    ![Challenge screenshot](/assets/img/rustFixMe1(7).PNG){: .writeup-image }
+    - Yeah unfortunately this is wrong!, after thorough research i learnt that, you have to run the file, as a project(folder). But, in this case the necessary files(including the crate xor_cryptor) were already in the folder when we unzipped it. So you have to go back to the root of the folder(directory) "fixme1".
+    - It is clearly explained below:
+        ![Challenge screenshot](/assets/img/rustFixMe1(7).PNG){: .writeup-image }
+    - Therefore:
+        ![Challenge screenshot](/assets/img/rustFixMe1(8).PNG){: .writeup-image }
+
+
 
     
 
