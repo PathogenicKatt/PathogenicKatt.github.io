@@ -17,7 +17,6 @@ date: 2025-05-24
 
 ![Challenge screenshot](/assets/img/rustFixMe1(1).PNG){: .writeup-image }
 
-<br>
 
 ## Aproach:
 
