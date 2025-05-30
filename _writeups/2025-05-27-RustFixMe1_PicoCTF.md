@@ -20,7 +20,6 @@ date: 2025-05-24
 <br>
 
 ## Aproach:
-<br>
 
 ![Challenge screenshot](/assets/img/rustFixMe1(2).PNG){: .writeup-image }
 
@@ -35,6 +34,13 @@ date: 2025-05-24
     - -z: to be able unzip the file, since it ends with gz.
     - -f: reprsents a file, which in this case is  *fixme1.tar.gz*, it could be any file.
 
-![Challenge screenshot](/assets/img/rustFixMe1(3).PNG){: .writeup-image }
 
-3. **Using SublimeText**:
+3. **Code Editor(Preference)**: As you can see below, that i have used sublime as my choice of a code editor, pick yours or join the train and use sublime as well, i will include the installation guide:
+    ![Challenge screenshot](/assets/img/rustFixMe1(3).PNG){: .writeup-image }
+    ```bash
+    apt install burpsuite
+    ```
+    - Then when you want to look at the file, which in this case is main.rs:
+    ```bash
+    subl main.rs
+    ```
