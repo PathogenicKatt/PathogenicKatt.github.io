@@ -52,7 +52,7 @@ date: 2025-05-24
 
 
 5. **Execution of the code**: After i have fixed the code, i struggled to execute the code, so i had to go to the rabbit hole again and do my research.
-    ![Challenge screenshot](/assets/img/rustFixMe(4).PNG){: .writeup-image }
+    ![Challenge screenshot](/assets/img/rustFixMe1(4).PNG){: .writeup-image }
     - Installation of Rust:
     ```bash
     curl --proto \'=https\' --tlsv1.2 https://sh.rustup.rs -sSf | sh
