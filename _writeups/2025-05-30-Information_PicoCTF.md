@@ -39,8 +39,18 @@ date: 2025-05-30
 - This looks like some text, encoded to hide information.
 - The encoding method, that always comes in my mind is `base64`, and it is common in ctf challenges.
 
-4. **Decoding**: Let's see what happens when decode the encoded text using base64. Normally you see a base64 with a double equal sign at the end of the decoded text. But in this, we do not see that.
+4. **Decoding**: Let's see what happens when decode the encoded text using base64. Normally you see a base64 with an equal sign at the end of the decoded text. But in this, we do not see that.
 ![Challenge screenshot](/assets/img/information(6).PNG){: .writeup-image }
+- the flag😆:
+    ```bash
+    echo "cGljb0NURnt0aGVfbTN0YWRhdGFfMXNfbW9kaWZpZWR9" | base64 -d
+    ```
+    - But then here is typical example of base64
+    ![Challenge screenshot](/assets/img/information(7).PNG){: .writeup-image }
+
+
+- Alternatively, if you do not like the terminal. You could use the following to [Cyberchef](https://gchq.github.io/CyberChef/). Great tool!, that has almost all the encryption/encoding/hashing methods, and allows to decode as well.
+![Challenge screenshot](/assets/img/information(7).PNG){: .writeup-image }
 
 
 
