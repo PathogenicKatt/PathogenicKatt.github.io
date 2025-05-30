@@ -57,7 +57,10 @@ date: 2025-05-24
     ```bash
     curl --proto \'=https\' --tlsv1.2 https://sh.rustup.rs -sSf | sh
     ```
-    - Copy the way it is, and allow for installation to do its thing and finish.
+    - Copy the way it is, and allow for installation to do its thing and lastly run the following command:
+    ```bash
+    sudo apt update rustc
+    ```
     - If you are a programmer, i am sure you were also gonna first try to run the file like so:
     ```bash
     rustc main.rs
