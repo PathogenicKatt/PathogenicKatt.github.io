@@ -33,7 +33,7 @@ date: 2025-05-24
     - The `tar` command is used to compress files in linux.
     - -x: I like to think of it as "extract".
     - -z: to be able unzip the file, since it ends with gz.
-    - -f: reprsents a file, which in this case is  *fixme1.tar.gz*, it could be any file. <br>
+    - -f: reprsents a file, which in this case is  *fixme1.tar.gz*, it could be any file.
 
 ![Challenge screenshot](/assets/img/rustFixMe1(3).PNG){: .writeup-image }
 
