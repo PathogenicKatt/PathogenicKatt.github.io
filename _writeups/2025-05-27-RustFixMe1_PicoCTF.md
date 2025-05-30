@@ -45,7 +45,8 @@ date: 2025-05-24
     ```bash
     subl main.rs
     ```
-- I want to say, that i knew nothing about Rust-programming language. I had to do my research to be able to solve the challenge. Looking at the source code, we see that, they required us to just manipulate the source code such that it works right, meaning that we apply the correct syntax. Bsically the objective of this challenge was to, i guess introduce the Rust Porogramming language to us.
+
+4. **Code Analysis**: I want to say, that i knew nothing about Rust-programming language. I had to do my research to be able to solve the challenge, one good resource is [w3schools](https://www.w3schools.com/rust/index.php). Looking at the source code, we see that, they required us to just manipulate the source code such that it works right, meaning that we apply the correct syntax. Bsically the objective of this challenge was to, i guess introduce the Rust Porogramming language to us.
 - It was fun, playing around with it to find to the correct syntax. But, honestly i struggled.
     ![Challenge screenshot](/assets/img/rustFixMe1(4).PNG){: .writeup-image }
 
