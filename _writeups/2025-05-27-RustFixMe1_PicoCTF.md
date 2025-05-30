@@ -46,8 +46,10 @@ date: 2025-05-24
     subl main.rs
     ```
 
-4. **Code Analysis**: I want to say, that i knew nothing about Rust-programming language. I had to do my research to be able to solve the challenge, one good resource is [w3schools](https://www.w3schools.com/rust/index.php). Looking at the source code, we see that, they required us to just manipulate the source code such that it works right, meaning that we apply the correct syntax. Bsically the objective of this challenge was to, i guess introduce the Rust Porogramming language to us. <br>
-It was fun, playing around with it to find to the correct syntax. But, honestly i struggled.
+4. **Code Analysis**: I want to say, that i knew nothing about Rust-programming language. I had to do my research to be able to solve the challenge, one good resource is [w3schools](https://www.w3schools.com/rust/index.php). Looking at the source code, we see that, they required us to just manipulate the source code such that it works right, meaning that we apply the correct syntax. Bsically the objective of this challenge was to, i guess introduce the Rust Porogramming language to us. It was fun, playing around with it to find to the correct syntax. But, honestly i struggled.
+    - Notice the difference:
+        ![Challenge screenshot](/assets/img/rustFixMe1(5).PNG){: .writeup-image }
+
 
 5. **Execution of the code**: After i have fixed the code, i struggled to execute the code, so i had to go to the rabbit hole again and do my research.
     ![Challenge screenshot](/assets/img/rustFixMe(4).PNG){: .writeup-image }
@@ -62,7 +64,8 @@ It was fun, playing around with it to find to the correct syntax. But, honestly 
     ```
     - Yeah unfortunately this is wrong!, after thorough research i learnt that, you have to run the file, as a project.
     - Basically after compiling, it will generate necessary files for you.
-    ![Challenge screenshot](/assets/img/rustFixMe1(5).PNG){: .writeup-image }
+    ![Challenge screenshot](/assets/img/rustFixMe1(6).PNG){: .writeup-image }
+
 
 
 
