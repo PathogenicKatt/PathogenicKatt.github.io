@@ -69,13 +69,15 @@ date: 2025-05-24
     - It is clearly explained below:
         ![Challenge screenshot](/assets/img/rustFixMe1(7).PNG){: .writeup-image }
 
+
 6. **The Flag:**Thus, we get our flag!.
-    ![Challenge screenshot](/assets/img/rustFixMe1(8).PNG){: .writeup-image } <br>
     - In simple, this is how you compile:
     ```bash
     cargo build
     ```
     - Then it will a generate the `run` file. Execute it! Then we should get our flag😆.
+        ![Challenge screenshot](/assets/img/rustFixMe1(8).PNG){: .writeup-image }
+
 
 
 
