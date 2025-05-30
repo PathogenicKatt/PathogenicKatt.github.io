@@ -45,7 +45,7 @@ date: 2025-05-30
     ```bash
     echo "cGljb0NURnt0aGVfbTN0YWRhdGFfMXNfbW9kaWZpZWR9" | base64 -d
     ```
-    - But then here is typical example of base64
+- But then here is typical example of base64:
     ![Challenge screenshot](/assets/img/information(8).PNG){: .writeup-image }
 
 
