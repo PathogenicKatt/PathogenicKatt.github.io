@@ -28,9 +28,13 @@ date: 2025-05-24
 1. **importing the file**: After using the `wget` command, you should be able to see the *fixme1.tar.gz*. 
 2. **Extracting the contents**: The following command should allow you to extract all the files from the folder.
     ```bash
-        tar -xzf fixme1.tar.gz
+    tar -xzf fixme1.tar.gz
     ```
     - The `tar` command is used to compress files in linux.
     - -x: I like to think of it as "extract".
     - -z: to be able unzip the file, since it ends with gz.
-    - -f: reprsents a file, which in this case is  *fixme1.tar.gz*, it could be any file.
+    - -f: reprsents a file, which in this case is  *fixme1.tar.gz*, it could be any file. <br>
+
+![Challenge screenshot](/assets/img/rustFixMe1(3).PNG){: .writeup-image }
+
+3. **Using SublimeText**:
