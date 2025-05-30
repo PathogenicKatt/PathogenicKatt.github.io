@@ -35,12 +35,13 @@ date: 2025-05-24
     - -f: reprsents a file, which in this case is  *fixme1.tar.gz*, it could be any file.
 
 
-3. **Code Editor(Preference)**: As you can see below, that i have used sublime as my choice of a code editor, pick yours or join the train and use sublime as well, i will include the installation guide:
+3. **Code Editor(Preference)**: As you can see below, that i have used sublime as my choice of a code editor, pick yours or join the train and use sublimetext as well. 
     ![Challenge screenshot](/assets/img/rustFixMe1(3).PNG){: .writeup-image }
+    - Sublime-text installation:
     ```bash
-    apt install burpsuite
+    sudo apt install sublime-text
     ```
-    - Then when you want to look at the file, which in this case is main.rs:
+    - Then when you want to look at the contents of the file, which in this case is main.rs:
     ```bash
     subl main.rs
     ```
