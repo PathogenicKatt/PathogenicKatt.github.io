@@ -46,8 +46,18 @@ date: 2025-05-24
     subl main.rs
     ```
 
-4. **Code Analysis**: I want to say, that i knew nothing about Rust-programming language. I had to do my research to be able to solve the challenge, one good resource is [w3schools](https://www.w3schools.com/rust/index.php). Looking at the source code, we see that, they required us to just manipulate the source code such that it works right, meaning that we apply the correct syntax. Bsically the objective of this challenge was to, i guess introduce the Rust Porogramming language to us.
-- It was fun, playing around with it to find to the correct syntax. But, honestly i struggled.
-    ![Challenge screenshot](/assets/img/rustFixMe(4).PNG){: .writeup-image }
+4. **Code Analysis**: I want to say, that i knew nothing about Rust-programming language. I had to do my research to be able to solve the challenge, one good resource is [w3schools](https://www.w3schools.com/rust/index.php). Looking at the source code, we see that, they required us to just manipulate the source code such that it works right, meaning that we apply the correct syntax. Bsically the objective of this challenge was to, i guess introduce the Rust Porogramming language to us. <br>
+It was fun, playing around with it to find to the correct syntax. But, honestly i struggled.
 
+5. **Execution of the code**: After i have fixed the code, i struggled to execute the code, so i had to go to the rabbit hole again and do my research.
+    ![Challenge screenshot](/assets/img/rustFixMe(4).PNG){: .writeup-image }
+    - Installation of Rust:
+    ```bash
+    curl --proto \'=https\' --tlsv1.2 https://sh.rustup.rs -sSf | sh
+    ```
+    - Copy the way it is, and allow for installation to do its thing and finish.
+    - If you are a programmer, i am sure you were also gonna first try to run the file like so:
+    ```bash
+    rustc main.rs
+    ```
 
