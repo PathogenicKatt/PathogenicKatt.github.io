@@ -68,8 +68,15 @@ date: 2025-05-24
     - Yeah unfortunately this is wrong!, after thorough research i learnt that, you have to run the file, as a project(folder). But, in this case the necessary files(including the crate xor_cryptor) were already in the folder when we unzipped it. So you have to go back to the root of the folder(directory) "fixme1".
     - It is clearly explained below:
         ![Challenge screenshot](/assets/img/rustFixMe1(7).PNG){: .writeup-image }
-    - Therefore:
-        ![Challenge screenshot](/assets/img/rustFixMe1(8).PNG){: .writeup-image }
+    <br>
+
+6. **The Flag:**Thus, we get our flag!
+    ![Challenge screenshot](/assets/img/rustFixMe1(8).PNG){: .writeup-image }
+    - In simple, this is how you compile:
+    ```bash
+    cargo build
+    ```
+    - Then it will a generate the `run` file. Execute it! Then we should get our flag😆.
 
 
 
