@@ -45,8 +45,6 @@ date: 2025-05-30
     ```bash
     echo "cGljb0NURnt0aGVfbTN0YWRhdGFfMXNfbW9kaWZpZWR9" | base64 -d
     ```
-- But then here is typical example of base64:
-![Challenge screenshot](/assets/img/information(8).PNG){: .writeup-image }
 - Alternatively, if you do not like the terminal. You could use the following to [Cyberchef](https://gchq.github.io/CyberChef/). Great tool!, that has almost all the encryption/encoding/hashing methods, and allows to decode as well.
 ![Challenge screenshot](/assets/img/information(7).PNG){: .writeup-image }
 
