@@ -4,7 +4,7 @@ title: "CTF Challenge: RustFixMe1"
 description: "How I solved the RustFixMe1 challenge"
 difficulty: easy
 event: "PicoCTF"
-tags: [programming, misc, general]
+tags: [programming, misc]
 date: 2025-05-24
 ---
 
