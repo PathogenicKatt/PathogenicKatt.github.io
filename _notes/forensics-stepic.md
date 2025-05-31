@@ -34,7 +34,7 @@ The stepic tool, uses a different approach to `steghide`. Stepic hides data insi
     ```
     -  -d: decode
     -  -i: file
-    - but, for simplicity, you can always just type the name `stepic`, and hit that enter!
+    - but, for simplicity, you can always just type the name `stepic`, and hit that enter!<br>
     ![stepic command](/assets/img/stepic-command.PNG){: .writeup-image }
 
 
