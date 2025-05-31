@@ -79,7 +79,7 @@ custom_css: true
 
 <h2>🔥 Recent Activity</h2>
 <div class="post-feed">
-  {% for post in site.posts limit:3 %}
+  {% for post in site.posts limit:6 %}
     <article class="post-preview">
       <h3>{{ post.title }}</h3>
       <time>{{ post.date | date: "%b %d" }}</time>
