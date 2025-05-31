@@ -89,7 +89,7 @@ custom_css: true
 </div>
 
 <div style="text-align:left; margin-top:1.5rem;">
-  <a href="/all-activities/" class="bubble" style="font-size:1.1rem;">View All Posts →</a>
+  <a href="/all-activities/" class="bubble" style="font-size:0.8rem;">View All Posts →</a>
 </div>
 
 
