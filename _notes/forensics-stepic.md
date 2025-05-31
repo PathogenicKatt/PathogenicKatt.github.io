@@ -1,6 +1,6 @@
 ---
 layout: note
-title: "Forensics: Stepic 🙂"
+title: "Forensics: Stepic 🔍"
 description: "Isolated information, regarding image steganography"
 tags: [stepic, forensics, steganography]
 date: 2025-05-30
@@ -19,7 +19,7 @@ The stepic tool, uses a different approach to `steghide`. Stepic hides data insi
 ## Usage
 - There is a module avalaible, in python3 for stepic. Meaning you can use it in python:
     ```python
-        import stepic
+    import stepic
 
     # Encode data into an image
     encoded_image = stepic.encode(image_path, data)
@@ -35,6 +35,7 @@ The stepic tool, uses a different approach to `steghide`. Stepic hides data insi
     -  -d: decode
     -  -i: file
     - but, for simplicity, you can always just type the name `stepic`, and hit that enter!
+    ![stepic command](./assets/img/stepic-command.PNG)
 
 
 ## Installation
