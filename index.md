@@ -88,6 +88,10 @@ custom_css: true
   {% endfor %}
 </div>
 
+<div style="text-align:center; margin-top:1.5rem;">
+  <a href="/all-activities/" class="bubble" style="font-size:1.1rem;">View All Posts →</a>
+</div>
+
 
 <div class="about-card">
   <h2>📬 Connect</h2>
