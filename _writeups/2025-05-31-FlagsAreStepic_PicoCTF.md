@@ -11,3 +11,6 @@ date: 2025-05-31
 ## Challenge Overview
 - The following was the description for the challenge:
     ![stepic challenge](/assets/img/flagsAreStepic(1).PNG){: .writeup-image }
+
+## Approach
+- 
