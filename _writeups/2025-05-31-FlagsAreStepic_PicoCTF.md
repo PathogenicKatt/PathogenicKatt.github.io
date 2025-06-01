@@ -13,4 +13,9 @@ date: 2025-05-31
     ![stepic challenge](/assets/img/flagsAreStepic(1).PNG){: .writeup-image }
 
 ## Approach
+- So if you go through the provided link. <br>
 ![stepic challenge](/assets/img/flagsAreStepic(2).PNG){: .writeup-image }
+<br>
+
+- From here i checked the source code:
+![stepic challenge](/assets/img/flagsAreStepic(3).PNG){: .writeup-image }
