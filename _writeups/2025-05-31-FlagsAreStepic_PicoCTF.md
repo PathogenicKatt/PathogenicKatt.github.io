@@ -13,4 +13,4 @@ date: 2025-05-31
     ![stepic challenge](/assets/img/flagsAreStepic(1).PNG){: .writeup-image }
 
 ## Approach
-![stepic challenge](/assets/img/flagAreStepic(2).PNG){: .writeup-image }
+![stepic challenge](/assets/img/flagsAreStepic(2).PNG){: .writeup-image }
