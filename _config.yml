@@ -28,6 +28,9 @@ collections:
     permalink: /writeups/:path/
     sort_by: date
     sort_order: descending
+  biblestudy:
+    output: true
+    permalink: /biblestudy/:title/
 
 
 

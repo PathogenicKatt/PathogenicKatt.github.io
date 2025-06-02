@@ -829,7 +829,7 @@ body[data-page="tools"] .back-button:hover {
   box-shadow: 0 4px 16px #39ff1455;
   transform: translateY(-2px) scale(1.05);
 }
-/* Christ's Journey Section Styles - RED & BLUE THEME */
+/* Christ's Journey Section Styles - CALM & CLEAN THEME */
 .christ-header-animation h1, .christ-header-animation p {
   animation: christFadeIn 2s;
 }
@@ -838,26 +838,153 @@ body[data-page="tools"] .back-button:hover {
   to { opacity: 1; transform: translateY(0);}
 }
 .christ-card {
-  border: 2px solid #4b6cb3; /* blue border */
-  background: linear-gradient(135deg, #232526 0%, #e74c3c 100%); /* dark to red */
-  box-shadow: 0 0 16px #4b6cb388; /* blue shadow */
+  border: 2px solid #7f9cf5;
+  background: linear-gradient(135deg, #f7fafc 0%, #c3dafe 100%);
+  box-shadow: 0 0 24px #a0aec040;
 }
-.scripture-list li {
-  margin-bottom: 1rem;
-  font-size: 1.1rem;
-  color: #fff;
+[data-theme="dark"] .christ-card {
+  background: linear-gradient(135deg, #232526 0%, #2d3748 100%);
+  border-color: #434190;
+  box-shadow: 0 0 24px #43419033;
 }
 .christ-bubble {
-  background: linear-gradient(90deg, #e74c3c 0%, #4b6cb3 100%); /* red to blue */
-  color: #fff !important;
+  background: linear-gradient(90deg, #b2f5ea 0%, #7f9cf5 100%);
+  color: #2d3748 !important;
   font-weight: bold;
-  border: 2px solid #4b6cb3;
+  border: 2px solid #7f9cf5;
 }
 .christ-bubble:hover {
-  box-shadow: 0 0 12px #e74c3ccc;
-  background: #232526;
-  color: #4b6cb3 !important;
+  box-shadow: 0 0 16px #b2f5ea88;
+  background: #ebf8ff;
+  color: #434190 !important;
 }
+
+/* Bible Study Grid Styles */
+.biblestudy-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin: 2rem 0;
+}
+.biblestudy-card {
+  background: #f7fafc;
+  border: 2px solid #b2f5ea;
+  border-radius: 16px;
+  box-shadow: 0 0 20px #b2f5ea33;
+  padding: 1.5rem;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.biblestudy-card:hover {
+  transform: translateY(-6px) scale(1.03);
+  box-shadow: 0 8px 32px #7f9cf555;
+}
+.biblestudy-card h3 {
+  color: #434190;
+  margin-top: 0;
+}
+.biblestudy-verse {
+  color: #319795;
+  font-style: italic;
+  margin-bottom: 0.7rem;
+}
+.biblestudy-link {
+  color: #3182ce;
+  font-weight: bold;
+  text-decoration: underline;
+  transition: color 0.2s;
+}
+.biblestudy-link:hover {
+  color: #319795;
+}
+[data-theme="dark"] .biblestudy-card {
+  background: #232526;
+  border-color: #319795;
+  color: #e2e8f0;
+}
+[data-theme="dark"] .biblestudy-verse {
+  color: #63b3ed;
+}
+[data-theme="dark"] .biblestudy-link {
+  color: #90cdf4;
+}
+[data-theme="dark"] .biblestudy-link:hover {
+  color: #63b3ed;
+}
+
+/* Bible Study Single Page - Fullscreen, Heading Centered, Content Left */
+.biblestudy-single {
+  width: 100vw;
+  min-height: 100vh;
+  margin: 0;
+  padding: 3.5rem 0;
+  background: linear-gradient(135deg, #f7fafc 0%, #c3dafe 100%);
+  border-radius: 0;
+  box-shadow: none;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+[data-theme="dark"] .biblestudy-single {
+  background: linear-gradient(135deg, #232526 0%, #2d3748 100%);
+  border: none;
+  box-shadow: none;
+}
+.biblestudy-header {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto 2rem auto;
+  padding: 0 2rem;
+  text-align: center;
+}
+.biblestudy-header h1 {
+  color: #434190;
+  margin-bottom: 0.5rem;
+  font-size: 2.2rem;
+  letter-spacing: 0.02em;
+  text-align: center;
+}
+[data-theme="dark"] .biblestudy-header h1 {
+  color: #b2f5ea;
+}
+.biblestudy-verse {
+  color: #319795;
+  font-style: italic;
+  font-size: 1.15rem;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+[data-theme="dark"] .biblestudy-verse {
+  color: #63b3ed;
+}
+.biblestudy-date {
+  display: block;
+  color: #718096;
+  font-size: 0.98rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+[data-theme="dark"] .biblestudy-date {
+  color: #a0aec0;
+}
+.biblestudy-content {
+  width: 100%;
+  max-width: none;
+  margin: 0 auto 2rem auto;
+  padding: 0 2rem;
+  color: #2d3748;
+  font-size: 1.08rem;
+  line-height: 1.7;
+  text-align: left;
+}
+[data-theme="dark"] .biblestudy-content {
+  color: #e2e8f0;
+}
+.biblestudy-single .christ-bubble {
+  margin: 2rem auto 0 auto;
+  display: block;
+}
+
 
 /* Social Links */
 .social-link.github { background: #333; }

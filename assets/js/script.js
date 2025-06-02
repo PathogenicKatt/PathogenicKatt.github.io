@@ -189,4 +189,23 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   });
 });
+document.addEventListener("DOMContentLoaded", function() {
+  // ...existing code...
 
+  // Random Bible Verse for Christ's Journey page
+  if (window.location.pathname.startsWith("/christ")) {
+    const verses = [
+      '"Trust in the Lord with all your heart and lean not on your own understanding." <strong>- Proverbs 3:5</strong>',
+      '"For I know the plans I have for you, declares the Lord..." <strong>- Jeremiah 29:11</strong>',
+      '"The Lord is my light and my salvation—whom shall I fear?" <strong>- Psalm 27:1</strong>',
+      '"Be strong and courageous. Do not be afraid..." <strong>- Joshua 1:9</strong>',
+      '"Cast all your anxiety on Him because He cares for you." <strong>- 1 Peter 5:7</strong>',
+      '"But seek first the kingdom of God and his righteousness..." <strong>- Matthew 6:33</strong>',
+      '"With God all things are possible." <strong>- Matthew 19:26</strong>',
+      '"The Lord will fight for you; you need only to be still." <strong>- Exodus 14:14</strong>'
+    ];
+    const random = verses[Math.floor(Math.random() * verses.length)];
+    const verseDiv = document.getElementById("random-verse");
+    if (verseDiv) verseDiv.innerHTML = random;
+  }
+});
