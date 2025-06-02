@@ -22,7 +22,7 @@ date: 2025-06-02
 
 
 ## 🙍‍♂️ Man's Lost Position — Unworthy
-
+---
 ### 📜 Scripture: Exodus 33:20-21 (BSB)
 > "But," He said, "you cannot see My face, for man shall not see Me and live."  
 > And the LORD said, "Behold, there is a place by Me where you shall stand on the rock."
@@ -33,7 +33,7 @@ date: 2025-06-02
 
 
 ## 🕊️ Conclusion: Living in Light of the Ascension
-
+---
 ### 📜 Scripture: Colossians 3:1, 4-5 (NKJV)
 > "If then you were raised with Christ, seek those things which are above, where Christ is, sitting at the right hand of God.  
 > When Christ who is our life appears, then you also will appear with Him in glory.  
