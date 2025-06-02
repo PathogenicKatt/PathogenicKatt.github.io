@@ -19,7 +19,7 @@ date: 2025-06-02
 ### 💡 Key Reflection:
 > Pilate's declaration, **"Behold, the Man,"** highlights Jesus' humanity and suffering. Despite His humiliation, Christ's identity as the Son of God remains unchallenged.  
 > This moment foreshadows His sacrificial love and the redemption He brings. ❤️
-
+<br>
 
 ## 🙍‍♂️ Man's Lost Position — Unworthy
 ---
@@ -31,6 +31,7 @@ date: 2025-06-02
 - This passage underscores the **holiness of God** and the inherent **unworthiness of humanity** to stand in His presence.
 - Yet, God provides a way—**symbolized by the rock**—foreshadowing Christ as our mediator (1 Timothy 2:5).
 
+<br>
 
 ## 🕊️ Conclusion: Living in Light of the Ascension
 ---
