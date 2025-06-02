@@ -190,7 +190,7 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 });
 document.addEventListener("DOMContentLoaded", function() {
-  // ...existing code...
+ 
 
   // Random Bible Verse for Christ's Journey page
   if (window.location.pathname.startsWith("/christ")) {
