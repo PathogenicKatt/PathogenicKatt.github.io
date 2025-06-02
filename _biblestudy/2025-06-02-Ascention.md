@@ -19,6 +19,7 @@ date: 2025-06-02
 ### 💡 Key Reflection:
 > Pilate's declaration, **"Behold, the Man,"** highlights Jesus' humanity and suffering. Despite His humiliation, Christ's identity as the Son of God remains unchallenged.  
 > This moment foreshadows His sacrificial love and the redemption He brings. ❤️
+
 <br>
 
 ## 🙍‍♂️ Man's Lost Position — Unworthy
