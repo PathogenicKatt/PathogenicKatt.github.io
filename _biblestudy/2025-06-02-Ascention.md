@@ -6,7 +6,7 @@ date: 2025-06-02
 ---
 
 ## ✨ Ascension: "Behold the Man"
-
+---
 ### 📖 Translations Comparison:
 - **NASB**:  
   "Jesus then came out, wearing the crown of thorns and the purple robe. And Pilate said to them, 'Behold, the Man!'"
@@ -15,13 +15,11 @@ date: 2025-06-02
 - **NLT**:  
   "Then Jesus came out wearing the crown of thorns and the purple robe. And Pilate said, 'Look, here is the man!'"
 
----
 
 ### 💡 Key Reflection:
 > Pilate's declaration, **"Behold, the Man,"** highlights Jesus' humanity and suffering. Despite His humiliation, Christ's identity as the Son of God remains unchallenged.  
 > This moment foreshadows His sacrificial love and the redemption He brings. ❤️
 
----
 
 ## 🙍‍♂️ Man's Lost Position — Unworthy
 
@@ -33,7 +31,6 @@ date: 2025-06-02
 - This passage underscores the **holiness of God** and the inherent **unworthiness of humanity** to stand in His presence.
 - Yet, God provides a way—**symbolized by the rock**—foreshadowing Christ as our mediator (1 Timothy 2:5).
 
----
 
 ## 🕊️ Conclusion: Living in Light of the Ascension
 
@@ -44,19 +41,17 @@ date: 2025-06-02
 
 ### 🔑 Key Points:
 - **Heavenly Perspective**:  
-  - 🌌 As believers, we are called to focus on eternal truths, not earthly distractions.
+  -  As believers, we are called to focus on eternal truths, not earthly distractions.
 - **Hope of Glory**:  
-  - ✨ Christ's ascension assures our future resurrection and union with Him.
+  -  Christ's ascension assures our future resurrection and union with Him.
 - **Practical Holiness**:  
-  - 🛡️ We must actively reject sinful behaviors that hinder our spiritual growth.
+  -  We must actively reject sinful behaviors that hinder our spiritual growth.
 
----
 
 ### 📝 Application Questions:
 - ❓ How does Pilate's statement in John 19:5 deepen your understanding of Jesus' sacrifice?
 - ❓ In what areas of your life do you need to "seek the things above" (Colossians 3:1)?
 - ❓ What steps can you take to "put to death" sinful habits (v. 5) this week?
 
----
 
 > *"Behold, the Man!"* — the crucified and risen Savior who invites us into His glory. 🙏
