@@ -8,7 +8,7 @@ function initNavigation() {
   const navContainer = document.createElement('div');
   navContainer.className = 'top-nav-container';
 
-  // Home button (always present)
+  // Home button
   const homeBtn = document.createElement('a');
   homeBtn.href = '/';
   homeBtn.className = 'nav-button home-button';
@@ -16,16 +16,23 @@ function initNavigation() {
   homeBtn.title = 'Return home';
   navContainer.appendChild(homeBtn);
 
+  // Theme toggle button
+  const themeBtn = document.createElement('button');
+  themeBtn.className = 'nav-button theme-button';
+  themeBtn.innerHTML = currentTheme === 'dark' ? '☀️' : '🌙';
+  themeBtn.title = currentTheme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode';
+  themeBtn.onclick = toggleTheme;
+  navContainer.appendChild(themeBtn);
+
   document.body.prepend(navContainer);
 }
 
 function toggleTheme() {
   const currentTheme = document.documentElement.getAttribute('data-theme');
   const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-  
   document.documentElement.setAttribute('data-theme', newTheme);
   localStorage.setItem('theme', newTheme);
-  
+
   const themeBtn = document.querySelector('.theme-button');
   if (themeBtn) {
     themeBtn.innerHTML = newTheme === 'dark' ? '☀️' : '🌙';
