@@ -985,6 +985,31 @@ body[data-page="tools"] .back-button:hover {
   display: block;
 }
 
+/* Responsive Adjustments */
+@media (max-width: 900px) {
+  .biblestudy-header,
+  .biblestudy-content {
+    max-width: 100vw;
+    padding: 0 1rem;
+  }
+  .biblestudy-single {
+    padding: 2rem 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .biblestudy-header h1 {
+    font-size: 1.4rem;
+  }
+  .biblestudy-header,
+  .biblestudy-content {
+    padding: 0 0.5rem;
+  }
+  .biblestudy-single {
+    padding: 1rem 0;
+  }
+}
+
 
 /* Social Links */
 .social-link.github { background: #333; }
