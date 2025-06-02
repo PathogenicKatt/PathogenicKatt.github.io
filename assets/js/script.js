@@ -1,17 +1,8 @@
 function initNavigation() {
-  // Detect page type from body attribute
-  const pageType = document.body.getAttribute('data-page');
-
-  // Force dark mode for resources and tools pages
-  if (pageType === 'resources' || pageType === 'tools') {
-    document.documentElement.setAttribute('data-theme', 'dark');
-    localStorage.setItem('theme', 'dark');
-  } else {
-    // Set initial theme for other pages
-    const currentTheme = localStorage.getItem('theme') ||
-      (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
-    document.documentElement.setAttribute('data-theme', currentTheme);
-  }
+  // Set initial theme based on user or system preference
+  const currentTheme = localStorage.getItem('theme') ||
+    (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+  document.documentElement.setAttribute('data-theme', currentTheme);
 
   // Create navigation container
   const navContainer = document.createElement('div');
@@ -25,35 +16,7 @@ function initNavigation() {
   homeBtn.title = 'Return home';
   navContainer.appendChild(homeBtn);
 
-  // Theme toggle button (only for non-resources/tools pages)
-  if (pageType !== 'resources' && pageType !== 'tools') {
-    const currentTheme = document.documentElement.getAttribute('data-theme');
-    const themeBtn = document.createElement('button');
-    themeBtn.className = 'nav-button theme-button';
-    themeBtn.innerHTML = currentTheme === 'dark' ? '☀️' : '🌙';
-    themeBtn.title = 'Toggle theme';
-    themeBtn.addEventListener('click', toggleTheme);
-    navContainer.appendChild(themeBtn);
-  }
-
   document.body.prepend(navContainer);
-
-  // "Back to Resources" button for tool pages (at the bottom)
-  if (pageType === 'tools') {
-    document.addEventListener('DOMContentLoaded', function() {
-      const backBtn = document.createElement('a');
-      backBtn.href = '/resources';
-      backBtn.className = 'nav-button back-button';
-      backBtn.innerHTML = '<i class="fas fa-arrow-left"></i> Back to Resources';
-      backBtn.title = 'Back to Resources';
-      const wrapper = document.createElement('div');
-      wrapper.style.display = 'flex';
-      wrapper.style.justifyContent = 'center';
-      wrapper.style.margin = '3em 0 2em 0';
-      wrapper.appendChild(backBtn);
-      document.body.appendChild(wrapper);
-    });
-  }
 }
 
 function toggleTheme() {
@@ -188,9 +151,6 @@ document.addEventListener('DOMContentLoaded', function() {
       pre.appendChild(copyBtn);
     }
   });
-});
-document.addEventListener("DOMContentLoaded", function() {
- 
 
   // Random Bible Verse for Christ's Journey page
   if (window.location.pathname.startsWith("/christ")) {
