@@ -829,6 +829,35 @@ body[data-page="tools"] .back-button:hover {
   box-shadow: 0 4px 16px #39ff1455;
   transform: translateY(-2px) scale(1.05);
 }
+/* Christ's Journey Section Styles - RED & BLUE THEME */
+.christ-header-animation h1, .christ-header-animation p {
+  animation: christFadeIn 2s;
+}
+@keyframes christFadeIn {
+  from { opacity: 0; transform: translateY(-30px);}
+  to { opacity: 1; transform: translateY(0);}
+}
+.christ-card {
+  border: 2px solid #4b6cb3; /* blue border */
+  background: linear-gradient(135deg, #232526 0%, #e74c3c 100%); /* dark to red */
+  box-shadow: 0 0 16px #4b6cb388; /* blue shadow */
+}
+.scripture-list li {
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+  color: #fff;
+}
+.christ-bubble {
+  background: linear-gradient(90deg, #e74c3c 0%, #4b6cb3 100%); /* red to blue */
+  color: #fff !important;
+  font-weight: bold;
+  border: 2px solid #4b6cb3;
+}
+.christ-bubble:hover {
+  box-shadow: 0 0 12px #e74c3ccc;
+  background: #232526;
+  color: #4b6cb3 !important;
+}
 
 /* Social Links */
 .social-link.github { background: #333; }
