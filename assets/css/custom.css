@@ -109,44 +109,6 @@ pre, code {
   transform: translateY(-2px);
 }
 
-.nav-button,
-.theme-button,
-.bubble {
-  box-shadow: 0 2px 8px rgba(75, 108, 179, 0.10), 0 1.5px 4px rgba(0,0,0,0.06);
-  border: 1.5px solid #e2e8f0;
-  background: linear-gradient(135deg, #f7fafc 60%, #e3eafe 100%);
-  cursor: pointer;
-  transition: 
-    background 0.2s,
-    color 0.2s,
-    border 0.2s,
-    box-shadow 0.2s,
-    transform 0.15s;
-}
-
-.nav-button:hover,
-.theme-button:hover,
-.bubble:hover {
-  box-shadow: 0 4px 16px rgba(75, 108, 179, 0.18), 0 3px 12px rgba(0,0,0,0.10);
-  background: linear-gradient(135deg, #e3eafe 0%, #b2c6f7 100%);
-  transform: scale(1.06);
-  border-color: #4b6cb3;
-  color: #4b6cb3;
-}
-
-.nav-button:active,
-.theme-button:active,
-.bubble:active {
-  transform: scale(0.97);
-  box-shadow: 0 1px 4px rgba(75, 108, 179, 0.10);
-}
-
-/* Make sure nav buttons are always pointer */
-.nav-button,
-.theme-button {
-  cursor: pointer;
-}
-
 /* Navigation */
 .top-nav-container {
   position: fixed;
@@ -843,6 +805,7 @@ pre, code {
   display: block;
 }
 /* Christ's Journey: Make nav buttons match heading color */
+
 body[data-page="christ"] .top-nav-container .nav-button:hover,
 body[data-page="christ"] .top-nav-container .theme-button:hover {
   background: #3b5399 !important;
@@ -976,3 +939,4 @@ body[data-page="christ"] .top-nav-container .theme-button {
     margin-right: 4rem;
   }
 }
+  
