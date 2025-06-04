@@ -5,5 +5,5 @@ date: 2025-06-04
 ---
 
 ## Walking in the spirit 😀
-- Study the word of the GOD.
+- Studying the word of the GOD.
 - Checkout my 'My Christ's journey' soon.
