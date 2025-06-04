@@ -23,3 +23,9 @@ custom_css: true
   </div>
 </div>
 
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    document.body.setAttribute('data-page', 'christ');
+  });
+</script>
+

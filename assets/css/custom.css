@@ -804,6 +804,18 @@ pre, code {
   margin: 2rem auto 0 auto;
   display: block;
 }
+/* Christ's Journey: Make nav buttons match heading color */
+body[data-page="christ"] .top-nav-container .nav-button,
+body[data-page="christ"] .top-nav-container .theme-button {
+  background: #4b6cb3 !important;
+  color: #fff !important;
+  border: 2px solid #4b6cb3 !important;
+}
+body[data-page="christ"] .top-nav-container .nav-button:hover,
+body[data-page="christ"] .top-nav-container .theme-button:hover {
+  background: #3b5399 !important;
+  border-color: #3b5399 !important;
+}
 
 /* Responsive Adjustments */
 @media (max-width: 900px) {
