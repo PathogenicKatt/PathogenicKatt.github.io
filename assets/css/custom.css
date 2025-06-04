@@ -805,16 +805,30 @@ pre, code {
   display: block;
 }
 /* Christ's Journey: Make nav buttons match heading color */
-body[data-page="christ"] .top-nav-container .nav-button,
-body[data-page="christ"] .top-nav-container .theme-button {
-  background: #4b6cb3 !important;
-  color: #fff !important;
-  border: 2px solid #4b6cb3 !important;
-}
 body[data-page="christ"] .top-nav-container .nav-button:hover,
 body[data-page="christ"] .top-nav-container .theme-button:hover {
   background: #3b5399 !important;
   border-color: #3b5399 !important;
+}.top-nav-container .nav-button,
+.top-nav-container .theme-button {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  box-sizing: border-box; /* Ensures border is included in size */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  border: 1px solid transparent; /* Default border for consistent sizing */
+}
+
+
+body[data-page="christ"] .top-nav-container .nav-button,
+body[data-page="christ"] .top-nav-container .theme-button {
+  border: 2px solid #4b6cb3 !important;
+  background: #4b6cb3 !important;
+  color: #fff !important;
 }
 
 /* Responsive Adjustments */
