@@ -832,6 +832,52 @@ body[data-page="christ"] .top-nav-container .theme-button {
   color: #fff !important;
 }
 
+/* Realistic button look for nav and bubbles */
+.nav-button,
+.theme-button {
+  box-shadow: 0 2px 8px rgba(44, 62, 80, 0.10), 0 1.5px 4px rgba(0,0,0,0.06);
+  border: 1.5px solid #e2e8f0;
+  background: var(--card-bg);
+  cursor: pointer;
+  transition: 
+    background 0.2s,
+    color 0.2s,
+    border 0.2s,
+    box-shadow 0.2s,
+    transform 0.15s;
+}
+
+.nav-button:hover,
+.theme-button:hover {
+  box-shadow: 0 4px 16px rgba(44, 62, 80, 0.18), 0 3px 12px rgba(0,0,0,0.10);
+  transform: scale(1.07);
+  background: var(--accent);
+  color: #fff;
+  border-color: var(--accent-dark);
+}
+
+.bubble {
+  box-shadow: 0 2px 8px rgba(44, 62, 80, 0.10), 0 1.5px 4px rgba(0,0,0,0.06);
+  border: 1.5px solid #e2e8f0;
+  background: var(--accent);
+  color: #fff;
+  cursor: pointer;
+  transition: 
+    background 0.2s,
+    color 0.2s,
+    border 0.2s,
+    box-shadow 0.2s,
+    transform 0.15s;
+}
+
+.bubble:hover {
+  box-shadow: 0 4px 16px rgba(44, 62, 80, 0.18), 0 3px 12px rgba(0,0,0,0.10);
+  background: var(--accent-dark);
+  color: #fff;
+  border-color: var(--accent-dark);
+  transform: scale(1.05);
+}
+
 /* Responsive Adjustments */
 @media (max-width: 900px) {
   .biblestudy-header,
@@ -939,4 +985,3 @@ body[data-page="christ"] .top-nav-container .theme-button {
     margin-right: 4rem;
   }
 }
-  
