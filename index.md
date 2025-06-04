@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "home | My CTF Journey"
+title: "home | Cybersec & faith Journey"
 description: "Tracking my CTF progress, writeups, and resources."
 custom_css: true
 ---
