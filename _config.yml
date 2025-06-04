@@ -1,5 +1,5 @@
-title: My CTF Blog
-description: My CTF journey and writeups
+title: Cybersecurity & Purposeful Living Hub
+description: CTFs, notes, and reflections for mind, skill, and spirit
 theme: minima
 plugins:
   - jekyll-feed
