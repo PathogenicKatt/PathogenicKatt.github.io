@@ -5,7 +5,7 @@ verse: "John 4:16 — 'God is spirit, and only by the power of his spirit can pe
 date: 2025-06-04
 ---
 
-# 🚶‍♂️ Walking in Spirit
+## 🚶‍♂️ Walking in Spirit
 ---
 - Note the difference between "walked" and "walking" in spirit. This implies that we should continue, and not let it be a thing of just that moment or that day, but we should continually seek His presence.
 
