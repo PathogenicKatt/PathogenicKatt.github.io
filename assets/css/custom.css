@@ -888,17 +888,6 @@ body[data-page="christ"] .top-nav-container .theme-button {
   }
 }
 .biblestudy-single {
-  width: 100vw;
-  min-height: 100vh;
-  margin: 0;
-  padding: 0;
-  background: linear-gradient(135deg, #f7fafc 0%, #c3dafe 100%);
-  border-radius: 0;
-  box-shadow: none;
-  border: none;
-  display: flex;
-  flex-direction: column;
-  align-items: stretch;
   /* Zoom out effect */
   transform: scale(0.96);
   transition: transform 0.5s cubic-bezier(.4,2,.6,1), background 0.3s;
