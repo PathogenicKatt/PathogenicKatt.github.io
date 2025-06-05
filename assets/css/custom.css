@@ -733,7 +733,7 @@ pre, code {
 
 /* Bible Study Single Page - Fullscreen, Heading Centered, Content Left */
 .biblestudy-single {
-  width: 100vw;
+  width: 100%;
   min-height: 100vh;
   margin: 0;
   padding: 3.5rem 0;
@@ -744,10 +744,15 @@ pre, code {
   display: flex;
   flex-direction: column;
   align-items: stretch;
+  position: relative;
+  z-index: 0;
+  overflow-x: hidden;
 }
+
 [data-theme="dark"] .biblestudy-single {
   background: linear-gradient(135deg, #232526 0%, #2d3748 100%);
 }
+
 .biblestudy-header {
   width: 100%;
   max-width: 800px;
