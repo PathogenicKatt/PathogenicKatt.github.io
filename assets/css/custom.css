@@ -747,8 +747,6 @@ pre, code {
 }
 [data-theme="dark"] .biblestudy-single {
   background: linear-gradient(135deg, #232526 0%, #2d3748 100%);
-  border: none;
-  box-shadow: none;
 }
 .biblestudy-header {
   width: 100%;
@@ -966,4 +964,33 @@ body[data-page="christ"] .top-nav-container .theme-button {
   .note-page-wrapper {
     margin-right: 4rem;
   }
+}
+
+/* Ensure the background fills the entire viewport for Bible Study Single Page */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.biblestudy-single {
+  min-height: 100vh;
+  width: 100vw;
+  margin: 0 !important;
+  padding: 0 !important;
+  background: linear-gradient(135deg, #f7fafc 0%, #c3dafe 100%);
+  border-radius: 0;
+  box-shadow: none;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  position: relative;
+  z-index: 0;
+  overflow-x: hidden;
+}
+
+[data-theme="dark"] .biblestudy-single {
+  background: linear-gradient(135deg, #232526 0%, #2d3748 100%);
 }
