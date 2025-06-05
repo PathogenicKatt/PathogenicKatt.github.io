@@ -887,11 +887,7 @@ body[data-page="christ"] .top-nav-container .theme-button {
     padding: 1rem 0;
   }
 }
-.biblestudy-single {
-  /* Zoom out effect */
-  transform: scale(0.96);
-  transition: transform 0.5s cubic-bezier(.4,2,.6,1), background 0.3s;
-}
+
 
 [data-theme="dark"] .biblestudy-single {
   background: linear-gradient(135deg, #232526 0%, #2d3748 100%);
