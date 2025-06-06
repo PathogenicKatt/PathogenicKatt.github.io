@@ -30,14 +30,12 @@ This is composed of 4 pillars, namely:
 
 ## ✝️ Matthew 16:13-19:
 - "When Jesus came to the region of Caesarea Philippi, he asked his disciples, 'Who do people say the Son of Man is?' They replied, 'some say- John the Baptist; others say Elijah; and still other, Jeremiah or one of the prophets.'But what about you? he asked. 'Who do say i am?' Simon answered, 'You Are The Messiah, the Son of the living God'. Jesus replied, 'Blessed are you, Simon son of Jonah, for this was not revealed to you by flesh and blood, but by my Father in heaven. And i tell you that you are Peter, and this rock i will build my church, and the gates of Hades will not overcome it. I will give you the keys of the kingdom of heaven; whatever ypu bind on earth will be bound in heaven, and whatever you loose on earth will be loosed in heaven.'"
-
 ### Reflection:
     - *"Who do you people say the Son of Man is?"*:By using this title, Jesus connects His mission to Old Testament prophecy, emphasizing His divine authority and an evalasting kingdom.
     - *"You are the messiah, the son of the living God"*: Messiah, the anointed one, our saviour-"to save humanity" or "to bring redemption" or "to bring salvation to humanity".
 
 ## 🤝 Ephesians 4:11-16:
 - "So Christ himself gave the apostles, prophets, the evangelists, the pastors and teachers, to equip his people for works of service, so that the **body of Christ may be built up** until we all reach unity in the faith and become mature, attaining to the whole measure of the *fullness of Christ*. Then we will no longer be infants, tossed back and forth by the waves, and blown here and there by every wind of teaching and by the cunning and craftiness of people in their **deceitful scheming**. Instead, speaking the truth in love, *we will grow to become in every respect the mature body of him* who is the head, that is, Christ. From him the whole body, joined and held together by every supporting ligament, grows and builds itself up in love, as each part does its work."
-
 ### Reflection:
     - **And it was He who gave**: The giving of these roles is an act of grace and sovereignty, highlighting that these positions are not self-appointed but divinely ordained.
     - **some to be apostles**: Apostles serve as Christ's messengers and witnesses to His resurrection. The term "apostle" means "one who is sent out".
