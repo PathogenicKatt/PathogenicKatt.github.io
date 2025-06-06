@@ -5,7 +5,9 @@ description: "Tracking my CTF progress, and growing in spirit."
 custom_css: true
 ---
 
-
+<div class="verse-ticker-container">
+  <div class="verse-ticker" id="verse-ticker"></div>
+</div>
 <div class="header-animation">
   <h1 style="text-align: center;">
     🌟 Cybersecurity & Purposeful Living 🌟

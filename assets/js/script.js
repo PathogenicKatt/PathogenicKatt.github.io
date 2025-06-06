@@ -176,4 +176,28 @@ document.addEventListener('DOMContentLoaded', function() {
     const verseDiv = document.getElementById("random-verse");
     if (verseDiv) verseDiv.innerHTML = random;
   }
+   // Verse ticker for homepage
+  if (window.location.pathname === "/" || window.location.pathname === "/index.html") {
+    const verses = [
+      "Trust in the Lord with all your heart and lean not on your own understanding. - Proverbs 3:5",
+      "For I know the plans I have for you, declares the Lord... - Jeremiah 29:11",
+      "The Lord is my light and my salvation—whom shall I fear? - Psalm 27:1",
+      "Be strong and courageous. Do not be afraid... - Joshua 1:9",
+      "Cast all your anxiety on Him because He cares for you. - 1 Peter 5:7",
+      "But seek first the kingdom of God and his righteousness... - Matthew 6:33",
+      "With God all things are possible. - Matthew 19:26",
+      "Humble yourself before the Lord, and he will lift you up in honor. - James 4:10",
+      "The Lord will fight for you; you need only to be still. - Exodus 14:14"
+    ];
+    const ticker = document.getElementById("verse-ticker");
+    if (ticker) {
+      let idx = 0;
+      function showVerse() {
+        ticker.textContent = verses[idx];
+        idx = (idx + 1) % verses.length;
+      }
+      showVerse();
+      setInterval(showVerse, 18000); // Change verse every animation cycle
+    }
+  }
 });

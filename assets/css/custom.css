@@ -976,3 +976,35 @@ html, body {
   margin-top: 2.5rem;
   justify-content: flex-start;
 }
+
+/* Verse Ticker Styles */
+.verse-ticker-container {
+  width: 100%;
+  overflow: hidden;
+  height: 2.2em;
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5em;
+  margin-top: 0.5em;
+  position: relative;
+  z-index: 1001;
+}
+
+.verse-ticker {
+  display: inline-block;
+  white-space: nowrap;
+  font-size: 1.08em;
+  color: var(--accent-dark);
+  font-style: italic;
+  animation: verseScroll 18s linear infinite;
+  padding-left: 100%;
+}
+
+@keyframes verseScroll {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
