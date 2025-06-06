@@ -169,6 +169,7 @@ document.addEventListener('DOMContentLoaded', function() {
       '"Cast all your anxiety on Him because He cares for you." <strong>- 1 Peter 5:7</strong>',
       '"But seek first the kingdom of God and his righteousness..." <strong>- Matthew 6:33</strong>',
       '"With God all things are possible." <strong>- Matthew 19:26</strong>',
+      '"Humble yourself before the Lord, and he will lift you up in honor." <strong>- James 4:10</strong>',
       '"The Lord will fight for you; you need only to be still." <strong>- Exodus 14:14</strong>'
     ];
     const random = verses[Math.floor(Math.random() * verses.length)];
