@@ -967,3 +967,12 @@ html, body {
 [data-theme="dark"] .biblestudy-single {
   background: linear-gradient(135deg, #232526 0%, #2d3748 100%);
 }
+
+/* Left-align the back button on Bible Study Single Page */
+.biblestudy-single .back-link {
+  display: inline-flex;
+  margin-left: 0;
+  margin-right: auto;
+  margin-top: 2.5rem;
+  justify-content: flex-start;
+}
