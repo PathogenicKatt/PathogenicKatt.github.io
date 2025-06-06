@@ -972,7 +972,7 @@ html, body {
 .biblestudy-single .back-link {
   display: inline-flex;
   margin-left: 0;
-  margin-right: auto;
+  margin-right: none;
   margin-top: 2.5rem;
   justify-content: flex-start;
 }
