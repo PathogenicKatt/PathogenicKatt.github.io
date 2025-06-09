@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "TryHackMe Writeup: rootMe"
-date: 2025-05-25
+date: 2025-06-09
 ---
 
 ## rootMe Writeup 😀
