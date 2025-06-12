@@ -430,6 +430,9 @@ pre, code {
   display: flex;
   flex-wrap: wrap;
   gap: 1.2rem;
+  padding-top: 1.2rem;
+  padding-bottom: 1.2rem;
+
 }
 
 .post-preview {
