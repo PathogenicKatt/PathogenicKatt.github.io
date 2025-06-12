@@ -18,6 +18,9 @@ custom_css: true
 </div>
 
   <div class="ctf-card">
+  <h4 style="color:rgb(238, 133, 114);">
+  <strong>Disclaimer:</strong> "All activities described here are conducted with the highest ethical standards and proper authorization. I never attempt to access or test systems without explicit permission."
+</h4>
     <h2>🌐 Site Navigation</h2>
     <div class="link-bubbles">
       <a href="/notes" class="bubble">📝 Notes</a>
@@ -30,10 +33,7 @@ custom_css: true
 
 
 <div class="ctf-card">
-    <h4 style="color:rgb(238, 133, 114);">
-  <strong>Disclaimer:</strong> "All activities described here are conducted with the highest ethical standards and proper authorization. I never attempt to access or test systems without explicit permission."
-</h4>
-    <h2>🔍 My Focus Areas</h2>
+    <h2> My Focus Areas</h2>
     <ul>
       <li>
         <strong>Web Exploitation</strong>
@@ -76,7 +76,7 @@ custom_css: true
 
 
 <div class="ctf-card">
-  <h2>Currently Learning</h2>
+  <h2> Currently Learning </h2>
   <ul>
     <li>Advanced Binary Exploitation</li>
     <li>Binary Analysis with GDB</li>
@@ -84,7 +84,7 @@ custom_css: true
   </ul>
 </div>
 
-<h2>Recent Activity</h2>
+<h2> Recent Activity</h2>
 <div class="post-feed">
   {% for post in site.posts limit:6 %}
     <article class="post-preview">
