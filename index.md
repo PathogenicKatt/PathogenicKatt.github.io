@@ -81,7 +81,7 @@ custom_css: true
   </ul>
 </div>
 
-<h2> Recent Activity</h2>
+<h2 class="recent-activity-heading"> Recent Activity</h2>
 <div class="post-feed">
   {% for post in site.posts limit:8 %}
     <article class="post-preview">

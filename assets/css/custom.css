@@ -408,6 +408,9 @@ pre, code {
   display: table !important;
 }
 
+.recent-activity-heading {
+  padding-left: 1rem;
+}
 
 
 /* Post Styles */
