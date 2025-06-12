@@ -18,9 +18,6 @@ custom_css: true
 </div>
 
   <div class="ctf-card">
-  <h4 style="color:rgb(238, 133, 114);">
-  <strong>Disclaimer:</strong> "All activities described here are conducted with the highest ethical standards and proper authorization. I never attempt to access or test systems without explicit permission."
-</h4>
     <h2>🌐 Site Navigation</h2>
     <div class="link-bubbles">
       <a href="/notes" class="bubble">📝 Notes</a>
