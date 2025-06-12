@@ -76,7 +76,7 @@ custom_css: true
 
 
 <div class="ctf-card">
-  <h2>🎯 Currently Learning</h2>
+  <h2>Currently Learning</h2>
   <ul>
     <li>Advanced Binary Exploitation</li>
     <li>Binary Analysis with GDB</li>
@@ -84,7 +84,7 @@ custom_css: true
   </ul>
 </div>
 
-<h2>🔥 Recent Activity</h2>
+<h2>Recent Activity</h2>
 <div class="post-feed">
   {% for post in site.posts limit:6 %}
     <article class="post-preview">
