@@ -92,7 +92,8 @@ pre, code {
 
 .bubble,
 .social-link {
-  padding: 0.7rem 1.2rem;
+  padding: 0.4rem 0.8rem;   /* Reduced padding */
+  font-size: 0.95rem;       /* Smaller font size */
   font-weight: 500;
 }
 
