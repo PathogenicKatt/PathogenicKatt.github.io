@@ -1008,3 +1008,20 @@ html, body {
     transform: translateX(-100%);
   }
 }
+
+.post-feed {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  /* padding-top: 1rem; */
+  /* padding-bottom: 1rem; */
+}
+
+.post-preview {
+  margin-bottom: 1.2rem; 
+  border-left: 3px solid var(--accent);
+  padding-left: 1rem;
+  transition: background 0.2s;
+}
+.post-preview:hover {
+  background: rgba(78, 205, 196, 0.07);
+}
