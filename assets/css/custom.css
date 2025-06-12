@@ -425,27 +425,6 @@ pre, code {
   line-height: 1.8;
 }
 
-.post-feed {
-  padding: 1.2rem 0 1.2rem 0;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1.2rem;
-  padding-top: 1.2rem;
-  padding-bottom: 1.2rem;
-
-}
-
-.post-preview {
-  background: var(--card-bg);
-  border: var(--card-border);
-  border-radius: 10px;
-  box-shadow: var(--card-shadow);
-  padding: 1rem 1.2rem;
-  min-width: 220px;
-  flex: 1 1 260px;
-  margin: 0;
-}
-
 /* Writeups Grid */
 .writeups-grid {
   display: grid;
