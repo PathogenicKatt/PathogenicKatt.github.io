@@ -10,10 +10,10 @@ custom_css: true
 </div>
 <div class="header-animation">
   <h1 style="text-align: center;">
-    🌟 Cybersecurity & Purposeful Living 🌟
+     Cybersecurity & Purposeful Living 
   </h1>
   <p class="subtitle" style="text-align: center;">
-    "Exploring digital defense, ethical hacking, and wisdom for the skill, and the spirit."
+    "Exploring digital defense, ethical hacking, and wisdom for personal skills, and the spirit."
   </p>
 </div>
 
