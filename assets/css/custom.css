@@ -1030,3 +1030,13 @@ html, body {
 .post-preview:hover {
   background: rgba(78, 205, 196, 0.07);
 }
+html, body {
+  height: 100%;
+  min-width: 100vw;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden; /* Prevent horizontal scroll */
+  background: var(--bg-color); /* Ensures background always fills */
+}
