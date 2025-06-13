@@ -2,7 +2,7 @@
 layout: note
 title: "Forensics: Stepic 🔍"
 description: "Isolated information, regarding image steganography"
-tags: [stepic, forensics, steganography]
+tags: [stepic, forensics, steganography, png, image]
 date: 2025-05-30
 ---
 
