@@ -20,7 +20,7 @@ So **disk imaging**, takes a copy of permanent storage devices like (USBs, SSDs,
 
 ## Autopsy
 - Here is a typical example of autopsy(gui):
-    ![stepic challenge](/assets/img/autopsy(1).PNG){: .writeup-image }
+    ![ autopsy](/assets/img/autopsy(1).png){: .writeup-image }
     - It has useful features
 <table>
   <thead>
