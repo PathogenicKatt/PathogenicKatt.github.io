@@ -259,7 +259,7 @@ pre, code {
 }
 .arrow-list li::before {
   content: "➔ ";
-  color: #333;
+  color: var(--accent); /* Use your accent color variable */
 }
 
 /* Note Layout Improvements */

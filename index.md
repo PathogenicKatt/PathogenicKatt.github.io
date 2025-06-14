@@ -83,10 +83,10 @@ custom_css: true
     <li>
       <strong>Forensics</strong>
       <ul class="arrow-list">
-        <li>Deep dive in memory  particularly disk imaging</li>
+        <li>Deep dive in memory particularly <strong>disk imaging</strong>.</li>
       </ul>
       <ul class="arrow-list">
-        <li>Resources like <a href="https://trailofbits.github.io/ctf/forensics/index.html">trail of bits</a> and <a href="https://ctf101.org/forensics/what-is-disk-imaging/"> ctf101</a>are my primary resources. 
+        <li>Resources like <a href="https://trailofbits.github.io/ctf/forensics/index.html">trail of bits</a> and <a href="https://ctf101.org/forensics/what-is-disk-imaging/"> ctf101</a> are my primary resources. 
         </li>
       </ul>
     </li>
