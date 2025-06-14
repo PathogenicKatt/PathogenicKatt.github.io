@@ -1049,3 +1049,7 @@ html, body {
   box-sizing: border-box;
   background: var(--bg-color); /* Ensures background always fills */
 }
+
+body, html {
+  transition: none !important;
+}
