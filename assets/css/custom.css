@@ -49,6 +49,7 @@ pre, code {
 [data-theme="dark"] pre,
 [data-theme="dark"] code {
   background: rgba(255, 255, 255, 0.1);
+  color: #e2e8f0; /* Light text for dark mode */
 }
 
 /* COMPONENT STYLES */
