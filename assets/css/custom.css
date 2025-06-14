@@ -39,22 +39,11 @@ a {
   text-decoration: none;
 }
 
-/* Accent background for code blocks */
 pre, code {
-  background: var(--accent) !important;
-  color: #fff !important; /* Ensure text is readable */
-}
-
-/* Optional: If you want inline code to have a slightly different style */
-code {
-  padding: 0.2rem 0.4rem;
+  font-family: 'Fira Code', monospace;
+  background: rgba(0, 0, 0, 0.1);
   border-radius: 6px;
-}
-
-/* For code blocks inside .note-body (if you want to target only notes) */
-.note-body pre, .note-body code {
-  background: var(--accent) !important;
-  color: #fff !important;
+  padding: 0.2rem 0.4rem;
 }
 
 [data-theme="dark"] pre,
