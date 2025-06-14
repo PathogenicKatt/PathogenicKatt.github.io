@@ -253,6 +253,15 @@ pre, code {
   display: inline-block;
 }
 
+.arrow-list {
+  list-style: none;
+  padding-left: 0;
+}
+.arrow-list li::before {
+  content: "➔ ";
+  color: #333;
+}
+
 /* Note Layout Improvements */
 .note-container {
   max-width: none;

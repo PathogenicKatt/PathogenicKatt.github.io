@@ -30,8 +30,8 @@ custom_css: true
 
 
 <div class="ctf-card">
-    <h2> My Focus Areas</h2>
-    <ul>
+    <h2> Focus Areas</h2>
+    <ul class="arrow-list">
       <li>
         <strong>Web Exploitation</strong>
         <ul>
