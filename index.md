@@ -31,40 +31,40 @@ custom_css: true
 
 <div class="ctf-card">
     <h2> Focus Areas</h2>
-    <ul class="arrow-list">
+    <ul>
       <li>
         <strong>Web Exploitation</strong>
-        <ul>
+        <ul class="arrow-list">
           <li>Finding and exploiting vulnerabilities in web applications, and authentication flaws.</li>
         </ul>
       </li>
       <li>
         <strong>Reverse Engineering</strong>
-        <ul>
+        <ul class="arrow-list">
           <li>Analyzing binaries or software to understand their inner workings or to find vulnerabilities.</li>
         </ul>
       </li>
       <li>
         <strong>Cryptography</strong>
-        <ul>
+        <ul class="arrow-list">
           <li>Breaking or designing secure cryptographic systems, and solving crypto-based CTF challenges.</li>
         </ul>
       </li>
       <li>
         <strong>Mobile Security</strong>
-        <ul>
+        <ul class="arrow-list">
           <li>Assessing and exploiting security flaws in Android-for now.</li>
         </ul>
       </li>
       <li>
         <strong>Binary Exploitation</strong>
-        <ul>
+        <ul class="arrow-list">
           <li>Exploiting memory corruption bugs (like buffer overflows) in compiled programs to gain control or leak data.</li>
         </ul>
       </li>
       <li>
         <strong>Forensics</strong>
-        <ul>
+        <ul class="arrow-list">
           <li>Recovering and analyzing digital evidence from files, memory dumps, or network traffic.</li>
         </ul>
       </li>
