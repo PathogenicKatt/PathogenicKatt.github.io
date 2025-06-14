@@ -81,8 +81,8 @@ custom_css: true
   <h2> Currently Learning </h2>
   <ul>
     <li>Forensics</li>
-      <ul class="arrow-list">Deep dive in memory forensics</ul>
-      <ul class="arrow-list">A resources like <a href="https://trailofbits.github.io/ctf/forensics/index.html">Trail of Bits</a>is aiding. </ul>
+      <ul class="arrow-list">Deep dive in memory  particularly disk imaging</ul>
+      <ul class="arrow-list">Resources like <a href="https://trailofbits.github.io/ctf/forensics/index.html">trail of bits</a> and <a href="https://ctf101.org/forensics/what-is-disk-imaging/"> ctf101</a>are my primary resources. </ul>
   </ul>
 </div>
 
