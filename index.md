@@ -80,9 +80,9 @@ custom_css: true
 <div class="ctf-card">
   <h2> Currently Learning </h2>
   <ul>
-    <li>Advanced Binary Exploitation</li>
-    <li>Binary Analysis with GDB</li>
-    <li>Crackme programs from <a href="https://microcorruption.com/debugger/">Microcorruption</a> </li>
+    <li>Forensics</li>
+      <ul class="arrow-list">Deep dive in memory forensics</ul>
+      <ul class="arrow-list">A resources like <a href="https://trailofbits.github.io/ctf/forensics/index.html">Trail of Bits</a>is aiding. </ul>
   </ul>
 </div>
 
