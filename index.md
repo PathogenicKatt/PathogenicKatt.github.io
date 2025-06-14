@@ -38,30 +38,35 @@ custom_css: true
           <li>Finding and exploiting vulnerabilities in web applications, and authentication flaws.</li>
         </ul>
       </li>
+        <br>
       <li>
         <strong>Reverse Engineering</strong>
         <ul class="arrow-list">
           <li>Analyzing binaries or software to understand their inner workings or to find vulnerabilities.</li>
         </ul>
       </li>
+        <br>
       <li>
         <strong>Cryptography</strong>
         <ul class="arrow-list">
           <li>Breaking or designing secure cryptographic systems, and solving crypto-based CTF challenges.</li>
         </ul>
       </li>
+        <br>
       <li>
         <strong>Mobile Security</strong>
         <ul class="arrow-list">
           <li>Assessing and exploiting security flaws in Android-for now.</li>
         </ul>
       </li>
+        <br>
       <li>
         <strong>Binary Exploitation</strong>
         <ul class="arrow-list">
           <li>Exploiting memory corruption bugs (like buffer overflows) in compiled programs to gain control or leak data.</li>
         </ul>
       </li>
+        <br>
       <li>
         <strong>Forensics</strong>
         <ul class="arrow-list">
