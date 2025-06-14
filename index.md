@@ -80,11 +80,16 @@ custom_css: true
 <div class="ctf-card">
   <h2> Currently Learning </h2>
   <ul>
-    <li>Forensics
-      <ul class="arrow-list">Deep dive in memory  particularly disk imaging</ul>
-      <ul class="arrow-list">Resources like <a href="https://trailofbits.github.io/ctf/forensics/index.html">trail of bits</a> and <a href="https://ctf101.org/forensics/what-is-disk-imaging/"> ctf101</a>are my primary resources. </ul>
+    <li>
+      <strong>Forensics</strong>
+      <ul class="arrow-list">
+        <li>Deep dive in memory  particularly disk imaging</li>
+      </ul>
+      <ul class="arrow-list">
+        <li>Resources like <a href="https://trailofbits.github.io/ctf/forensics/index.html">trail of bits</a> and <a href="https://ctf101.org/forensics/what-is-disk-imaging/"> ctf101</a>are my primary resources. 
+        </li>
+      </ul>
     </li>
-      
   </ul>
 </div>
 
