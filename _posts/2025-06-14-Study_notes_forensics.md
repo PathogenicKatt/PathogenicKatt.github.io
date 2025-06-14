@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Study Notes: Disk Imaging"
-date: 2025-06-16
+date: 2025-06-14
 ---
 
 ## Forensics
