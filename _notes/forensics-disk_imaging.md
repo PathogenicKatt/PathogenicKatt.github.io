@@ -32,31 +32,79 @@ So **disk imaging**, takes a copy of permanent storage devices like (USBs, SSDs,
   </thead>
   <tbody>
     <tr>
-      <td>File Browser</td>
+      <td><strong>File Browser</strong></td>
       <td>Shows literally all files</td>
       <td>Helps find suspicious files</td>
     </tr>
     <tr>
-      <td>Hex Viewer</td>
+      <td><strong>Hex Viewer</strong></td>
       <td>Allows you to inspect raw bytes(header analysis)</td>
       <td>You can check the <strong>magic bytes</strong></td>
-
     </tr>
     <tr>
-      <td>Keyword Search</td>
+      <td><strong>Keyword Search</strong></td>
       <td>Scans for strings(e.g CTF{.*})</td>
       <td>Find hidden flags in slack space</td>
     </tr>
     <tr>
-      <td>Timeline Analysis</td>
+      <td><strong>Timeline Analysis</strong></td>
       <td>Shows file activity timelines(who edited what and when)</td>
       <td>Track attacker actions</td>
     </tr>
     <tr>
-        <td>Hash Filtering</td>
+        <td><strong>Hash Filtering</strong></td>
         <td>Identifies known files(e.g Malware hashes)</td>
         <td>Spot modified files</td>
     </tr>
   </tbody>
 </table>
+
+### Alternatively: Command-line approach
+1. **The Sleuth Kit (TSK)** - A suite of command-line tools for forensic analysis of disk imaging.
+- Installation:
+    ```bash
+    sudo apt install sleuthkit
+    ```
+- Essential commands:
+<table>
+  <thead>
+    <tr>
+      <th>Command</th>
+      <th>Purpose</th>
+      <th>Example Use Case</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>mmls</code></td>
+      <td>Lists partitions in the disk image</td>
+      <td><code>mmls disk.img</code> finds hidden partitions as well</td>
+    </tr>
+    <tr>
+      <td><code>fls</code></td>
+      <td>List files/dirs(including deleted)</td>
+      <td><code>fls -r -d disk.img</code> Recursive(<code>-r</code>) + deleted file(<code>-d</code>)</td>
+    </tr>
+    <tr>
+      <td><code>icat</code></td>
+      <td>Extracts a specific file by inode</td>
+      <td><code>icat disk.img 45 > file.txt</code> Recover file with inode 45.</td>
+    </tr>
+    <tr>
+      <td><code>istat</code-></td>
+      <td>Show file metadata(timestamps)</td>
+      <td><code>istat disk.img 45</code>Checks when the file was modified.</td>
+    </tr>
+    <tr>
+        <td><code>fsstat</code></td>
+        <td>File system details(block size, type)</td>
+        <td><code>fsstat disk.img</code> just confirms if, it's FAT/NTFS.</td>
+    </tr>
+  </tbody>
+</table>
+
+2. **dd + foremost/scapel** - *File Carving*, when you need to recover deleted files or extract embedded data.
+3. **bulk_extractor** -  *Faster Data Scanning*, extracts emails, credit cards, URLs, and other patterns from disk images.
+4. **photorec** - Recovers files even if the *file system* is corrupted.
+5. **Volatility** - This is for memory dumps, not for disk images but necessary to be included. It is a must know CLI tool for *memory forensics*(.raw, .mem files).
 
