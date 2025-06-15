@@ -108,8 +108,8 @@ So **disk imaging**, takes a copy of permanent storage devices like (USBs, SSDs,
     fls -o 2048 disk.img    # List files in partion
     icat -o 2048 disk.img 123 > secret.txt  # Extract file with inode 123
     ```
-- What exactly is **inode**: Inodes are like file ID cards they don’t store the actual data but help investigators understand and recover critical file details during forensic analysis. But sometimes can help recover deleted data.
-    ![ inode structure](/assets/img/inodeStructure.png){: .writeup-image }
+- What exactly is **inode**: Inodes are like file ID cards they don’t store the actual data but help investigators understand and recover critical file details during forensic analysis.
+![ inode structure](/assets/img/inodeStructure.png){: .writeup-image }
 
 
 2. **dd + foremost/scapel** - *File Carving*, when you need to recover deleted files or extract embedded data.
