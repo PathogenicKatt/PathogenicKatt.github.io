@@ -91,7 +91,7 @@ So **disk imaging**, takes a copy of permanent storage devices like (USBs, SSDs,
       <td><code>icat disk.img 45 > file.txt</code> Recover file with inode 45.</td>
     </tr>
     <tr>
-      <td><code>istat</code-></td>
+      <td><code>istat</code></td>
       <td>Show file metadata(timestamps)</td>
       <td><code>istat disk.img 45</code>Checks when the file was modified.</td>
     </tr>
@@ -102,6 +102,15 @@ So **disk imaging**, takes a copy of permanent storage devices like (USBs, SSDs,
     </tr>
   </tbody>
 </table>
+- A few examples:
+    ```bash
+    mmls disk.img   # Find partition offset (e.g 2048)
+    fls -o 2048 disk.img    # List files in partion
+    icat -o 2048 disk.img 123 > secret.txt  # Extract file with inode 123
+    ```
+- What exactly is **inode**: Inodes are like file ID cards they don’t store the actual data but help investigators understand and recover critical file details during forensic analysis. But sometimes can help recover deleted data.
+    ![ inode structure](/assets/img/inodeStructure.png){: .writeup-image }
+
 
 2. **dd + foremost/scapel** - *File Carving*, when you need to recover deleted files or extract embedded data.
 3. **bulk_extractor** -  *Faster Data Scanning*, extracts emails, credit cards, URLs, and other patterns from disk images.
