@@ -22,5 +22,10 @@ date: 2025-06-26
 ## Algorithm:
 - The transformation can be represented by aligning two alphabets; and the cipher is when the plain alphabet is rotated left or right by some number of positions. The Caesar Cipher, by default is set by *three shifts to the left for encryption* and *three shifts to the right for decryption*.
 
-- Take for example(encryption -> Using three shifts to the left ):
-![stepic command](/assets/img/Caesar-Cipher(1).PNG){: .writeup-image }
+- Take for example(encryption -> Using three shifts to the left ) *"reference"*:
+![Caesar-Cipher-example](/assets/img/Caesar-Cipher(1).PNG){: .writeup-image }
+    - The above example, explains it all.
+- Here is another typical example(of encryption) in applicationL"
+![Caesar-Cipher-example-2](/assets/img/Caesar-Cipher(2).PNG){: .writeup-image }
+    - Using the 1st example as reference, for instance, the letter 'T' from the plain-text is replaced by 'Q' using the "Caesar shift three". 
+
