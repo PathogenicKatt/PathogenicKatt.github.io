@@ -1,7 +1,7 @@
 
 
-def enc(x,n):
-    position = (x+n) % 26
+def enc(plain_position, n_of_shifts):
+    position = (plain_position + n_of_shifts) % 26
     return position
 
 

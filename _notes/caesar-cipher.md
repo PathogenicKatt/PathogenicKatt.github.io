@@ -27,5 +27,18 @@ date: 2025-06-26
     - The above example, explains it all.
 - Here is another typical example(of encryption) in applicationL"
 ![Caesar-Cipher-example-2](/assets/img/Caesar-Cipher(2).PNG){: .writeup-image }
-    - Using the 1st example as reference, for instance, the letter 'T' from the plain-text is replaced by 'Q' using the "Caesar shift three". 
+    - Using the 1st example as reference, for instance, the letter 'T' from the plain-text is replaced by 'Q' using the "Caesar shift three".
+    - Below, is a python script i created to test(Detailed explanation further down):
+    ```python
+    def enc(plain_position, n_of_shifts):
+        position = (plain_position + n_of_shifts) % 26
+        return position
+    
+    if __name__ == "__main__":
+        shift = int(input("Enter the shift value: "))
+        pos = enc(4, shift)
+        print(f"Position after shifting: {pos}")
+    ```
+
+## Encryption/Decryption Mathematically:
 
