@@ -1,6 +1,6 @@
 ---
 layout: note
-title: "Cryptography: Image Encryption "
+title: "Cryptography: Image Encryption 🔐"
 description: "Locking an image is just fascinating"
 tags: [pixels, encryption, image, crypto, decryption]
 date: 2025-06-27
