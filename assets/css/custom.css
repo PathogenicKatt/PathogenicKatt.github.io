@@ -65,6 +65,7 @@ pre, code {
   margin: 1rem 0;
   box-shadow: var(--card-shadow);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  -webkit-backdrop-filter: blur(8px);
   backdrop-filter: blur(8px);
 }
 
@@ -1052,4 +1053,12 @@ html, body {
 
 body, html {
   transition: none !important;
+}
+
+img {
+  transition: transform 0.3s ease;
+}
+
+img:hover {
+  transform: scale(1.02);
 }
