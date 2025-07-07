@@ -637,17 +637,7 @@ pre, code {
   color: white;
 }
 
-/* Writeup image zoom */
-.writeup-content img {
-  transition: transform 0.3s cubic-bezier(.4,0,.2,1);
-  cursor: zoom-in;
-}
 
-.writeup-content img:hover {
-  transform: scale(1.08);
-  z-index: 10;
-  box-shadow: 0 8px 32px rgba(0,0,0,0.18);
-}
 
 /* Hide/show for search */
 .note-card[style*="display: none"] {
@@ -1057,4 +1047,14 @@ html, body {
 body, html {
   transition: none !important;
 }
+/* Writeup image zoom */
+.writeup-content img {
+  transition: transform 0.3s cubic-bezier(.4,0,.2,1);
+  cursor: zoom-in;
+}
 
+.writeup-content img:hover {
+  transform: scale(1.08);
+  z-index: 10;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+}
