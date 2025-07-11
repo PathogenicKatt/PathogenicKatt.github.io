@@ -1080,7 +1080,7 @@ body, html {
 /* Main Bubble Style */
 .main-bubble {
   background: linear-gradient(90deg, #b2f5ea 0%, #3182ce 100%);
-  color: #3182ce !important;
+  color: #03070a !important;
   font-weight: bold;
   border: 2px solid #3182ce;
   font-size: 0.95rem;         /* Slightly smaller */
@@ -1095,7 +1095,7 @@ body, html {
 }
 
 .main-bubble:hover, .main-bubble:focus {
-  box-shadow: 0 0 16px #3182ce55;
+  box-shadow: 0 0 16px #75b8f755;
   background: #ebf8ff;
   color: #3182ce !important;
   border-color: #3182ce;
@@ -1104,5 +1104,5 @@ body, html {
 
 .main-bubble:active {
   transform: scale(0.97);
-  box-shadow: 0 1px 4px #3182ce22;
+  box-shadow: 0 1px 4px #4aa0f022;
 }
