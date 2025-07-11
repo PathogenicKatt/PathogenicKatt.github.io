@@ -1,6 +1,6 @@
 ---
 layout: note
-title: "Internship day 01: Intro to Azure | AI & Cybersecurity"
+title: "AI & Cybersecurity(Internship)-01"
 description: "Introduction to azure services and creating labs"
 tags: [datacenters, cloud computing, labs, application security, azure]
 date: 2025-07-07

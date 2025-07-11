@@ -1,6 +1,6 @@
 ---
 layout: note
-title: "Programming: Password Complexity Checker "
+title: "Password Complexity Checker "
 description: "Locking an image is just fascinating"
 tags: [python, encryption, programming, crypto, decryption]
 date: 2025-07-03
