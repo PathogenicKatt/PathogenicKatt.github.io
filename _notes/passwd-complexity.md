@@ -1,12 +1,12 @@
 ---
 layout: note
-title: "Programming: Password Complexity Checker 🤲"
+title: "Programming: Password Complexity Checker "
 description: "Locking an image is just fascinating"
 tags: [python, encryption, programming, crypto, decryption]
 date: 2025-07-03
 ---
 
-# Password Complexity ✨
+# Password Complexity 
 - For us to be able to understand what a complex password looks like, we have to cover the basic building blocks of the password.
 - **Character Variety**
     - lowercase letters(`a-z`)

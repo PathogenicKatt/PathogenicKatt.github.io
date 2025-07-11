@@ -1,12 +1,12 @@
 ---
 layout: note
-title: "Cryptography: Image Encryption 🔐"
+title: "Image Encryption "
 description: "Locking an image is just fascinating"
-tags: [pixels, encryption, image, crypto, decryption]
+tags: [pixels, encryption, image, cryptography, decryption]
 date: 2025-06-27
 ---
 
-# Image Encryption ✨
+# Image Encryption 
 - Image encryption is the most fascinating area in cryptography, simply because i never thought images could be manipulated like this. Same with, Image steganography, like the fact that you hide contents in an image without people realizing is really fascinating. This is achieved through pixel manipulation. Let's deep dive and see what Image encryption has for us.
 - **What exactly are pixels?**
     - They are known as *picture elements*, they basically make up the whole picture.

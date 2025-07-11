@@ -1,12 +1,12 @@
 ---
 layout: note
-title: "Cryptography: Caesar Cipher 🔑"
+title: "Caesar Cipher"
 description: "One of the simplest and most widely known encryption technique."
-tags: [crypto, encryption, encoding, decoding, decryption, shift cipher]
+tags: [cryptoGRAPHY, encryption, encoding, decoding, decryption, shift cipher]
 date: 2025-06-26
 ---
 
-# Caesar Cipher ✨
+# Caesar Cipher
 - To understand this, i need a broader idea. That is, there two classical encryption techniques. namely, **Substitution** and **Transposition**. 
 - A **Substitution cipher** is an encryption whereby, the algorithm *replaces each letter in the plaintext with another letter*, that's all!. Below, are one of the examples of Substitution Cipher:
     - **Caesar Cipher**.

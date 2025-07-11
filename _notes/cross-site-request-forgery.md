@@ -1,12 +1,12 @@
 ---
 layout: note
-title: "Web: Cross Site Request Forgery 💻📡"
+title: "Cross Site Request Forgery(XSS)"
 description: "A web exploitation that utilizes cookies of target website to forge requests."
 tags: [web, csrf, iframe, cookies, requests]
 date: 2025-07-04
 ---
 
-## CSRF(Cross Site Request Forgery) ✨
+## CSRF(Cross Site Request Forgery) 
 - **In Formal**:
     - Cross-site request forgery, also known as one-click attack or session riding and abbreviated as CSRF or XSRF, is a type of malicious exploit of a website or web application where unauthorized commands are submitted from a user that the web application trusts. 
     - a type of cyber attack that tricks a user into unknowingly submitting a malicious request to a web application where they are authenticated, potentially leading to unauthorized actions like transferring funds or changing account details. It exploits the trust that a website has in a user's browser, making it difficult to distinguish between legitimate and forged requests.

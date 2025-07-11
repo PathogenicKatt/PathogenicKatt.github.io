@@ -1,6 +1,6 @@
 ---
 layout: note
-title: "Forensics: Disk Imaging 🔍"
+title: "Disk Imaging"
 description: "a bit-for-bit copy of a storage device"
 tags: [disk imaging, forensics, autopsy, memory, foremost]
 date: 2025-06-14

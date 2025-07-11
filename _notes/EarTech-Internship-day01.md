@@ -1,12 +1,12 @@
 ---
 layout: note
-title: "Internship day 01: Intro to Azure | AI & Cybersecurity📡"
+title: "Internship day 01: Intro to Azure | AI & Cybersecurity"
 description: "Introduction to azure services and creating labs"
 tags: [datacenters, cloud computing, labs, application security, azure]
 date: 2025-07-07
 ---
 
-## Day 01: Data and Application & Intro to Confidential Ledgers(Lab) ✨
+## Day 01: Data and Application & Intro to Confidential Ledgers(Lab) 
 - **What is Azure**?
     - Azure is a cloud computing platform created by microsoft
     - It competes with the likes of **AWS**-Created by Amazon and also **Google cloud** which of course created by Google.
