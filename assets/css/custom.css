@@ -61,8 +61,8 @@ pre, code {
   background: var(--card-bg);
   border: var(--card-border);
   border-radius: 12px;
-  padding: 1rem;
-  margin: 1rem 0;
+  padding: 0.7rem 1rem;
+  margin: 0;
   box-shadow: var(--card-shadow);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   -webkit-backdrop-filter: blur(8px);
@@ -165,8 +165,8 @@ pre, code {
 .notes-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
-  margin: 3rem 0;
+  gap: 1rem;           /* Reduced gap between cards */
+  margin: 1.5rem 0;    /* Less space above/below grid */
 }
 
 /* Lists */
