@@ -1096,8 +1096,8 @@ body, html {
 .main-bubble:hover, .main-bubble:focus {
   box-shadow: 0 0 16px #75b8f755;
   background: #ebf8ff;
-  color: #3182ce !important;
-  border-color: #78b6ef;
+  color: #498ccb !important;
+  border-color: #8cbfef;
   transform: scale(1.06);
 }
 
