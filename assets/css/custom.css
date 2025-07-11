@@ -1081,7 +1081,6 @@ body, html {
 .main-bubble {
   background: linear-gradient(90deg, #b2f5ea 0%, #509ce2 100%);
   color: #03070aaf !important;
-  font-weight: bold;
   border: 2px solid #3182ce;
   font-size: 0.95rem;         /* Slightly smaller */
   padding: 0.4rem 1rem;       /* Slightly smaller */
