@@ -1076,3 +1076,33 @@ body, html {
   z-index: 10;
   box-shadow: 0 8px 32px rgba(0,0,0,0.18);
 }
+
+/* Main Bubble Style */
+.main-bubble {
+  background: linear-gradient(90deg, #b2f5ea 0%, #3182ce 100%);
+  color: #3182ce !important;
+  font-weight: bold;
+  border: 2px solid #3182ce;
+  font-size: 0.95rem;         /* Slightly smaller */
+  padding: 0.4rem 1rem;       /* Slightly smaller */
+  box-shadow: 0 0 12px #3182ce22;
+  transition: 
+    background 0.2s,
+    color 0.2s,
+    border 0.2s,
+    box-shadow 0.2s,
+    transform 0.18s;
+}
+
+.main-bubble:hover, .main-bubble:focus {
+  box-shadow: 0 0 16px #3182ce55;
+  background: #ebf8ff;
+  color: #3182ce !important;
+  border-color: #3182ce;
+  transform: scale(1.06);
+}
+
+.main-bubble:active {
+  transform: scale(0.97);
+  box-shadow: 0 1px 4px #3182ce22;
+}
