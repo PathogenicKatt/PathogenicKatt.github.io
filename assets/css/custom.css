@@ -76,22 +76,23 @@ pre, code {
   box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
 }
 
-/* Buttons & Links */
+/* Unified Button Styles */
 .bubble,
 .nav-button,
 .theme-toggle,
 .social-link,
 .back-link {
-  background: var(--accent);
-  color: white;
+  background: linear-gradient(90deg, var(--accent) 0%, var(--accent-dark) 100%);
+  color: #2d3748 !important;
+  font-weight: bold;
+  border: 2px solid var(--accent-dark);
   border-radius: 50px;
-  border: 2px solid var(--accent-dark); 
-  box-shadow: 0 2px 8px rgba(78, 205, 196, 0.18);
+  box-shadow: 0 2px 8px var(--accent-dark)22;
   font-size: 1.05rem;
   font-weight: 600;
   padding: 0.5rem 1.2rem;
   cursor: pointer;
-  transition: 
+  transition:
     background 0.2s,
     color 0.2s,
     border 0.2s,
@@ -104,30 +105,50 @@ pre, code {
   outline: none;
 }
 
-.bubble:hover, .bubble:focus {
-  background: var(--accent-dark);
-  color: #fff;
-  border-color: var(--accent-dark);
-  box-shadow: 0 6px 18px rgba(78, 205, 196, 0.28);
-  transform: scale(1.07);
-}
-
-.bubble:active {
-  transform: scale(0.97);
-  box-shadow: 0 1px 4px rgba(78, 205, 196, 0.10);
-}
-
-.social-link i {
-  margin-right: 0.5em;
-}
-
+/* Unified Hover Effect */
 .bubble:hover,
 .nav-button:hover,
 .theme-toggle:hover,
 .social-link:hover,
 .back-link:hover {
+  box-shadow: 0 0 16px var(--accent)88;
+  background: #ebf8ff;
+  color: var(--accent-dark) !important;
+  border-color: var(--accent-dark);
+  transform: scale(1.06);
+}
+
+/* Unified Active Effect */
+.bubble:active,
+.nav-button:active,
+.theme-toggle:active,
+.social-link:active,
+.back-link:active {
+  transform: scale(0.97);
+  box-shadow: 0 1px 4px var(--accent-dark)22;
+}
+
+/* For dark mode, ensure text is readable */
+[data-theme="dark"] .bubble,
+[data-theme="dark"] .nav-button,
+[data-theme="dark"] .theme-toggle,
+[data-theme="dark"] .social-link,
+[data-theme="dark"] .back-link {
+  color: #fff !important;
+  border: 2px solid var(--accent-dark);
+  background: linear-gradient(90deg, var(--accent) 0%, var(--accent-dark) 100%);
+}
+
+[data-theme="dark"] .bubble:hover,
+[data-theme="dark"] .nav-button:hover,
+[data-theme="dark"] .theme-toggle:hover,
+[data-theme="dark"] .social-link:hover,
+[data-theme="dark"] .back-link:hover {
   background: var(--accent-dark);
-  transform: translateY(-2px);
+  color: #fff !important;
+  box-shadow: 0 0 16px var(--accent)88;
+  border-color: var(--accent-dark);
+  transform: scale(1.06);
 }
 
 /* Navigation */
