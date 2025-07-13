@@ -1,6 +1,6 @@
 layout: biblestudy
-title: "A Father's Instruction"
-verse: "Proverbs 4:16 - 'For the wicked cannot sleep unless they do evil; And they are deprived of sleep unless they make someone stumble and fall.'"
+title: "The Governance of Prayer"
+verse: "James 5:16 - 'Therefore confess your sins to each other and pray for each other so that you may be healed. The prayer of a righteous person is powerful and effective.'"
 date: 2025-07-02
 ---
 
