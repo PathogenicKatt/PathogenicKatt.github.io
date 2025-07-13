@@ -6,7 +6,7 @@ date: 2025-07-13
 ---
 
 # The Governance of Prayer.
-## Verses
+## 📜Verses
 - **James 5:16** *"Therefore confess your sins to each other and pray for each other so that you may be healed. The prayer of a righteous person is powerful and effective."*
 - **Reflections**:
     - Admit your sins, and confess them,so healing may take place.

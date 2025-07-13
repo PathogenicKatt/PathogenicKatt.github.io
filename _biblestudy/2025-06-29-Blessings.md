@@ -5,7 +5,7 @@ verse: "Ephesians 1:3 - 'Let us give thanks to the God and Father our Lord Jesus
 date: 2025-06-29
 ---
 
-# Spiritual Blessings in Christ ✨
+# Spiritual Blessings in Christ 
 ## 📜 Verses:
 - **Ephesians 1:3-6** *"Let us give thanks to the God and Father our Lord Jesus Christ! For in our union with Christ he has blessed us by giving us every spiritual blessing in the heavenly world. Even before the world was made, God had already chosen us to be his through our union with Christ, so we would be holy and without fault before him. Because of his Love, God had already decided that through Jesus Christ, he would make us his sons and daughters and hence this was his pleasure and purpose. Let us praise God for his glorious grace, for the free gift he gave us in his dear Son!"*
 - **Reflections**
