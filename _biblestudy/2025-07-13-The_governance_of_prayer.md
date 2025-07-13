@@ -1,3 +1,4 @@
+---
 layout: biblestudy
 title: "The Governance of Prayer"
 verse: "James 5:16 - 'Therefore confess your sins to each other and pray for each other so that you may be healed. The prayer of a righteous person is powerful and effective.'"
