@@ -13,7 +13,7 @@ custom_css: true
 
   <div class="about-grid">
     <section class="about-card">
-      <h2>📚 Academic Journey</h2>
+      <h2>Academic Journey</h2>
       <p>My cybersecurity journey began in 2022 while studying <strong>ICT at University of Mpumalanga (UMP)</strong>. Seeking deeper technical challenges, I transferred to <strong>North West University (NWU)</strong> in 2023 to pursue Computer Science and Mathematics.</p>
       
       <p>Though NWU doesn't offer formal cybersecurity courses, their participation in the <strong> SANReN CTF </strong> program became my hands-on training ground. This exclusive competition (not available at UMP) ignited my passion for security research.</p>
@@ -25,7 +25,7 @@ custom_css: true
     </section>
 
     <section class="about-card">
-      <h2>🚩 CTF Experience</h2>
+      <h2>CTF Experience</h2>
       <div class="ctf-logos">
         <img src="{{ '/assets/img/pico.png' | relative_url }}" alt="PicoCTF" loading="lazy">
         <img src="{{ '/assets/img/htb.png' | relative_url }}" alt="HackTheBox" loading="lazy">
@@ -41,7 +41,7 @@ custom_css: true
 
 
     <section class="about-card">
-      <h2>💻 Technical Skills</h2>
+      <h2>Technical Skills</h2>
       <div class="skill-cloud">
         <span>Python</span>
         <span>C</span>
@@ -63,7 +63,7 @@ custom_css: true
 
     <!-- Connect Section -->
     <section class="about-card connect">
-      <h2>💬 Let's Connect</h2>
+      <h2>Let's Connect</h2>
       <div class="social-links">
         <a href="https://github.com/PathogenicKatt" class="social-link github" target="_blank" rel="noopener noreferrer">
           <i class="fab fa-github"></i> GitHub
