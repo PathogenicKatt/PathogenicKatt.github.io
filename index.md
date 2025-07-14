@@ -20,11 +20,11 @@ custom_css: true
   <div class="ctf-card">
     <h2>🌐 Site Navigation</h2>
     <div class="link-bubbles">
-      <a href="/notes" class="bubble main-bubble">Notes</a>
-<a href="/writeups" class="bubble main-bubble">Writeups</a>
-<a href="/resources" class="bubble main-bubble toolbox-bubble">Toolbox</a>
-<a href="/about" class="bubble main-bubble">About</a>
-<a href="/christ" class="bubble christ-bubble">My Christ's Journey</a>
+            <a href="/notes" class="bubble">Notes</a>
+      <a href="/writeups" class="bubble">Writeups</a>
+      <a href="/resources" class="bubble toolbox-bubble">Toolbox</a>
+      <a href="/about" class="bubble">About</a>
+      <a href="/christ" class="bubble christ-bubble">My Christ's Journey</a>
     </div>
   </div>
 
