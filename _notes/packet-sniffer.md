@@ -195,5 +195,5 @@ def main():
 - You can find the full code on my github(PRODIGY_CS_05).
 - I plan to deep dive on this, when i find time🙏.
 - This was the output: <br>
-[web-traffic](/assets/img/web-traffic.PNG)
+![web-traffic](/assets/img/web-traffic.PNG)
     
