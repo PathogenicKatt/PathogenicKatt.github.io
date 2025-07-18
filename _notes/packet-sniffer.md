@@ -194,4 +194,6 @@ def main():
     - N.B sniff(store=false), prevents memory overload.
 - You can find the full code on my github(PRODIGY_CS_05).
 - I plan to deep dive on this, when i find time🙏.
+- This was the output: <br>
+[web-traffic](/assets/img/web-traffic.PNG)
     
