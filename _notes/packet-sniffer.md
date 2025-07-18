@@ -120,6 +120,7 @@ date: 2025-07-15
 ## Code breakdown
 - Please allow me to say this, i have specifically targeted the packets from the website service, otherwise including other services is complex, it would take me some time to research more and make sure that i understand.
 - The code below is focused on HTTP/HTTPS ports.
+- It analyzes the packets from the websites you visited or visit as it is running, it won't show the name of the websites, because the https is blocking that, but there is a way bypass that restriction.
 - **Required modules**
 ```python
 from scapy.all import *
