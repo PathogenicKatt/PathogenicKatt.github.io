@@ -45,8 +45,8 @@ date: 2025-07-15
 - **Application Layer(5)** -> This layer holds the *actual data*.
     - HTTP Request
     - DNS queries
-    - Email messages
-### Tools
+    - Email messages <br>
+## Tools
 - Lastly please allow me to briefly talk about the tool used in analyzing the **network packets**.
 - The tool is called **Wireshark**, and it is a tool that is mostly recommended when analyzing or sniffing the messages sent between the source IP address and the destination IP address.
 - In CTF Challenges, we normaly get a file with a **.pcap** extention:
