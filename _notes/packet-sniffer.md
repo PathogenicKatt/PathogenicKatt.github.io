@@ -121,6 +121,10 @@ date: 2025-07-15
 - Please allow me to say this, i have specifically targeted the packets from the website service, otherwise including other services is complex, it would take me some time to research more and make sure that i understand.
 - The code below is focused on HTTP/HTTPS ports.
 - It analyzes the packets from the websites you visited or visit as it is running, it won't show the name of the websites, because the https is blocking that, but there is a way bypass that restriction.
+- This is gonna take your local ip address as the source and destination ip adress(website you visit or currently visiting).
+    - (TCP/IP protocol) and again, you will notice that the ip changes a little, now and then, that's because, the system, assigns it a different ip everytime you run the code.
+    - (TCP/IP Protocol) The ports as well, Every new connection requires a unique source port + destination port pair.
+- The output we get, is a list of how typical packets look like.
 - **Required modules**
 ```python
 from scapy.all import *
@@ -131,7 +135,7 @@ import socket
 - **Configuration section**
 ```python
 LOG_FILE = "web_visits.log"       
-PACKET_LIMIT = 50               
+PACKET_LIMIT = 30               
 DELAY_SECONDS = 2                 
 ```
     - Planning to store the packets to the `web_visits.log` file.
@@ -139,7 +143,6 @@ DELAY_SECONDS = 2
 - **The main function**
 ```python
 def log_visit(packet):
-    """Process and log web visits"""
     if not packet.haslayer(TCP) or not packet.haslayer(IP):
         return
     # --
