@@ -20,18 +20,18 @@ date: 2025-07-15
 
 ### The OSI Model and Packet Layers
 - I think it also important to include the **OSI(Open Systems Interconnection) model**, as it properly demostrate how the packet is encapsulated and what it carries.
-- **Physical Layer** -> This could be electrical signals or wireless transmission(basically how the packet travels from computer to another)
-- **Data Link Layer(Ethernet)** -> MAC address, local network delivery.
+- **Physical Layer(1)** -> This could be electrical signals or wireless transmission(basically how the packet travels from computer to another)
+- **Data Link Layer(Ethernet)(2)** -> MAC address, local network delivery.
     - Source/Destination MAC addresses.
     - Protocol type (IPv4,IPv6).
     - Quick Intro to **IPv4** & **IPv6**:
         - **IPv4** -> This is an old version of IP addresses, it uses 32-bit address and offers a little number of IP addresses(Not enough for the fast growing population and also not to mention that one person can own about 3 devices each with a unique ip address).
         - **IPv6** -> It was introduced to help the shortage of IP addresses from **IPv4**, as it uses 128-bit addresses, offering a siginificant large address space and it is much secure.
-- **Network Layer(IP)** -> Logical address routing
+- **Network Layer(IP)(3)** -> Logical address routing
     - Source/Destination IP addresses
     - Protocol(TCP,UDP,ICMP)
     - Time To Live(TTL)
-- **Transport Layer(TCP/UDP)** -> End-to-end communication
+- **Transport Layer(TCP/UDP)(4)** -> End-to-end communication
     - Source/Destination ports
     - Sequence numbers
     - Flags (SYN, ACK, etc)
@@ -42,7 +42,7 @@ date: 2025-07-15
     - Quick Intro to **TCP** & **UDP**:
         - **TCP(Transmission Control Protocol)** -> This one is *connection-oriented*, meaning it establishes a connection between sender and receiver before data transfer, and one example is *web browsing*. It ensure that no data is lost along the way.
         - **UDP(User Datagram Protocol)** -> Where as, UDP is *connectionless*, it sends data without establishing a prior connection, and a few examples are *online gaming* and *video streaming*. It is not reliable, as data can be lost, it is focused on in faster transmission.
-- **Application Layer** -> This layer holds the *actual data*.
+- **Application Layer(5)** -> This layer holds the *actual data*.
     - HTTP Request
     - DNS queries
     - Email messages
