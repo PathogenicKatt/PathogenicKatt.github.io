@@ -25,8 +25,8 @@ date: 2025-07-15
     - Source/Destination MAC addresses.
     - Protocol type (IPv4,IPv6).
     - Quick Intro to **IPv4** & **IPv6**:
-        - **IPv4** -> This is an old version of IP addresses, it uses 32-bit address and offers a little number of IP addresses(Not enough for the fast growing population and also not to mention that one person can own about 3 devices each with a unique ip address).
-        - **IPv6** -> It was introduced to help the shortage of IP addresses from **IPv4**, as it uses 128-bit addresses, offering a siginificant large address space and it is much secure. <br>
+    - **IPv4** -> This is an old version of IP addresses, it uses 32-bit address and offers a little number of IP addresses(Not enough for the fast growing population and also not to mention that one person can own about 3 devices each with a unique ip address).
+    - **IPv6** -> It was introduced to help the shortage of IP addresses from **IPv4**, as it uses 128-bit addresses, offering a siginificant large address space and it is much secure. <br>
 3. **Network Layer(IP)** -> Logical address routing
     - Source/Destination IP addresses
     - Protocol(TCP,UDP,ICMP)
@@ -35,13 +35,13 @@ date: 2025-07-15
     - Source/Destination ports
     - Sequence numbers
     - Flags (SYN, ACK, etc)
-        - "Three-way handshake"
-        - **SYN** - Synchronize(The client initiates a connection by sending a TCP segment with a SYN flag)
-        - **SYN-ACK** - The server responds with a TCP segment that has both the SYN and ACK flags set.
-        - **ACK** - Acknowledge(Lastly, the client sends a final TCP segment with the ACK flag set and this completes the "three-way handshake")
+    - "Three-way handshake"
+    - **SYN** - Synchronize(The client initiates a connection by sending a TCP segment with a SYN flag)
+    - **SYN-ACK** - The server responds with a TCP segment that has both the SYN and ACK flags set.
+    - **ACK** - Acknowledge(Lastly, the client sends a final TCP segment with the ACK flag set and this completes the "three-way handshake")
     - Quick Intro to **TCP** & **UDP**:
-        - **TCP(Transmission Control Protocol)** -> This one is *connection-oriented*, meaning it establishes a connection between sender and receiver before data transfer, and one example is *web browsing*. It ensure that no data is lost along the way.
-        - **UDP(User Datagram Protocol)** -> Where as, UDP is *connectionless*, it sends data without establishing a prior connection, and a few examples are *online gaming* and *video streaming*. It is not reliable, as data can be lost, it is focused on in faster transmission. <br>
+    - **TCP(Transmission Control Protocol)** -> This one is *connection-oriented*, meaning it establishes a connection between sender and receiver before data transfer, and one example is *web browsing*. It ensure that no data is lost along the way.
+    - **UDP(User Datagram Protocol)** -> Where as, UDP is *connectionless*, it sends data without establishing a prior connection, and a few examples are *online gaming* and *video streaming*. It is not reliable, as data can be lost, it is focused on in faster transmission. <br>
 5. **Application Layer** -> This layer holds the *actual data*.
     - HTTP Request
     - DNS queries
