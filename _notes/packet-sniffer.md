@@ -46,7 +46,7 @@ date: 2025-07-15
     - HTTP Request
     - DNS queries
     - Email messages
-## Tools
+### Tools
 - Lastly please allow me to briefly talk about the tool used in analyzing the **network packets**.
 - The tool is called **Wireshark**, and it is a tool that is mostly recommended when analyzing or sniffing the messages sent between the source IP address and the destination IP address.
 - In CTF Challenges, we normaly get a file with a **.pcap** extention:
@@ -120,12 +120,13 @@ date: 2025-07-15
 </table>
 
 ## Code breakdown
-- Please allow me to say this, i have specifically targeted the packets from the website service, otherwise including other services is complex, it would take me some time to research more and make sure that i understand.
+- Please allow me to say this, i have specifically targeted the packets from the website service, otherwise including other services is complex, it would take me some time to research more and make sure that i understand. Also, I tried to use the Windows NPCAP API, but i coulnd't, it did not want to work, which was very important for this task, but alternatively, i tried this approach.
 - The code below is focused on HTTP/HTTPS ports.
 - It analyzes the packets from the websites you visited or visit as it is running, it won't show the name of the websites, because the https is blocking that, but there is a way bypass that restriction.
 - This is gonna take your local ip address as the source and destination ip adress(website you visit or currently visiting).
     - (TCP/IP protocol) and again, you will notice that the ip changes a little, now and then, that's because, the system, assigns it a different ip everytime you run the code.
     - (TCP/IP Protocol) The ports as well, Every new connection requires a unique source port + destination port pair.
+- Also, make sure when you run the python file, you click yes for admin priviliges otherwise it won't run.
 - The output we get, is a list of how typical packets look like.
 - **Required modules**
 ```python
