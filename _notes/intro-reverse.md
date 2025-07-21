@@ -42,13 +42,13 @@ int doubleNumber(int b){
       <td>x86(32-bit)</td>
       <td>CISC</td>
       <td>Little</td>
-      <td>EAX,EBX</td>
+      <td>EAX,EBX,...</td>
     </tr>
     <tr>
       <td>x64(x86-64)</td>
       <td>CISC</td>
       <td>Little</td>
-      <td>RAX,RBX,..</td>
+      <td>RAX,RBX,...</td>
     </tr>
     <tr>
       <td>ARM(32/64)</td>
@@ -65,12 +65,9 @@ int doubleNumber(int b){
   </tbody>
 </table>
 - Why do these matter actually?
-1. **x86/x64**
-    - **pwnable** challenges(buffer overflows, ROP)
-2. **ARM**
-    - **Android Reverse Engineering** or **IoT devices**
-3. **MIPS**
-    - Appears in **router hacking** challenges.
+1. **x86/x64** - **pwnable** challenges(buffer overflows, ROP)
+2. **ARM** - **Android Reverse Engineering** or **IoT devices**
+3. **MIPS** - Appears in **router hacking** challenges.
 
 - Basically, the process is that a programmer writes the source code in **high-level language** -> Then the *compiler* will covert that the **high-level language** to **low-level language** -> Eventually, it will coverted to **assembly** and then lastly to **machine code(1's and 0's)**.
 
@@ -110,7 +107,7 @@ label name operands ;comment
 
 ## Some common Instructions
 - Here is a list of common instructions in the X86-64 instruction set.
-```x86
+```arm
 ; Take two numbers and add them
 MOV eax, 5
 MOV ebx, 3
@@ -122,7 +119,8 @@ ADD eax, ebx
 - `ADD` Then, we perform the ADD instruction that adds the two data points it is given.
     - `ADD Dest, Source`
 - One key takeaway is that, we did not use the `Labels`.
-- This just a quick introduction.
+- More instructions set: <br>
+![arm instruction](/assets/img/arm-instruction-set.png)
 
 ## Big Endian vs Little Endian
 - These are ways to store numbers or data in memory addresses.
