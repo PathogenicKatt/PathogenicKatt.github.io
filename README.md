@@ -1,4 +1,4 @@
-# 🕵️‍♂️ My CTF & Bible Study Knowledge Base
+# My CTF & Bible Study Knowledge Base
 
 ![GitHub Pages](https://img.shields.io/badge/Hosted_on-GitHub_Pages-blue.svg)
 ![Jekyll](https://img.shields.io/badge/Powered_by-Jekyll-red.svg)
@@ -6,27 +6,26 @@
 
 Welcome to my personal knowledge base! Here I document my cybersecurity journey, CTF writeups, technical notes, and Bible study reflections. This site is built to help me (and others) learn, grow, and share knowledge in both technical and spiritual domains.
 
-🔗 **Live Site:** [https://pathogenickatt.github.io](https://pathogenickatt.github.io)
+**Live Site:** [https://pathogenickatt.github.io](https://pathogenickatt.github.io)
 
 ---
 
-## ✨ Features
+## Features
 
-### 🗂️ Core Sections
+### Core Sections
 - **Writeups Hub:** Filterable CTF solutions by difficulty (Easy/Medium/Hard)
 - **Knowledge Base:** Searchable technical notes with tags
 - **Resource Toolbox:** Curated cybersecurity tools and resources
 - **Bible Study:** Reflections and notes on scripture, faith, and Christian living
 - **Dark/Light Mode:** Automatic system preference detection
 
-### ⚡ Technical Highlights
+### Technical Highlights
 - **Advanced Search:** Real-time filtering for notes and writeups
 - **Developer Experience:** Code copy buttons, zoomable screenshots, syntax-highlighted code blocks
 - **Responsive Design:** Works on desktop and mobile
 
----
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 - **Framework:** Jekyll (Ruby)
 - **Frontend:** HTML5, CSS3, JavaScript
@@ -36,11 +35,9 @@ Welcome to my personal knowledge base! Here I document my cybersecurity journey,
   - Highlight.js (Code syntax)
   - Font Awesome (Icons)
 
----
+## Getting Started
 
-## 🚀 Getting Started
-
-### 💻 Local Development
+### Local Development
 
 ```bash
 # Install dependencies
@@ -55,7 +52,7 @@ JEKYLL_ENV=production bundle exec jekyll build
 
 ---
 
-## 📁 Main Sections
+## Main Sections
 
 - **Home:** Overview, navigation, recent activity, and focus areas
 - **Notes:** Technical notes with search and tags
@@ -66,14 +63,14 @@ JEKYLL_ENV=production bundle exec jekyll build
 
 ---
 
-## 🙏 Bible Study
+## Bible Study
 
 This site also features a growing collection of Bible study notes, including reflections on prayer, faith, unity, and Christian living. Example:  
 - [Walking In Spirit](./_biblestudy/2025-06-04-Walking-in-Spirit.md)
 
 ---
 
-## 📬 Connect
+## Connect
 
 - [GitHub](https://github.com/PathogenicKatt)
 - [Email](mailto:katlehom814@gmail.com)

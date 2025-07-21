@@ -7,7 +7,7 @@ custom_css: true
 
 <div class="about-container">
   <section class="about-header">
-    <h1> Hi, I'm Katleho 🙋‍♂️</h1>
+    <h1> Hi, I'm Katleho</h1>
     <p class="subtitle">BSc Computer Science & Mathematics | CTF Player | Security Researcher</p>
   </section>
 

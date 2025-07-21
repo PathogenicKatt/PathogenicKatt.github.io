@@ -18,7 +18,7 @@ custom_css: true
 </div>
 
   <div class="ctf-card">
-    <h2>🌐 Site Navigation</h2>
+    <h2>Site Navigation</h2>
     <div class="link-bubbles">
             <a href="/notes" class="bubble">Notes</a>
       <a href="/writeups" class="bubble">Writeups</a>
