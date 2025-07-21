@@ -8,8 +8,6 @@ Welcome to my personal knowledge base! Here I document my cybersecurity journey,
 
 **Live Site:** [https://pathogenickatt.github.io](https://pathogenickatt.github.io)
 
----
-
 ## Features
 
 ### Core Sections
@@ -23,7 +21,6 @@ Welcome to my personal knowledge base! Here I document my cybersecurity journey,
 - **Advanced Search:** Real-time filtering for notes and writeups
 - **Developer Experience:** Code copy buttons, zoomable screenshots, syntax-highlighted code blocks
 - **Responsive Design:** Works on desktop and mobile
-
 
 ## Tech Stack
 
@@ -50,8 +47,6 @@ bundle exec jekyll serve --livereload
 JEKYLL_ENV=production bundle exec jekyll build
 ```
 
----
-
 ## Main Sections
 
 - **Home:** Overview, navigation, recent activity, and focus areas
@@ -61,18 +56,12 @@ JEKYLL_ENV=production bundle exec jekyll build
 - **Bible Study:** Bible study notes and reflections (see `_biblestudy/`)
 - **About:** Contact and background information
 
----
-
 ## Bible Study
 
 This site also features a growing collection of Bible study notes, including reflections on prayer, faith, unity, and Christian living. Example:  
 - [Walking In Spirit](./_biblestudy/2025-06-04-Walking-in-Spirit.md)
 
----
-
 ## Connect
-
-- [GitHub](https://github.com/PathogenicKatt)
 - [Email](mailto:katlehom814@gmail.com)
 - [CTFTime Profile](https://ctftime.org/profile/PathogenicKatt)
 
