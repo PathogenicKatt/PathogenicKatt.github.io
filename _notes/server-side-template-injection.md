@@ -16,7 +16,7 @@ date: 2025-07-22
     - Data exfiltration
 
 ## Popular Template Engines
-- **Jinja2** (Python/Flask): Uses `{{ }}` and `{% %}` syntax.
+- **Jinja2** (Python/Flask): Uses `{{ }}` syntax.
 - **Twig** (PHP) Inspired by Jinja, used in Symfony and Drupal.
 - **Thymeleaf** (Java) Used with Spring, integrates well with HTML5: uses `${ }` syntax.
 - **Handlebars** (JavaScript): Focuses on logic-less templates.
