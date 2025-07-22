@@ -2,7 +2,7 @@
 layout: note
 title: "Server Side Template Injection(SSTI)"
 description: "user input is improperly embedded in a server-side template"
-tags: [web, rev, mobile-hacking, template]
+tags: [rev, mobile-hacking, template]
 date: 2025-07-22
 ---
 
