@@ -2,11 +2,11 @@
 layout: note
 title: "Server Side Template Injection(SSTI)"
 description: "user input is improperly embedded in a server-side template"
-tags: [rev, mobile-hacking, template]
+tags: [input, web, template, tplmap]
 date: 2025-07-22
 ---
 
-# Server Side Templaerte Injection(SSTI)
+# Server Side Template Injection(SSTI)
 - Server-side template injection is when an attacker is able to use native template syntax to inject a malicious payload into a template, which is then executed server-side. 
 - **In simple**: SSTI occurs when user input is improperly handled in server-rendered templates, allowing attackers to execute arbitrary code on the server.
 - *At the severe end of the scale, an attacker can potentially achieve remote code execution, taking full control of the back-end server and using it to perform other attacks on internal infrastructure.* 
