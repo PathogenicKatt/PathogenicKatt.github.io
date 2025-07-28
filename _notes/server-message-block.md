@@ -7,7 +7,7 @@ date: 2025-07-25
 ---
 
 # Server Message Block(SMB)
-- The Server Message Block (SMB) protocol is a client-server communication protocol used for sharing access to files, printers, serial ports and other resources on a network.<br>
+- The Server Message Block (SMB) protocol is a client-server communication protocol used for sharing access to files, printers, serial ports and other resources on a network.
 ![smb](/assets/img/smb.png){: .writeup-image }
 
 - **SMB** a crucial protocol in Windows environments.
