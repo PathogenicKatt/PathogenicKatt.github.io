@@ -1096,11 +1096,7 @@ html, body {
 body, html {
   transition: none !important;
 }
-/* Writeup image zoom */
-.writeup-content img {
-  transition: transform 0.3s cubic-bezier(.4,0,.2,1);
-  cursor: zoom-in;
-}
+
 
 .writeup-content img:hover {
   transform: scale(1.08);
