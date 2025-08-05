@@ -5,7 +5,7 @@ description: "This service provides you an encrypted flag. Can you decrypt it wi
 difficulty: easy
 event: "PicoCTF"
 tags: [crypto, asymmetric, rsa]
-date: 2025-06-09
+date: 2025-08-02
 ---
 
 ## Challenge Overview:
