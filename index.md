@@ -56,7 +56,7 @@ custom_css: true
       <li>
         <strong>Mobile Security</strong>
         <ul class="arrow-list">
-          <li>Assessing and exploiting security flaws in Android-for now.</li>
+          <li>Assessing and exploiting security flaws in Android.</li>
         </ul>
       </li>
         <br>

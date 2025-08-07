@@ -7,15 +7,7 @@ data_page: tools
 <div class="terminal-header">
   <span class="prompt">$</span> <span class="cmd">cat burp-suite.md</span>
 </div>
-
-
-
 # <span style="font-family: 'Fira Mono', monospace;">Burp Suite</span>
-
-<div class="hacker-intro">
-  <p>Hello, <span class="hacker-green">welcome</span><br>
-  <span class="hacker-blink">_</span></p>
-</div>
 
 <div class="resource-card">
   <h2>Web Exploitation Tool</h2>

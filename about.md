@@ -8,13 +8,13 @@ custom_css: true
 <div class="about-container">
   <section class="about-header">
     <h1> Hi, I'm Katleho</h1>
-    <p class="subtitle">BSc Computer Science & Mathematics | CTF Player | Security Researcher</p>
+    <p class="subtitle"> CTF Player | Security Researcher</p>
   </section>
 
   <div class="about-grid">
     <section class="about-card">
       <h2>Academic Journey</h2>
-      <p>My cybersecurity journey began in 2022 while studying <strong>ICT at University of Mpumalanga (UMP)</strong>. Seeking deeper technical challenges, I transferred to <strong>North West University (NWU)</strong> in 2023 to pursue Computer Science and Mathematics.</p>
+      <p>My Cybersecurity journey began in 2022 while studying, <strong>Bachelor in Information & Communication Technology(BICT)</strong> at  University of Mpumalanga (UMP). Seeking deeper technical challenges, I transferred to North West University (NWU) in 2023 to pursue <strong>Bsc with Computer Science and Mathematics.</strong></p>
       
       <p>Though NWU doesn't offer formal cybersecurity courses, their participation in the <strong> SANReN CTF </strong> program became my hands-on training ground. This exclusive competition (not available at UMP) ignited my passion for security research.</p>
       
@@ -27,16 +27,14 @@ custom_css: true
     <section class="about-card">
       <h2>CTF Experience</h2>
       <ul class="ctf-skills">
-        <li>Regular competitor on <a href="https://www.csc.ac.za/" target="_blank" rel="noopener noreferrer">CTFtime</a> events</li>
-        <li>Focused in <strong>reverse engineering</strong> and <strong>web security</strong></li>
-        <li>Little experience with <strong>Microcorruption</strong> embedded systems</li>
+        <li>Regular competitor on <a href="https://www.csc.ac.za/" target="_blank" rel="noopener noreferrer">CTFtime</a> events.</li>
+        <br>
+        <li>My focus area lies mostly in <strong><i>reverse engineering</i></strong> and <strong><i>web exploitation.</i></strong></li>
+        <br>
+        <li>My learning is supported by hands on practice on platforms like TryHackMe, HackTheBox, OverTheWire, PicoCTF and a few ethical hacking books like (<i>Linux Basics for Hackers</i>).</li>
+        <br>
         <li>Currently Preparing for <strong>National CTF 2025</strong>: <a href="https://www.csc.ac.za/" target="_blank" rel="noopener noreferrer">SANReN CTF</a></li>
       </ul>
-      <div class="ctf-logos">
-        <img src="{{ '/assets/img/pico.png' | relative_url }}" alt="PicoCTF" loading="lazy">
-        <img src="{{ '/assets/img/htb.png' | relative_url }}" alt="HackTheBox" loading="lazy">
-        <img src="{{ '/assets/img/otw.png' | relative_url }}" alt="OverTheWire" loading="lazy">
-      </div>
     </section>
 
     <section class="about-card">
