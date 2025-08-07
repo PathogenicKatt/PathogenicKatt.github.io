@@ -55,7 +55,6 @@ JEKYLL_ENV=production bundle exec jekyll build
 - **Bible Study:** Bible study notes and reflections
 - **About Me:** Contact and background information
 
-## Connect
-- [Email](mailto:katlehom814@gmail.com)
+
 
 > _"An investment in knowledge pays the best interest."_ — Benjamin Franklin
