@@ -120,10 +120,3 @@ custom_css: true
     </a>
   </div>
 </div>
-
-
-<div class="ctf-badge">
-  <a href="https://ctftime.org/profile/PathogenicKatt" target="_blank" rel="noopener noreferrer">
-    <img src="https://img.shields.io/badge/CTFTime-Profile-blue?style=for-the-badge" alt="CTFTime Profile">
-  </a>
-</div>
