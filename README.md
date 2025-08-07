@@ -52,18 +52,10 @@ JEKYLL_ENV=production bundle exec jekyll build
 - **Notes:** Technical notes with search and tags
 - **Writeups:** CTF solutions, filterable by difficulty
 - **Resources:** Toolbox of useful links and tools
-- **Bible Study:** Bible study notes and reflections (see `_biblestudy/`)
-- **About:** Contact and background information
-
-## Bible Study
-
-This site also features a growing collection of Bible study notes, including reflections on prayer, faith, unity, and Christian living. Example:  
-- [Walking In Spirit](./_biblestudy/2025-06-04-Walking-in-Spirit.md)
+- **Bible Study:** Bible study notes and reflections
+- **About Me:** Contact and background information
 
 ## Connect
 - [Email](mailto:katlehom814@gmail.com)
-- [CTFTime Profile](https://ctftime.org/profile/PathogenicKatt)
 
----
-
-> _“But seek first his kingdom and his righteousness, and all these things will be given to you as well.”_ — Matthew 6:33
+> _"An investment in knowledge pays the best interest."_ — Benjamin Franklin
