@@ -2,7 +2,6 @@
 
 ![GitHub Pages](https://img.shields.io/badge/Hosted_on-GitHub_Pages-blue.svg)
 ![Jekyll](https://img.shields.io/badge/Powered_by-Jekyll-red.svg)
-![Theme](https://img.shields.io/badge/Theme-Dark/Light-ff69b4.svg)
 
 Welcome to my personal knowledge base! Here I document my cybersecurity journey, CTF writeups, technical notes, and Bible study reflections. This site is built to help me (and others) learn, grow, and share knowledge in both technical and spiritual domains.
 
