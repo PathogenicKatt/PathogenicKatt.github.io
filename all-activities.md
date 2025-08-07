@@ -4,7 +4,7 @@ title: "All Activities"
 permalink: /all-activities/
 ---
 
-<h1>🗂️ All Activities</h1>
+<h1>All Activities</h1>
 <div class="post-feed">
   {% for post in site.posts %}
     <article class="post-preview">
