@@ -109,14 +109,3 @@ custom_css: true
 </div>
 
 
-<div class="about-card">
-  <h2>Connect</h2>
-  <div class="social-links">
-    <a href="https://github.com/PathogenicKatt" class="social-link github" target="_blank" rel="noopener noreferrer">
-      <i class="fab fa-github"></i> GitHub
-    </a>
-    <a href="mailto:katlehom814@gmail.com" class="social-link email">
-      <i class="fas fa-envelope"></i> Email
-    </a>
-  </div>
-</div>
