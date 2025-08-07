@@ -26,19 +26,18 @@ custom_css: true
 
     <section class="about-card">
       <h2>CTF Experience</h2>
+      <ul class="ctf-skills">
+        <li>Regular competitor on <a href="https://www.csc.ac.za/" target="_blank" rel="noopener noreferrer">CTFtime</a> events</li>
+        <li>Focused in <strong>reverse engineering</strong> and <strong>web security</strong></li>
+        <li>Little experience with <strong>Microcorruption</strong> embedded systems</li>
+        <li>Currently Preparing for <strong>National CTF 2025</strong>: <a href="https://www.csc.ac.za/" target="_blank" rel="noopener noreferrer">SANReN CTF</a></li>
+      </ul>
       <div class="ctf-logos">
         <img src="{{ '/assets/img/pico.png' | relative_url }}" alt="PicoCTF" loading="lazy">
         <img src="{{ '/assets/img/htb.png' | relative_url }}" alt="HackTheBox" loading="lazy">
         <img src="{{ '/assets/img/otw.png' | relative_url }}" alt="OverTheWire" loading="lazy">
       </div>
-      <ul class="ctf-skills">
-        <li>Regular competitor on <a href="https://www.csc.ac.za/" target="_blank" rel="noopener noreferrer">CTFtime</a> events</li>
-        <li>Specializing in <strong>forensics</strong> and <strong>web security</strong></li>
-        <li>Little experience with <strong>Microcorruption</strong> embedded systems</li>
-        <li>Currently Preparing for <strong>National CTF 2025</strong>: <a href="https://www.csc.ac.za/" target="_blank" rel="noopener noreferrer">SANReN CTF</a></li>
-      </ul>
     </section>
-
 
     <section class="about-card">
       <h2>Technical Skills</h2>
@@ -47,16 +46,15 @@ custom_css: true
         <span>C</span>
         <span>C++</span>
         <span>Java</span>
+        <span>SQL</span>
+        <span>Assembly</span>
         <span>Web Exploitation</span>
         <span>Reverse Engineering</span>
         <span>Cryptography</span>
-        <span>Linux</span>
         <span>Forensics</span>
-        <span>SQL</span>
-        <span>Assembly(x86)</span>
+        <span>Linux</span>
         <span>Git</span>
-
-
+        <span>Cloud Computing(Azure)</span>
       </div>
       
     </section>
