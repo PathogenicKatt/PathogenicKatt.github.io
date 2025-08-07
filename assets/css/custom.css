@@ -971,6 +971,10 @@ body[data-page="christ"] .top-nav-container .theme-button {
 .social-link.github { background: #333; }
 .social-link.ctftime { background: #4b6cb3; }
 .social-link.email { background: #d44638; }
+.social-link.linkedin {
+  background: #0077b5;
+  color: #fff !important;
+}
 .social-link {
   border: none !important;
 }

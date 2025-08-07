@@ -74,6 +74,9 @@ custom_css: true
         <a href="mailto:katlehom814@gmai.com" class="social-link email">
           <i class="fas fa-envelope"></i> Email
         </a>
+        <a href="www.linkedin.com/in/katleho-mofokeng" class="social-link linkedin" target="_blank" rel="noopener noreferrer">
+          <i class="fab fa-linkedin"></i> LinkedIn
+        </a>
       </div>
     </section>
  
