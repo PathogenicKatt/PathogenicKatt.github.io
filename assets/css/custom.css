@@ -68,6 +68,9 @@ pre, code {
   -webkit-backdrop-filter: blur(8px);
   backdrop-filter: blur(8px);
 }
+.ctf-card {
+  margin-bottom: 1.6rem; 
+}
 
 .ctf-card:hover,
 .about-card:hover,
@@ -106,15 +109,6 @@ pre, code {
   gap: 0.5em;
 }
 
-
-.social-link.github,
-.social-link.ctftime,
-.social-link.email {
-  background: linear-gradient(90deg, var(--accent) 0%, var(--accent-dark) 100%) !important;
-  color: #fff !important;
-  border: 2px solid var(--accent-dark) !important;
-}
-
 /* Unified Hover Effect */
 .bubble:hover,
 .nav-button:hover,
@@ -142,7 +136,6 @@ pre, code {
 [data-theme="dark"] .bubble,
 [data-theme="dark"] .nav-button,
 [data-theme="dark"] .theme-toggle,
-[data-theme="dark"] .social-link,
 [data-theme="dark"] .back-link {
   background: linear-gradient(90deg, var(--accent) 0%, var(--accent-dark) 100%);
   color: #fff !important;
@@ -973,10 +966,14 @@ body[data-page="christ"] .top-nav-container .theme-button {
 }
 
 
+
 /* Social Links */
 .social-link.github { background: #333; }
 .social-link.ctftime { background: #4b6cb3; }
 .social-link.email { background: #d44638; }
+.social-link {
+  border: none !important;
+}
 
 /* Responsive Adjustments */
 @media (max-width: 768px) {
@@ -1034,6 +1031,7 @@ html, body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  margin-bottom: 3rem;
 }
 
 

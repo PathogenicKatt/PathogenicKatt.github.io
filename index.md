@@ -104,7 +104,7 @@ custom_css: true
   {% endfor %}
 </div>
 
-<div style="text-align:left; margin-top:1.5rem;">
+<div style="text-align:left; margin-top:0.3rem; margin-bottom:3rem;">
   <a href="/all-activities/" class="bubble" style="font-size:0.8rem;">View All Posts →</a>
 </div>
 
