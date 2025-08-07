@@ -78,6 +78,45 @@ pre, code {
   transform: translateY(-5px);
   box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
 }
+.note-preview {
+  display: block;
+  background: var(--card-bg);
+  border-left: 4px solid var(--accent);
+  border-radius: 10px;
+  margin-bottom: 1.5rem;
+  padding: 1.2rem 1.2rem 1.2rem 1.5rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  transition: 
+    background 0.2s,
+    box-shadow 0.2s,
+    transform 0.18s;
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+.note-preview h3 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  color: var(--accent);
+  font-size: 1.25rem;
+}
+
+.note-preview p {
+  margin: 0 0 0.7rem 0;
+  color: var(--text-color);
+  opacity: 0.92;
+}
+
+.note-preview .note-tags {
+  margin-top: 0.5rem;
+}
+
+.note-preview:hover {
+  background: rgba(78, 205, 196, 0.09);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.10);
+  transform: translateY(-3px) scale(1.02);
+  text-decoration: none;
+}
 
 
 .bubble,
@@ -201,7 +240,9 @@ pre, code {
   max-width: 1200px;
   margin: 2rem auto;
   padding: 0 1.5rem;
+
 }
+
 
 .about-grid,
 .notes-grid {
@@ -209,6 +250,7 @@ pre, code {
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 1.5rem;           
   margin: 1.5rem 0;    
+
 }
 
 /* Lists */

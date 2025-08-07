@@ -11,7 +11,7 @@ custom_css: true
  
 
 <div class="ctf-card christ-card">
-  <h2 style="color:#434190;">📖 Bible Study Notes</h2>
+  <h2 style="color:#434190;">Bible Study Notes</h2>
   <div class="biblestudy-grid">
     {% for study in site.biblestudy reversed %}
       <div class="biblestudy-card">

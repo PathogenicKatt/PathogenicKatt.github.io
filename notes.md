@@ -6,7 +6,7 @@ custom_css: true
 ---
 
 <div class="notes-header">
-  <h1>Notes 📖</h1>
+  <h1>Notes</h1>
   <p class="subtitle">"An investment in knowledge pays the best interest." - <strong>Benjamin Franklin</strong> </p>
 </div>
 
@@ -16,7 +16,7 @@ custom_css: true
 
 <div class="notes-grid">
   {% for note in site.notes %}
-    <a href="{{ note.url }}" class="note-card">
+    <a href="{{ note.url }}" class="note-preview">
       <h3>{{ note.title }}</h3>
       <p>{{ note.description }}</p>
       <div class="note-tags">
