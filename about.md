@@ -71,10 +71,10 @@ custom_css: true
         <a href="https://ctftime.org/profile/PathogenicKatt" class="social-link ctftime" target="_blank" rel="noopener noreferrer">
           <i class="fas fa-flag"></i> CTFTime
         </a>
-        <a href="mailto:katlehom814@gmai.com" class="social-link email">
+        <a href="mailto:katlehom814@gmail.com" class="social-link email">
           <i class="fas fa-envelope"></i> Email
         </a>
-        <a href="www.linkedin.com/in/katleho-mofokeng" class="social-link linkedin" target="_blank" rel="noopener noreferrer">
+        <a href="https://www.linkedin.com/in/katleho-mofokeng" class="social-link linkedin" target="_blank" rel="noopener noreferrer">
           <i class="fab fa-linkedin"></i> LinkedIn
         </a>
       </div>
