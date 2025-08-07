@@ -11,8 +11,11 @@ data_page: resources
 # <span style="font-family: 'Fira Mono', monospace;">CTF Resources & Tools</span>
 
 <div class="hacker-intro">
-  <p> <span class="hacker-green">Welcome</span>! to my personal arsenal of tools for CTFs.<br>
-  <span class="hacker-blink">_</span></p>
+  <p>
+    <span class="hacker-green">Welcome</span>! "Every great hacker starts with curiosity and the right tools".<br>
+    <strong>Sharpen your skills, embrace the challenge, and remember, every solved problem brings you closer to mastery.</strong><br>
+    <span class="hacker-blink">Keep pushing. Time is ticking!</span>
+  </p>
 </div>
 
 <div class="resources-grid">
