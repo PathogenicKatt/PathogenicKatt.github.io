@@ -1006,6 +1006,122 @@ body[data-page="christ"] .top-nav-container .theme-button {
     padding: 0;
   }
 }
+/* Resources Grid */
+.resources-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  gap: 2rem;
+  margin: 2.5rem 0;
+  align-items: stretch;
+}
+
+/* Resource Card */
+.resource-card {
+  background: var(--card-bg);
+  border: var(--card-border);
+  border-radius: 14px;
+  box-shadow: var(--card-shadow);
+  padding: 2rem 1.5rem 1.5rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  min-height: 220px;
+  transition: 
+    box-shadow 0.22s,
+    transform 0.18s,
+    border 0.18s;
+  position: relative;
+}
+
+.resource-card h2 {
+  font-family: 'Fira Code', 'Fira Mono', monospace;
+  font-size: 1.3rem;
+  color: var(--accent-dark);
+  margin-top: 0;
+  margin-bottom: 1.2rem;
+  letter-spacing: 0.01em;
+}
+
+.resource-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.resource-card li {
+  margin-bottom: 0.7rem;
+}
+
+.resource-card a {
+  color:#245a3b;
+  font-weight: 500;
+  font-family: 'Fira Mono', monospace;
+  transition: color 0.18s;
+  border-bottom: 1px dashed ;
+  padding-bottom: 2px;
+}
+
+.resource-card a:hover {
+  color: var(--accent-dark);
+  border-bottom: 1px solid var(--accent-dark);
+  text-decoration: none;
+}
+
+/* Subtle hover effect for card */
+.resource-card:hover {
+  box-shadow: 0 8px 32px var(--accent-dark)22;
+  transform: translateY(-4px) scale(1.02);
+  border-color: var(--accent);
+}
+
+/* Terminal header styling */
+.terminal-header {
+  background: #232526;
+  color: #b2f5ea;
+  font-family: 'Fira Mono', monospace;
+  padding: 0.7rem 1.2rem;
+  border-radius: 8px 8px 0 0;
+  margin-bottom: 1.2rem;
+  font-size: 1.08rem;
+  letter-spacing: 0.01em;
+  display: flex;
+  align-items: center;
+  gap: 0.7em;
+}
+
+.terminal-header .prompt {
+  color: #4ecdc4;
+  font-weight: bold;
+}
+
+.terminal-header .cmd {
+  color: #fff;
+  font-weight: 500;
+}
+
+/* Hacker intro styling */
+.hacker-intro {
+  background: var(--card-bg);
+  border-radius: 8px;
+  padding: 1.2rem 1.5rem;
+  margin-bottom: 2rem;
+  font-size: 1.08rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  font-family: 'Fira Mono', monospace;
+}
+
+.hacker-green {
+  color: #4ecdc4;
+  font-weight: bold;
+}
+
+.hacker-blink {
+  animation: blink 1.2s steps(2, start) infinite;
+}
+
+@keyframes blink {
+  to { opacity: 0; }
+}
 
 
 
