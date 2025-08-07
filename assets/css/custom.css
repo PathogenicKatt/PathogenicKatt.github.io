@@ -736,6 +736,19 @@ pre, code {
   background: #ebf8ff;
   color: #434190 !important;
 }
+[data-theme="dark"] .christ-bubble {
+  background: linear-gradient(90deg, var(--accent) 0%, var(--accent-dark) 100%) !important; /* red gradient */
+  color: #181818 !important; /* black text */
+  font-weight: bold;
+  border: 2px solid var(--accent-dark) !important;
+}
+[data-theme="dark"] .christ-bubble:hover {
+  background: #ffb3b3 !important; /* lighter red for hover */
+  color: #181818 !important;
+  box-shadow: 0 0 16px var(--accent)88;
+  border-color: var(--accent-dark) !important;
+  transform: scale(1.06);
+}
 
 /* Bible Study Grid Styles */
 .biblestudy-grid {
@@ -1107,5 +1120,6 @@ body, html {
   z-index: 10;
   box-shadow: 0 8px 32px rgba(0,0,0,0.18);
 }
+
 
 
