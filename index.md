@@ -63,7 +63,7 @@ custom_css: true
       <li>
         <strong>Binary Exploitation</strong>
         <ul class="arrow-list">
-          <li>Exploiting memory corruption bugs (like buffer overflows) in compiled programs to gain control or leak data.</li>
+          <li>Exploiting memory corruption bugs (like <i>buffer overflows</i>) in compiled programs to gain control or leak data.</li>
         </ul>
       </li>
         <br>
@@ -83,7 +83,7 @@ custom_css: true
     <li>
       <strong>Forensics</strong>
       <ul class="arrow-list">
-        <li>Deep dive in memory particularly <strong>disk imaging</strong>.</li>
+        <li>Deep dive in memory particularly <strong><i>disk imaging</i></strong>.</li>
       </ul>
       <ul class="arrow-list">
         <li>Resources like <a href="https://trailofbits.github.io/ctf/forensics/index.html">trail of bits</a> and <a href="https://ctf101.org/forensics/what-is-disk-imaging/"> ctf101</a> are my primary resources. 
