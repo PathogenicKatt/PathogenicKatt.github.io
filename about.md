@@ -8,7 +8,7 @@ custom_css: true
 <div class="about-container">
   <section class="about-header">
     <h1> Hi, I'm Katleho</h1>
-    <p class="subtitle"> CTF Player | Security Researcher</p>
+    <p class="subtitle"> CTF Player | Artificial Intelligence & Cybersecurity Researcher</p>
   </section>
 
   <div class="about-grid">
