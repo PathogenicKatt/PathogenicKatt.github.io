@@ -12,8 +12,8 @@ custom_css: true
   <h1 style="text-align: center;">
      Cybersecurity & Purposeful Living 
   </h1>
-  <p class="subtitle" style="text-align: center;">
-    "Exploring digital defense, ethical hacking, and wisdom for personal skills, and the spirit."
+  <p class="subtitle" style="text-align: center;"><i>
+    "Exploring digital defense, ethical hacking, and wisdom for personal skills, and the spirit."</i>
   </p>
 </div>
 
