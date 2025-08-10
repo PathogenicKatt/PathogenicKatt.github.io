@@ -6,8 +6,8 @@ custom_css: true
 ---
 
 <div class="writeups-header">
-  <h1>CTF Writeups 🚩</h1>
-  <p class="subtitle">"The flag was there all along..."-<strong>myself</strong>😆</p>
+  <h1>CTF Writeups</h1>
+  <p class="subtitle"><it>"Where curiosity meets the solution."</it>-<strong>myself</strong></p>
 </div>
 
 <div class="writeups-search">
