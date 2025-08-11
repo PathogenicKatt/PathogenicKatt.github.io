@@ -36,13 +36,13 @@ _Allow God to infilitrate within you and he will share his heart with you. He wi
 _Through the story of Joseph and Gideon_
 - **Joseph**
     - **Genesis 37:28**-*"and when some Midianite traders came by, the brothers pulled Joseph out of the well and sold him for twenty pieces of silver to the Ishmaelites, who took him to Egypt"*
-    - **Context** -> Joseph's bothers sold him to slavery.
+    - **Context** -> Joseph's brothers sold him to slavery.
 
     - **Genesis 39:16-20**-*"She kept Joseph's cloak beside her until his master came home. Then she told him this story: 'That Hebrew slave you brought us came to me to make sport of me. But as soon as i screamed for help, he left his cloak beside me and ran out of the house'. When his Master heard the story his wife tolf him, saying, 'This is how your slave treated me,' he burned with anger. Joseph's Master took him and put him in prison, the place where the King's prisoners were confined."* 
     - **Context**-> Because Joseph refused to sleep with her(King's wife), She falsely accused Joseph, and made him to be *unjustly imprisoned*. 
 
     - **Genesis 40:23**-*"The chief cupbearer, however, did not remember Joseph; he forgot him"*
-    - **Context** -> So Joseph has a gift to interpret dreams, and when the two prisoners who had different dreams, Joseph interpreted them, and the dreams was about them being released from the prison, but Jospeh asked the chief cupbearer to remember him, when he is released, that he should let the King know that he was falsey imprisoned, but the cup bearer when he was released, he literally forgot Joseph.
+    - **Context** -> So Joseph has a gift to interpret dreams, and when the two prisoners who had different dreams, Joseph interpreted them, and the dreams was about them being released from the prison, but Joseph asked the chief cupbearer to remember him, when he is released, that he should let the King know that he was falsey imprisoned, but the cup bearer when he was released, he literally forgot Joseph.
 
     - **Reflection** <br>
     -> Joseph speaking to his brothers: **Genesis 50:19** - *"But Joseph said to them, 'Don't be afraid. Am i in the place of God? You intended to harm me, but God intended it for good to accomplish what is now being done, the saving of many lives. So then, don't be afraid. I will provide for you and your children.' And he reassured them and spoke to kindly to them"* <br>
