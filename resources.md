@@ -12,7 +12,7 @@ data_page: resources
 
 <div class="hacker-intro">
   <p>
-    <span class="hacker-green">Welcome</span>! "Every great hacker starts with curiosity and the right tools".<br>
+    <span class="hacker-green">Hii</span>! "Every great hacker starts with curiosity and the right tools".<br>
     <strong>Sharpen your skills, embrace the challenge, and remember, every solved problem brings you closer to mastery.</strong><br>
     <span class="hacker-blink">Keep pushing. Time is ticking!</span>
   </p>
@@ -22,37 +22,37 @@ data_page: resources
 
   <div class="resource-card">
     <h2>Web Exploitation</h2>
-    <ul>
-      <li><a href="/tools/burp-suite">Burp Suite</a></li>
-      <li><a href="./tools/ffuf.md">ffuf</a></li>
-      <li><a href="./tools/sqlmap.md">SQLMap</a></li>
-    </ul>
+    <li><a href="/tools/burp-suite">Burp Suite</a></li>
+    <li><a href="./tools/ffuf">ffuf</a></li>
+    <li><a href="./tools/sqlmap">SQLMap</a></li>
   </div>
 
   <div class="resource-card">
     <h2>Forensics</h2>
-    <ul>
-      <li><a href="./tools/binwalk.md">binwalk</a></li>
-      <li><a href="./tools/foremost.md">foremost</a></li>
-    </ul>
+    <li><a href="./tools/binwalk">binwalk</a></li>
+    <li><a href="./tools/foremost">foremost</a></li>
   </div>
 
   <div class="resource-card">
     <h2>Cryptography</h2>
-    <ul>
-      <li><a href="./tools/cyberchef.md">CyberChef</a></li>
-      <li><a href="./tools/hashcat.md">hashcat</a></li>
-    </ul>
+    <li><a href="./tools/cyberchef">CyberChef</a></li>
+    <li><a href="./tools/hashcat">hashcat</a></li>
   </div>
+
   <div class="resource-card">
     <h2>Reverse Engineering</h2>
-    <ul>
-      <li><a href="./tools/angr.md">angr</a></li>
-    </ul>
+    <li><a href="./tools/angr">angr</a></li>
   </div>
+
   <div class="resource-card">
     <h2>Open Source Intelligence</h2>
   </div>
+
+  <div class="resource-card">
+    <h2>Mobile Hacking</h2>
+    <li><a href="./tools/frida">Frida</a></li>
+  </div>
+
   <div class="resource-card">
     <h2>Attack & Defend</h2>
   </div>

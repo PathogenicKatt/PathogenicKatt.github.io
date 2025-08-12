@@ -8,10 +8,9 @@ data_page: tools
   <span class="prompt">$</span> <span class="cmd">cat angr.md</span>
 </div>
 # <span style="font-family: 'Fira Mono', monospace;">Angr</span>
-
+  <p>The angr python framework, is used along with <strong>claripy</strong> which is <i>"angr's constraint solver".</i></p>
 <div class="resource-card">
   <h2>Reverse Engineering Tool</h2>
-  <p>Another tool, used along with angr is <strong>claripy</strong>, which is involved in <i>"constraint solving"</i></p>
   <ul>
     <li><strong>Description:</strong> Python framework for analyzing binaries using symbolic execution.</li>
     <li><strong>Common Uses:</strong> Finding inputs that reach specific program states (for instance, "success" branches).</li>

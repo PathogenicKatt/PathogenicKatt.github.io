@@ -1111,7 +1111,7 @@ body[data-page="christ"] .top-nav-container .theme-button {
 }
 
 .hacker-green {
-  color: #4ecdc4;
+  color: var(--accent-dark);
   font-weight: bold;
 }
 
