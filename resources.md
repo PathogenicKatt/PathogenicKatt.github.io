@@ -45,7 +45,7 @@ data_page: resources
   </div>
 
   <div class="resource-card">
-    <h2>Open Source Intelligence</h2>
+    <h2>OSINT</h2>
   </div>
 
   <div class="resource-card">
