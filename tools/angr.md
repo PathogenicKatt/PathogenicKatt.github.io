@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Python: Angr"
+title: "Angr"
 data_page: tools
 ---
 
