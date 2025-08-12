@@ -46,6 +46,9 @@ data_page: resources
   </div>
   <div class="resource-card">
     <h2>Reverse Engineering</h2>
+    <ul>
+      <li><a href="./tools/angr.md">angr</a></li>
+    </ul>
   </div>
   <div class="resource-card">
     <h2>Open Source Intelligence</h2>
