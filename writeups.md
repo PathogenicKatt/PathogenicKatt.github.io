@@ -7,7 +7,7 @@ custom_css: true
 
 <div class="writeups-header">
   <h1>CTF Writeups</h1>
-  <p class="subtitle"><i>"Where curiosity meets the solution."</i>-<strong>myself</strong></p>
+  <p class="subtitle"><i>"Where curiosity meets the solution."</i></p>
 </div>
 
 <div class="writeups-search">

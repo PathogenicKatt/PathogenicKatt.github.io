@@ -13,7 +13,7 @@ custom_css: true
      Cybersecurity & Purposeful Living 
   </h1>
   <p class="subtitle" style="text-align: center;"><i>
-    "Exploring digital defense, ethical hacking, and wisdom for personal skills, and the spirit."</i>
+    "Knowing is not enough; we must apply. Willing is not enough; we must do.</i> -<strong> Johann Wolfgang von Goethe</strong>
   </p>
 </div>
 
