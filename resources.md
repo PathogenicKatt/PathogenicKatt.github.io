@@ -31,6 +31,7 @@ data_page: resources
     <h2>Forensics</h2>
     <li><a href="./tools/binwalk">binwalk</a></li>
     <li><a href="./tools/foremost">foremost</a></li>
+    <li><a href="./tools/trail-of-bits">trail of bits</a></li>
   </div>
 
   <div class="resource-card">
