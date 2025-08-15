@@ -35,7 +35,7 @@ password: ' OR 'x'='x' --
 
 ## Burpsuite
 - In this case, the flag was in plainsight in burbsuite:
-    ![SQLiLite](/assets/img/moreSQLIi(6).PNG){: .writeup-image }
+    ![SQLiLite](/assets/img/moreSQLi(6).PNG){: .writeup-image }
 
 
 
