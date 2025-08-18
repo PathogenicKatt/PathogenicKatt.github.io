@@ -17,8 +17,7 @@ custom_css: true
   </p>
 </div>
 
-  <div class="ctf-card">
-    <h2>Site Navigation</h2>
+  <div class="ctf-card" >
     <div class="link-bubbles">
       <a href="/about" class="bubble">About Me</a>
       <a href="/notes" class="bubble">Notes</a>
@@ -28,44 +27,34 @@ custom_css: true
     </div>
   </div>
 
-
 <div class="ctf-card">
 <h2 style="margin: 0; padding: 0 0 12px 0; padding-bottom: 1px"> Focus Areas</h2>
-<p style="margin: 0; padding: 0 0 12px 0; padding-bottom: 0"><i>Primary focus and deepest interest:</i></p>
-  <ul>
-    <strong>Forensics</strong>
+<p style="margin: 0; padding: 0 0 12px 0; padding-bottom: 0"><i>Primary focus, where my heart strongly lies:</i></p>
       <ul class="arrow-list">
-        <li>Recovering and analyzing digital evidence from files, memory dumps, or network traffic.
+        <li><strong>Forensics</strong>: Recovering and analyzing digital evidence from files, memory dumps, or network traffic.
         </li>
       </ul>
-    <strong>Reverse Engineering</strong>
       <ul class="arrow-list">
-        <li>Analyzing binaries or software to understand their inner workings or to find vulnerabilities.
+        <li><strong>Reverse Engineering</strong>: Analyzing binaries or software to understand their inner workings or to find vulnerabilities.
         </li>
       </ul>
-    <strong>Binary Exploitation</strong>
       <ul class="arrow-list">
-        <li>Exploiting memory corruption bugs (like <i>buffer overflows</i>) in compiled programs to gain control or leak data.
+        <li><strong>Binary Exploitation</strong>: Exploiting memory corruption bugs (like <i>buffer overflows</i>) in compiled programs to gain control or leak data.
         </li>
       </ul>
-  </ul>
+<br>
 <h2 style="margin: 0; padding: 0 0 12px 0; padding-bottom: 1px">Other Areas</h2>
-<p style="margin: 0; padding: 0 0 12px 0; padding-bottom: 0"><i>Supporting knowledge and competencies:</i></p>
-  <ul>
-    <strong>Cryptography</strong>
+<p style="margin: 0; padding: 0 0 12px 0; padding-bottom: 0"><i>Supporting competencies:</i></p>
       <ul class="arrow-list">
-        <li>Breaking or designing secure cryptographic systems, and solving crypto-based CTF challenges.</li>
+        <li><strong>Cryptography</strong>: Breaking or designing secure cryptographic systems, and solving crypto-based CTF challenges.</li>
       </ul>
-    <strong>Mobile Security</strong>
       <ul class="arrow-list">
-        <li>Assessing and exploiting security flaws in Android.</li>
+        <li><strong>Mobile Security</strong>: Assessing and exploiting security flaws in Android.</li>
       </ul>
-    <strong>Web Exploitation</strong>
       <ul class="arrow-list">
-        <li>Finding and exploiting vulnerabilities in web applications, and authentication flaws.
+        <li><strong>Web Exploitation</strong>: Finding and exploiting vulnerabilities in web applications, and authentication flaws.
         </li>
       </ul>
-    </ul>
 </div>
 
 <h2 class="recent-activity-heading"> Recent Activity</h2>
