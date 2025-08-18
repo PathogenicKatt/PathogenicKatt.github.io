@@ -30,49 +30,41 @@ custom_css: true
 
 
 <div class="ctf-card">
-    <h2> Focus Areas</h2>
-    <ul>
-      <li>
-        <strong>Web Exploitation</strong>
-        <ul class="arrow-list">
-          <li>Finding and exploiting vulnerabilities in web applications, and authentication flaws.</li>
-        </ul>
-      </li>
-        <br>
-      <li>
-        <strong>Reverse Engineering</strong>
-        <ul class="arrow-list">
-          <li>Analyzing binaries or software to understand their inner workings or to find vulnerabilities.</li>
-        </ul>
-      </li>
-        <br>
-      <li>
-        <strong>Cryptography</strong>
-        <ul class="arrow-list">
-          <li>Breaking or designing secure cryptographic systems, and solving crypto-based CTF challenges.</li>
-        </ul>
-      </li>
-        <br>
-      <li>
-        <strong>Mobile Security</strong>
-        <ul class="arrow-list">
-          <li>Assessing and exploiting security flaws in Android.</li>
-        </ul>
-      </li>
-        <br>
-      <li>
-        <strong>Binary Exploitation</strong>
-        <ul class="arrow-list">
-          <li>Exploiting memory corruption bugs (like <i>buffer overflows</i>) in compiled programs to gain control or leak data.</li>
-        </ul>
-      </li>
-        <br>
-      <li>
-        <strong>Forensics</strong>
-        <ul class="arrow-list">
-          <li>Recovering and analyzing digital evidence from files, memory dumps, or network traffic.</li>
-        </ul>
-      </li>
+<h2 style="margin: 0; padding: 0 0 12px 0; padding-bottom: 1px"> Focus Areas</h2>
+<p style="margin: 0; padding: 0 0 12px 0; padding-bottom: 0"><i>Primary focus and deepest interest:</i></p>
+  <ul>
+    <strong>Forensics</strong>
+      <ul class="arrow-list">
+        <li>Recovering and analyzing digital evidence from files, memory dumps, or network traffic.
+        </li>
+      </ul>
+    <strong>Reverse Engineering</strong>
+      <ul class="arrow-list">
+        <li>Analyzing binaries or software to understand their inner workings or to find vulnerabilities.
+        </li>
+      </ul>
+    <strong>Binary Exploitation</strong>
+      <ul class="arrow-list">
+        <li>Exploiting memory corruption bugs (like <i>buffer overflows</i>) in compiled programs to gain control or leak data.
+        </li>
+      </ul>
+  </ul>
+<h2 style="margin: 0; padding: 0 0 12px 0; padding-bottom: 1px">Other Areas</h2>
+<p style="margin: 0; padding: 0 0 12px 0; padding-bottom: 0"><i>Supporting knowledge and competencies:</i></p>
+  <ul>
+    <strong>Cryptography</strong>
+      <ul class="arrow-list">
+        <li>Breaking or designing secure cryptographic systems, and solving crypto-based CTF challenges.</li>
+      </ul>
+    <strong>Mobile Security</strong>
+      <ul class="arrow-list">
+        <li>Assessing and exploiting security flaws in Android.</li>
+      </ul>
+    <strong>Web Exploitation</strong>
+      <ul class="arrow-list">
+        <li>Finding and exploiting vulnerabilities in web applications, and authentication flaws.
+        </li>
+      </ul>
     </ul>
 </div>
 
