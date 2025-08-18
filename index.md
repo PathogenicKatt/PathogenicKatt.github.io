@@ -68,23 +68,6 @@ custom_css: true
     </ul>
 </div>
 
-
-<div class="ctf-card">
-  <h2> Currently Learning </h2>
-  <ul>
-    <li>
-      <strong>Forensics</strong>
-      <ul class="arrow-list">
-        <li>Deep dive in memory particularly <strong><i>disk imaging</i></strong>.</li>
-      </ul>
-      <ul class="arrow-list">
-        <li>Resources like <a href="https://trailofbits.github.io/ctf/forensics/index.html">trail of bits</a> and <a href="https://ctf101.org/forensics/what-is-disk-imaging/"> ctf101</a> are my primary resources. 
-        </li>
-      </ul>
-    </li>
-  </ul>
-</div>
-
 <h2 class="recent-activity-heading"> Recent Activity</h2>
 <div class="post-feed">
   {% for post in site.posts limit:8 %}
@@ -96,8 +79,8 @@ custom_css: true
   {% endfor %}
 </div>
 
-<div style="text-align:left; margin-top:0.3rem; margin-bottom:3rem;">
-  <a href="/all-activities/" class="bubble" style="font-size:0.8rem;">View All Posts →</a>
+<div style="text-align:left; margin-top:0.1rem; margin-left:0.5rem; padding-bottom:3rem;">
+  <a href="/all-activities/" class="bubble" style="font-size:0.8rem;">View All Posts</a>
 </div>
 
 
