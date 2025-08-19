@@ -655,7 +655,7 @@ pre, code {
 .writeup-content img {
   max-width: 100%;
   height: auto;
-  border-radius: 8px;
+  
   margin: 1.5rem 0;
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
@@ -667,6 +667,13 @@ pre, code {
   margin-bottom: 1.5rem;
   color: var(--text-color);
   opacity: 0.8;
+}
+
+.writeup-image {
+  max-width: 100%;
+  height: auto;
+  margin: 1.5rem 0;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 #writeupsSearch {
   width: 100%;
@@ -1266,17 +1273,7 @@ html, body {
 body, html {
   transition: none !important;
 }
-/* Writeup image zoom */
-.writeup-content img {
-  transition: transform 0.3s cubic-bezier(.4,0,.2,1);
-  cursor: zoom-in;
-}
 
-.writeup-content img:hover {
-  transform: scale(1.08);
-  z-index: 10;
-  box-shadow: 0 8px 32px rgba(0,0,0,0.18);
-}
 
 
 
