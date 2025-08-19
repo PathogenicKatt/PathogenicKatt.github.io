@@ -11,7 +11,7 @@ date: 2025-08-19
     - Active Directory (AD) is a directory service developed by Microsoft for *managing users* and *resources* in Windows domain networks.
     - It stores information about network objects, such as users and computers, and provides authentication and authorization services to control access to these resources.
     - It's like a blueprint of Windows domain networks, it knows every user, every computer and all the rules.
-    - **Has the following features:**Centralized Resource Management, Authentication and Authorization, Organizational Units (OUs), Group Policy, *Domain Services (DS)*, Scalability, Replication. 
+    - **Has the following features:**Centralized Resource Management, Authentication and Authorization, Organizational Units (OUs), Group Policy, *Domain Services (DS)*, Scalability, Replication.
 - **An Attack Path?**
     - It's a sequence of steps to get to the higher privilige access.
 - **Enumeration?**
@@ -23,6 +23,8 @@ date: 2025-08-19
 
 - In essence, here is the diagram of the **Active Directory**, i mean it is important to understand what exactly *active directory* is:
 ![active-directory diagram](/assets/img/active-directory.jpg){: .writeup-image }
+
+_For More details regarding "active directory" please checkout: <a href="/notes">notes</a>._
 
 ## Tool: BlackHound
 - This is a typical tool used to help with this type of an attack.
