@@ -58,6 +58,10 @@ data_page: resources
     <h2>Attack & Defend</h2>
   </div>
   
+    <div class="resource-card">
+    <h2>Network Exploitation</h2>
+    <li><a href="./tools/bloodhound">BloodHound</a></li>
+    </div>
 
 </div>
 
