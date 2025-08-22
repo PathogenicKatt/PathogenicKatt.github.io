@@ -7,13 +7,13 @@ date: 2025-08-20
 ---
 
 # Web Requests
-- **HyperText Transfer Protocol (HTTP)**
-    - Most internet communications are made with web requests through the HTTP protocol.
-    - HTTP is an *application-level protocol* used to access the *World Wide Web* resources.
-    - The default port for HTTP communication is **port 80**.
-    - It is considered insecure.
+## HyperText Transfer Protocol (HTTP)
+- Most internet communications are made with web requests through the HTTP protocol.
+- HTTP is an *application-level protocol* used to access the *World Wide Web* resources.
+- The default port for HTTP communication is **port 80**.
+- It is considered insecure.
 - **Uniform Resource Locator (URL)**
-    - Resources over HTTP are accessed via a URL:
+  - Resources over HTTP are accessed via a URL:
     ![stepic command](/assets/img/url.PNG){: .writeup-image }
 
 <table>
@@ -94,3 +94,130 @@ _Note: Our browsers usually first look up records in the local **'/etc/hosts'** 
     katt02@kali$ ls 
     index.html
     ```
+      - `-O`: specifies the remote server, which in this case is inlanefreight.com
+  
+## Hypertext Transfer Protocol Secure (HTTPS)
+- From above, we touched on HTTP. However, one of the significant drawbacks of HTTP is that all data is transferred in clear-text. It is not encrypted. Making it vulnerable to the threat-actors!. This could be done by performing a *Man-in-the-middle (MiTM)* attack to view the transferred data.
+- To avoid this issue, the **HTTPS (HTTP Secure) protocol** was created, in which all communications are transferred in an *encrypted format*, so even if a third party does intercept the request, they would not be able to extract the data out of it. 
+- **HTTP & HTTPS Overview**:
+![http-overwiew](/assets/img/http-overview.PNG){: .writeup-image }
+    - I have highlighted what using the http protocol expose.
+    - In contrast to this, meaning; using **HTTPS Protocol**:
+![https-overwiew](/assets/img/https-overview.PNG){: .writeup-image }
+  - As we can that the same data is now *encrypted*.
+
+- **HTTPS Flow**
+![http-flow](/assets/img/https-flow.PNG){: .writeup-image }
+- The part that is highlighted by yellow, is a request of **http**, and we see that we get **302 status-code**, implying that website has been permanently moved. 
+- This is because we have encrypted the website now. We see that in the blue highlighted part.
+- Next, the client (web browser) sends a "client hello" packet, giving information about itself. After this, the server replies with "server hello", followed by a key exchange to exchange SSL certificates. The client verifies the key/certificate and sends one of its own. After this, an encrypted handshake is initiated to confirm whether the encryption and transfer are working correctly.
+- Notice that:
+  - `port 80` indicates that the site is using **http**.
+  - `port 443` indicates that the site is using **https**.
+
+- **cURL for HTTPS**
+  - cURL automatically handle all HTTPS communication standards and perform a secure handshake and then encrypt and decrypt data automatically.
+  ```bash
+  Katt02@kali$ curl https://inlanefreight.com
+  curl: (60) SSL certificate problem: Invalid certificate chain
+  More details here: https://curl.haxx.se/docs/sslcerts.html
+  ...SNIP...
+  ```
+  - We may face such an issue when testing a local web application or with a web application hosted for practice purposes, as such web applications may not yet have implemented a valid SSL certificate.
+  - To skip the certificate check with cURL, we can use the -k flag:
+
+```bash
+Katt02@kali$ curl -k https://inlanefreight.com
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+...SNIP...
+```
+- As we can see, the request went through this time, and we received the response data.
+
+ _Note: Although the data transferred through the HTTPS protocol may be encrypted, the request may still reveal the visited URL if it contacted a clear-text DNS server. For this reason, it is recommended to utilize encrypted DNS servers (e.g. 8.8.8.8 or 1.1.1.1), or utilize a VPN service to ensure all traffic is properly encrypted._
+
+## HTTP Requests and Responses
+- HTTP communications mainly consist of an **HTTP request** and an **HTTP response**.
+- An HTTP request is made by the client (e.g. cURL/browser), and is processed by the server (e.g. web server).
+- Once the server receives the **HTTP request**, it processes it and responds by sending the **HTTP response**, which contains the response code
+- **HTTP Request**:
+  - The image below shows an HTTP GET request to the URL:
+  ![http-request](/assets/img/http-request.PNG){: .writeup-image }
+- The first line of any HTTP request contains three main fields 'separated by spaces':
+<table>
+<thead>
+    <tr>
+      <th>Field</th>
+      <th>Example</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Method</td>
+      <td>GET</td>
+      <td>The HTTP method or verb, which specifies the type of action to perform.</td>
+    </tr>
+    <tr>
+      <td>Path</td>
+      <td>/users/login.html</td>
+      <td>The path to the resource being accessed.</td>
+    </tr>
+    <tr>
+      <td>Version</td>
+      <td>HTTP/1.1</td>
+      <td>The third and final field is used to denote the HTTP version.</td>
+    </tr>
+  </tbody>
+</table>
+
+- **HTTP Response**:
+  - Once the server processes our request, it sends its response. The following is an example HTTP response:
+  ![http-response](/assets/img/http-response.PNG){: .writeup-image }
+  - The first line of an HTTP response contains two fields separated by spaces. The first being the **HTTP version** (e.g. HTTP/1.1), and the second denotes the **HTTP response code** (e.g. 200 OK).
+
+- **cURL**
+  - cURL also allows us to preview the full HTTP request and the full HTTP response.
+  - which is very handy when performing web penetration tests or writing exploits. 
+  - To view the full HTTP request and response, we can simply add the `-v` verbose flag to our earlier commands, and it should print both the request and response:
+
+```bash
+Katt02@kali$ curl inlanefreight.com -v
+*   Trying SERVER_IP:80...
+* TCP_NODELAY set
+* Connected to inlanefreight.com (SERVER_IP) port 80 (#0)
+> GET / HTTP/1.1
+> Host: inlanefreight.com
+> User-Agent: curl/7.65.3
+> Accept: */*
+> Connection: close
+> 
+* Mark bundle as not supporting multiuse
+< HTTP/1.1 401 Unauthorized
+< Date: Tue, 21 Jul 2020 05:20:15 GMT
+< Server: Apache/X.Y.ZZ (Ubuntu)
+< WWW-Authenticate: Basic realm="Restricted Content"
+< Content-Length: 464
+< Content-Type: text/html; charset=iso-8859-1
+< 
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+...SNIP...
+```
+  - As we can see, this time, we get the full HTTP request and response.
+  - The request simply sent `GET` `/ HTTP/1.1` along with the `Host`, `User-Agent` and `Accept` headers.
+  - In return, the HTTP response contained the **HTTP/1.1 401 Unauthorized**, which indicates that we do not have access over the requested resource.
+  - Similar to the request, the response also contained several headers sent by the server, including `Date`, `Content-Length`, and `Content-Type`.
+  - Finally, the response contained the response body in HTML, which is the same one we received earlier when using cURL without the `-v` flag.
+  - The `-vvv` flag shows an even more verbose output.
+
+- **Browser DevTools**:
+  - Most modern web browsers come with built-in developer tools (DevTools), which are mainly intended for developers to test their web applications.
+  - However, as web penetration testers, these tools can be a vital asset in any web assessment we perform, as a browser (and its DevTools) are among the assets we are most likely to have in every web assessment exercise.
+  - To open the browser devtools in either Chrome or Firefox, we can click `[CTRL+SHIFT+I]` or simply click `[F12]`.
+  - If we click on the **Network tab** and refresh the page, we should be able to see the list of requests sent by the page: 
+  ![devtools](/assets/img/devTools.PNG){: .writeup-image }
+  - As we can see, the devtools show us at a glance the response status (i.e. response code), the request method used (GET), the requested resource (i.e. URL/domain), along with the requested path. Furthermore, we can use Filter URLs to search for a specific request, in case the website loads too many to go through.
+
+
+_Note: HTTP version 1.X sends requests as clear-text, and uses a new-line character to separate different fields and different requests. HTTP version 2.X, on the other hand, sends requests as binary data in a dictionary form_
