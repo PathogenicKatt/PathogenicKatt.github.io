@@ -221,3 +221,232 @@ Katt02@kali$ curl inlanefreight.com -v
 
 
 _Note: HTTP version 1.X sends requests as clear-text, and uses a new-line character to separate different fields and different requests. HTTP version 2.X, on the other hand, sends requests as binary data in a dictionary form_
+
+## HTTP Headers
+- HTTP headers pass information between the client and the server.
+- We can divide headers into the following categories:
+- *General Headers*:
+  - General headers are used in both HTTP requests and responses. They are contextual and are used to describe the message rather than its contents.
+  <table>
+    <thead>
+      <tr>
+        <th>Header</th>
+        <th>Example</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Date</td>
+        <td>Date: Wed, 16 Feb 2022 10:38:44 GMT</td>
+        <td>Holds the date and time at which the message originated.</td>
+      </tr>
+      <tr>
+        <td>Conection</td>
+        <td>Connection: close</td>
+        <td>Dictates if the current network connection should stay alive after the request finishes. Two commonly used values for this header are close and keep-alive. The close value means that they would like to terminate the connection, while the keep-alive header indicates that the connection should remain open to receive more data and input.</td>
+      </tr>
+    </tbody>
+  </table>
+- *Entity Headers*:
+  - These headers are used to describe the content (entity) transferred by a message. They are usually found in responses and POST or PUT requests.
+  <table>
+    <thead>
+      <tr>
+        <th>Header</th>
+        <th>Example</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Content-Type</td>
+        <td>Content-Type: text/html</td>
+        <td>Used to describe the type of resource being transferred. The charset field denotes the encoding standard, such as `UTF-8`.</td>
+      </tr>
+      <tr>
+        <td>Media-Type</td>
+        <td>Media-Type: application/pdf</td>
+        <td>The media-type is similar to Content-Type, and describes the data being transferred.</td>
+      </tr>
+      <tr>
+        <td>Boundary</td>
+        <td>boundary="b4e4fbd93540"</td>
+        <td>Acts as a marker to separate content when there is more than one in the same message.</td>
+      </tr>
+      <tr>
+        <td>Content-Length</td>
+        <td>Content-Length: 385</td>
+        <td>Holds the size of the entity being passed.</td>
+      </tr>
+      <tr>
+        <td>Content-Encoding</td>
+        <td>Content-Encoding: gzip</td>
+        <td>Data can undergo multiple transformations before being passed. For example, large amounts of data can be compressed to reduce the message size. </td>
+      </tr>
+    </tbody>
+  </table>
+- *Request Headers*:
+  - The client sends Request Headers in an HTTP transaction. These headers are used in an HTTP request and do not relate to the content of the message. 
+    <table>
+    <thead>
+      <tr>
+        <th>Header</th>
+        <th>Example</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Date</td>
+        <td>Date: Wed, 16 Feb 2022 10:38:44 GMT</td>
+        <td>Holds the date and time at which the message originated.</td>
+      </tr>
+      <tr>
+        <td>Conection</td>
+        <td>Connection: close</td>
+        <td>Dictates if the current network connection should stay alive after the request finishes. Two commonly used values for this header are close and keep-alive. The close value means that they would like to terminate the connection, while the keep-alive header indicates that the connection should remain open to receive more data and input.</td>
+      </tr>
+    </tbody>
+  </table>
+- *Entity Headers*:
+  - These headers are used to describe the content (entity) transferred by a message. They are usually found in responses and POST or PUT requests.
+  <table>
+    <thead>
+      <tr>
+        <th>Header</th>
+        <th>Example</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Host</td>
+        <td>Host: www.inlanefreight.com</td>
+        <td>Used to specify the host being queried for the resource. </td>
+      </tr>
+      <tr>
+        <td>User-Agent</td>
+        <td>User-Agent: curl/7.77.0</td>
+        <td>The User-Agent header is used to describe the client requesting resources. This header can reveal a lot about the client, such as the browser, its version, and the operating system.</td>
+      </tr>
+      <tr>
+        <td>Referer</td>
+        <td>Referer: http://www.inlanefreight.com/</td>
+        <td>Denotes where the current request is coming from.For example, clicking a link from Google search results would make https://google.com the referer. </td>
+      </tr>
+      <tr>
+        <td>Accept</td>
+        <td>Accept: */*</td>
+        <td>The Accept header describes which media types the client can understand. It can contain multiple media types separated by commas. The */* value signifies that all media types are accepted.</td>
+      </tr>
+      <tr>
+        <td>Cookie</td>
+        <td>Cookie: PHPSESSID=b4e4fbd93540</td>
+        <td>Contains cookie-value pairs in the format name=value. A cookie is a piece of data stored on the client-side and on the server, which acts as an identifier.</td>
+      </tr>
+      <tr>
+        <td>Authorization</td>
+        <td>Authorization: BASIC cGFzc3dvcmQK</td>
+        <td>Another method for the server to identify clients. After successful authentication, the server returns a token unique to the client. Unlike cookies, tokens are stored only on the client-side and retrieved by the server per request.</td>
+      </tr>
+    </tbody>
+  </table>
+- *Response Headers*:
+  - Response Headers can be used in an HTTP response and do not relate to the content. 
+  <table>
+    <thead>
+      <tr>
+        <th>Header</th>
+        <th>Example</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Date</td>
+        <td>Date: Wed, 16 Feb 2022 10:38:44 GMT</td>
+        <td>Holds the date and time at which the message originated.</td>
+      </tr>
+      <tr>
+        <td>Conection</td>
+        <td>Connection: close</td>
+        <td>Dictates if the current network connection should stay alive after the request finishes. Two commonly used values for this header are close and keep-alive. The close value means that they would like to terminate the connection, while the keep-alive header indicates that the connection should remain open to receive more data and input.</td>
+      </tr>
+    </tbody>
+  </table>
+- *Entity Headers*:
+  - These headers are used to describe the content (entity) transferred by a message. They are usually found in responses and POST or PUT requests.
+  <table>
+    <thead>
+      <tr>
+        <th>Header</th>
+        <th>Example</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Server</td>
+        <td>Server: Apache/2.2.14 (Win32)</td>
+        <td>Contains information about the HTTP server, which processed the request. It can be used to gain information about the server, such as its version, and enumerate it further.</td>
+      </tr>
+      <tr>
+        <td>Set-Cookie</td>
+        <td>Set-Cookie: PHPSESSID=b4e4fbd93540</td>
+        <td>Contains the cookies needed for client identification.</td>
+      </tr>
+      <tr>
+        <td>WWW-Authenticate</td>
+        <td>WWW-Authenticate: BASIC realm="localhost"</td>
+        <td>Notifies the client about the type of authentication required to access the requested resource.</td>
+      </tr>
+    </tbody>
+  </table>
+- *Security Headers*:
+  - At last we have security headers. With the increase in the variety of browsers and web-based attacks, defining certain headers that enhanced security was necessary.
+  <table>
+    <thead>
+      <tr>
+        <th>Header</th>
+        <th>Example</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Content-Security-Policy</td>
+        <td>Content-Security-Policy: script-src 'self'</td>
+        <td>Dictates the website's policy towards externally injected resources. This could be JavaScript code as well as script resources. This header instructs the browser to accept resources only from certain trusted domains, hence preventing attacks such as Cross-site scripting (XSS).</td>
+      </tr>
+      <tr>
+        <td>Strict-Transport-Security</td>
+        <td>Strict-Transport-Security: max-age=31536000</td>
+        <td>Prevents the browser from accessing the website over the plaintext HTTP protocol, and forces all communication to be carried over the secure HTTPS protocol.</td>
+      </tr>
+      <tr>
+        <td>Referrer-Policy</td>
+        <td>Referrer-Policy: origin</td>
+        <td>Dictates whether the browser should include the value specified via the Referer header or not. It can help in avoiding disclosing sensitive URLs and information while browsing the website.</td>
+      </tr>
+    </tbody>
+  </table>
+
+- **cURL**
+  - we saw how using the `-v` flag with cURL shows us the full details of the HTTP request and response.
+  - If we were only interested in seeing the response headers, then we can use the `-I` flag to send a HEAD request and only display the response headers.
+  ![http-response header](/assets/img/htb-response-header.PNG){: .writeup-image }
+
+  - We can use the `-i` flag to display both the headers and the response body (e.g. HTML code).
+  ![http-response header-&-html](/assets/img/htb-response-header-&-html.PNG){: .writeup-image }
+
+  - The difference between the two is that `-I` sends a HEAD request (as will see in the next section), while -i sends any request we specify and prints the headers as well.
+
+- **Browser DevTools**
+  - let's see how we can preview the HTTP headers using the browser devtools.
+  - we can go to the Network tab to view the different requests made by the page. We can click on any of the requests to view its details: 
+  ![htb-devtools-flag](/assets/img/devTool-flag.PNG){: .writeup-image }
+  - In the first Headers tab, we see both the HTTP request and HTTP response headers.
+  - As a bonus challenge, we see that there is a flag file, let's see if we can retrieve its contents:
+  ![htb-devtools-flag](/assets/img/htb-flag-devtools.PNG){: .writeup-image }
+
