@@ -1,14 +1,14 @@
 ---
 layout: default
 title: "About Me"
-description: "About Katleho - Computer Science & Mathematics student"
+description: "About Katleho - Computer Science & Mathematics student | CTF Enthusiast from South Africa"
 custom_css: true
 ---
 
 <div class="about-container">
   <section class="about-header">
     <h1> Hi, I'm Katleho</h1>
-    <p class="subtitle"> Cybersecurity ❤ & AI Security Engineer | Proactive CTF Player </p>
+    <p class="subtitle"> Cybersecurity ❤ & AI Security Engineer | CTF Player</p>
   </section>
 
   <div class="about-grid">
@@ -22,20 +22,21 @@ custom_css: true
         <img src="{{ '/assets/img/ump-logo.png' | relative_url }}" alt="University of Mpumalanga logo" loading="lazy">
         <img src="{{ '/assets/img/nwu-logo.png' | relative_url }}" alt="North West University logo" loading="lazy">
       </div>
-  </section>
+    </section>
 
-  <section class="about-card">
+    <section class="about-card">
       <h2>CTF Experience</h2>
       <ul class="ctf-skills">
-        <li>Regular competitor on <a href="https://ctftime.org/event/2792" target="_blank" rel="noopener noreferrer">CTFtime</a> events.</li>
+        <li>Regular competitor on <a href="https://ctftime.org/" target="_blank" rel="noopener noreferrer">CTFtime</a> events.</li>
         <br>
         <li>Comfortable with using the following tools: <i>Wireshark</i>,<i> Ghidra</i>, and <i> GDB(GNU Debugger)</i>.
         </li>
         <br>
         <li>My learning is supported by hands on practice on platforms like TryHackMe, HackTheBox, OverTheWire, PicoCTF and a few ethical hacking books like (<i>Linux Basics for Hackers</i>).</li>
-  </section>
+      </ul>
+    </section>
 
-  <section class="about-card">
+    <section class="about-card">
       <h2>Technical Skills</h2>
       <div class="skill-cloud">
         <span>Python</span>
@@ -47,11 +48,12 @@ custom_css: true
         <span>Linux commands</span>
         <span>Git</span>
         <span>Cloud Computing (Azure)</span>
-      </div>    
-  </section>
+      </div>
+      
+    </section>
 
     <!-- Connect Section -->
-  <section class="about-card connect">
+    <section class="about-card connect">
       <h2>Let's Connect</h2>
       <div class="social-links">
         <a href="https://github.com/PathogenicKatt" class="social-link github" target="_blank" rel="noopener noreferrer">
@@ -67,6 +69,7 @@ custom_css: true
           <i class="fab fa-linkedin"></i> LinkedIn
         </a>
       </div>
-  </section> 
+    </section>
+ 
   </div>
 </div>
