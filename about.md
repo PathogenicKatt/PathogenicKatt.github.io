@@ -47,8 +47,7 @@ custom_css: true
         <span>Linux commands</span>
         <span>Git</span>
         <span>Cloud Computing (Azure)</span>
-      </div>
-      
+      </div>    
     </section>
 
     <!-- Connect Section -->
@@ -68,7 +67,6 @@ custom_css: true
           <i class="fab fa-linkedin"></i> LinkedIn
         </a>
       </div>
-    </section>
- 
+    </section> 
   </div>
 </div>
