@@ -561,4 +561,25 @@ _Note: HTTP version 1.X sends requests as clear-text, and uses a new-line charac
     </tbody>
   </table>
 
+- **GET**
+  - Whenever we visit any URL, our browsers default to a GET request to obtain the remote resources hosted at that URL.
+  - Once the browser receives the initial page it is requesting; it may send other requests using various HTTP methods.
+- **HTTP Basic Auth**
+  - When we visit the following website, it prompts us to enter a username and a password. 
+  ![htb-login](/assets/img/login-htb.PNG){: .writeup-image }
+  - This type of authentication utilizes a basic HTTP authentication, which is handled directly by the webserver to protect a specific page/directory, without directly interacting with the web application.
+  - To access the page, we have to enter a valid pair of credentials, which are admin:admin in this case.
+  - Once we enter the credentials, we would get access to the page:
+  ![htb-logged-in-page](/assets/img/logged-in-htb.PNG){: .writeup-image }
+  - Let's try to access the page with cURL, and we'll add `-i` to view the response headers:
+  ![htb-access-denied-page](/assets/img/acess-denied-htb.PNG){: .writeup-image }
+  - As we can see, we get Access denied in the response body, and we also get Basic realm="Access denied" in the WWW-Authenticate header, which confirms that this page indeed uses **basic HTTP auth**.
+  - To properly input the credentials on the terminal, we use the `-u` tag:
+  ![htb-logged-in-terminal](/assets/img/logged-in-terminal-htb.PNG){: .writeup-image }
+
+
+
+
+  
+
 
