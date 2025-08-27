@@ -1,0 +1,62 @@
+title: Cybersecurity & Purposeful Living Hub
+description: CTFs, notes, and reflections for mind, skill, and spirit
+theme: minima
+plugins:
+  - jekyll-feed
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  hard_wrap: false
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
+
+collections:
+  notes:
+    output: true
+    permalink: /notes/:path/
+    sort_by: date
+    sort_order: descending
+  posts:
+    output: true
+    permalink: /:year/:month/:title/
+  writeups:
+    output: true
+    permalink: /writeups/:path/
+    sort_by: date
+    sort_order: descending
+  biblestudy:
+    output: true
+    permalink: /biblestudy/:title/
+
+
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+      custom_css: true
+  - scope:
+      path: "_notes"
+    values:
+      layout: "note"
+  - scope:
+      path: "_posts"
+    values:
+      layout: "post"
+  - scope:
+      path: "_writeups"
+    values:
+      layout: "writeup"
+
+include:
+  - _notes
+  - _includes
+  - _layouts
+  - assets/css
+  - assets/js
+

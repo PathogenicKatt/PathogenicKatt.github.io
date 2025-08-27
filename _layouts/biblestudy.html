@@ -1,0 +1,18 @@
+---
+layout: default
+---
+
+<article class="biblestudy-single">
+  <header class="biblestudy-header">
+    <h1>{{ page.title }}</h1>
+    <p class="biblestudy-verse"><i>{{ page.verse }}</i></p>
+    <time class="biblestudy-date" datetime="{{ page.date | date_to_xmlschema }}">
+      {{ page.date | date: "%B %d, %Y" }}
+    </time>
+  </header>
+  <section class="biblestudy-content">
+    {{ content }}
+  </section>
+  <a href="/christ/" class="bubble christ-bubble back-link">← Back</a>
+
+</article>

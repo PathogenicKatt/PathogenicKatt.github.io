@@ -1,0 +1,35 @@
+---
+layout: default
+---
+<div class="writeup-page-wrapper">
+  <main class="writeup-container">
+    <article class="writeup-content">
+      <header class="writeup-header">
+        <h1 class="writeup-title">{{ page.title }}</h1>
+        <div class="writeup-meta">
+          {% if page.date %}
+          <span class="writeup-date">
+            {{ page.date | date: "%B %d, %Y" }}
+          </span>
+          {% endif %}
+          {% if page.event %}
+          <span class="event">{{ page.event }}</span>
+          {% endif %}
+          <span class="difficulty-badge {{ page.difficulty | default: 'easy' }}">
+            {{ page.difficulty | capitalize | default: "Easy" }}
+          </span>
+        </div>
+      </header>
+
+      <div class="writeup-body">
+        {{ content }}
+      </div>
+
+      <footer class="writeup-footer">
+        <a href="/writeups" class="back-link">
+          <i class="fas fa-arrow-left"></i> Back to all writeups
+        </a>
+      </footer>
+    </article>
+  </main>
+</div>

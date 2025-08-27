@@ -1,0 +1,1280 @@
+/* ROOT VARIABLES */
+:root {
+  /* Light Theme */
+  --bg-color: #f5f7fa;
+  --text-color: #2d3748;
+  --card-bg: rgba(255, 255, 255, 0.95);
+  --card-border: 1px solid rgba(0, 0, 0, 0.08);
+  --card-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  --accent: #4ecdc4;
+  --accent-dark: #3aa89f;
+  --link-color: #3182ce;
+}
+
+[data-theme="dark"] {
+  /* Dark Theme */
+  --bg-color: #121212;
+  --text-color: #e2e8f0;
+  --card-bg: rgba(30, 30, 30, 0.95);
+  --card-border: 1px solid rgba(255, 255, 255, 0.08);
+  --card-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  --accent: #ff6b6b;
+  --accent-dark: #e05555;
+  --link-color: #63b3ed;
+}
+
+/* BASE STYLES */
+body {
+  background: var(--bg-color);
+  color: var(--text-color);
+  font-family: 'Fira Code', 'Courier New', monospace;
+  line-height: 1.6;
+  margin: 0;
+  padding: 20px;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+a {
+  color: var(--link-color);
+  text-decoration: none;
+}
+
+pre, code {
+  font-family: 'Fira Code', monospace;
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+  padding: 0.2rem 0.4rem;
+}
+
+[data-theme="dark"] pre,
+[data-theme="dark"] code {
+  background: rgba(255, 255, 255, 0.1);
+  color: #e2e8f0; /* Light text for dark mode */
+}
+
+/* COMPONENT STYLES */
+/* Cards */
+.ctf-card,
+.about-card,
+.construction-card,
+.note-card {
+  background: var(--card-bg);
+  border: var(--card-border);
+  border-radius: 12px;
+  padding: 0.7rem 1rem;
+  margin: 0;
+  box-shadow: var(--card-shadow);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+}
+.ctf-card {
+  margin-bottom: 1.6rem; 
+}
+
+.ctf-card:hover,
+.about-card:hover,
+.note-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+.note-preview {
+  display: block;
+  background: var(--card-bg);
+  border-left: 4px solid var(--accent);
+  border-radius: 10px;
+  margin-bottom: 1.5rem;
+  padding: 1.2rem 1.2rem 1.2rem 1.5rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  transition: 
+    background 0.2s,
+    box-shadow 0.2s,
+    transform 0.18s;
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+.note-preview h3 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  color: var(--accent);
+  font-size: 1.25rem;
+}
+
+.note-preview p {
+  margin: 0 0 0.7rem 0;
+  color: var(--text-color);
+  opacity: 0.92;
+}
+
+.note-preview .note-tags {
+  margin-top: 0.5rem;
+}
+
+.note-preview:hover {
+  background: rgba(78, 205, 196, 0.09);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.10);
+  transform: translateY(-3px) scale(1.02);
+  text-decoration: none;
+}
+
+
+.bubble,
+.nav-button,
+.theme-toggle,
+.social-link,
+.back-link {
+  background: linear-gradient(90deg, var(--accent) 0%, var(--accent-dark) 100%);
+  color: #fff;
+  display: inline-flex;
+  align-items: center;
+  font-weight: 600;
+  border: 2px solid var(--accent-dark);
+  border-radius: 50px;
+  box-shadow: 0 2px 8px var(--accent-dark)22;
+  font-size: 1rem;
+  padding: 0.5rem 1.2rem;
+  cursor: pointer;
+  transition:
+    background 0.18s,
+    color 0.18s,
+    border 0.18s,
+    box-shadow 0.18s,
+    transform 0.15s;
+    justify-content: center;
+  letter-spacing: 0.02em;
+  outline: none;
+  text-decoration: none;
+  gap: 0.5em;
+}
+
+/* Unified Hover Effect */
+.bubble:hover,
+.nav-button:hover,
+.theme-toggle:hover,
+.social-link:hover,
+.back-link:hover {
+  background: var(--accent-dark);
+  color: #fff;
+  box-shadow: 0 0 16px var(--accent)88;
+  border-color: var(--accent-dark);
+  transform: scale(1.06);
+}
+
+/* Unified Active Effect */
+.bubble:active,
+.nav-button:active,
+.theme-toggle:active,
+.social-link:active,
+.back-link:active {
+  transform: scale(0.97);
+  box-shadow: 0 1px 4px var(--accent-dark)22;
+}
+
+/* For dark mode, ensure text is readable and accent is correct */
+[data-theme="dark"] .bubble,
+[data-theme="dark"] .nav-button,
+[data-theme="dark"] .theme-toggle,
+[data-theme="dark"] .back-link {
+  background: linear-gradient(90deg, var(--accent) 0%, var(--accent-dark) 100%);
+  color: #fff !important;
+  border: 2px solid var(--accent-dark);
+}
+
+[data-theme="dark"] .bubble:hover,
+[data-theme="dark"] .nav-button:hover,
+[data-theme="dark"] .theme-toggle:hover,
+[data-theme="dark"] .social-link:hover,
+[data-theme="dark"] .back-link:hover {
+  background: var(--accent-dark);
+  color: #fff !important;
+  box-shadow: 0 0 16px var(--accent)88;
+  border-color: var(--accent-dark);
+  transform: scale(1.06);
+}
+
+/* Navigation */
+.top-nav-container {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  gap: 12px;
+  z-index: 1000;
+}
+
+.nav-button,
+.theme-toggle {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  font-size: 1.2rem;
+}
+
+.theme-toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+}
+
+/* Specific Components */
+/* Override header-animation h1 to use default text color */
+.header-animation h1 {
+  background: none !important;
+  -webkit-background-clip: initial !important;
+  background-clip: initial !important;
+  -webkit-text-fill-color: initial !important;
+  color: var(--text-color) !important;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  opacity: 0.9;
+  margin-top: 0;
+}
+
+/* Layouts */
+.about-container,
+.construction-container,
+.note-content {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1.5rem;
+
+}
+
+
+.about-grid,
+.notes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;           
+  margin: 1.5rem 0;    
+
+}
+
+/* Lists */
+.skill-cloud,
+.link-bubbles,
+.construction-links,
+.social-links,
+.ctf-logos,
+.university-logos,
+.note-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 1.5rem 0;
+  padding: 0;
+  list-style: none;
+}
+
+.skill-cloud li,
+.skill-cloud span,
+.tag {
+  background: rgba(78, 205, 196, 0.15);
+  padding: 0.5rem 1rem;
+  border-radius: 50px;
+  font-size: 0.9rem;
+  transition: transform 0.2s;
+}
+
+.skill-cloud li:hover,
+.tag:hover {
+  transform: scale(1.05);
+}
+
+/* Notes System */
+.notes-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.notes-search {
+  margin: 2rem auto;
+  max-width: 600px;
+}
+
+#notesSearch {
+  width: 100%;
+  padding: 12px 20px;
+  border: 2px solid var(--accent);
+  border-radius: 8px;
+  background: var(--card-bg);
+  color: var(--text-color);
+  font-size: 1rem;
+}
+
+.note-card h3 {
+  margin-top: 0;
+  color: var(--accent);
+}
+
+
+/* Individual Note Page */
+.note-content {
+  max-width: 100vw;        
+  overflow-x: auto;        
+  margin: 0;
+  padding: 0 0 3rem 0;
+  background: var(--bg-color);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.note-page-wrapper {
+  margin-left: 0;
+  padding-left: 2rem;
+}
+
+.note-header {
+  margin-bottom: 2rem;
+}
+
+.back-link {
+  padding: 0.5rem 1rem;
+  margin-top: 2rem;
+  display: inline-block;
+}
+
+.arrow-list {
+  list-style: none;
+  padding-left: 0;
+}
+.arrow-list li::before {
+  content: "➔ ";
+  color: var(--accent); 
+}
+
+/* Note Layout Improvements */
+.note-container {
+  max-width: none;
+  margin-right: 2rem;
+}
+
+.note-title {
+  text-align: center;
+  margin: 2.5rem 0 1.5rem 0;
+  font-size: 2.4rem;
+  line-height: 1.3;
+}
+
+.note-meta {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  color: var(--accent-dark);
+  font-size: 0.95rem;
+}
+
+.note-date {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.note-date::before {
+  content: "📅";
+  opacity: 0.7;
+}
+
+.note-body {
+  line-height: 1.8;
+}
+
+.note-body h2 {
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+  font-size: 1.6rem;
+}
+
+.note-body h3 {
+  margin-top: 2rem;
+  font-size: 1.3rem;
+}
+
+.note-body p {
+  margin-bottom: 1.5rem;
+}
+
+.note-body pre {
+  background: rgba(0, 0, 0, 0.05);
+  padding: 1.2rem;
+  border-radius: 8px;
+  overflow-x: auto;
+  margin: 1.5rem 0;
+}
+
+.note-body code {
+  font-size: 0.9em;
+}
+
+.note-footer {
+  max-width: 800px;
+  margin-left: 0;
+  margin-right: 0;
+  text-align: left;
+  width: 100%;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+[data-theme="dark"] .note-footer {
+  border-top-color: rgba(255, 255, 255, 0.1);
+}
+
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.7rem 1.3rem;
+  background: var(--card-bg);
+  color: var(--accent-dark);
+  border: 1px solid var(--accent-dark);
+  border-radius: 8px;
+  font-weight: 500;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  transition: 
+    background 0.2s,
+    color 0.2s,
+    border 0.2s,
+    box-shadow 0.2s,
+    transform 0.2s;
+  text-decoration: none;
+  margin-top: 2.5rem;
+}
+
+.back-link:hover {
+  background: var(--accent-dark);
+  color: #fff;
+  border-color: var(--accent-dark);
+  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+  transform: translateX(-4px) scale(1.03);
+}
+
+/* ================== */
+/* TABLE STYLES ONLY  */
+/* ================== */
+.note-body table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+  font-family: 'Fira Code', monospace;
+  background: var(--card-bg);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: var(--card-shadow);
+}
+
+.note-body th {
+  background-color: rgba(78, 205, 196, 0.3);
+  color: var(--text-color);
+  padding: 12px 15px;
+  text-align: left;
+  font-weight: 600;
+  border-bottom: 2px solid var(--accent);
+}
+
+.note-body td {
+  padding: 12px 15px;
+  border-bottom: 1px solid var(--accent);
+  color: var(--text-color);
+}
+
+.note-body tr:hover {
+  background-color: rgba(78, 205, 196, 0.1);
+}
+
+[data-theme="dark"] .note-body th {
+  background-color: rgba(255, 107, 107, 0.3);
+}
+
+[data-theme="dark"] .note-body tr:hover {
+  background-color: rgba(255, 107, 107, 0.1);
+}
+
+/* Fix for kramdown */
+.note-body table {
+  display: table !important;
+}
+
+.recent-activity-heading {
+  padding-left: 1rem;
+  margin-bottom: 0.3rem;
+}
+
+
+/* Post Styles */
+.post {
+  max-width: none;
+  margin: 2rem auto;
+  padding: 0 1.5rem;
+}
+
+.post-header {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.post-content {
+  line-height: 1.8;
+}
+
+/* Writeups Grid */
+.writeups-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+.writeups-search {
+  margin: 2rem auto;
+  max-width: 600px;
+}
+
+.writeup-card {
+  background: var(--card-bg);
+  border-radius: 12px;
+  padding: 1.5rem;
+  transition: all 0.3s ease;
+  border-left: 4px solid var(--accent);
+  box-shadow: var(--card-shadow);
+}
+
+.writeup-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.writeup-card-header {
+  display: center;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.writeup-page-wrapper {
+  margin-left: 0;
+  padding-left: 2rem;
+}
+
+.difficulty-badge {
+  padding: 0.3rem 0.8rem;
+  border-radius: 50px;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.difficulty-badge.easy {
+  background: rgba(46, 204, 113, 0.2);
+  color: #2ecc71;
+}
+.difficulty-badge.medium {
+  background: rgba(241, 196, 15, 0.2);
+  color: #f1c40f;
+}
+.difficulty-badge.hard {
+  background: rgba(231, 76, 60, 0.2);
+  color: #e74c3c;
+}
+.writeups-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.writeup-meta {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  color: var(--accent-dark);
+  font-size: 0.95rem;
+}
+
+.writeup-date {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.writeup-date::before {
+  content: "📅";
+  opacity: 0.7;
+}
+
+.event {
+  background: rgba(78, 205, 196, 0.15);
+  padding: 0.3rem 0.8rem;
+  border-radius: 50px;
+}
+.writeup-content {
+  text-align: left;
+  line-height: 1.8;
+  font-size: 1rem;
+}
+.writeup-body {
+  line-height: 1.8;
+  text-align: left;
+}
+
+.writeup-container {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1.5rem;
+}
+
+.writeup-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.writeup-title {
+  text-align: center;
+  margin: 2.5rem 0 1.5rem 0;
+  font-size: 2.4rem;
+  line-height: 1.3;
+}
+
+.writeup-footer {
+  max-width: 800px;
+  margin-left: 0;
+  margin-right: 0;
+  text-align: left;
+  width: 100%;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+/* Writeup Page Styles */
+.writeup-content img {
+  max-width: 100%;
+  height: auto;
+  
+  margin: 1.5rem 0;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.writeup-content .image-caption {
+  text-align: center;
+  font-style: italic;
+  margin-top: -1rem;
+  margin-bottom: 1.5rem;
+  color: var(--text-color);
+  opacity: 0.8;
+}
+
+.writeup-image {
+  max-width: 100%;
+  height: auto;
+  margin: 1.5rem 0;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+#writeupsSearch {
+  width: 100%;
+  padding: 12px 20px;
+  border: 2px solid var(--accent);
+  border-radius: 8px;
+  background: var(--card-bg);
+  color: var(--text-color);
+  font-size: 1rem;
+}
+
+/* Difficulty Filter */
+.difficulty-filter {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  margin-top: 1rem;
+  font-size: 1rem; /* Slightly larger */
+  margin: 2rem auto 1rem auto;
+  max-width: 600px;
+}
+
+.difficulty-btn {
+  font-size: 1rem;
+  padding: 0.4rem 1rem;
+  border-radius: 50px;
+  border: none;
+  background: rgba(78, 205, 196, 0.15);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.difficulty-btn.active {
+  background: var(--accent);
+  color: white;
+}
+/* Copy buttons for code blocks */
+.copy-btn {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  background: rgba(255,255,255,0.2);
+  border: none;
+  border-radius: 4px;
+  padding: 0.3rem 0.6rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.copy-btn:hover {
+  background: var(--accent);
+  color: white;
+}
+
+
+
+/* Hide/show for search */
+.note-card[style*="display: none"] {
+  display: none !important;
+}
+
+/* Images */
+.ctf-logos img,
+.university-logos img {
+  height: 40px;
+  opacity: 0.8;
+  transition: all 0.3s;
+}
+
+.ctf-logos img:hover,
+.university-logos img:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+/* Christ's Journey Section Styles  */
+.christ-header-animation h1, .christ-header-animation p {
+  animation: christFadeIn 2s;
+}
+@keyframes christFadeIn {
+  from { opacity: 0; transform: translateY(-30px);}
+  to { opacity: 1; transform: translateY(0);}
+}
+.christ-card {
+  border: 2px solid #7f9cf5;
+  background: linear-gradient(135deg, #f7fafc 0%, #c3dafe 100%);
+  box-shadow: 0 0 24px #a0aec040;
+}
+[data-theme="dark"] .christ-card {
+  background: linear-gradient(135deg, #232526 0%, #2d3748 100%);
+  border-color: #434190;
+  box-shadow: 0 0 24px #43419033;
+}
+.christ-bubble {
+  background: linear-gradient(90deg, #b2f5ea 0%, #7f9cf5 100%);
+  color: #2d3748 !important;
+  font-weight: bold;
+  border: 2px solid #7f9cf5;
+}
+.christ-bubble:hover {
+  box-shadow: 0 0 16px #b2f5ea88;
+  background: #ebf8ff;
+  color: #434190 !important;
+}
+[data-theme="dark"] .christ-bubble {
+  background: linear-gradient(90deg, var(--accent) 0%, var(--accent-dark) 100%) !important; /* red gradient */
+  color: #181818 !important; /* black text */
+  font-weight: bold;
+  border: 2px solid var(--accent-dark) !important;
+}
+[data-theme="dark"] .christ-bubble:hover {
+  background: #ffb3b3 !important; /* lighter red for hover */
+  color: #181818 !important;
+  box-shadow: 0 0 16px var(--accent)88;
+  border-color: var(--accent-dark) !important;
+  transform: scale(1.06);
+}
+
+/* Bible Study Grid Styles */
+.biblestudy-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin: 2rem 0;
+}
+.biblestudy-card {
+  background: #f7fafc;
+  border: 2px solid #b2f5ea;
+  border-radius: 16px;
+  box-shadow: 0 0 20px #b2f5ea33;
+  padding: 1.5rem;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.biblestudy-card:hover {
+  transform: translateY(-6px) scale(1.03);
+  box-shadow: 0 8px 32px #7f9cf555;
+}
+.biblestudy-card h3 {
+  color: #434190;
+  margin-top: 0;
+}
+.biblestudy-verse {
+  color: #319795;
+  font-style: italic;
+  margin-bottom: 0.7rem;
+}
+.biblestudy-link {
+  color: #3182ce;
+  font-weight: bold;
+  text-decoration: underline;
+  transition: color 0.2s;
+}
+.biblestudy-link:hover {
+  color: #319795;
+}
+[data-theme="dark"] .biblestudy-card {
+  background: #232526;
+  border-color: #319795;
+  color: #e2e8f0;
+}
+[data-theme="dark"] .biblestudy-verse {
+  color: #63b3ed;
+}
+[data-theme="dark"] .biblestudy-link {
+  color: #90cdf4;
+}
+[data-theme="dark"] .biblestudy-link:hover {
+  color: #63b3ed;
+}
+
+/* Bible Study Single Page - Fullscreen, Heading Centered, Content Left */
+.biblestudy-single {
+  width: 100%;
+  max-width: 100vw;        
+  overflow-x: auto;        
+  min-height: 100vh;
+  margin: 0;
+  padding: 3.5rem 0;
+  background: linear-gradient(135deg, #f7fafc 0%, #c3dafe 100%);
+  border-radius: 0;
+  box-shadow: none;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  position: relative;
+  z-index: 0;
+}
+
+[data-theme="dark"] .biblestudy-single {
+  background: linear-gradient(135deg, #232526 0%, #2d3748 100%);
+}
+
+.biblestudy-header {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto 2rem auto;
+  padding: 0 2rem;
+  text-align: center;
+}
+.biblestudy-header h1 {
+  color: #434190;
+  margin-bottom: 0.5rem;
+  font-size: 2.2rem;
+  letter-spacing: 0.02em;
+  text-align: center;
+}
+[data-theme="dark"] .biblestudy-header h1 {
+  color: #b2f5ea;
+}
+.biblestudy-verse {
+  color: #319795;
+  font-style: italic;
+  font-size: 1.15rem;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+[data-theme="dark"] .biblestudy-verse {
+  color: #63b3ed;
+}
+.biblestudy-date {
+  display: block;
+  color: #718096;
+  font-size: 0.98rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+[data-theme="dark"] .biblestudy-date {
+  color: #a0aec0;
+}
+.biblestudy-content {
+  width: 100%;
+  max-width: none;
+  margin: 0 auto 2rem auto;
+  padding: 0 2rem;
+  color: #2d3748;
+  font-size: 1.08rem;
+  line-height: 1.7;
+  text-align: left;
+}
+[data-theme="dark"] .biblestudy-content {
+  color: #e2e8f0;
+}
+.biblestudy-single .christ-bubble {
+  margin: 2rem auto 0 auto;
+  display: block;
+}
+
+
+body[data-page="christ"] .top-nav-container .nav-button:hover,
+body[data-page="christ"] .top-nav-container .theme-button:hover {
+  background: #3b5399 !important;
+  border-color: #3b5399 !important;
+}.top-nav-container .nav-button,
+.top-nav-container .theme-button {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  box-sizing: border-box; /* Ensures border is included in size */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  border: 1px solid transparent; /* Default border for consistent sizing */
+}
+
+
+body[data-page="christ"] .top-nav-container .nav-button,
+body[data-page="christ"] .top-nav-container .theme-button {
+  border: 2px solid #4b6cb3 !important;
+  background: #4b6cb3 !important;
+  color: #fff !important;
+}
+
+
+.nav-button,
+.theme-button,
+.bubble {
+  box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+  border: 1.5px solid rgba(0,0,0,0.08);
+  cursor: pointer;
+  transition: 
+    box-shadow 0.18s,
+    transform 0.15s,
+    border 0.18s;
+}
+
+.nav-button:hover,
+.theme-button:hover,
+.bubble:hover {
+  box-shadow: 0 4px 16px rgba(0,0,0,0.16);
+  transform: scale(1.06);
+  border-width: 2px;
+}
+
+.nav-button:active,
+.theme-button:active,
+.bubble:active {
+  transform: scale(0.97);
+  box-shadow: 0 1px 4px rgba(0,0,0,0.10);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 900px) {
+  .biblestudy-header,
+  .biblestudy-content {
+    max-width: 100vw;
+    padding: 0 1rem;
+  }
+  .biblestudy-single {
+    padding: 2rem 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .biblestudy-header h1 {
+    font-size: 1.4rem;
+  }
+  .biblestudy-header,
+  .biblestudy-content {
+    padding: 0 0.5rem;
+  }
+  .biblestudy-single {
+    padding: 1rem 0;
+  }
+}
+
+
+[data-theme="dark"] .biblestudy-single {
+  background: linear-gradient(135deg, #232526 0%, #2d3748 100%);
+}
+
+@media (max-width: 900px) {
+  .biblestudy-single {
+    transform: none;
+    padding: 0;
+  }
+}
+/* Resources Grid */
+.resources-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  gap: 2rem;
+  margin: 2.5rem 0;
+  align-items: stretch;
+}
+
+/* Resource Card */
+.resource-card {
+  background: var(--card-bg);
+  border: var(--card-border);
+  border-radius: 14px;
+  box-shadow: var(--card-shadow);
+  padding: 2rem 1.5rem 1.5rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  min-height: 220px;
+  transition: 
+    box-shadow 0.22s,
+    transform 0.18s,
+    border 0.18s;
+  position: relative;
+}
+
+.resource-card h2 {
+  font-family: 'Fira Code', 'Fira Mono', monospace;
+  font-size: 1.3rem;
+  margin-top: 0;
+  margin-bottom: 1.2rem;
+  letter-spacing: 0.01em;
+}
+
+.resource-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.resource-card li {
+  margin-bottom: 0.7rem;
+}
+
+.resource-card a {
+  color: var(--accent-dark);
+  font-weight: 500;
+  font-family: 'Fira Mono', monospace;
+  transition: color 0.18s;
+  border-bottom: 1px dashed ;
+  padding-bottom: 2px;
+}
+
+.resource-card a:hover {
+  color: var(--accent-dark);
+  border-bottom: 1px solid var(--accent-dark);
+  text-decoration: none;
+}
+
+/* Subtle hover effect for card */
+.resource-card:hover {
+  box-shadow: 0 8px 32px var(--accent-dark)22;
+  transform: translateY(-4px) scale(1.02);
+  border-color: var(--accent);
+}
+
+/* Terminal header styling */
+.terminal-header {
+  background: #232526;
+  color: #b2f5ea;
+  font-family: 'Fira Mono', monospace;
+  padding: 0.7rem 1.2rem;
+  border-radius: 8px 8px 0 0;
+  margin-bottom: 1.2rem;
+  font-size: 1.08rem;
+  letter-spacing: 0.01em;
+  display: flex;
+  align-items: center;
+  gap: 0.7em;
+}
+
+.terminal-header .prompt {
+  color: #4ecdc4;
+  font-weight: bold;
+}
+
+.terminal-header .cmd {
+  color: #fff;
+  font-weight: 500;
+}
+
+/* Hacker intro styling */
+.hacker-intro {
+  background: var(--card-bg);
+  border-radius: 8px;
+  padding: 1.2rem 1.5rem;
+  margin-bottom: 2rem;
+  font-size: 1.08rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  font-family: 'Fira Mono', monospace;
+}
+
+.hacker-green {
+  color: var(--accent-dark);
+  font-weight: bold;
+}
+
+.hacker-blink {
+  animation: blink 1.2s steps(2, start) infinite;
+}
+
+@keyframes blink {
+  to { opacity: 0; }
+}
+
+
+
+/* Social Links */
+.social-link.github { background: #333; }
+.social-link.ctftime { background: #d44638; }
+.social-link.email { background:#718096; }
+
+.social-link.linkedin {background: #4b6cb3;}
+.social-link {
+  border: none !important;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .header-animation h1,
+  .about-header h1,
+  .notes-header h1 {
+    font-size: 2.2rem;
+  }
+  .about-grid,
+  .notes-grid,
+  .writeups-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .writeup-card {
+    padding: 1rem;
+    margin: 0 0 1.2rem 0;
+    border-radius: 10px;
+    font-size: 1rem;
+  }
+
+  .writeup-title {
+    font-size: 1.5rem;
+  }
+
+  .theme-toggle,
+  .nav-button {
+    width: 36px;
+    height: 36px;
+    top: 15px;
+    right: 15px;
+  }
+
+  .writeup-content img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+  
+@media (min-width: 1200px) {
+  .note-container {
+    max-width: 1000px;
+  }
+}
+@media (min-width: 1400px) {
+  .note-page-wrapper {
+    margin-right: 4rem;
+  }
+}
+
+/* Ensure the background fills the entire viewport for Bible Study Single Page */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  margin-bottom: 3rem;
+}
+
+
+[data-theme="dark"] .biblestudy-single {
+  background: linear-gradient(135deg, #232526 0%, #2d3748 100%);
+}
+
+/* Left-align the back button on Bible Study Single Page */
+.biblestudy-single .back-link {
+  display: inline-flex;
+  margin-left: 0;
+  margin-right: none;
+  margin-top: 2.5rem;
+  justify-content: flex-start;
+}
+
+/* Verse Ticker Styles */
+.verse-ticker-container {
+  width: 100%;
+  overflow: hidden;
+  height: 2.2em;
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5em;
+  margin-top: 0.5em;
+  position: relative;
+  z-index: 1001;
+}
+
+.verse-ticker {
+  display: inline-block;
+  white-space: nowrap;
+  font-size: 1.08em;
+  color: var(--accent-dark);
+  font-style: italic;
+  animation: verseScroll 18s linear infinite;
+  padding-left: 100%;
+}
+
+@keyframes verseScroll {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.post-feed {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-top: 0.1rem; 
+  padding-bottom: 1rem;
+}
+
+.post-preview {
+  margin-bottom: 1.2rem; 
+  border-left: 3px solid var(--accent);
+  padding-left: 1rem;
+  transition: background 0.2s;
+}
+.post-preview:hover {
+  background: rgba(78, 205, 196, 0.07);
+}
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: var(--bg-color);
+}
+
+body, html {
+  transition: none !important;
+}
+
+
+
+
+

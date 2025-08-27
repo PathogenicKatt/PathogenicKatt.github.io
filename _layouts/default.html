@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  {% include head.html %}
+  {% if page.custom_css %}{% include css.html %}{% endif %}
+  
+<body data-page="{{ page.data_page | default: page.collection | default: page.title | downcase }}">
+  <main class="page-content">
+    {{ content }}
+  </main>
+  <script src="{{ '/assets/js/script.js' | relative_url }}"></script>
+</body>
+</html>
