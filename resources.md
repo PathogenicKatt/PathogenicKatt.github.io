@@ -12,8 +12,7 @@ data_page: resources
 
 <div class="hacker-intro">
   <p>
-    <span class="hacker-green">Hii</span>! "Every great hacker starts with curiosity and the right tools".<br>
-    <strong>Sharpen your skills, embrace the challenge, and remember, every solved problem brings you closer to mastery.</strong><br>
+    <span class="hacker-green">Hii</span>! "Just a reminder: Trust in the LORD, in everything you do!".<br>
     <span class="hacker-blink">Keep pushing. Time is ticking!</span>
   </p>
 </div>
