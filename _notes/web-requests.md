@@ -727,24 +727,6 @@ _Note: HTTP version 1.X sends requests as clear-text, and uses a new-line charac
   - Notice that i used the `tail` command to retrieve the last added data. This is convenient as it cuts the whole data, to what you need.
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 _Tip: Many login forms would redirect us to a different page once authenticated (e.g. /dashboard.php). If we want to follow the redirection with cURL, we can use the -L flag._
 
 
