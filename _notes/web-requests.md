@@ -1,8 +1,8 @@
 ---
 layout: note
 title: "Web Requests"
-description: "A directory service for Windows network environments."
-tags: [web, http, internet, https]
+description: "HTTP (Hypertext Transfer Protocol) specifies a collection of request methods to specify what action is to be performed on a particular resource."
+tags: [web, http, internet, https, crud]
 date: 2025-08-20
 ---
 
