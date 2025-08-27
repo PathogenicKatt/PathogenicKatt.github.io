@@ -42,6 +42,7 @@ data_page: resources
   <div class="resource-card">
     <h2>Reverse Engineering</h2>
     <li><a href="./tools/angr">angr</a></li>
+    <li><a href="./tools/javascript-deobfuscation">javascript-deobfuscation</a></li>
   </div>
 
   <div class="resource-card">
