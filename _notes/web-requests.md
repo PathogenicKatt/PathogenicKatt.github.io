@@ -737,10 +737,10 @@ curl -X PUT http://<server-link>:<port>/api.php/city/london
   - We simply specify the city name for the API and use the HTTP DELETE method, and it would delete the entry, as follows:
 ![crud api delete](/assets/img/crud-api-htb(9).PNG){: .writeup-image }
   - As we can  below, after we deleted Cape-Town, we get an empty array when we try reading it, meaning it no longer exists.
-![crud api delete](/assets/img/crud-api-htb(10).PNG){: .writeup-image }
+![crud api](/assets/img/crud-api-htb(10).PNG){: .writeup-image }
   - Also note the difference to when i have used the silent tag `-s`
   - **Bonus Challenge**:
-![crud api delete](/assets/img/crud-api-htb(11).PNG){: .writeup-image }
+![crud api flag](/assets/img/crud-api-htb(11).PNG){: .writeup-image }
 
 - With this, we are able to perform all 4 CRUD operations through cURL.
 
