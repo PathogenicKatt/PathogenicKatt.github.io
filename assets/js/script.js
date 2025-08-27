@@ -47,7 +47,7 @@ function setupNotesSearch() {
 
   searchInput.addEventListener('input', function() {
     const searchTerm = this.value.trim().toLowerCase();
-    const noteCards = document.querySelectorAll('.note-card');
+    const noteCards = document.querySelectorAll('.note-preview');
     
     noteCards.forEach(card => {
       const title = card.querySelector('h3')?.textContent.toLowerCase() || '';
