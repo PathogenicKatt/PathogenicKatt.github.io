@@ -414,7 +414,6 @@ _Note: HTTP version 1.X sends requests as clear-text, and uses a new-line charac
       </tr>
     </thead>
     <tbody>
-
       <tr>
         <td>Content-Security-Policy</td>
         <td>Content-Security-Policy: script-src 'self'</td>
@@ -656,75 +655,113 @@ _Note: HTTP version 1.X sends requests as clear-text, and uses a new-line charac
 ![post method htb curl request data](/assets/img/post-method-htb(10).PNG){: .writeup-image }
   - As we can see, we were able to interact with the search function directly without needing to login or interact with the web application front-end. 
   - This can be an essential skill when performing web application assessments or bug bounty exercises, as it is much faster to test web applications this way.
-  - **Bonus Challenge**:
-    - I forgot to take the screenshot of the whole process but luckily i saved the one-line command i used to get the flag, in a "flag.txt" file:
-![post method htb bonus challenge](/assets/img/post-method-htb(11).PNG){: .writeup-image }
 
-## CRUD API
-- In this case we jumping on how web application may utilize APIs to perform the same task as above(which uses php parameters to search for a city name), and here we wil directly interact with api endpoints.
-- **API**
+## CRUD API:
+- We saw examples of a City Search web application that uses **PHP parameters** to search for a city name in the previous sections.
+- This section will look at how such a web application may utilize APIs to perform the same thing, and we will directly interact with the **API endpoint**.
+- **APIs**:
   - There are several types of APIs.
   - Many APIs are used to interact with a database, such that we would be able to specify the requested table and the requested row within our API query, and then use an HTTP method to perform the operation needed. 
-  -  For example, for the api.php endpoint in our example, if we wanted to update the city table in the database, and the row we will be updating has a city name of london, then the URL would look something like this:
-  ```bash
-  curl -X PUT http://<server_link>:<port>/api.php/city/london
-  ```
-- **CRUD**
-  - As we can see, we can easily specify the table and the row we want to perform an operation on through such APIs.
-  - Then we may utilize different HTTP methods to perform different operations on that row.
+  - For example, for the `api.php` endpoint in our example, if we wanted to update the city table in the database, and the row we will be updating has a city name of london, then the URL would look something like this:
+```bash
+curl -X PUT http://<server-link>:<port>/api.php/city/london
+```
+- **CRUD**:
+  - As we can see, we can easily specify the table and the row we want to perform an operation on through such APIs. 
+  - Then we may utilize different HTTP methods to perform different operations on that row. 
   - In general, APIs perform 4 main operations on the requested database entity:
-  <table>
-    <thead>
-      <tr>
-        <th>Operations</th>
-        <th>HTTP Method</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>Create</td>
-        <td>POST</td>
-        <td>Adds the specified data to the database table</td>
-      </tr>
-      <tr>
-        <td>Read</td>
-        <td>GET</td>
-        <td>Reads the specified entity from the database table.</td>
-      </tr>
-      <tr>
-        <td>Update</td>
-        <td>PUT</td>
-        <td>Updates the data of the specified database table.</td>
-      </tr>
-      <tr>
-        <td>Delete</td>
-        <td>DELETE</td>
-        <td>Removes the specified row from the database table</td>
-      </tr>
-    </tbody>
-  </table>
-  - These four operations are mainly linked to the commonly known CreateReadUpdadeDelete(CRUD) APIs, but the same principle is also used in REST APIs and several other types of APIs.
+<table>
+<thead>
+    <tr>
+      <th>Operation</th>
+      <th>HTTP Method</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Create</td>
+      <td>POST</td>
+      <td>Adds the specified data to the database table.</td>
+    </tr>
+    <tr>
+      <td>Read</td>
+      <td>GET</td>
+      <td>Reads the specified entity from the database table.</td>
+    </tr>
+    <tr>
+      <td>Update</td>
+      <td>PUT</td>
+      <td>Updates the data of the specified database table.</td>
+    </tr>
+    <tr>
+      <td>Delete</td>
+      <td>DELETE</td>
+      <td>Removes the specified row from the database table</td>
+    </tr>
+  </tbody>
+</table>
+  - These four operations are mainly linked to the commonly known CRUD APIs, but the same principle is also used in REST APIs and several other types of APIs.
 - **Read**:
-  - The first thing we will do when interacting with an API is reading data. 
-  - As mentioned earlier, we can simply specify the table name after the API (e.g. /city) and then specify our search term (e.g. /london), as follows:
-![crud api curl read](/assets/img/crud-api-htb.PNG){: .writeup-image }
-  - We see that the result is sent as a JSON string. To have it properly formatted in JSON format, we can pipe the output to the jq utility, which will format it properly.
-  - We will also silent any unneeded cURL output with -s, as follows:
-![crud api curl read json](/assets/img/crud-api-htb(1).PNG){: .writeup-image }
+  - The first thing we will do when interacting with an API is reading data.
+  - we can simply specify the table name after the API (e.g. /city) and then specify our search term (e.g. /london), as follows:
+![crud api read](/assets/img/crud-api-htb.PNG){: .writeup-image }
+  - We see that the result is sent as a JSON string. 
+  - To have it properly formatted in JSON format, we can pipe the output to the `jq` utility, which will format it properly.
+  - We will also silent any unneeded cURL output with `-s`, as follows:
+![crud api read](/assets/img/crud-api-htb(1).PNG){: .writeup-image }
   - As we can see, we got the output in a nicely formatted output. We can also provide a search term and get all matching results:
-![crud api curl read full-results](/assets/img/crud-api-htb(2).PNG){: .writeup-image }
+![crud api read](/assets/img/crud-api-htb(2).PNG){: .writeup-image }
   - Finally, we can pass an empty string to retrieve all entries in the table:
-![crud api curl read full-results](/assets/img/crud-api-htb(3).PNG){: .writeup-image }
-
+![crud api read-all entries](/assets/img/crud-api-htb(3).PNG){: .writeup-image }
 - **Create**:
-  - To add a new entry, we can use an HTTP POST request.
-  - We can simply POST our JSON data, and it will be added to the table.
+  - To add a new entry, we can use an HTTP POST request, which is quite similar to what we have performed in the previous section. 
+  - We can simply POST our JSON data, and it will be added to the table. 
   - As this API is using JSON data, we will also set the Content-Type header to JSON, as follows:
-![crud api curl adding data](/assets/img/crud-api-htb(4).PNG){: .writeup-image }
+![crud api create](/assets/img/crud-api-htb(4).PNG){: .writeup-image }
   - Now, we can read the content of the city we added (Joburg), to see if it was successfully added:
-![crud api curl reading data](/assets/img/crud-api-htb(5).PNG){: .writeup-image }
-  - Notice that i used the `tail` command to retrieve the last added data. This is convenient as it cuts the whole data, to what you need.
+![crud api create](/assets/img/crud-api-htb(5).PNG){: .writeup-image }
+  - As we can see, a new city was created, which did not exist before.
+- **Update**:
+  - Now that we know how to read and write entries through APIs, let's start discussing two other HTTP methods we have not used so far: `PUT` and `DELETE`.
+  - As mentioned at the beginning of the section, PUT is used to update API entries and modify their details, while `DELETE` is used to remove a specific entity.
+  - Using PUT is quite similar to POST in this case, with the only difference being that we have to specify the name of the entity we want to edit in the URL, otherwise the API will not know which entity to edit.
+  - So, all we have to do is specify the city name in the URL, change the request method to PUT, and provide the JSON data like we did with POST, as follows:
+![crud api create](/assets/img/crud-api-htb(6).PNG){: .writeup-image }
+  - We see in the example above that we first specified /city/london as our city, and passed a JSON string that contained "city_name":"Cape Town" in the request data. So, the london city should no longer exist, and a new city with the name Cape Town should exist. Let's try reading both to confirm:
+![crud api read-updated contents](/assets/img/crud-api-htb(8).PNG){: .writeup-image }
+  - We get an empty array, But below we see that Cape-Town exists.
+![crud api read](/assets/img/crud-api-htb(7).PNG){: .writeup-image }
+- **DELETE**
+  - Finally, let's try to delete a city, which is as easy as reading a city. 
+  - We simply specify the city name for the API and use the HTTP DELETE method, and it would delete the entry, as follows:
+![crud api delete](/assets/img/crud-api-htb(8).PNG){: .writeup-image }
+  - As we can see, after we deleted Cape-Town, we get an empty array when we try reading it, meaning it no longer exists.
+![crud api delete](/assets/img/crud-api-htb(9).PNG){: .writeup-image }
+  - **Bonus Challenge**:
+![crud api delete](/assets/img/crud-api-htb(10).PNG){: .writeup-image }
+
+- With this, we are able to perform all 4 CRUD operations through cURL.
+
+
+_Note: The HTTP PATCH method may also be used to update API entries instead of PUT. To be precise, PATCH is used to partially update an entry (only modify some of its data "e.g. only city_name"), while PUT is used to update the entire entry. We may also use the HTTP OPTIONS method to see which of the two is accepted by the server, and then use the appropriate method accordingly. In this section, we will be focusing on the PUT method, though their usage is quite similar._
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 _Tip: Many login forms would redirect us to a different page once authenticated (e.g. /dashboard.php). If we want to follow the redirection with cURL, we can use the -L flag._
