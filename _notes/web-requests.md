@@ -729,17 +729,18 @@ curl -X PUT http://<server-link>:<port>/api.php/city/london
   - So, all we have to do is specify the city name in the URL, change the request method to PUT, and provide the JSON data like we did with POST, as follows:
 ![crud api create](/assets/img/crud-api-htb(6).PNG){: .writeup-image }
   - We see in the example above that we first specified /city/london as our city, and passed a JSON string that contained "city_name":"Cape Town" in the request data. So, the london city should no longer exist, and a new city with the name Cape Town should exist. Let's try reading both to confirm:
-![crud api read-updated contents](/assets/img/crud-api-htb(8).PNG){: .writeup-image }
+![crud api read-updated contents](/assets/img/crud-api-htb(7).PNG){: .writeup-image }
   - We get an empty array, But below we see that Cape-Town exists.
-![crud api read](/assets/img/crud-api-htb(7).PNG){: .writeup-image }
+![crud api read](/assets/img/crud-api-htb(8).PNG){: .writeup-image }
 - **DELETE**
   - Finally, let's try to delete a city, which is as easy as reading a city. 
   - We simply specify the city name for the API and use the HTTP DELETE method, and it would delete the entry, as follows:
-![crud api delete](/assets/img/crud-api-htb(8).PNG){: .writeup-image }
-  - As we can see, after we deleted Cape-Town, we get an empty array when we try reading it, meaning it no longer exists.
 ![crud api delete](/assets/img/crud-api-htb(9).PNG){: .writeup-image }
-  - **Bonus Challenge**:
+  - As we can  below, after we deleted Cape-Town, we get an empty array when we try reading it, meaning it no longer exists.
 ![crud api delete](/assets/img/crud-api-htb(10).PNG){: .writeup-image }
+  - Also note the difference to when i have used the silent tag `-s`
+  - **Bonus Challenge**:
+![crud api delete](/assets/img/crud-api-htb(11).PNG){: .writeup-image }
 
 - With this, we are able to perform all 4 CRUD operations through cURL.
 
