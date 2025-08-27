@@ -8,7 +8,10 @@ custom_css: true
 <div class="about-container">
   <section class="about-header">
     <h1> Hi, I'm Katleho</h1>
-    <p class="subtitle"> Cybersecurity ❤ & AI Security Engineer | CTF Player</p>
+    <p class="subtitle"> Junior Cybersecurity Analyst ❤ & AI Security Engineer | CTF Player</p>
+    <p > 
+“Great things are not done by impulse, but by a series of small things brought together.” - <strong>Vincent Van Gogh</strong>
+</p>
   </section>
 
   <div class="about-grid">
