@@ -37,6 +37,7 @@ data_page: resources
     <h2>Cryptography</h2>
     <li><a href="./tools/cyberchef">CyberChef</a></li>
     <li><a href="./tools/hashcat">hashcat</a></li>
+    <li><a href="./tools/cipher-indentifier">Cipher-Indentifier</a></li>
   </div>
 
   <div class="resource-card">
