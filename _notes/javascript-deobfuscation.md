@@ -111,7 +111,11 @@ _Note: The above type of obfuscation is known as "packing", which is usually rec
     - Though these tools are doing a good job so far in clearing up the code into something we can understand, once the code becomes more obfuscated and encoded, it would become much more difficult for automated tools to clean it up. 
     - This is especially true if the code was obfuscated using a custom obfuscation tool.
     - We would need to manually reverse engineer the code to understand how it was obfuscated and its functionality for such cases. 
-    
+
+## Bonus Challenge:
+    ![htb-code obfuscation](/assets/img/js-src-code(18).PNG){: .writeup-image }
+
+
 
 
 
