@@ -61,7 +61,35 @@ _It must be noted that doing authentication or encryption on the client-side is 
 - **Packing JavaScript code**:
     - Now, let us obfuscate our line of code to make it more obscure and difficult to read.
     - First, we will try <a href="https://beautifytools.com/javascript-obfuscator.php" target="_blank">BeautifyTools</a> to obfuscate our code:
-    ![htb-code minification](/assets/img/js-src-code(8).PNG){: .writeup-image }
+    ![htb-code obfuscation](/assets/img/js-src-code(8).PNG){: .writeup-image }
+    - after obfuscation:
+    ![htb-code obfuscation](/assets/img/js-src-code(9).PNG){: .writeup-image }
+    - We see that our code became much more obfuscated and difficult to read. We can copy this code into <a href="https://jsconsole.com" target=_blank>jsconsole</a>, to verify that it still does its main function:
+    ![htb-code obfuscation](/assets/img/js-src-code(10).PNG){: .writeup-image }
+    - We see that we get the same output.
+    - A **packer obfuscation** tool usually attempts to convert all words and symbols of the code into a list or a dictionary and then refer to them using the (p,a,c,k,e,d) function to re-build the original code during execution. The (p,a,c,k,e,d) can be different from one packer to another.
+    - However, it usually contains a certain order in which the words and symbols of the original code were packed to know how to order them during execution.
+    - While a packer does a great job reducing the code's readability, we can still see its main strings written in cleartext, which may reveal some of its functionality. This is why we may want to look for better ways to obfuscate our code.
+<br>
+_Note: The above type of obfuscation is known as "packing", which is usually recognizable from the six function arguments used in the initial function "function(p,a,c,k,e,d)"._
+
+## Advanced Obfuscation
+- So far, we have been able to make our code obfuscated and more difficult to read.
+- However, the code still contains strings in cleartext, which may reveal its original functionality.
+- In this section, we will try a couple of tools that should completely obfuscate the code and hide any remnants of its original functionality.
+- **Obfuscator**:
+    - Let's visit <a href="https://obfuscator.io" target=_blank>obfuscator</a>. Before we click obfuscate, we will change String Array Encoding to Base64, as seen below:
+    ![htb-code obfuscation](/assets/img/js-src-code(11).PNG){: .writeup-image }
+    - Now, we can paste our code and click obfuscate: 
+    ![htb-code obfuscation](/assets/img/js-src-code(12).PNG){: .writeup-image }
+    - We see a huge difference.
+    ![htb-code obfuscation](/assets/img/js-src-code(13).PNG){: .writeup-image }
+    - This code is obviously more obfuscated, and we can't see any remnants of our original code.
+    - We can now try running it in <a href="https://jsconsole.com" target=_blank>jsconsole</a> to verify that it still performs its original function.
+    ![htb-code obfuscation](/assets/img/js-src-code(14).PNG){: .writeup-image }
+    - We see that, indeed, the code gave us the same output.
+## Deobfuscation
+
 
 
 
