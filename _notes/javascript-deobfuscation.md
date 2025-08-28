@@ -89,8 +89,29 @@ _Note: The above type of obfuscation is known as "packing", which is usually rec
     ![htb-code obfuscation](/assets/img/js-src-code(14).PNG){: .writeup-image }
     - We see that, indeed, the code gave us the same output.
 ## Deobfuscation
-
-
+- Now that we understand how code obfuscation works let's start our learning towards deobfuscation.
+- **Beautify**:
+    - We see that the current code we have is all written in a single line.
+    - This is known as Minified JavaScript code. 
+    - In order to properly format the code, we need to Beautify our code. 
+    - The most basic method for doing so is through our Browser `Dev Tools`.
+    - Using Firefox, we can open the browser debugger with `[ CTRL+SHIFT+Z ]`, and then click on our script `secret.js`. 
+    - This will show the script in its original formatting, but we can click on the '{ }' button at the bottom, which will Pretty Print the script into its proper JavaScript formatting: 
+    ![htb-code obfuscation](/assets/img/js-src-code(15).PNG){: .writeup-image }
+    - But we see that after pressing the `{}` button, we get the following:
+    ![htb-code obfuscation](/assets/img/js-src-code(16).PNG){: .writeup-image }
+    - However, the code is still not very easy to read.
+    - This is because the code we are dealing with was not only minified but obfuscated as well.
+    - So, simply formatting or beautifying the code will not be enough. For that, we will require tools to deobfuscate the code.
+- **Deobfuscate**:
+    - One good tool is <a href="https://matthewfl.com/unPacker.html" target=_blank>UnPacker</a>.
+    ![htb-code obfuscation](/assets/img/js-src-code(17).PNG){: .writeup-image }
+    
+- **Reverse Engineering**
+    - Though these tools are doing a good job so far in clearing up the code into something we can understand, once the code becomes more obfuscated and encoded, it would become much more difficult for automated tools to clean it up. 
+    - This is especially true if the code was obfuscated using a custom obfuscation tool.
+    - We would need to manually reverse engineer the code to understand how it was obfuscated and its functionality for such cases. 
+    
 
 
 
