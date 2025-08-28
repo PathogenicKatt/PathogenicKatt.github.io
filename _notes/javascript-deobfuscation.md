@@ -111,9 +111,26 @@ _Note: The above type of obfuscation is known as "packing", which is usually rec
     - Though these tools are doing a good job so far in clearing up the code into something we can understand, once the code becomes more obfuscated and encoded, it would become much more difficult for automated tools to clean it up. 
     - This is especially true if the code was obfuscated using a custom obfuscation tool.
     - We would need to manually reverse engineer the code to understand how it was obfuscated and its functionality for such cases. 
+- **Code anlysis**
+    - Now that we have deobfuscated the code, we can start going through it:
+    ![htb-code obfuscation](/assets/img/js-src-code(18).PNG){: .writeup-image }
+    - We see that the secret.js file contains only one function, generateSerial.
+    - **HTTP Requests**:
+        - Let us look at each line of the generateSerial function.
+        - **Code Variables**: The function starts by defining a variable `xhr`, which creates an object of `XMLHttpRequest`. As we may not know exactly what `XMLHttpRequest` does in JavaScript, let us Google `XMLHttpRequest` to see what it is used for.
+        - **XMLHttpRequest**: All modern browsers have a built-in XMLHttpRequest object to request data from a server. The `XMLHttpRequest` object can be used to request data from a web server. The XMLHttpRequest object is a developers dream, because you can:
+            - Update a web page without reloading the page.
+            - Request data from a server - after the page has loaded.
+            - Receive data from a server  - after the page has loaded.
+            - Send data to a server - in the background.
+        - we see that it is a JavaScript function that handles web requests.
+        - The second variable defined is the `URL` variable, which contains a `URL` to `/serial.php`, which should be on the same domain, as no domain was specified.
+        - **Code Functions**: Next, we see that `xhr.open` is used with "`POST`" and `URL`. After googling what xhr.open does, we see that it is used to exchange data with a server.
+        - So, all generateSerial is doing is simply sending a POST request to /serial.php, without including any POST data or retrieving anything in return.
+
 
 ## Bonus Challenge:
-    ![htb-code obfuscation](/assets/img/js-src-code(18).PNG){: .writeup-image }
+    ![htb-code obfuscation](/assets/img/js-src-code(19).PNG){: .writeup-image }
 
 
 
