@@ -18,9 +18,8 @@ data_page: tools
         <li> Hex encode: <code> echo "giberrish" | xxd -p</code></li>
         <li> Hex decode: <code> echo "6769626265726973680a" | xxd -p -r</code></li>
         <li> ROT 13: <code> echo "gibbersih" | tr 'A-Za-z' 'N-ZA-Mn-za-m'</code></li>
-
       </ul>
-    <li><strong>Official Sites:</strong> <a href="https://jsconsole.com/" target="_blank">jsconsole</a>, <a href="https://prettier.io/playground/" target="_blank">prettier</a>, <a href="https://beautifier.io/" target="_blank">beautifier</a>,  <a href="http://www.jsnice.org/" target="_blank">jsnice</a></li>
+    <li><strong>Official Sites:</strong> <a href="https://jsconsole.com/" target="_blank">jsconsole</a>, <a href="https://prettier.io/playground/" target="_blank">prettier</a>, <a href="https://beautifier.io/" target="_blank">beautifier</a>,  <a href="http://www.jsnice.org/" target="_blank">jsnice</a>, <a href="https://matthewfl.com/unPacker.html" target=_blank>unpacker</a></li>
   </ul>
 
 </div>
