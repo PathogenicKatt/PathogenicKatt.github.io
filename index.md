@@ -13,7 +13,7 @@ custom_css: true
      Cybersecurity & Purposeful Living 
   </h1>
   <p class="subtitle" style="text-align: center;"><i>
-    "Knowing is not enough; we must apply. Willing is not enough; we must do.</i> -<strong> Johann Wolfgang von Goethe</strong>
+    "Knowing is not enough; we must apply. Willing is not enough; we must do."</i> -<strong> Johann Wolfgang von Goethe</strong>
   </p>
 </div>
 
