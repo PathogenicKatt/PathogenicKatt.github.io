@@ -130,7 +130,7 @@ _Note: The above type of obfuscation is known as "packing", which is usually rec
 
 
 ## Bonus Challenge:
-    ![htb-code obfuscation](/assets/img/js-src-code(19).PNG){: .writeup-image }
+![htb-code obfuscation](/assets/img/js-src-code(19).PNG){: .writeup-image }
 
 
 
