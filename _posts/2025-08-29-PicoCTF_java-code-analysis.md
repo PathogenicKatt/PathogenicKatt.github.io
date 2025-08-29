@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: "PicoCTF: Java Code Analysis!?!"
 date: 2025-08-29
 ---
