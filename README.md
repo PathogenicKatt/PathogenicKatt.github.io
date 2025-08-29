@@ -28,8 +28,6 @@ Welcome to my personal knowledge base! Here I document my cybersecurity journey,
 - **Deployment:** GitHub Pages
 - **Extensions:**
   - Marked.js (Markdown rendering)
-  - Highlight.js (Code syntax)
-  - Font Awesome (Icons)
 
 ## Getting Started
 
@@ -54,6 +52,7 @@ JEKYLL_ENV=production bundle exec jekyll build
 - **Resources:** Toolbox of useful links and tools
 - **Bible Study:** Bible study notes and reflections
 - **About Me:** Contact and background information
+
 
 
 
