@@ -162,15 +162,21 @@ document.addEventListener('DOMContentLoaded', function() {
   // Random Bible Verse for Christ's Journey page
   if (window.location.pathname.startsWith("/christ")) {
     const verses = [
-      '"Trust in the Lord with all your heart and lean not on your own understanding." <strong>- Proverbs 3:5</strong>',
-      '"For I know the plans I have for you, declares the Lord..." <strong>- Jeremiah 29:11</strong>',
-      '"The Lord is my light and my salvation—whom shall I fear?" <strong>- Psalm 27:1</strong>',
-      '"Be strong and courageous. Do not be afraid..." <strong>- Joshua 1:9</strong>',
-      '"Cast all your anxiety on Him because He cares for you." <strong>- 1 Peter 5:7</strong>',
-      '"But seek first the kingdom of God and his righteousness..." <strong>- Matthew 6:33</strong>',
-      '"With God all things are possible." <strong>- Matthew 19:26</strong>',
-      '"Humble yourself before the Lord, and he will lift you up in honor." <strong>- James 4:10</strong>',
-      '"The Lord will fight for you; you need only to be still." <strong>- Exodus 14:14</strong>'
+      '"Trust in the Lord with all your heart and lean not on your own understanding; in all your ways submit to him, and he will make your paths straight." <strong>- Proverbs 3:5-6</strong>',
+      '"For I know the plans I have for you, declares the Lord, plans to prosper you and not to harm you, plans to give you hope and a future." <strong>- Jeremiah 29:11</strong>',
+      '"The Lord is my light and my salvation—whom shall I fear? The Lord is the stronghold of my life—of whom shall I be afraid?" <strong>- Psalm 27:1</strong>',
+      '"Have I not commanded you? Be strong and courageous. Do not be afraid; do not be discouraged, for the Lord your God will be with you wherever you go." <strong>- Joshua 1:9</strong>',
+      '"Cast all your anxiety on him because he cares for you." <strong>- 1 Peter 5:7</strong>',
+      '"But seek first his kingdom and his righteousness, and all these things will be given to you as well." <strong>- Matthew 6:33</strong>',
+      '"Jesus looked at them and said, \'With man this is impossible, but with God all things are possible.\'" <strong>- Matthew 19:26</strong>',
+      '"Humble yourselves before the Lord, and he will lift you up." <strong>- James 4:10</strong>',
+      '"The Lord will fight for you; you need only to be still." <strong>- Exodus 14:14</strong>',
+      '"For God so loved the world that he gave his one and only Son, that whoever believes in him shall not perish but have eternal life." <strong>- John 3:16</strong>',
+      '"I can do all this through him who gives me strength." <strong>- Philippians 4:13</strong>',
+      '"And we know that in all things God works for the good of those who love him, who have been called according to his purpose." <strong>- Romans 8:28</strong>',
+      '"Therefore, if anyone is in Christ, the new creation has come: The old has gone, the new is here!" <strong>- 2 Corinthians 5:17</strong>',
+      '"But he said to me, \'My grace is sufficient for you, for my power is made perfect in weakness.\' Therefore I will boast all the more gladly about my weaknesses, so that Christ\'s power may rest on me." <strong>- 2 Corinthians 12:9</strong>',
+      '"Do not be anxious about anything, but in every situation, by prayer and petition, with thanksgiving, present your requests to God. And the peace of God, which transcends all understanding, will guard your hearts and your minds in Christ Jesus." <strong>- Philippians 4:6-7</strong>'
     ];
     const random = verses[Math.floor(Math.random() * verses.length)];
     const verseDiv = document.getElementById("random-verse");
