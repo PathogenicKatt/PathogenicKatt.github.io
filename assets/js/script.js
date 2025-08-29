@@ -185,15 +185,20 @@ document.addEventListener('DOMContentLoaded', function() {
    // Verse ticker for homepage
   if (window.location.pathname === "/" || window.location.pathname === "/index.html") {
     const verses = [
-      "Trust in the Lord with all your heart and lean not on your own understanding. - Proverbs 3:5",
-      "For I know the plans I have for you, declares the Lord... - Jeremiah 29:11",
-      "The Lord is my light and my salvation—whom shall I fear? - Psalm 27:1",
-      "Be strong and courageous. Do not be afraid... - Joshua 1:9",
-      "Cast all your anxiety on Him because He cares for you. - 1 Peter 5:7",
-      "But seek first the kingdom of God and his righteousness... - Matthew 6:33",
-      "With God all things are possible. - Matthew 19:26",
-      "Humble yourself before the Lord, and he will lift you up in honor. - James 4:10",
-      "The Lord will fight for you; you need only to be still. - Exodus 14:14"
+      "Trust in the Lord with all your heart and lean not on your own understanding; in all your ways submit to him, and he will make your paths straight. - Proverbs 3:5-6",
+      "For I know the plans I have for you, declares the Lord, plans to prosper you and not to harm you, plans to give you hope and a future. - Jeremiah 29:11",
+      "The Lord is my light and my salvation—whom shall I fear? The Lord is the stronghold of my life—of whom shall I be afraid? - Psalm 27:1",
+      "Have I not commanded you? Be strong and courageous. Do not be afraid; do not be discouraged, for the Lord your God will be with you wherever you go. - Joshua 1:9",
+      "Cast all your anxiety on him because he cares for you. - 1 Peter 5:7",
+      "But seek first his kingdom and his righteousness, and all these things will be given to you as well. - Matthew 6:33",
+      "Jesus looked at them and said, 'With man this is impossible, but with God all things are possible.' - Matthew 19:26",
+      "Humble yourselves before the Lord, and he will lift you up. - James 4:10",
+      "The Lord will fight for you; you need only to be still. - Exodus 14:14",
+      "For God so loved the world that he gave his one and only Son, that whoever believes in him shall not perish but have eternal life. - John 3:16",
+      "I can do all this through him who gives me strength. - Philippians 4:13",
+      "And we know that in all things God works for the good of those who love him, who have been called according to his purpose. - Romans 8:28",
+      "Therefore, if anyone is in Christ, the new creation has come: The old has gone, the new is here! - 2 Corinthians 5:17",
+      "Do not be anxious about anything, but in every situation, by prayer and petition, with thanksgiving, present your requests to God. - Philippians 4:6"
     ];
     const ticker = document.getElementById("verse-ticker");
     if (ticker) {
