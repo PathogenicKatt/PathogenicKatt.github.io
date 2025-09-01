@@ -1,5 +1,5 @@
 ---
-layout: biblestudy
+layout: under_construction
 title: "Discovering Purpose 02"
 verse: "Isaiah 55:9 - 'For as the heavens are higher than the earth, so are My ways higher than your ways, and My thoughts than your thoughts'"
 date: 2025-09-01
