@@ -221,5 +221,20 @@ date: 2025-08-30
     - The recommended boot flow for a device is as follows:
     ![verification boot flow](/assets/img/android-htb(3).PNG){: .writeup-image}
 
+<br>
+- **APK Structure**:
+    - The Android Package Kit file, commonly known as an APK, is the file format used by the Android operating system to distribute and install applications.
+    - An APK is essentially an archive that contains all the components needed for an Android app to run.
+    - Among its contents is the application's compiled code, stored in a single DEX (Dalvik Executable) file. 
+    - When an Android application is compiled, the Java (or Kotlin) source code is first converted into Java bytecode, which is then transformed and optimized into a DEX file.
+    -  These DEX files are executable and can be interpreted by the Dalvik Virtual Machine (DVM) or the Android Runtime (ART), depending on the device and Android version.
+    - In addition to compiled code, APK files include resources such as assets, images, UI layouts, and the AndroidManifest.xml file (all of which are necessary for the application to function).
+    - APK files use the .apk extension and, since they are ZIP-based archives, they can be unpacked with standard tools such as the unzip command in Linux.
+    ![apk structure](/assets/img/android-htb(4).PNG){: .writeup-image}
+    - The files extracted from the APK are encoded, and neither the source code nor the configuration files are human-readable.
+    ![apk structure](/assets/img/android-htb(5).PNG){: .writeup-image}
+    - The image below shows the unzipped structure of an APK file:
+    ![apk structure](/assets/img/android-htb(6).PNG){: .writeup-image}
 
+    
 
