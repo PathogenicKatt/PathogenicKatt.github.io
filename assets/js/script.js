@@ -122,6 +122,32 @@ function setupImageZoom() {
     });
   });
 }
+function setupCVESearchAndFilter() {
+  const searchInput = document.getElementById('cvesSearch');
+  const criticalityBtns = document.querySelectorAll('.difficulty-btn');
+  if (!searchInput) return;
+
+  // Search filter
+  searchInput.addEventListener('input', function() {
+    const query = this.value.toLowerCase();
+    document.querySelectorAll('.cve-card').forEach(card => {
+      const text = card.textContent.toLowerCase();
+      card.style.display = text.includes(query) ? '' : 'none';
+    });
+  });
+
+  // Criticality filter
+  criticalityBtns.forEach(btn => {
+    btn.addEventListener('click', function() {
+      criticalityBtns.forEach(b => b.classList.remove('active'));
+      this.classList.add('active');
+      const crit = this.getAttribute('data-criticality');
+      document.querySelectorAll('.cve-card').forEach(card => {
+        card.style.display = (crit === 'all' || card.dataset.criticality === crit) ? '' : 'none';
+      });
+    });
+  });
+}
 
 // Initialize everything when DOM loads
 document.addEventListener('DOMContentLoaded', function() {
@@ -129,6 +155,7 @@ document.addEventListener('DOMContentLoaded', function() {
   setupNotesSearch();
   setupWriteupsSearch();
   setupImageZoom();
+  setupCVESearchAndFilter();
   
   // Syntax highlighting
   if (typeof hljs !== 'undefined') {

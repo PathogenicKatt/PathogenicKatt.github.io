@@ -1,0 +1,21 @@
+---
+layout: default
+---
+
+<div class="writeup-page-wrapper cve-page-wrapper">
+  <div class="writeup-header">
+    <span class="difficulty-badge criticality-badge {{ page.criticality | downcase }}">
+      {{ page.criticality | capitalize }}
+    </span>
+    <span class="event">{{ page.cve_id }}</span>
+    <h1 class="writeup-title">{{ page.title }}</h1>
+    <p class="writeup-date"><strong>Published:</strong> {{ page.date | date: "%b %d, %Y" }}</p>
+  </div>
+  <div class="writeup-body cve-body">
+    <p class="cve-description">{{ page.description }}</p>
+    {{ content }}
+  </div>
+  <div class="writeup-footer">
+    <a href="/cves" class="back-link bubble">← Back to CVEs</a>
+  </div>
+</div>

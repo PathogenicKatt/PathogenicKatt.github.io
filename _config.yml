@@ -31,6 +31,10 @@ collections:
   biblestudy:
     output: true
     permalink: /biblestudy/:title/
+  cves:
+    output: true
+    permalink: /cves/:name/
+  
 
 
 
