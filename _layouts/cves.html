@@ -5,7 +5,13 @@ layout: default
 <div class="writeup-page-wrapper cve-page-wrapper">
   <div class="writeup-header">
     <h1 class="writeup-title">{{ page.title }}</h1>
-    <p class="writeup-date"><strong>Published:</strong> {{ page.date | date: "%b %d, %Y" }}</p>
+    <p class="writeup-date"><strong>Published:</strong> 
+  {% if page.published %}
+    {{ page.published | date: "%b %d, %Y" }}
+  {% else %}
+    {{ page.date | date: "%b %d, %Y" }}
+  {% endif %}
+</p>
   </div>
   <div class="writeup-body cve-body">
     <p class="cve-description">{{ page.description }}</p>
