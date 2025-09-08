@@ -7,10 +7,9 @@ custom_css: true
 
 <div class="writeups-header">
   <h1>CTF Writeups</h1>
-  <p class="subtitle"><i>"Where curiosity meets the solution."</i></p>
 </div>
 
-<div class="writeups-search">
+<div class="search-bar-container" style="text-align:center;">
   <input type="text" id="writeupsSearch" placeholder="Search writeups...">
   <div class="difficulty-filter">
     <span>Filter:</span>
