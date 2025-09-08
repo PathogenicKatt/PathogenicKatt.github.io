@@ -8,10 +8,7 @@ custom_css: true
 <div class="about-container">
   <section class="about-header">
     <h1> Hi, I'm Katleho</h1>
-    <p class="subtitle"> Junior Cybersecurity Analyst ❤ & AI Security Engineer | CTF Player</p>
-    <p > <i>
-“Great things are not done by impulse, but by a series of small things brought together.” </i>- <strong>Vincent Van Gogh</strong>
-</p>
+    <p class="subtitle"> Junior Security Analyst ❤ & AI Security Engineer | CTF Player</p>
   </section>
 
   <div class="about-grid">
@@ -48,7 +45,9 @@ custom_css: true
         <span>Java</span>
         <span>SQL</span>
         <span>Assembly</span>
-        <span>Linux commands</span>
+        <span>Linux</span>
+        <span>Web development</span>
+        <span>Windows</span>
         <span>Git</span>
         <span>Cloud Computing (Azure)</span>
       </div>
