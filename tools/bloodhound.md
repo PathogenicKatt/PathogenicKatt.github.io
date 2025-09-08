@@ -68,3 +68,4 @@ SharpHound.exe --CollectionMethod Stealth # Attempt to be quieter
 # 4. Run built-in queries or manually explore the graph.
 # 5. Right-click on high-value targets (marked with a trophy) or your owned users to find paths.
 ```
+<a href="/resources" class="back-link">&#8592; Back to Resources</a>
