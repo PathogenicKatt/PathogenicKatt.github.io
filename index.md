@@ -45,16 +45,15 @@ custom_css: true
         </li>
       </ul>
 <br>
-<h2 style="margin: 0; padding: 0 0 12px 0; padding-bottom: 1px">Other Areas</h2>
 <p style="margin: 0; padding: 0 0 12px 0; padding-bottom: 0"><i>Supporting competencies:</i></p>
       <ul class="arrow-list">
-        <li><strong>Cryptography</strong>: Breaking or designing secure cryptographic systems, and solving crypto-based CTF challenges.</li>
+        <li><strong>Cryptography</strong>: Breaking & designing secure cryptographic systems.</li>
       </ul>
       <ul class="arrow-list">
         <li><strong>Mobile Security</strong>: Assessing and exploiting security flaws in Android.</li>
       </ul>
       <ul class="arrow-list">
-        <li><strong>Web Exploitation</strong>: Finding and exploiting vulnerabilities in web applications, and authentication flaws.
+        <li><strong>Web Exploitation</strong>: Finding and exploiting vulnerabilities in web applications.
         </li>
       </ul>
 </div>
