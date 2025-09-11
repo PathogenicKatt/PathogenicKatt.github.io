@@ -1,10 +1,9 @@
-# My CTF & Bible Study Knowledge Base
+# My Cybersecurity & Bible Study Knowledge Base
 
 ![GitHub Pages](https://img.shields.io/badge/Hosted_on-GitHub_Pages-blue.svg)
 ![Jekyll](https://img.shields.io/badge/Powered_by-Jekyll-red.svg)
 
-Welcome to my personal knowledge base! Here I document my cybersecurity journey, CTF writeups, technical notes, and Bible study reflections. This site is built to help me (and others) learn, grow, and share knowledge in both technical and spiritual domains.
-
+Welcome to my personal knowledge base, this website is to store my cybersecurity notes, CTF writeups, tools, and Bible study reflections.
 **Live Site:** [https://pathogenickatt.github.io](https://pathogenickatt.github.io)
 
 ## Features
@@ -57,3 +56,4 @@ JEKYLL_ENV=production bundle exec jekyll build
 
 
 > _"An investment in knowledge pays the best interest."_ — Benjamin Franklin
+
