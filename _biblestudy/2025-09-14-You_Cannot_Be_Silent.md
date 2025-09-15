@@ -14,7 +14,7 @@ _"When Jesus comes back, pray that he may not find you sleeping in the wrong tim
     -> So in this case Queen Esther, had hidden her identity, and a genocidal decree has been issued against her people by the king's advisor, and her cousin Mordecai told her she must risk her life by going to the king unsummoned to plead for her people. So Esther decided to stay safe, quiet not take action. <br>
     -> And Mordecai tells that, Esther's privilege, position, and her influence was not by mistake, or an accident but it was a divine setup for a critical moment. <br>
     - **Reflection**: <br>
-    -> Like Esther, many of us enjoy comfort and safety. We fear rejection, cancellation, or conflict. Our instinct is to remain silent. <>
+    -> Like Esther, many of us enjoy comfort and safety. We fear rejection, cancellation, or conflict. Our instinct is to remain silent. <br>
     -> From this verse we see that, Mordecai tells that the positions we find ourselves, are a platform that God has placed us in, to take action in, and our Pastor also mentiones that, "our neighbours as well, they are our mission, and that God has sovereignly placed us where we are right now." <br>
     -> To remain silent is to miss our divine purpose.
 
