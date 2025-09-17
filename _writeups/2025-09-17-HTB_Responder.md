@@ -53,10 +53,10 @@ _Which flag do we use in the Responder utility to specify the network interface?
 - `-I`: interfaces like eth0, tun0.
 <br>
 
-_There are several tools that take a NetNTLMv2 challenge/response and try millions of passwords to see if any of them generate the same response. One such tool is often referred to as `john`, but the full name is what?._
-- `John the ripper`
+_There are several tools that take a NetNTLMv2 challenge/response and try millions of passwords to see if any of them generate the same response. One such tool is often referred to as `john`, but the full name is what?._<br>
+- `John the ripper`<br>
 ![responder](/assets/img/htb-responder(9).PNG)<br>
-<br>
+
 
 _What is the password for the administrator user?_
 - This is where, we use the power of `Responder`
@@ -79,7 +79,17 @@ _What is the password for the administrator user?_
 <br>
 
 _We'll use a Windows service (i.e. running on the box) to remotely access the Responder machine using the password we recovered. What port TCP does it listen on?_<br>
-![responder](/assets/img/htb-responder(15).PNG)<br>
+![responder](/assets/img/htb-responder(16).PNG)<br>
+
+_Submit root flag_
+- Now that we have the credentials, we can have remotely access to their machine.
+- Through the following tool `evil-winrm`, and hence you can install it as follows:
+```bash
+sudo gem install evil-winrm
+```
+- **Exploit**:
+
+
 
 
     
