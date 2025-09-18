@@ -87,7 +87,8 @@ _Submit root flag_
 ```bash
 sudo gem install evil-winrm
 ```
-- **Exploit**:
+<br>
+
 
 
 
