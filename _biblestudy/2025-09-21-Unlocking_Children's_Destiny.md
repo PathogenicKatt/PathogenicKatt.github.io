@@ -16,6 +16,7 @@ _"Children are destined for the 'Fear of the LORD', 'Church', 'Intercession' and
 - **Judges 13:12** _"Then Monoah asked, 'when you words come true, what must the boy do? what kind of a life must he lead?'"_
     - **Reflection**: From the scripture we see that Manoah asked God for guidance on how to raise his child, and this tells us that parents also need wisdom from God to help their children live the right way. 
 <br>
+<br>
 - **Proverbs 22:15** _"Children just naturally do silly, careless things, but a good spanking will teach them how to behave."_
 ## In conclusion
 Raising children is a great responsibility and a blessing. Parents, the Community and the church, must guide them to know God, pray for them, and set a good example. <br>
