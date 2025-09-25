@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Added Tools: SQLmap"
+title: "Added Tool: SQLmap"
 date: 2025-09-25
 ---
 
