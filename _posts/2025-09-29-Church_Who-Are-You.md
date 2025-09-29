@@ -5,4 +5,4 @@ date: 2025-09-29
 ---
 
 # Who Are You
-- A powerful messsage from church, checkout <a href="/biblestudy">bible-study<a>.
+- A powerful messsage from church, checkout <a href="/christ">bible-study<a>.
