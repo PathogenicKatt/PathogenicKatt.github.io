@@ -37,5 +37,5 @@ Many times we do things without having a clear direction, and hope that it will 
 
 
 <div style="font-size: 0.95em; color: #555; margin-top: 2em; border-top: 1px solid #eee; padding-top: 1em;">
-  <strong>Reference:</strong> inspired by Dr. Myles Munroe's book <em>"A Man of Purpose and Power"</em>.
+  <strong>Reference:</strong> inspired by Dr. Myles Munroe's book.
 </div>
