@@ -198,3 +198,85 @@ date: 2025-10-04
     </tr>
   </tbody>
 </table>
+
+## Shell
+### Prompt Description
+- The bash prompt is simple to understand. By default, it shows information like your username (who you are), your computer's name (hostname), and the folder/directory you're currently working in.<br>
+![prompt description](/assets/img/linuxFundamentals(1).PNG){: .writeup-image}<br>
+- The home directory for a user is marked with a tilde <~> and is the default folder when we log in:<br>
+![prompt description](/assets/img/linuxFundamentals(2).PNG){: .writeup-image}<br>
+- The dollar sign `<$>`, in this case, stands for a user. As soon as we log in as **root**, the character changes to a hash `<#>` and looks like this:<br>
+![prompt description](/assets/img/linuxFundamentals(3).PNG){: .writeup-image}<br>
+For example, when we upload and run a shell on the target system, we may not see the username, hostname, and current working directory. This may be due to the PS1 variable in the environment not being set correctly. In this case, we would see the following prompts:
+- **Unprivileged - User Shell Prompt**:<br>
+![prompt description](/assets/img/linuxFundamentals(4).PNG){: .writeup-image}<br>
+- **Privileged - Root Shell Prompt**:<br>
+![prompt description](/assets/img/linuxFundamentals(5).PNG){: .writeup-image}<br>
+<br>
+The **PS1** variable in Linux systems controls how your command prompt looks in the terminal. It's like a template that defines the text you see each time the system is ready for you to type a command.<br>
+By customizing the **PS1** variable, you can change the prompt to display information such as your username, your computer's name, the current folder you're in, or even add colors and special characters.<br><br>
+In addition to displaying basic information like your username and current folder, you can customize the command prompt to show other useful details such as the IP address, date, time, and the success or failure of the last command. <br>
+The prompt can be customized using special characters and variables in the shell’s configuration file (.bashrc for the Bash shell). <br>
+<table>
+  <thead>
+    <tr>
+      <th>Special Character</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>\d</td>
+      <td>Date (Mon Feb 6)</td>
+    </tr>
+    <tr>
+      <td>\D{%Y-%m-%d}</td>
+      <td>Date (YYYY-MM-DD)</td>
+    </tr>
+    <tr>
+      <td>\H</td>
+      <td>Full hostname</td>
+    </tr>
+    <tr>
+      <td>\j</td>
+      <td>Number of jobs managed by the shell</td>
+    </tr>
+    <tr>
+      <td>\n</td>
+      <td>Newline</td>
+    </tr>
+    <tr>
+      <td>\r</td>
+      <td>Carriage return</td>
+    </tr>
+    <tr>
+      <td>\s</td>
+      <td>Name of the shell</td>
+    </tr>
+    <tr>
+      <td>\t</td>
+      <td>Current time 24-hour (HH:MM:SS)</td>
+    </tr>
+    <tr>
+      <td>\T</td>
+      <td>Current time 12-hour (HH:MM:SS)</td>
+    </tr>
+    <tr>
+      <td>\@</td>
+      <td>Current time</td>
+    </tr>
+    <tr>
+      <td>\u</td>
+      <td>Currenr username</td>
+    </tr>
+    <tr>
+      <td>\w</td>
+      <td>Full path of the current working directory</td>
+    </tr>
+  </tbody>
+</table>
+
+
+
+
+
