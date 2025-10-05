@@ -226,51 +226,51 @@ The prompt can be customized using special characters and variables in the shell
   </thead>
   <tbody>
     <tr>
-      <td>\d</td>
+      <td>d</td>
       <td>Date (Mon Feb 6)</td>
     </tr>
     <tr>
-      <td>\D{%Y-%m-%d}</td>
+      <td>D{%Y-%m-%d}</td>
       <td>Date (YYYY-MM-DD)</td>
     </tr>
     <tr>
-      <td>\H</td>
+      <td>H</td>
       <td>Full hostname</td>
     </tr>
     <tr>
-      <td>\j</td>
+      <td>j</td>
       <td>Number of jobs managed by the shell</td>
     </tr>
     <tr>
-      <td>\n</td>
+      <td>n</td>
       <td>Newline</td>
     </tr>
     <tr>
-      <td>\r</td>
+      <td>r</td>
       <td>Carriage return</td>
     </tr>
     <tr>
-      <td>\s</td>
+      <td>s</td>
       <td>Name of the shell</td>
     </tr>
     <tr>
-      <td>\t</td>
+      <td>t</td>
       <td>Current time 24-hour (HH:MM:SS)</td>
     </tr>
     <tr>
-      <td>\T</td>
+      <td>T</td>
       <td>Current time 12-hour (HH:MM:SS)</td>
     </tr>
     <tr>
-      <td>\@</td>
+      <td>@</td>
       <td>Current time</td>
     </tr>
     <tr>
-      <td>\u</td>
+      <td>u</td>
       <td>Currenr username</td>
     </tr>
     <tr>
-      <td>\w</td>
+      <td>w</td>
       <td>Full path of the current working directory</td>
     </tr>
   </tbody>
