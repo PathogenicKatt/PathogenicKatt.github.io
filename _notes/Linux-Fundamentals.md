@@ -226,57 +226,75 @@ The prompt can be customized using special characters and variables in the shell
   </thead>
   <tbody>
     <tr>
-      <td>d</td>
+      <td>/d</td>
       <td>Date (Mon Feb 6)</td>
     </tr>
     <tr>
-      <td>D{%Y-%m-%d}</td>
-      <td>Date (YYYY-MM-DD)</td>
-    </tr>
-    <tr>
-      <td>H</td>
+      <td>/H</td>
       <td>Full hostname</td>
     </tr>
     <tr>
-      <td>j</td>
+      <td>/j</td>
       <td>Number of jobs managed by the shell</td>
     </tr>
     <tr>
-      <td>n</td>
+      <td>/n</td>
       <td>Newline</td>
     </tr>
     <tr>
-      <td>r</td>
+      <td>/r</td>
       <td>Carriage return</td>
     </tr>
     <tr>
-      <td>s</td>
+      <td>/s</td>
       <td>Name of the shell</td>
     </tr>
     <tr>
-      <td>t</td>
+      <td>/t</td>
       <td>Current time 24-hour (HH:MM:SS)</td>
     </tr>
     <tr>
-      <td>T</td>
+      <td>/T</td>
       <td>Current time 12-hour (HH:MM:SS)</td>
     </tr>
     <tr>
-      <td>@</td>
+      <td>/@</td>
       <td>Current time</td>
     </tr>
     <tr>
-      <td>u</td>
+      <td>/u</td>
       <td>Currenr username</td>
     </tr>
     <tr>
-      <td>w</td>
+      <td>/w</td>
       <td>Full path of the current working directory</td>
     </tr>
   </tbody>
 </table>
 
+## Getting Help
+We will always stumble across tools whose optional parameters we do not know from memory or tools we have never seen before. Therefore it is vital to know how we can help ourselves to get familiar with those tools. The first two ways are the **man pages** and the **help functions**.
+- Manual (syntax):
+```bash
+man <tool>
+```
+- Help Function (Syntax):
+<br>
+![curl help](/assets/img/linuxFundamentals(6).PNG){: .writeup-image}
+<br>
 
+- But then it is not limited to just the **man pages** and **help functions**, but here are some interesting ones:
+  - **whatis (syntax)**:
+<br>
+  ![curl help](/assets/img/linuxFundamentals(7).PNG){: .writeup-image}
+```bash
+whatis <tool>
+``` 
+  - **apropos** (which looks at the manual page and brings details where the same tool is used):
+  <br>
+  ![curl help](/assets/img/linuxFundamentals(8).PNG){: .writeup-image}
 
+## System Information
+it's important to understand the Linux structure, including **system details**, **processes**, **network configurations**, **users/user settings**, and **directories**, along with their related parameters. 
 
 
