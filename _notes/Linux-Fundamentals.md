@@ -295,6 +295,104 @@ whatis <tool>
   ![curl help](/assets/img/linuxFundamentals(8).PNG){: .writeup-image}
 
 ## System Information
-it's important to understand the Linux structure, including **system details**, **processes**, **network configurations**, **users/user settings**, and **directories**, along with their related parameters. 
+it's important to understand the Linux structure, including **system details**, **processes**, **network configurations**, **users/user settings**, and **directories**, along with their related parameters. Below is a list of essential tools to help gather this information.<br>
+<table>
+  <thead>
+    <tr>
+      <th>Command</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>whoami</code></td>
+      <td>Displays current username.</td>
+    </tr>
+    <tr>
+      <td><code>id</code></td>
+      <td>Returns users identity</td>
+    </tr>
+    <tr>
+      <td><code>hostname</code></td>
+      <td>Sets or prints the name of current host system.</td>
+    </tr>
+    <tr>
+      <td><code>uname</code></td>
+      <td>Prints basic information about the operating system name and system hardware.</td>
+    </tr>
+    <tr>
+      <td><code>pwd</code></td>
+      <td>Returns working directory name.</td>
+    </tr>
+    <tr>
+      <td><code>ipconfig</code></td>
+      <td>The ifconfig utility is used to assign or to view an address to a network interface and/or configure network interface parameters.</td>
+    </tr>
+    <tr>
+      <td><code>ip</code></td>
+      <td>Ip is a utility to show or manipulate routing, network devices, interfaces and tunnels.</td>
+    </tr>
+    <tr>
+      <td><code>netstat</code></td>
+      <td>Shows network status.</td>
+    </tr>
+    <tr>
+      <td>ss</td>
+      <td>Another utility to investigate sockets.</td>
+    </tr>
+    <tr>
+      <td><code>ps</code></td>
+      <td>Shows process status.</td>
+    </tr>
+    <tr>
+      <td><code>who</code></td>
+      <td>Displays who is logged in.</td>
+    </tr>
+    <tr>
+      <td><code>env</code></td>
+      <td>Prints environment or sets and executes command.</td>
+    </tr>
+    <tr>
+      <td><code>lsblk</code></td>
+      <td>Lists block devices.</td>
+    </tr>
+    <tr>
+      <td><code>lsusb</code></td>
+      <td>Lists USB devices</td>
+    </tr>
+    <tr>
+      <td><code>lsof</code></td>
+      <td>Lists opened files.</td>
+    </tr>
+    <tr>
+      <td><code>lsci</code></td>
+      <td>Lists PCI devices.</td>
+    </tr>
+  </tbody>
+</table>
+
+- **Hostname**:<br>
+![hostname](/assets/img/linucFundamentals(9).PNG){: writeup-image}<br>
+  - The hostname command is pretty self-explanatory and will just print the name of the computer that we are logged into.
+- **Whoami**:
+  - This quick and easy command can be used on both Windows and Linux systems to get our current username. 
+  - In this case for me, it is going to be "PathogenicKatt".
+- **ld**:
+  - The id command expands on the whoami command and prints out our effective group membership and IDs. 
+  - This can be of interest to penetration testers looking to see what access a user may have and sysadmins looking to audit account permissions and group membership.
+- **uname**:
+  - Starting by checking *`man`*:<br>
+  ![hostname](/assets/img/linucFundamentals(11).PNG){: writeup-image}<br>
+  - And hence, Running `uname -a` will print *all information* about the machine in a specific order: **kernel name**, **hostname**, the **kernel release**, **kernel version**, **machine hardware name**, and **operating system**.<br>
+  ![hostname](/assets/img/linucFundamentals(10).PNG){: writeup-image}<br>
+  - **Uname to Obtain Kernel Release**: Suppose we want to print out the kernel release to search for potential kernel exploits quickly. We can type `uname -r` to obtain this information.
+
+
+
+## Logging In via SSH
+- Secure Shell (SSH) refers to a protocol that allows clients to access and execute commands or actions on remote computers.
+- On Linux-based hosts and servers, as well as other Unix-like operating systems, SSH is one of the permanently installed standard tools and is the preferred choice for many administrators to configure and maintain a computer through remote access.
+
+
 
 
