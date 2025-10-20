@@ -77,7 +77,78 @@ This also allows us to work with the values stored in the individual variables.
 Result:  150
 ```
 <br>
-Another handy feature of the Python interpreter is that the IDLE assigns the latest expression to the variable **_**. This allows us to continue working with the last value.
+Another handy feature of the Python interpreter is that the IDLE assigns the latest expression to the variable **_**. This allows us to continue working with the last value.<br>
+```python
+>>> 38 + 4
+42
+>>> 50 - _      # 50 - 42
+8
+```
+<br>
+Note however that this is true only for IDLE. In regular Python code that is run from .py files e.g. from the command line or in an Integrated Development Environment, _ is simply just a variable. It is often used as a placeholder for values we do not care about, for example if a function returns two values, but only one of them is important to us, for example x_coord, _ = get_position_of_birb(). This is to show other developers, and ourselves a few months into the future, that the value returned, e.g. the y-coordinate from the previous example, is not needed.
+
+## Conditional Statements and Loops
+- Below is an example of what an if/else (conditional Statements) block of code looks like:
+```python
+happy = True
+if happy:
+    print("Happy and we know it!")
+else:
+    print("Not happy...")
+```
+A few things happened here already. Pay close attention to the **indentation** of the code. Python does not require how wide each **indentation** must be, as long as there is consistency. We also have to consider the situation that we want to bring in more than just two different options. The **elif (else-if)** expression means that we continue with this one if the previous condition is not met. Basically, **elif** is the shortened notation of nested if statements.
+- **If-Elif-Else Statement**:
+```python
+happy = 2
+if happy == 1:
+    print("Happy and we know it!")
+elif happy == 2:
+    print("Excited about it!")
+else:
+    print("Not happy...")
+```
+<br>
+This brings us to the first type of loop: the while-loop. Consider the below code:
+- **The While-Loop**:
+```python
+counter = 0
+while counter < 5:
+    print(f'Hello #{counter}')
+    counter = counter + 1
+```
+The loop checks if the counter, which is set to 0 initially, is below 5 - it is - and then prints "Hello #0" and sets the counter variable to the value of itself (0) + 1. Next iteration, it checks if counter, which is now 1, is less than 5 - it is - and then prints "Hello #1" and sets counter to the value of itself (1) + 1. On the 3rd iteration, counter is 2 (because we started at 0), and so forth. Hebce, the output:
+```text
+Hello #0
+Hello #1
+Hello #2
+Hello #3
+Hello #4
+```
+
+## Loops and Lists
+_Recall from the previous section that a loop is a block of code that keeps iterating the contents until some condition is met. This section will look at one kind of loops often referred to as the "for-each loop". This is a loop that iterates over each element in some collection of elements and does something for each individual element.Consider the below line of code:_
+- **A List of Strings**
+```python
+groceries = ['Walnuts', 'Grapes', 'Bird seeds']
+```
+This is a list of strings. The square brackets indicate a list, and the comma-separated values inside of it are strings. Similarly, [] is an empty list, and [42] is a list with just one element, the int value 42. When pointing out values inside lists, Python numbers the elements in a list from 0 and upwards. This means that the above list has three elements and that the first element is at index 0. The second element is at index 1, and the third element is at index 2. Like so:
+- **Value Indexes**:
+```python
+groceries = ['Walnuts', 'Grapes', 'Bird seeds']
+# index:         0          1          2
+```
+We can also write lists the following way for easier readability (especially with much larger lists):
+- **Alternative Syntax**:
+```python
+groceries = [
+    'Walnuts',    # index 0
+    'Grapes',     # index 1
+    'Bird seeds'  # index 2
+]
+```
+The last thing to mention about lists before we move on is how to retrieve an element from the list. Say we want to print the first element to the console. This is done by referencing the variable name of the list, e.g., groceries and which index is desired like so: groceries[0] to get the first element, 'Walnuts'. The last element, 'Bird seeds' would in this example then be groceries[2] because the value 'Bird seeds' is located at index 2 in the list. Python can even count backward, so we could also have gotten the last element of the list - regardless of how many elements are in it - by asking for index -1: groceries[-1]. It works the same way we did with strings.
+
+
 
 
 
