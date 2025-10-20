@@ -146,7 +146,81 @@ groceries = [
     'Bird seeds'  # index 2
 ]
 ```
-The last thing to mention about lists before we move on is how to retrieve an element from the list. Say we want to print the first element to the console. This is done by referencing the variable name of the list, e.g., groceries and which index is desired like so: groceries[0] to get the first element, 'Walnuts'. The last element, 'Bird seeds' would in this example then be groceries[2] because the value 'Bird seeds' is located at index 2 in the list. Python can even count backward, so we could also have gotten the last element of the list - regardless of how many elements are in it - by asking for index -1: groceries[-1]. It works the same way we did with strings.
+The last thing to mention about lists before we move on is how to retrieve an element from the list. Say we want to print the first element to the console. This is done by referencing the variable name of the list, e.g., groceries and which index is desired like so: groceries[0] to get the first element, 'Walnuts'. The last element, 'Bird seeds' would in this example then be groceries[2] because the value 'Bird seeds' is located at index 2 in the list. Python can even count backward, so we could also have gotten the last element of the list - regardless of how many elements are in it - by asking for index -1: groceries[-1]. It works the same way we did with strings.<br>
+![Python idle](/assets/img/htb-python3(2).PNG){: .writeup-image}<br>
+- **Strings Indexing**: Strings can also be indexed. This is especially useful when we want to filter out certain parts of some output. We can think of each word as a list of letters with indexes. However, there is also the negative index, which allows us to start counting the string letters from the end. Let us take the following string as an example: **ABCDEF**<br>
+<table>
+  <thead>
+    <tr>
+      <th>Negative Index</th>
+      <th>Index</th>
+      <th>Character</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>-6</td>
+      <td>0</td>
+      <td>A</td>
+    </tr>
+    <tr>
+      <td>-5</td>
+      <td>1</td>
+      <td>B</td>
+    </tr>
+    <tr>
+      <td>-4</td>
+      <td>2</td>
+      <td>C</td>
+    </tr>
+    <tr>
+      <td>-3</td>
+      <td>3</td>
+      <td>D</td>
+    </tr>
+    <tr>
+      <td>-2</td>
+      <td>4</td>
+      <td>E</td>
+    </tr>
+    <tr>
+      <td>-1</td>
+      <td>5</td>
+      <td>F</td>
+    </tr>
+  </tbody>
+</table>
+We use the index to tell Python which letter we want to output from it. In this example, we want to output the first and the last letter.<br>
+![Python idle](/assets/img/htb-python3(4).PNG){: .writeup-image}<br>
+We can also work with these indexes to give us particular substrings.
+- **Substrings**:
+```python
+>>> var = "ABCDEF"
+>>> print(var[:2])  # Up to index 2
+AB
+>>> print(var[2:])  # Ignore everything up to index 2
+CDEF
+>>> print(var[2:4]) # Everything between index 2 and 4 ("2" is counted)
+CD
+>>> print(var[-2:]) # Up to negative index 2 (last two characters)
+EF
+```
+- **For-Each Loop**
+_As already mentioned, Python allows us to loop over each element (or value) in a list. Consider the below piece of code where we at first have defined a list and then the loop._
+    - **The For-Each Loop**
+    ```python
+    groceries = ['Walnuts', 'Grapes', 'Bird seeds']
+    for food in groceries:
+    print(f'I bought some {food} today.')
+    ```
+    The for-each loop is structured this way: first the for keyword, then the variable name we choose, followed by the in keyword and a collection to iterate over. In this example, we told Python to run the code inside the block "for each element," where we then call the current element food. We then tell Python where to find these elements, which in this case is inside groceries". 
+    - Output:
+    ```text
+    I bought some Walnuts today.
+    I bought some Grapes today.
+    I bought some Bird seeds today.
+    ```
+
 
 
 
