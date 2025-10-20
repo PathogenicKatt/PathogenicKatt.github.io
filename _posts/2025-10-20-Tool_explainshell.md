@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Added Tool: explainshell"
-date: 2025-09-25
+date: 2025-10-20
 ---
 
 # explainshell
