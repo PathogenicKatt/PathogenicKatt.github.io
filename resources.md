@@ -58,11 +58,15 @@ data_page: resources
   <div class="resource-card">
     <h2>Attack & Defend</h2>
   </div>
-  
-    <div class="resource-card">
+  <div class="resource-card">
     <h2>Network Exploitation</h2>
     <li><a href="./tools/bloodhound">BloodHound</a></li>
-    </div>
+  </div>
+
+  <div class="resource-card">
+    <h2>General</h2>
+    <li><a href="./tools/explainshell">explainshell</a></li>
+  </div>
 
 </div>
 
