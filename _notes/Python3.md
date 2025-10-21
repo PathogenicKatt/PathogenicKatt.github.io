@@ -221,6 +221,62 @@ _As already mentioned, Python allows us to loop over each element (or value) in 
     I bought some Bird seeds today.
     ```
 
+## Defining Functions
+- **Functions**:
+  -> Functions let us define code blocks that perform a range of actions, produce a range of values, and optionally return one or more of these values. Like in math, where f(x) is a function f of x and produces the same result when given the same input. For example f(x) = x + 1 is a function f of x which returns x + 1. Thus f(2) would be 3, because f(2) = 2 + 1 which is 3.
+  - **First Function**:
+  ```python
+  def f(x):
+    return 2 * x + 5
+  returned_value = f(2) # Which in case will be 9
+  ```
+- Functions which parameters are not named explicitly are called positional parameters.
+- When we call a function and explicitly set the value of a parameter, e.g. foo(bar=42), this parameter is called a named parameter.  
+
+
+## Making Code Classy
+- A class is a spec of how an object of some type is produced. The result of instantiating such a class is an object of the class. Let us look at an example:
+- **The DreamCake Class**:
+```python
+class DreamCake:
+  eggs = 4
+  sugar = 300
+  milk = 200
+  butter = 50
+  flour = 250
+  baking_soda = 20
+  vanilla = 10
+  baking_soda = 20
+  vanilla = 10
+  topping = None
+  garnish = None
+  is_baked = False
+  #----
+  # The __init__ function of the class, automatically gets called by Python once a new instance of a class is requested.
+  # please notice about the __init__ function, the self parameter. This parameter is a mandatory, first parameter of all class functions. 
+  def __init__(self, topping='No topping', garnish='No Garnish'):
+    self.topping = topping
+    self.garnish = garnish
+  #---
+  def bake(self):
+    self.is_baked = True
+  #---
+  def is_cake_ready(self):
+    return self.is_baked
+  #---
+  plain_cake = DreamCake() # The topping and garnish default to "No topping" and "No garnish" for a plain cake, respectively.
+  chocolate_cake = DreamCake(topping='Chocolate frosting') # We need to add chocolate frosting on top for a chocolate cake, but no garnish (defaults to "No garnish").
+  luxury_strawberry_cake = DreamCake(topping='Strawberry frosting', garnish='Chocolate bits') # Our luxury cakes have the topping and garnish explicitly set.
+  #---
+  # This can, of course, also be specified without using named parameters for brevity:
+  luxury_strawberry_cake = DreamCake('Strawberry frosting', 'Chocolate bits')
+  #---
+  # Now that we have objects of the class DreamCake stored in variables, we can call the functions of the class on the object variables by appending a . and the function.
+  chocolate_cake.bake()  # Call the function "bake" on the object. This will set the chocolate_cake as baked and the value of is_baked to True.
+  is_cake_done = chocolate_cake.is_cake_ready() # This is initializing the value of is_cake_done to True since we return the value from is_baked.
+```
+
+
 
 
 
