@@ -274,7 +274,22 @@ class DreamCake:
   # Now that we have objects of the class DreamCake stored in variables, we can call the functions of the class on the object variables by appending a . and the function.
   chocolate_cake.bake()  # Call the function "bake" on the object. This will set the chocolate_cake as baked and the value of is_baked to True.
   is_cake_done = chocolate_cake.is_cake_ready() # This is initializing the value of is_cake_done to True since we return the value from is_baked.
+  print(is_cake_done)  # Prints "True" because we called "bake" earlier
 ```
+
+## Advanced Notes on Classes
+A few examples below
+- **Magic methods**:
+  - <code>_init_</code>
+  - <code>_str_</code>
+  - <code>_contains_</code>
+  - <code>_eq_</code>
+<br>
+![sublime python code](/assets/img/htb-python3(3).PNG){: .writeup-image}<br>
+_Another two Magic Methods worth mentioning are the <code>__enter__</code> and <code>__exit__</code> functions, allowing us to create classes that support using the with keyword. The with keyword will enable us to specify the default functionality of a class for build-up and teardown procedures. For example, the class C2TcpConnection which represents a TCP connection to a C2 server._<br>
+-> The build-up step could include initiating a socket and attempting to authenticate given input from external sources. <br>
+-> The teardown step could include proper error handling and a guarantee of properly closing the socket after use.
+
 
 
 
