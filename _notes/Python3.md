@@ -328,6 +328,62 @@ python3 -m pip install -r requirements.txt
   ```
   Once installed, we can import the library into our code by typing import requests and then use it right away.
 
+## The BeautifulSoup Package
+_Another handy package is the BeautifulSoup library (rather beautifulsoup4). This library makes working with HTML a lot easier in Python. Before, we learned how to query a website and get output back, which could be the raw HTML. Digging through this HTML can be cumbersome if we have to search through textual output by hand. BeautifulSoup turns the HTML into Python objects that are much easier to work with and allows us to analyze the content better programmatically._
+- **Installing the package**:
+```bash
+python3 -m pip install beautifulsoup4
+```
+<br>
+-> Hence,before-hand we have the following **(HTML - Ugly Format)**:<br>
+
+```html
+<html>
+<head><title>Birbs are pretty</title></head>
+<body><p class="birb-food"><b>Birbs and their foods</b></p>
+<p class="food">Birbs love:<a class="seed" href="http://seeds" id="seed">seed</a>
+   and 
+   <a class="fruit" href="http://fruit" id="fruit">fruit</a></p>
+ </body></html>
+ ```
+
+ -> This HTML looks a little messy. We'll then load this into BeautifulSoup and print it in a nicely formatted way, as follows:
+ ```python
+ from bs4 import BeautifulSoup
+html_doc = """ html code goes here """
+soup = BeautifulSoup(html.doc, 'html.parser')
+print(soup.prettify())
+```
+-> which then prints **(HTML - Pretty Format)**:
+```html
+<html>
+ <head>
+  <title>
+   Birbs are pretty
+  </title>
+ </head>
+ <body>
+  <p class="birb-food">
+   <b>
+    Birbs and their foods
+   </b>
+  </p>
+  <p class="food">
+   Birbs love:
+   <a class="seed" href="http://seeds" id="seed">
+    seed
+   </a>
+   and
+   <a class="fruit" href="http://fruit" id="fruit">
+    fruit
+   </a>
+  </p>
+ </body>
+</html>
+```
+
+
+
 
 
 
