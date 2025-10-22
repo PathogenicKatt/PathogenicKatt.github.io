@@ -316,6 +316,17 @@ python3 -m pip install -r requirements.txt
 ```
   - This will then go through each of the requirements and install them by selecting the latest available and permitted version.
 
+## The Importance of Libraries
+- **The Requests Package**: 
+  - The requests library is an elegant and simple HTTP library for Python. From the documenation:
+  ```text
+  Requests allows you to send HTTP/1.1 requests extremely easily. There’s no need to manually add query strings to your URLs, or to form-encode your POST data. Keep-alive and HTTP connection pooling are 100% automatic, thanks to urllib3.
+  ```
+  - **Installing the package**:
+  ```bash
+  python3 pip -m install requests
+  ```
+  Once installed, we can import the library into our code by typing import requests and then use it right away.
 
 
 
