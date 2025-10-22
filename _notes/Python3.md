@@ -290,6 +290,31 @@ _Another two Magic Methods worth mentioning are the <code>__enter__</code> and <
 -> The build-up step could include initiating a socket and attempting to authenticate given input from external sources. <br>
 -> The teardown step could include proper error handling and a guarantee of properly closing the socket after use.
 
+## Managing Libraries in Python
+_The most popular way of installing external packages in Python is by using pip. According to the author, pip is short for "pip installs packages"_
+- **Installing a package**:
+```bash
+python3 -m pip install [package]
+```
+- **Upgrading a package**:
+```bash
+python3 -m pip install --upgrade [package]
+```
+- **Uninstalling a package**:
+```bash
+pip uninstall [package]
+```
+- **Listing installed packages**:
+```bash
+python3 -m pip freeze
+```
+![python freeze](/assets/img/htb-python3(5).PNG){: .writeup-image}<br>
+It just so happens to be the case that pip supports maintaining packages from a **requirements file**. This file, often called literally **requirements.txt**, contains a list of all the required packages needed to run the script successfully. The format is quite simple. We would copy the above freeze output and save it as a **requirements file**. 
+- **Install from requirements.txt**:
+```bash
+python3 -m pip install -r requirements.txt
+```
+  - This will then go through each of the requirements and install them by selecting the latest available and permitted version.
 
 
 
