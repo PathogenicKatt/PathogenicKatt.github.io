@@ -24,6 +24,7 @@ data_page: resources
     <li><a href="/tools/burp-suite">Burp Suite</a></li>
     <li><a href="./tools/ffuf">ffuf</a></li>
     <li><a href="./tools/sqlmap">SQLMap</a></li>
+    <li><a href="./tools/httpbin">httpbin</a></li>
   </div>
 
   <div class="resource-card">
