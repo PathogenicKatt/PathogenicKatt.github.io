@@ -19,20 +19,6 @@ data_page: tools
 - **Authentication**: Test Basic Auth and Bearer Token authentication
 - **Dynamic Data**: Generate random data, delayed responses, and streaming data
 
-## Common Use Cases
-- API testing and development
-- Debugging HTTP clients
-- Learning about HTTP protocols
-- Network troubleshooting
-- Testing proxy configurations
-
-## Example Endpoints
-- `/ip` - Returns the client's IP address
-- `/user-agent` - Returns the user-agent header
-- `/headers` - Returns all request headers
-- `/delay/n` - Delays response by n seconds
-- `/status/code` - Returns specified HTTP status code
-
 <div class="resource-card">
   <h2>Web tool</h2>
   <ul>
