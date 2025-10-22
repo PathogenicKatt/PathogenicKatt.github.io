@@ -25,6 +25,7 @@ data_page: resources
     <li><a href="./tools/ffuf">ffuf</a></li>
     <li><a href="./tools/sqlmap">SQLMap</a></li>
     <li><a href="./tools/httpbin">httpbin</a></li>
+    <li><a href="./tools/pokeapi">pokeapi</a></li>
   </div>
 
   <div class="resource-card">
