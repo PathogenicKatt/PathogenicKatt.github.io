@@ -59,4 +59,36 @@ sudo apt install virtualbox virtualbox-ext-pack -y
     - NVMe support
 ![hardware virtualization](/assets/img/htb-setting-up(3).PNG){: .writeup-image}<br>
 
+### Proxmox
+- Proxmox is an open-source, enterprise-grade server virtualization and management platform which utilizies Kernel-based Virtual Machine (KVM) for full virtualization and Linux Containers (LXC) for container-based virtualization.
+- This software is used in businesses and large data centers.
+![hardware virtualization](/assets/img/htb-setting-up(4).PNG){: .writeup-image}<br>
+- Proxmox provides three main solutions which can be downloaded <a href="https://proxmox.com/en/downloads" target="_blank" >here</a>:
+    - Proxmox Virtual Environment
+    - Proxmox Backup Server
+    - Proxmox Mail Gateway
+- **Proxmox VE ISO Download**
+![proxmox](/assets/img/htb-setting-up(5).PNG){: .writeup-image}<br>
+    - This software allows us to build and simulate entire networks, including complex setups using any type of virtual machine or container you can think of. 
+    - We can download the Proxmox VE ISO file and install it on VirtualBox to experiment with it without the need for additional hardware resources.
+- **Proxmox VE Installation**:
+![proxmox](/assets/img/htb-setting-up(6).PNG){: .writeup-image}<br>
+- Once everything is set up, we should double check all the stats. If everything looks good, we now can start the VM.
+![proxmox](/assets/img/htb-setting-up(7).PNG){: .writeup-image}<br>
+- When the VM boots up, we're greeted with the Proxmox Virtual Environment screen. Now, we can select the option to install Proxmox VE using the graphical interface.
+![proxmox](/assets/img/htb-setting-up(8).PNG){: .writeup-image}<br>
+- Pay close attention throughout the duration of the setup, and make sure to read everything through the installation. Once it's installed, you will see the login screen, along with management webpage's URL.
+![proxmox](/assets/img/htb-setting-up(9).PNG){: .writeup-image}<br>
+- The same credentials you used during the installation will be used to log into the web dashboard. Your credentials will be root:yourpasswd.
+![proxmox](/assets/img/htb-setting-up(10).PNG){: .writeup-image}<br>
+- At this point, you should see all the configuration options for your virtualized “Datacenter”. This is where you can upload VMs, containers, create networks, and much more. Those VMs and containers will be inside virtualized Proxmox environment and do not need to be added independently to VirtualBox.
+![proxmox](/assets/img/htb-setting-up(11).PNG){: .writeup-image}<br>
+
+
+
+
+
+
+
+
 
