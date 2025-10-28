@@ -27,4 +27,36 @@ date: 2025-10-28
 ![hardware virtualization](/assets/img/htb-setting-up.PNG){: .writeup-image}
 
 ## Virtual Machines
-- A virtual machine (VM) is a virtual operating system that runs on a host system (an actual physical computer system).
+- A virtual machine (VM) is a **virtual operating system** that runs on a host system (an actual physical computer system).
+- The physical hardware resources of the host system are allocated via **hypervisors**.
+    - A hypervisor manages the hardware resources, and from the virtual machine's point of view, allocated computing power, RAM, hard disk capacity, and network connections are exclusively available.
+    - In simple it is a software that creates and runs the virtualization.
+        - It allocates and controls the sharing of a machine's resources; including storage space, RAM and CPU's. 
+- From the application perspective, an operating system installed within the VM behaves as if installed directly on the hardware.
+- VMs offer numerous advantages over running an operating system or application directly on a physical system:
+    - Applications and services of a VM do not interfere with each other.
+    - Complete independence of the guest system from the host system's operating system and the underlying physical hardware.
+    - VMs can be moved or cloned to other systems by simple copying.
+    - Hardware resources can be dynamically allocated via the hypervisor.
+    - Better and more efficient utilization of existing hardware resources.
+
+### Introduction to VirtualBox
+- We can install VirtualBox from the command line, or download the installation file from the <a href="https://www.virtualbox.org/wiki/Downloads" target="_blank">official website</a> and install it manually.<br>
+![hardware virtualization](/assets/img/htb-setting-up(1).PNG){: .writeup-image}
+- VirtualBox is very common in private use.
+- The installation is easy and usually requires no additional configuration for it to launch.
+- We can download VirtualBox from their homepage: <a href="https://www.virtualbox.org/" target="_blank">https://www.virtualbox.og/<a><br>
+![hardware virtualization](/assets/img/htb-setting-up(2).PNG){: .writeup-image}<br>
+- *Alternatively, with Ubuntu Linux we can use the following commands to install both VirtualBox and the extension pack simultaneously:*
+```bash
+sudo apt install virtualbox virtualbox-ext-pack -y
+```
+- The VirtualBox extension pack enhances the overall functionality of VirtualBox with the following features:
+    - USB 2.0/3.0 support
+    - VirtualBox RDP
+    - Disk Encryption
+    - PXE Boot
+    - NVMe support
+![hardware virtualization](/assets/img/htb-setting-up(3).PNG){: .writeup-image}<br>
+
+
