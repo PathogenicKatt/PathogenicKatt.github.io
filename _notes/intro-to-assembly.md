@@ -65,4 +65,60 @@ syscall
 - Understanding assembly language instructions is critical for binary exploitation, which is an essential part of penetration testing.
 - To disassemble, debug, and follow binary instructions in memory and find potential vulnerabilities, we must have a basic understanding of Assembly language and how it flows through the CPU components.
 - NB: Learning **Intel x86 Assembly Language** is crucial for writing exploits for binaries on modern machines.
-- In addition to Intel x86, ARM is becoming more common, as most modern smartphones and some modern laptops like the M1 MacBook Pro feature ARM processors.
+- In addition to Intel x86, **ARM** is becoming more common, as most modern smartphones and some modern laptops like the M1 MacBook Pro feature ARM processors.
+
+## Computer Architecture
+- This architecture executes machine code to perform specific algorithms. It mainly consists of the following elements:
+    - **Central Processing Unit (CPU)**
+    - **Memory Unit**
+    - **Input/Output Devices**
+- Furthermore, the CPU itself consists of three main components:
+    - **Control Unit (CU)**
+    - **Arithmetic Logic Unit (ALU)**
+    - **Registers**
+![computer structure](/assets/img/htb-assembly(1).PNG){: .writeup-image}<br>
+- Though very old, this architecture is still the basis of most modern computers, servers, and even smartphones.
+- Assembly languages mainly work with the CPU and memory.
+- Furthermore, basic and advanced binary exploitation requires a proper understanding of computer architecture.
+    - With basic stack overflows, we only need to be aware of the general design.
+    - Once we start using ROP and Heap exploits, our understanding should be profound.
+
+### Memory
+- A computer's memory (Primary Memory) is where the **temporary data** and **instructions of currently** running programs are **located**.
+- It is the primary location the CPU uses to retrieve and process data.
+- There are two main types of memory:
+    - **Cache**
+    - **Random Access Memory (RAM)**
+- Cache memory is usually located within the CPU itself and hence is extremely fast compared to RAM, as it runs at the same *clock speed* as the CPU.
+    - However, it is very *limited in size* and very sophisticated, and expensive to manufacture due to it being so close to the CPU core.
+    - There are usually three levels of cache memory, depending on their closeness to the CPU core:
+    <table>
+    <thead>
+        <tr>
+            <th>Level</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><code>Level 1 Cache</code></td>
+            <td>Usually in kilobytes, the fastest memory available, located in each CPU core. (Only registers are faster.)</td>
+        </tr>
+        <tr>
+            <td><code>Level 2 Cache</code></td>
+            <td>Usually in megabytes, extremely fast (but slower than L1), shared between all CPU cores.</td>
+        </tr>
+        <tr>
+            <td><code>Level 3 Cache</code></td>
+            <td>Usually in megabytes (larger than L2), faster than RAM but slower than L1/L2. (Not all CPUs use L3.)</td>
+        </tr>
+    </tbody>
+    </table>
+
+- **RAM**
+- RAM is much larger than cache memory, coming in sizes ranging from gigabytes up to terabytes.
+- RAM is also located far away from the CPU cores and is much slower than cache memory.
+- Accessing data from RAM addresses takes many more instructions.
+- In the past, with **32-bit addresses**, memory addresses were limited from **0x00000000** to **0xffffffff**.
+- This meant that the maximum possible RAM size was 232 bytes, which is only 4 gigabytes, at which point we run out of unique addresses.
+- With **64-bit addresses**, the range is now up to **0xffffffffffffffff**, with a theoretical maximum RAM size of 264 bytes, which is around 18.5 exabytes (18.5 million terabytes), so we shouldn't be running out of memory addresses anytime soon.
