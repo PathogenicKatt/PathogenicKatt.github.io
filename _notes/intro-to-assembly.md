@@ -168,8 +168,8 @@ syscall
 - If a CPU has a speed of 3.0 GHz, it can run 3 billion cycles every second (per core).<br>
 ![clock cycle](/assets/img/htb-assembly(3).PNG){: writeup-image}<br>
 - **Instruction Cycle**:
-    - An **instruction cycle** is the cycle the CPU takes to process a *single machine instruction*.
-![instruction cycle](/assets/img/htb-assembly(4).PNG){: writeup-image}<br>
+    - An **instruction cycle** is the cycle the CPU takes to process a *single machine instruction*.<br>
+![instruction cycle](/assets/img/htb-assembly(4).PNG){: writeup-image}<br><br>
 - An instruction cycle consists of four stages: **Fetch**, **Decode**, **Execute**, and **Store**:
 <table>
 <thead>
@@ -197,3 +197,144 @@ syscall
     </tr>
 </tbody>
 </table>
+
+> All of the stages in the instruction cycle are carried out by the Control Unit, except when arithmetic instructions need to be executed "add, sub, ..etc", which are executed by the ALU. 
+
+- Each Instruction Cycle takes multiple clock cycles to finish, depending on the CPU architecture and the complexity of the instruction.
+- Once a single instruction cycle ends, the CU increments to the next instruction and runs the same cycle on it, and so on.<br><br>
+![instruction cycle](/assets/img/htb-assembly(5).PNG){: writeup-image}<br>
+- For example, if we were to execute the assembly instruction <code>add rax, 1</code>, it would run through an instruction cycle:
+    1. **Fetch** the instruction from the **rip register**, 48 83 C0 01 (in binary).
+    2. **Decode** '48 83 C0 01' to know it needs to **perform an add of 1 to the value at rax**.
+    3. **Execute**: Get the current value at rax *(by CU)*, add 1 to it *(by the ALU)*.
+    4. **Store** the new value **back to rax**.
+- In the past, processors used to *process instructions sequentially*, so they had to wait for one instruction to finish to start the next.
+- On the other hand, **modern processors** can process multiple instructions in **parallel** by having multiple instruction/clock cycles running at the same time.
+- This is made possible by having a **multi-thread** and **multi-core** design.<br><br>
+![modern processor](/assets/img/htb-assembly(6).PNG){: writeup-image}<br>
+
+### Processor Specific
+> It is important to understand that each processor has its own set of instructions and corresponding machine code.
+- Even though we can tell that both instructions are similar and do the same thing, their syntax is different, and the locations of the source and destination operands are swapped as well. Still, both codes assemble the same machine code and perform the same instruction.
+- So, each processor type has its Instruction Set Architectures, and each architecture can be further represented in several syntax formats
+- If we want to know whether our Linux system supports x86_64 architecture, we can use the <code>lscpu</code> command:
+    - **Manual**:<br>
+![manual of lscpu](/assets/img/htb-assembly(7).PNG){: writeup-image}<br>
+    - **Usage**:<br>
+![usage of lscpu](/assets/img/htb-assembly(8).PNG){: writeup-image}<br>
+
+- We can also use the uname -m command to get the CPU architecture.<br>
+![usage of uname](/assets/img/htb-assembly(9).PNG){: writeup-image}<br>
+
+## Instruction Set Architectures
+- An **Instruction Set Architecture (ISA)** specifies the syntax and semantics of the assembly language on each architecture.
+- **ISA** mainly consists of the following components:
+    - **Instructions**
+    - **Registers**
+    - **Memory Addresses**
+    - **Data types**
+<br>
+<table>
+<thead>
+    <tr>
+        <th>Component</th>
+        <th>Description</th>
+        <th>Example</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>Instruction</td>
+        <td>The instruction to be processed in the opcode operand_list format. There are usually 1,2, or 3 comma-separated operands.</td>
+        <td><code>add rax, 1</code>,<code>mov rsp, rax</code>, <code>push rax</code></td>
+    </tr>
+    <tr>
+        <td>Registers</td>
+        <td>Used to store operands, addresses, or instructions temporarily.</td>
+        <td><code>rax</code>, <code>rsp</code>, <code>rip</code></td>
+    </tr>
+    <tr>
+        <td>Memory Addresses</td>
+        <td>The address in which data or instructions are stored. May point to memory or registers.</td>
+        <td><code>0xffffffffaa8a25ff</code>, <code>0x44d0</code>, <code>$rax</code></td>
+    </tr>
+    <tr>
+        <td>Data Types</td>
+        <td>The type of stored data.</td>
+        <td><code>byte</code>, <code>double word</code>, <code>word</code></td>
+    </tr>
+</tbody>
+</table>
+<br>
+
+- There are two main Instruction Set Architectures that are widely used:
+    - **Complex Instruction Set Computer (CISC)** - Used in Intel and AMD processors in most computers and servers.
+    - **Reduced Instruction Set Computer (RISC)** - Used in ARM and Apple processors, in most smartphones, and some modern laptops.
+### CISC
+- The CISC architecture was one of the earliest ISA's ever developed.
+- CISC architecture favors more complex instructions to be run at a time to reduce the overall number of instructions.
+    - For example, suppose we were to add two registers with the 'add rax, rbx' instruction.
+    - In that case, a CISC processor can do this in a *single 'Fetch-Decode-Execute-Store' instruction cycle*, without having to split it into multiple instructions to fetch rax, then fetch rbx, then add them, and then store them in `rax, each of which would take its own 'Fetch-Decode-Execute-Store' instruction cycle.
+- Furthermore, even though it takes a single instruction cycle to execute a single instruction, as the instructions are more complex, each instruction cycle takes more clock cycles. This fact leads to more power consumption and heat to execute each instruction.
+
+### RISC
+- The RISC architecture favors splitting instructions into minor instructions, and so the CPU is designed only to handle simple instructions. 
+- For example, the same previous add r1, r2, r3 instruction on a RISC processor would fetch r2, then fetch r3, add them, and finally store them in r1.
+    - Every instruction of these takes an entire 'Fetch-Decode-Execute-Store' instruction cycle, which leads, as can be expected, to a larger number of total instructions per program, and hence a longer assembly code.
+- The below diagram shows how CISC instructions take a variable amount of clock cycles, while RISC instructions take a fixed amount: <br><br>
+![CISC vs RISC](/assets/img/htb-assembly(10).PNG){: writeup-image}<br>
+- **CISC vs. RISC**
+
+<table>
+<thead>
+    <tr>
+        <th>Area</th>
+        <th>CISC</th>
+        <th>RISC</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>Complexity</td>
+        <td>Favors complex instructions.</td>
+        <td>Favors simple instructions</td>
+    </tr>
+    <tr>
+        <td>Length of instructions</td>
+        <td>Longer instructions - Variable length 'multiples of 8-bits'</td>
+        <td>Shorter instructions - Fixed length '32-bit/64-bit'</td>
+    </tr>
+    <tr>
+        <td>Total instructions per program</td>
+        <td>Fewer total instructions - Shorter code</td>
+        <td>More total instructions - Longer code</td>
+    </tr>
+    <tr>
+        <td>Optimization</td>
+        <td>Relies on hardware optimization (in CPU)</td>
+        <td>Relies on software optimization (in Assembly)</td>
+    </tr>
+    <tr>
+        <td>Instruction Execution Time</td>
+        <td>Variable - Multiple clock cycles</td>
+        <td>Fixed - One clock cycle</td>
+    </tr>
+    <tr>
+        <td>Instructions supported by CPU</td>
+        <td>Many instructions (~1500)</td>
+        <td>Fewer instructions (~200)</td>
+    </tr>
+    <tr>
+        <td>Power Consumption</td>
+        <td>High</td>
+        <td>Very Low</td>
+    </tr>
+    <tr>
+        <td>Examples</td>
+        <td>Intel and AMD</td>
+        <td>ARM, Apple</td>
+    </tr>
+</tbody>
+</table>
+<br>
+
