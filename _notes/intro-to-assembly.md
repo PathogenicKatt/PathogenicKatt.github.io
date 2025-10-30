@@ -122,3 +122,78 @@ syscall
 - In the past, with **32-bit addresses**, memory addresses were limited from **0x00000000** to **0xffffffff**.
 - This meant that the maximum possible RAM size was 232 bytes, which is only 4 gigabytes, at which point we run out of unique addresses.
 - With **64-bit addresses**, the range is now up to **0xffffffffffffffff**, with a theoretical maximum RAM size of 264 bytes, which is around 18.5 exabytes (18.5 million terabytes), so we shouldn't be running out of memory addresses anytime soon.
+- When a program is run (done), all of its data and instructions are moved from the **storage unit** to the **RAM** to be accessed when needed by the CPU.
+- The RAM is split into **4 segments**:
+    ![RAM segments](/assets/img/htb-assembly(2).PNG){: .writeup-image}<br>
+
+<table>
+<thead>
+    <tr>
+        <th>Segment</th>
+        <th>Description</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>Stack</td>
+        <td>Has a <i>Last-in First-out (LIFO)</i> design and is fixed in size. Data in it can only be accessed in a specific order by push-ing and pop-ing data.</td>
+    </tr>
+    <tr>
+        <td>Heap</td>
+        <td>Has a hierarchical design and is therefore much larger and more versatile in storing data (Meaning the data could be stored any where), as data can be stored and retrieved in any order.<i> However, this makes the heap slower than the Stack.</i></td>
+    </tr>
+    <tr>
+        <td>Data</td>
+        <td>Has to parts: <i>Data</i>, which is used to hold variables, <i>.bss</i>, which is used to hold unassigned variables (i.e., buffer memory for later allocation).</td>
+    </tr>
+    <tr>
+        <td>Text</td>
+        <td>Main assembly instructions are loaded into this segment to be fetched and executed by the CPU.</td>
+    </tr>
+</tbody>
+</table>
+
+## CPU Architecture
+- The Central Processing Unit (CPU) is the main processing unit within a computer.
+- The **CPU** contains both the ,
+    - **Control Unit (CU)** Which is in charge of *moving and controlling data*, and the
+    - **Arithmetic/Logic Unit (ALU)**, which is in charge of *performing various arithmetics* and *logical calculations* as requested by a program through the assembly instructions.
+- The manner in which and how efficiently a *CPU processes* its instructions depends on its **Instruction Set Architecture (ISA)**.
+    - **RISC architecture** is based on *processing more simple instructions*, which takes more cycles, but each cycle is shorter and *takes less power*.
+    - **CISC architecture** is based on *fewer, more complex instructions*, which can finish the requested instructions in fewer cycles, but each instruction takes more time and power to be processed.
+
+### Clock speed & Clock cycle
+- Each CPU has a **clock speed** that indicates its overall speed.
+- The **frequency** in which the cycles occur is counted, is **cycles per second (Hertz)**.
+- If a CPU has a speed of 3.0 GHz, it can run 3 billion cycles every second (per core).<br>
+![clock cycle](/assets/img/htb-assembly(3).PNG){: writeup-image}<br>
+- **Instruction Cycle**:
+    - An **instruction cycle** is the cycle the CPU takes to process a *single machine instruction*.
+![instruction cycle](/assets/img/htb-assembly(4).PNG){: writeup-image}<br>
+- An instruction cycle consists of four stages: **Fetch**, **Decode**, **Execute**, and **Store**:
+<table>
+<thead>
+    <tr>
+        <th>Instruction</th>
+        <th>Description</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>1. Fetch</td>
+        <td>Takes the next instruction's address from the <i>Instruction Address Register (IAR)</i>, which tells it where the next instruction is located.</td>
+    </tr>
+    <tr>
+        <td>2. Decode</td>
+        <td>Takes the instruction from the IAR, and decodes it from binary to see what is required to be executed.</td>
+    </tr>
+    <tr>
+        <td>3. Execute</td>
+        <td>Fetch instruction operands from <i>register/memory</i>, and process the instruction in the ALU or CU.</td>
+    </tr>
+    <tr>
+        <td>4. Store</td>
+        <td>Store the new value in the destination operand.</td>
+    </tr>
+</tbody>
+</table>
