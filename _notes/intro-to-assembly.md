@@ -1,8 +1,8 @@
 ---
 layout: note
 title: "Intro to Assembly"
-description: "A high-level programming language; used for scripting and automating stuff."
-tags: [low-level, assembly, python, scripting]
+description: "a low-level programming language that uses human-readable mnemonics to represent a computer's machine code instructions."
+tags: [low-level, assembly, ARM, x86_64]
 date: 2025-10-29
 ---
 
@@ -337,4 +337,94 @@ syscall
 </tbody>
 </table>
 <br>
+
+## Registers, Addresses, and Data Types
+- Now that we understand general computer and processor architecture, we need to understand a few assembly elements before we start learning Assembly: **Registers**, **Memory Addresses**, **Address Endianness**, and **Data Types**.
+- Each of these elements is important, and properly understanding them will help us avoid issues and hours of troubleshooting while writing and debugging assembly code.
+
+### Registers
+- As previously mentioned, each CPU core has a set of registers.
+- The registers are the fastest components in any computer, as they are built within the CPU core.
+- However, registers are very limited in size and can only hold a few bytes of data at a time. 
+- There are two main types of registers we will be focusing on: **Data Registers** and **Pointer Registers**.
+
+<table>
+<thead>
+    <tr>
+        <th>Data Registers</th>
+        <th>Pointer Registers</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td><code>rax</code></td>
+        <td>rbp</td>
+    </tr>
+    <tr>
+        <td><code>rbx</code></td>
+        <td>rsp</td>
+    </tr>
+    <tr>
+        <td><code>rcx</code></td>
+        <td>rip</td>
+    </tr>
+    <tr>
+        <td><code>rdx</code></td>
+    </tr>
+    <tr>
+        <td><code>r8</code></td>
+    </tr>
+    <tr>
+        <td><code>r9</code></td>
+    </tr>
+    <tr>
+        <td><code>r10</code></td>
+    </tr>
+</tbody>
+</table>
+
+- **Data Registers**: are usually used for storing instructions/syscall arguments. The primary data registers are: <code>rax</code>, <code>rbx</code>, <code>rcx</code>, and <code>rdx</code>. The <code>rdi</code> and <code>rsi<code> registers also exist and are usually used for the *instruction destination and source operands*. Then, we have secondary data registers that can be used when all previous registers are in use, which are <code>r8</code>, <code>r9</code>, and <code>r10</code>.
+- **Pointer Registers**: are used to *store specific important address pointers*. The main pointer registers are the **Base Stack Pointer** <code>rbp</code>, which points to the beginning of the Stack, the Current **Stack Pointer** <code>rsp</code>, which *points to the current location* within the Stack (top of the Stack), and the **Instruction Pointer** <code>rip</code>, which *holds the address of the next instruction*.
+
+### Sub-Registers
+- Each **64-bit register** can be further divided into **smaller sub-registers** containing the lower bits, at **one byte 8-bits**, **2 bytes 16-bits**, and **4 bytes 32-bits**.
+- Each sub-register can be used and accessed on its own, so we don't have to consume the full 64-bits if we have a smaller amount of data.<br>
+![sub registers](/assets/img/htb-assembly(11).PNG){: .writeup-image}<br>
+- Sub-registers can be accessed as:<br>
+<table>
+<thead>
+    <tr>
+        <th>Size in bits</th>
+        <th>Size in bytes</th>
+        <th>Name</th>
+        <th>Example</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td><code>16-bit</code></td>
+        <td><code>2-bytes</code></td>
+        <td>the base name</td>
+        <td><code>ax</code></td>
+    </tr>
+    <tr>
+        <td><code>8-bit</code></td>
+        <td><code>1-byte</code></td>
+        <td>the base name + and/or ends with <code>l</code></td>
+        <td><code>al</code></td>
+    </tr>
+    <tr>
+        <td><code>32-bits</code></td>
+        <td><code>4-bytes</code></td>
+        <td>the base name + and/or starts with e prefix</td>
+        <td><code>eax</code></td>
+    </tr>
+    <tr>
+        <td><code>64-bits</code></td>
+        <td><code>8-bytes</code></td>
+        <td>the base name + and/or starts with r prefix</td>
+        <td><code>rax</code></td>
+    </tr>
+</tbody>
+</table>
 
