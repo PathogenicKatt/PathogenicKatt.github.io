@@ -10,7 +10,7 @@ custom_css: true
 </div>
 <div class="header-animation">
   <h1 style="text-align: center;">
-     Cybersecurity & Purposeful Living 
+     All Things Cybersecurity
   </h1>
   <p class="subtitle" style="text-align: center;"><i>
     "Knowing is not enough; we must apply. Willing is not enough; we must do."</i> -<strong> Johann Wolfgang von Goethe</strong>
@@ -48,9 +48,6 @@ custom_css: true
 <p style="margin: 0; padding: 0 0 12px 0; padding-bottom: 0"><i>Supporting competencies:</i></p>
       <ul class="arrow-list">
         <li><strong>Cryptography</strong>: Breaking & designing secure cryptographic systems.</li>
-      </ul>
-      <ul class="arrow-list">
-        <li><strong>Mobile Security</strong>: Assessing and exploiting security flaws in Android.</li>
       </ul>
       <ul class="arrow-list">
         <li><strong>Web Exploitation</strong>: Finding and exploiting vulnerabilities in web applications.
