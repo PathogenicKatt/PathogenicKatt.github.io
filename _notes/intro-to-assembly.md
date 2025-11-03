@@ -711,3 +711,15 @@ nasm -f elf64 basic.s
     </tr>
 </tbody>
 </table>
+
+### Break
+- The **first step of debugging** is setting **breakpoints** to *stop the execution at a specific location* or *when a particular condition is met*.
+- This helps us in examining the state of the program and the value of registers at that point.
+- Breakpoints also allow us to stop the program's execution at that point so that we can step into each instruction and examine how it changes the program and values.
+- We can set a **breakpoint** at a **specific address** or for a **particular function**.
+- To set a **breakpoint**, we can use the <code>break</code> or <code>b</code> command along with the **address** or **function name** we want to break at.
+- If *we want to set a breakpoint* at a certain address, like <code>_start+10</code>, we can either <code>b *_start+10</code> or <code>b *0x40100a</code>:
+- The <code>*</code> tells GDB to break at the instruction stored in **0x40100a**.
+- **NB**: Once the *program is running*, if *we set another breakpoint*, like <code>b *0x401005</code>, in order to **continue** to that **breakpoint**, we should use the <code>continue</code> or <code>c</code> command. If we use <code>run</code> or <code>r</code> again, *it will run the program from the start*. **This can be useful to skip loops**, as we will see later in the module.
+- If we want to see what breakpoints we have at any point of the execution, we can use the <code>info breakpoint</code> command. 
+- We can also disable, enable, or delete any breakpoint.
