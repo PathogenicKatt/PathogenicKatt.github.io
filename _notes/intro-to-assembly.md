@@ -670,3 +670,14 @@ nasm -f elf64 basic.s
 - Flag:<br>
 ![flag](/assets/img/htb-assembly(17).PNG){: .writeup-image}
 
+## GNU Debugger (GDB)
+- **Programs** written in **high-level languages** *can set breakpoints on specific lines and run the program through a debugger to monitor how they act*.
+- With **Assembly**, we deal with **machine code** represented as **assembly instructions**, *so our breakpoints are set in the memory location in which our machine code is loaded*.
+- To *debug our binaries*, we will be using a well-known debugger for Linux programs called **GNU Debugger (GDB)**.
+- There are other similar debuggers for Linux, like **Radare** and **Hopper**, and for Windows, like **Immunity Debugger** and **WinGDB**.<br>
+![gdb gef](/assets/img/htb-assembly(18).PNG){: .writeup-image}<br>
+- As we can see, the output we got closely resembles our assembly code and the disassembly output we got from objdump in the previous section.
+- **Having the memory address is critical for examining the variables/operands and setting breakpoints for a certain instruction.**
+- You may notice through debugging that some memory addresses are in the form of **0x00000000004xxxxx**, rather than their raw address in memory **0xffffffffaa8a25ff**
+    - This is due to **$rip-relative addressing** in **Position-Independent Executables (PIE)**, in which the memory addresses are used relative to their distance from the instruction pointer <code>$rip</code> within the program's own Virtual RAM, *rather than using raw memory addresses*.
+    - This feature may be **disabled** to reduce the risk of **binary exploitation**.
