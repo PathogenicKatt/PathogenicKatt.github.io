@@ -428,3 +428,5 @@ syscall
 </tbody>
 </table>
 
+- For example, for the <code>bx</code> data register, the **16-bit** is <code>bx</code>,  so the **8-bit** is <code>bl</code>, the **32-bit** is <code>eax</code>, and the 64-bit would be **rbx**.
+
