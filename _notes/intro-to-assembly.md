@@ -559,3 +559,81 @@ syscall
         <td>qword</td>
     </tr>
 </table>
+
+## Assemble File Structure
+- Assembly code template:
+```nasm
+        global _start
+
+        section .data
+message: db     "Hello World"
+
+        section .text
+_start:
+        mov     rax,1
+        mov     rdi,1
+        mov     rsi,message
+        mov     rdx,18
+        syscall 
+
+        mov     rax,60
+        mov     rdi,0
+        syscall
+```
+- First, let's examine the way the code is distributed:<br>
+![assebly file structure](/assets/img/htb-assembly(13).PNG){: .writeup-image}
+- Looking at the vertical parts of the code, each line can have three elements:
+<pre> 1. Labels      2. Instructions      3. Operands </pre>
+- Next, if we look at the code line-by-line, we see that it has three main parts:
+<table>
+<thead>
+    <tr>
+        <th>Section</th>
+        <th>Description</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td><code>_global start</code></td>
+        <td>This is a directive that directs the code to start executing at the _start label defined below.</td>
+    </tr>
+    <tr><code>section .data</code></tr>
+    <tr>This is the <code>data</code> section, which should contain all of the variables.</tr>
+    <tr>
+        <td><code>section .text</code></td>
+        <td>This is the <code>text</code> section containing all of the code to be executed.</td>
+    </tr>
+    <tr>
+        <td></td>
+    </tr>
+</tbody>
+</table>
+
+- **directives**:
+    - An Assembly code is **line-based**, which means that the file is processed line-by-line, executing the instruction of each line.
+    - We see at the first line a directive <code>global _start</code>, which instructs the machine to start processing the instructions after the <code>_start</code> label.
+
+- **Variables**:
+    - Next, we have the <code>.data</code> section.
+    - The <code>data</code> section holds our variables to make it easier for us to define variables and reuse them without writing them multiple times.
+    - Once we run our program, all of our variables will be loaded into memory in the data segment.
+    - We can define variables using <code>db</code> for a list of bytes, <code>dw</code> for a list of words, <code>dd</code> for a list of digits, and so on.
+    - Furthermore, we can use the <code>equ</code> instruction with the **$** token to evaluate an expression, like the length of a defined variable's string.
+        - However, the labels defined with the equ instruction are constants, and they cannot be changed later.
+    - For example, the following code defines a variable and then defines a constant for its length:
+    ```nasm
+    section .data
+        message db "Hello world!", 0x0a
+        length  equ $-message
+    ```
+        - Note: the $ token indicates the current distance from the beginning of the current section.
+        - As the message variable is at the beginning of the data section, the current location, i.e,. value of **$**, equals the length of the string.
+- **Code**:
+    - This section holds all of the assembly instructions and loads them to the text memory segment. 
+    - Once all instructions are loaded into the text segment, the processor starts executing them one after another.
+    - The default convention is to have the <code>_start</code> label at the beginning of the <code>.text</code> section, which -as per the <code>global _start</code> directive- starts the main code that will be executed as the program runs.
+    - The <code>text</code> segment within the memory is **read-only**, so we cannot write any variables within it. 
+    - The <code>data</code> section, on the other hand, is **read/write**, which is why we write our variables to it.
+    - However, the data segment within the memory is not executable, so any code we write to it cannot be executed.
+    -  This separation is part of memory protections to mitigate things like buffer overflows and other types of binary exploitation.
+> Tip: We can add comments to our assembly code with a semi-colon ;. We can use comments to explain the purpose of each part of the code, and what each line is doing. Doing so will save us a lot of time in the future if we ever revisit the code and need to understand it.
