@@ -637,3 +637,33 @@ _start:
     - However, the data segment within the memory is not executable, so any code we write to it cannot be executed.
     -  This separation is part of memory protections to mitigate things like **buffer overflows** and other types of **binary exploitation**.
 > Tip: We can add comments to our assembly code with a semi-colon ;. We can use comments to explain the purpose of each part of the code, and what each line is doing. Doing so will save us a lot of time in the future if we ever revisit the code and need to understand it.
+
+## Assemble & Disassemble
+### Assemble
+- we can assemble our code with **nasm**, we can **link** it using <code>ld</code> to utilize various OS features and libraries.
+- Hence the following assembly code:<br>
+![basic assembly code](/assets/img/htb-assembly(14).PNG){: .writeup-image}<br>
+- And to assemble the code (Note: The <code>-f elf64</code> flag is used to note that we want to assemble a 64-bit assembly code. If we wanted to assemble a 32-bit code, we would use <code>-f elf</code>.):
+```bash
+nasm -f elf64 basic.s
+```
+- This should output a **basic.o** object file, which is then **assembled into machine code**, along with the details of all variables and sections. *This file is not executable just yet*.
+- **Linking**
+    - The final step is to link our file using <code>ld</code>.
+    - The **basic.o object** file, though **assembled**, *still cannot be executed*.
+    - This is because many **references** and **labels** used by **nasm** need to be *resolved into actual addresses*, along with *linking the file with various OS libraries* that may be needed.
+    - FUN FACT: *This is why a Linux binary is called ELF, which stands for an Executable and Linkable Format*.
+    - To link a file using <code>ld</code>, we can use the following command:
+    ```bash
+    ld -o basic.o basic
+    ```
+
+### Disassembling
+- To disassemble a file, we will use the <code>objdump</code> tool, which dumps **machine code** from a file and **interprets** the assembly instruction of each hex code.
+- We can disassemble a binary using the <code>-d</code> flag.
+- Note: we will also use the flag <code>-M intel</code>, so that **objdump** would write the instructions in the **Intel syntax**, which we are using, as we discussed before (note the difference below).<br>
+![objdump](/assets/img/htb-assembly(15).PNG){: .writeup-image}<br>
+- from above we see that; nasm efficiently changed our **64-bit registers** to the **32-bit sub-registers** where possible, to use less memory when possible, like changing <code>mov rax, 1</code> to <code>mov eax,0x1</code>.
+- The <code>-d</code> flag will only disassemble the **.text section** of our code.
+- 
+
