@@ -10,7 +10,7 @@ custom_css: true
 </div>
 <div class="header-animation">
   <h1 style="text-align: center;">
-     All Things Cybersecurity
+     Low-Level Security Engineering
   </h1>
   <p class="subtitle" style="text-align: center;"><i>
     "Knowing is not enough; we must apply. Willing is not enough; we must do."</i> -<strong> Johann Wolfgang von Goethe</strong>
@@ -31,26 +31,25 @@ custom_css: true
 
 <div class="ctf-card">
 <h2 style="margin: 0; padding: 0 0 12px 0; padding-bottom: 1px"> Focus Areas</h2>
-<p style="margin: 0; padding: 0 0 12px 0; padding-bottom: 0"><i>Primary focus, where my heart strongly lies:</i></p>
+<p style="margin: 0; padding: 0 0 12px 0; padding-bottom: 0"><i>Primary expertise:</i></p>
       <ul class="arrow-list">
-        <li><strong>Forensics</strong>: Recovering and analyzing digital evidence from files, memory dumps, or network traffic.
+        <li><strong>Reverse Engineering</strong>: Specializing in mobile application analysis, uncovering app behaviors, and identifying security vulnerabilities in Android/iOS apps.
         </li>
       </ul>
       <ul class="arrow-list">
-        <li><strong>Reverse Engineering</strong>: Analyzing binaries or software to understand their inner workings or to find vulnerabilities.
-        </li>
-      </ul>
-      <ul class="arrow-list">
-        <li><strong>Binary Exploitation</strong>: Exploiting memory corruption bugs (like <i>buffer overflows</i>) in compiled programs to gain control or leak data.
+        <li><strong>Binary Exploitation</strong>: Discovering and exploiting memory corruption vulnerabilities, buffer overflows, and other low-level security issues in compiled programs.
         </li>
       </ul>
 <br>
-<p style="margin: 0; padding: 0 0 12px 0; padding-bottom: 0"><i>Supporting competencies:</i></p>
+<p style="margin: 0; padding: 0 0 12px 0; padding-bottom: 0"><i>Secondary focus:</i></p>
       <ul class="arrow-list">
-        <li><strong>Cryptography</strong>: Breaking & designing secure cryptographic systems.</li>
+        <li><strong>Digital Forensics</strong>: Investigation of digital artifacts, memory analysis, and incident response.
+        </li>
       </ul>
+<br>
+<p style="margin: 0; padding: 0 0 12px 0; padding-bottom: 0"><i>Additional competencies:</i></p>
       <ul class="arrow-list">
-        <li><strong>Web Exploitation</strong>: Finding and exploiting vulnerabilities in web applications.
+        <li><strong>Web Exploitation</strong>: Understanding and identifying security vulnerabilities in web applications.
         </li>
       </ul>
 </div>
