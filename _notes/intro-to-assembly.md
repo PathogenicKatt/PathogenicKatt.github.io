@@ -665,5 +665,8 @@ nasm -f elf64 basic.s
 ![objdump](/assets/img/htb-assembly(15).PNG){: .writeup-image}<br>
 - from above we see that; nasm efficiently changed our **64-bit registers** to the **32-bit sub-registers** where possible, to use less memory when possible, like changing <code>mov rax, 1</code> to <code>mov eax,0x1</code>.
 - The <code>-d</code> flag will only disassemble the **.text section** of our code.
-- 
+- To **dump any strings**, we can use the <code>-s</code> flag, and add <code>-j .data</code> to only examine the **.data section** (This means that we also do not need to add <code>-M intel</code>).<br>
+![objdump strings](/assets/img/htb-assembly(16).PNG){: .writeup-image}<br>
+- Flag:<br>
+![flag](/assets/img/htb-assembly(17).PNG){: .writeup-image}
 
