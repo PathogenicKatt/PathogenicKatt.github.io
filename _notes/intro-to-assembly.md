@@ -429,4 +429,133 @@ syscall
 </table>
 
 - For example, for the <code>bx</code> data register, the **16-bit** is <code>bx</code>,  so the **8-bit** is <code>bl</code>, the **32-bit** is <code>eax</code>, and the 64-bit would be **rbx**.
+- This also applies to the base and stack pointers:
+    - It's sub-register <code>bpl</code> is an **8-bit** 
+    - The register <code>bp</code> is a **16-bit** (base name)
+    - The register <code>ebp</code> is a **32-bit**
+    - The register <code>rbp</code> is a **64-bit**
+    - The above is the same for stack pointer.
 
+- The **RFLAGS register** in the x86_64 architecture is a 64-bit status register that contains **condition flags** reflecting the outcome of various CPU operations.
+- Flags include:
+    - **Carry Flag (CF)**: *Indicates carry or borrow in arithmetic operations*.
+    - **Zero Flag (ZF)**: *Set if the result of an operation is zero*.
+    - **Sign Flag (SF)**: *Reflects the sign of the result (negative or positive)*.
+    - **Overflow Flag (OF)**: *Set if signed overflow occurs*.
+    - **Interrupt Enable Flag (IF)**: *Controls whether interrupts are enabled*.
+    - **Direction Flag (DF)**: *Controls string operation direction*.
+    - **Parity Flag (PF)**: *Indicates even parity of the least significant byte*.
+
+### Memory Addresses
+- **x86_64-bit processors** have 64-bit wide addresses that range from **0x0** to **0xffffffffffffffff**
+-  There are several types of **address fetching (i.e., addressing modes)** in the x86 architecture:<br>
+<table>
+<thead>
+    <tr>
+        <th>Addressing Mode</th>
+        <th>Description</th>
+        <th>Example</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>Immediate</td>
+        <td>The value is given within the instruction</td>
+        <td><code>ADD 7</code></td>
+    </tr>
+    <tr>
+        <td>Register</td>
+        <td>The register name that holds a value is given in the instruction.</td>
+        <td><code>ADD eax</code></td>
+    </tr>
+    <tr>
+        <td>Direct</td>
+        <td>The direct full address is given in the instruction.</td>
+        <td><code>ADD 0xffffffffaa8a25ff</code></td>
+    </tr>
+    <tr>
+        <td>Indirect</td>
+        <td>A reference pointer is given in the instruction.</td>
+        <td><code>CALL 0x44d000</code> or <code>CALL [rax]</code></td>
+    </tr>
+    <tr>
+        <td>Stack</td>
+        <td>The address is on top of the stack</td>
+        <td><code>ADD rsp</code></td>
+    </tr>
+</tbody>
+</table>
+
+
+### Address Endianness
+- An address endianness is the order of its bytes in which they are stored or retrieved from memory. 
+- There are two types of endianness: **Little-Endian** and **Big-Endian**.
+- With **Little-Endian processors**, the *little-end byte* of the address is filled/retrieved first right-to-left, while with Big-Endian processors, the big-end byte is filled/retrieved first left-to-right.<br>
+![address endianness](/assets/img/htb-assembly(12).jpg){: .writeup-image}<br>
+- When retrieving the value, the processor has to use the same endianness used when storing them, or it will get the wrong value. 
+- **NB**:
+    - Intel/AMD which are 86_64-bit architecture use **Little Endian**:
+    - **The important thing we need to take from this is knowing that our bytes are stored into memory from right-to-left.**
+
+### Data Types
+-  The following are the most common data types we will be using with instructions:
+<table>
+<thead>
+    <tr>
+        <th>Component</th>
+        <th>Length</th>
+        <th>Example</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>byte</td>
+        <td>8-bits</td>
+        <td>0xab</td>
+    </tr>
+    <tr>
+        <td>word</td>
+        <td>16-bits (2-bytes)</td>
+        <td>0xabcd</td>
+    </tr>
+    <tr>
+        <td>double word (dword)</td>
+        <td>32-bits (4-bytes)</td>
+        <td>0xabcdef12</td>
+    </tr>
+    <tr>
+        <td>quad word (qword)</td>
+        <td>64-bits (8-bytes)</td>
+        <td>0xabcdef1234567890</td>
+    </tr>
+</tbody>
+</table>
+
+> *"Whenever we use a variable with a certain data type or use a data type with an instruction, both operands should be of the same size."*
+
+- For example, we cannot use a variable of data type (byte) with <code>rax</code> as it is of data type 8-bytes; Hence in this case for a byte we have to use <code>al</code> which has the same size of 1 byte.
+
+<table>
+<thead>
+    <tr>
+        <th>Sub-Register</th>
+        <th>Data Type</th>
+    </tr>
+</thead>
+    <tr>
+        <td><code>al</code></td>
+        <td>byte</td>
+    </tr>
+    <tr>
+        <td><code>bx</code></td>
+        <td>word</td>
+    </tr>
+    <tr>
+        <td><code>ebx</code></td>
+        <td>dword</td>
+    </tr>
+    <tr>
+        <td><code>rbx</code></td>
+        <td>qword</td>
+    </tr>
+</table>
