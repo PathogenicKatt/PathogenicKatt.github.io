@@ -681,3 +681,33 @@ nasm -f elf64 basic.s
 - You may notice through debugging that some memory addresses are in the form of **0x00000000004xxxxx**, rather than their raw address in memory **0xffffffffaa8a25ff**
     - This is due to **$rip-relative addressing** in **Position-Independent Executables (PIE)**, in which the memory addresses are used relative to their distance from the instruction pointer <code>$rip</code> within the program's own Virtual RAM, *rather than using raw memory addresses*.
     - This feature may be **disabled** to reduce the risk of **binary exploitation**.
+
+## Debugging with GDB
+- Now that we have the general information about our program, we will start running it and debugging it.
+- Debugging consists mainly of four steps:
+<table>
+<thead>
+    <tr>
+        <th>Step</th>
+        <th>Description</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>Break</td>
+        <td>Setting breakpoints at various points of interest.</td>
+    </tr>
+    <tr>
+        <td>Examine</td>
+        <td>Running the program and examining the state of the program at these points</td>
+    </tr>
+    <tr>
+        <td>Step</td>
+        <td>Moving through the program to examine how it acts with each instruction and with user input</td>
+    </tr>
+    <tr>
+        <td>Modify</td>
+        <td>Modify values in specific registers or addresses at specific breakpoints, to study how it would affect the execution</td>
+    </tr>
+</tbody>
+</table>
