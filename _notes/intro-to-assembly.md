@@ -787,5 +787,37 @@ nasm -f elf64 basic.s
     - As we can see, *we took exactly one step* and *stopped again* at the <code>mov edi, 0x1</code> instruction.
 
 - **Step Count**
-    - 
+    - Similarly to examine, we can repeat the <code>si</code> command by adding a number after it.
+    - For example, if we wanted to move 3 steps to reach the **syscall instruction**, we can do so as follows: 
+    ![assembly](/assets/img/htb-assembly(24).PNG){: .writeup-image}<br>
+    - As we can see, we stopped at the syscall instruction as expected.
+    - *You can hit the return/enter empty in order to repeat the last command. Try hitting it at this stage, and you should make another 3 steps, and break at the other syscall instruction.*<br>
+    ![assembly](/assets/img/htb-assembly(25).PNG){: .writeup-image}<br>
+
+- **Step**
+    - The <code>step</code> or <code>s</code> command, on the other hand, will continue until the following line of code is reached or until it exits from the current function.
+    - If we run an assembly code, it will break when we exit the current function _start
+    - If there's a call to another function within this function, it'll break at the beginning of that function. 
+    - Otherwise, it'll break after we exit this function after the program's end. 
+    - Let us try using s, and see what happens:
+    ![assembly](/assets/img/htb-assembly(26).PNG){: .writeup-image}<br>
+    - We see that the execution continued until we reached the exit from the _start function, so we reached the end of the program and exited normally without any errors.
+    - *There's also the <code>next</code> or <code>n</code> command, which will also continue until the next line, but will skip any functions called in the same line of code, instead of breaking at them like step. There's also the <code>nexti</code> or <code>ni</code>, which is similar to <code>si</code>, but skips functions calls.*
+<br>
+
+- **Modify**
+    - The final step of debugging is **modifying values** *in registers and addresses at a certain point of execution*. 
+    - This helps us in seeing how this would affect the execution of the program.
+    - **Addresses**:
+        - To modify values in GDB, we can use the <code>set</code> command.
+        - However, we will utilize the <code>patch</code> command in GEF to make this step much easier.
+        - Let's enter <code>help patch</code> in GDB to get its help menu: 
+        ![modifying values in GDB](/assets/img/htb-assembly(27).PNG){: .writeup-image}<br>
+        - As we can see, we have to provide the type/size of the new value, the location to be stored, and the value we want to use.
+        - So, let's try changing the string stored in the .data section (at address 0x402000 as we saw earlier) to the string Patched!\n.
+        ![modifying values in GDB](/assets/img/htb-assembly(28).PNG){: .writeup-image}<br>
+        - Notice how we used **\x0a** for adding a new line after our string.
+        
+
+
 
