@@ -820,7 +820,11 @@ nasm -f elf64 basic.s
 - **Registers**
     - We also note that we did not replace the entire string.
     - This is because we only modified the characters up to the length of our string and left the remainder of the old string.
-    - 
+    - Finally, the **write system call** specified a length of **0x12** of bytes to be printed.
+    - To fix this, let's modify the value stored in **$rdx** to the length of our string, which is **0x9**.
+    ![modifying values in GDB](/assets/img/htb-assembly(29).PNG){: .writeup-image}<br>
+
+    
 
 
 
