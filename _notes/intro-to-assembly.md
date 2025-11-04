@@ -777,3 +777,15 @@ nasm -f elf64 basic.s
 
 - **Step**
     - The third step of debugging is **stepping** through the program *one instruction or line of code at a time*.
+    - As we can see, we are currently at the very first instruction in our basic program:
+    ![assembly](/assets/img/htb-assembly(22).PNG){: .writeup-image}<br>
+    - Note: the instruction shown with the **->** symbol is where we are at, and it has not yet been processed.
+    - To move through the program, there are three different commands we can use: <code>stepi</code>, <code>step</code> and <code>s</code>.
+    - The <code>stepi</code> or <code>si</code> command will step through the assembly instructions one by one, which is the smallest level of steps possible while debugging.
+    - Let us use the si command to see how we get to the next instruction:
+    ![assembly](/assets/img/htb-assembly(23).PNG){: .writeup-image}<br>
+    - As we can see, *we took exactly one step* and *stopped again* at the <code>mov edi, 0x1</code> instruction.
+
+- **Step Count**
+    - 
+
