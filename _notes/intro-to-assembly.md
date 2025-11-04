@@ -722,4 +722,58 @@ nasm -f elf64 basic.s
 - The <code>*</code> tells GDB to break at the instruction stored in **0x40100a**.
 - **NB**: Once the *program is running*, if *we set another breakpoint*, like <code>b *0x401005</code>, in order to **continue** to that **breakpoint**, we should use the <code>continue</code> or <code>c</code> command. If we use <code>run</code> or <code>r</code> again, *it will run the program from the start*. **This can be useful to skip loops**, as we will see later in the module.
 - If we want to see what breakpoints we have at any point of the execution, we can use the <code>info breakpoint</code> command. 
-- We can also disable, enable, or delete any breakpoint.
+- We can also <code>disable</code>, <code>enable</code>, or <code>delete</code> any breakpoint.
+
+### Examine
+- The next step of debugging is *examining the values in registers and addresses*.
+- To manually examine any of the addresses or registers or examine any other, we can use the <code>x</code> command in the format of **x/FMT ADDRESS**, as <code>help x</code> would tell us. 
+- The **ADDRESS** is the *address or register we want to examine*, while **FMT** is the examine format.
+- The examine format **FMT** can have three parts:
+<table>
+<thead>
+    <tr>
+        <th>Argument</th>
+        <th>Description</th>
+        <th>Example</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>Count</td>
+        <td>The number of times we want to repeat the examine</td>
+        <td>3,4,8</td>
+    </tr>
+    <tr>
+        <td>Format</td>
+        <td>The format we want the result to be represented in</td>
+        <td>x(hex), s(string), i(instruction)</td>
+    </tr>
+    <tr>
+        <td>Size</td>
+        <td>The size of memory we want to examine</td>
+        <td>b(byte), h(halfword), w(word), g(giant, 8 bytes)</td>
+    </tr>
+</tbody>
+</table>
+
+- **Instruction**:
+    - if we wanted to examine the next four instructions in line, we will have to examine the $rip register (which holds the address of the next instruction), and use 4 for the count, i for the format, and g for the size (for 8-bytes or 64-bits).
+    ![examining gdb](/assets/img/htb-assembly(19).PNG){: .writeup-image}<br>
+    - We see that we get the following four instructions as expected.
+    - This can help us as we go through a program in examining certain areas and what instructions they may contain.
+- **Strings**:
+    - We can also examine a variable stored at a specific memory address.
+    - We know that our **message variable** is stored at the <code>.data</code> section on address **0x402000** from our previous disassembly.
+    - We also see the upcoming command <code>movabs rsi, 0x402000</code>, so we may want to examine what is being moved from **0x402000**.
+    - In this case, we will not put anything for the Count, as we only want one address (1 is the default), and will use s as the format to get it in a string format rather than in hex:
+    ![examining memory](/assets/img/htb-assembly(20).PNG){: .writeup-image}<br>
+    - As we can see, we can see the string at this address represented as text rather than hex characters.
+- **Addresses**
+    - We often need to examine **addresses** and **registers** *containing hex data*, *such as memory addresses, instructions, or binary data*.
+    - Let us examine the same previous instruction, but in hex format, to see how it looks:
+    ![examining instruction](/assets/img/htb-assembly(21).PNG){: .writeup-image}<br>
+    - We see instead of mov eax,0x1, we get **0x000001b8**, which is the hex representation of the mov eax,0x1 machine code in little-endian formatting.
+        - This is read as: **b8 01 00 00**.
+
+- **Step**
+    - The third step of debugging is **stepping** through the program *one instruction or line of code at a time*.
