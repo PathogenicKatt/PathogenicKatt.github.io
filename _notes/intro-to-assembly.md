@@ -814,10 +814,14 @@ nasm -f elf64 basic.s
         - Let's enter <code>help patch</code> in GDB to get its help menu: 
         ![modifying values in GDB](/assets/img/htb-assembly(27).PNG){: .writeup-image}<br>
         - As we can see, we have to provide the type/size of the new value, the location to be stored, and the value we want to use.
-        - So, let's try changing the string stored in the .data section (at address 0x402000 as we saw earlier) to the string Patched!\n.
+        - So, let's try changing the string stored in the .data section (at address 0x402000 as we saw earlier) to the string Yo Katt we winning!\n.
         ![modifying values in GDB](/assets/img/htb-assembly(28).PNG){: .writeup-image}<br>
         - Notice how we used **\x0a** for adding a new line after our string.
-        
+- **Registers**
+    - We also note that we did not replace the entire string.
+    - This is because we only modified the characters up to the length of our string and left the remainder of the old string.
+    - 
+
 
 
 
