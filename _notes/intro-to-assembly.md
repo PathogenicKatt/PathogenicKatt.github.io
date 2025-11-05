@@ -864,3 +864,62 @@ nasm -f elf64 basic.s
     - This is usually done when the data is large and would not fit in one register, so the data is placed on the stack or in the heap, and a pointer to its location is stored in the register.
     - Note that if we use mov rax, [rsp+10], it will actually move the value at [rsp+10] to rax, as discussed earlier. We cannot move a pointer with an offset using mov.
 
+## Arithmetic Instructions
+- With Arithmetic Instructions, we can perform various mathematical computations on data stored in registers and memory addresses.
+- These instructions are usually processed by the ALU in the CPU, among other instructions.
+- We will split arithmetic instructions into two types: *instructions that take only one operand* **(Unary)**, *instructions that take two operands* **(Binary)**.
+- **Unary Instructions**:
+    - The following are the main **Unary Arithmetic Instructions** (we will assume that <code>rax</code> *starts as 1 for each instruction*):
+<table>
+<thead>
+    <tr>
+        <th>Instruction</th>
+        <th>Description</th>
+        <th>Example</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td><code>inc</code></td>
+        <td>Increment by 1</td>
+        <td><code>inc rax</code> -> <code>rax++</code> or <code>rax += 1</code> -> <code>rax</code> = 2</td>
+    </tr>
+    <tr>
+        <td><code>dec</code></td>
+        <td>Decrement by 1</td>
+        <td><code>dec rax</code> -> <code>rax--</code> or <code>rax -= 1</code> -> <code>rax</code> = 0</td>
+    </tr>
+</tbody>
+</table>
+<br>
+
+- **Binary Instructions**:
+    - Next, we have Binary Arithmetic Instructions, and the main ones are: We'll assume that both <code>rax</code> and <code>rbx</code> start as **1** *for each instruction*.
+    - The following are the main **Unary Arithmetic Instructions** (we will assume that <code>rax</code> *starts as 1 for each instruction*):
+<table>
+<thead>
+    <tr>
+        <th>Instruction</th>
+        <th>Description</th>
+        <th>Example</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td><code>add</code></td>
+        <td>Add both operands</td>
+        <td><code>add rax, rbx</code> -> <code>rax</code> = 1 + 1 -> 2</td>
+    </tr>
+    <tr>
+        <td><code>sub</code></td>
+        <td>Subtract Source from Destination (i.e <code>rax</code> = <code>rax</code> - <code>rbx</code>)</td>
+        <td><code>sub rax, rbx</code> -> <code>rax</code> = 1 - 1 -> 0</td>
+    </tr>
+    <tr>
+        <td><code>imul</code></td>
+        <td>Multiply both operands</td>
+        <td><code>imul rax, rbx</code> -> <code>rax</code> = 1 * 1 -> 1</td>
+    </tr>
+</tbody>
+</table>
+<br>
