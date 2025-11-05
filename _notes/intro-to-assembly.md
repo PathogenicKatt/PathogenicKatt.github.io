@@ -824,8 +824,43 @@ nasm -f elf64 basic.s
     - To fix this, let's modify the value stored in **$rdx** to the length of our string, which is **0x9**.
     ![modifying values in GDB](/assets/img/htb-assembly(29).PNG){: .writeup-image}<br>
 
-    
+## Data Movement
+- The main Data Movement instructions are:
+<table>
+<thead>
+    <tr>
+        <th>Instruction</th>
+        <th>Description</th>
+        <th>Example</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td><code>mov</code></td>
+        <td>Move data or load immediate data</td>
+        <td><code>mov rax,1</code>=> rax=1</td>
+    </tr>
+    <tr>
+        <td><code>lea</code></td>
+        <td>Load an address pointing to the value</td>
+        <td><code>lea rax,[rsp+5]</code>=> rax=rsp+5</td>
+    </tr>
+        <tr>
+        <td><code>xchg</code></td>
+        <td>Swap data between two registers or addresses</td>
+        <td><code>xchg rax,rbx</code>=> rax=rbx, rbx=rax</td>
+    </tr> 
+</tbody>
+</table>
+<br>
 
-
-
+- **Moving Data**
+- **Address Pointers**
+    - In many cases, we would see that the register or address we are using does not immediately contain the final value but contains another address that points to the final value. 
+    - We can use square brackets to compute an address offset relative to a register or another address. For example, we can do <code>mov rax, [rsp+10]</code> to move the value stored 10 address away from rsp.
+- **Loading Value Pointers**
+    - Finally, we need to understand *how to load a pointer address to a value*, using the lea **(or Load Effective Address)** instruction, *which loads a pointer to the specified value*, as in <code>lea rax, [rsp]</code>.
+    - This is the opposite of what we just learned above (i.e., load pointer to a value vs. move value from pointer).
+    - This is usually done when the data is large and would not fit in one register, so the data is placed on the stack or in the heap, and a pointer to its location is stored in the register.
+    - Note that if we use mov rax, [rsp+10], it will actually move the value at [rsp+10] to rax, as discussed earlier. We cannot move a pointer with an offset using mov.
 
