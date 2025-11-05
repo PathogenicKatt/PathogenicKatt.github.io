@@ -923,3 +923,38 @@ nasm -f elf64 basic.s
 </tbody>
 </table>
 <br>
+
+- **Bitwise Instructions**:
+    - Now, let's move to Bitwise Instructions, which are instructions that work on the bit level (we'll assume that rax = 1 and rbx = 2 for each instruction):
+<table>
+<thead>
+    <tr>
+        <th>Instruction</th>
+        <th>Description</th>
+        <th>Example</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td><code>not</code></td>
+        <td>Bitwise NOT (invert all bits, 0->1 and 1->0)</td>
+        <td><code>not rax</code> -> NOT 00000001 -> 11111110</td>
+    </tr>
+    <tr>
+        <td><code>and</code></td>
+        <td>Bitwise AND (if both bits are 1 -> 1, if bits are different -> 0)</td>
+        <td><code>and rax, rbx</code> -> 00000001 AND 00000010 -> 00000000</td>
+    </tr>
+    <tr>
+        <td><code>or</code></td>
+        <td>Bitwise OR (if either bit is 1 -> 1, if both are 0 -> 0)</td>
+        <td><code>or rax, rbx</code> -> 00000001 OR 00000010 -> 00000011</td>
+    </tr>
+    <tr>
+        <td><code>xor</code></td>
+        <td>Bitwise XOR (if bits are the same -> 0, if bits are different -> 1)</td>
+        <td><code>xor rax, rbx</code> -> 00000001 XOR 00000010 -> 00000011</td>
+    </tr>
+</tbody>
+</table>
+<br>
