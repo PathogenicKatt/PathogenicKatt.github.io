@@ -958,3 +958,68 @@ nasm -f elf64 basic.s
 </tbody>
 </table>
 <br>
+
+## Loops
+- **Loop Structure**:
+    - A loop in assembly is a set of instructions that repeat for rcx times. Let's take the following example:
+    ```nasm
+    exampleLoop:
+        instruction 1
+        instruction 2
+        instruction 3
+        instruction 4
+        instruction 5
+        loop exampleLoop
+    ```
+    - Once the assembly code reaches <code>exampleLoop</code>, it will start executing the instructions under it.
+    - We should set the number of iterations we want the loop to go through in the <code>rcx</code> register. 
+    - Every time the **loop** reaches the <code>loop</code> instruction, **it will decrease rcx by 1** (i.e., dec rcx) and **jump back to the specified label**, <code>exampleLoop</code> in this case.
+    - So, before we enter any loop, we should mov the number of loop iterations we want to the <code>rcx</code> register.
+<table>
+<thead>
+    <tr>
+        <th>Instruction</th>
+        <th>Description</th>
+        <th>Example</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td><code>mov rcx, x</code></td>
+        <td>Sets loop (<code>rcx</code>) counter to x</td>
+        <td><code>mov rcx, 3</code></td>
+    </tr>
+    <tr>
+        <td><code>loop</code></td>
+        <td>Jumps back to the start of <code>loop</code> until counter reaches 0</td>
+        <td><code>loop exampleLoop</code></td>
+    </tr>
+</tbody>
+</table>
+<br>
+
+## Unconditional Branching
+- The second type of **Control Instructions** is **Branching Instructions**, which are *general instructions that allow us to jump to any point in the program if a specific condition is met*.
+- Let's first discuss the most basic branching instruction:
+    - <code>jmp</code>, which will always jump to a location unconditionally.
+    - The <code>jmp</code> instruction jumps the program to the label or specified location in its operand so that the program's execution is continued there.
+    - Once a program's execution is directed to another location, it will continue processing instructions from that point.
+    - The basic <code>jmp</code> instruction is unconditional, which means that it will always jump to the specified location, regardless of the conditions. 
+    - This contrasts with **Conditional Branching instructions** that only jump if a specific condition is met:
+<table>
+<thead>
+    <tr>
+        <th>Instruction</th>
+        <th>Description</th>
+        <th>Example</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td><code>jmp</code></td>
+        <td>Jumps to specified label, address, or location</td>
+        <td><code>jmp loop</code></td>
+    </tr>
+</tbody>
+</table>
+<br>
