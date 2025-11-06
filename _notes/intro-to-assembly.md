@@ -1004,7 +1004,8 @@ nasm -f elf64 basic.s
     - <code>jmp</code>, which will always jump to a location unconditionally.
     - The <code>jmp</code> instruction jumps the program to the label or specified location in its operand so that the program's execution is continued there.
     - Once a program's execution is directed to another location, it will continue processing instructions from that point.
-    - The basic <code>jmp</code> instruction is unconditional, which means that it will always jump to the specified location, regardless of the conditions. 
+    - The basic <code>jmp</code> instruction is unconditional, which means that it will always jump to the specified location, regardless of the conditions.
+    - unconditional jumps completely redirect execution - they don't execute any instructions between the jump and the target label! 
     - This contrasts with **Conditional Branching instructions** that only jump if a specific condition is met:
 <table>
 <thead>
@@ -1023,3 +1024,65 @@ nasm -f elf64 basic.s
 </tbody>
 </table>
 <br>
+
+## Conditional Branching
+- Unlike Unconditional Branching Instructions, Conditional Branching instructions are only processed when a specific condition is met, based on the Destination and Source operands.
+- A **conditional jump instruction** has multiple varieties as <code>Jcc</code>, where <code>cc</code> represents the Condition Code.
+- The following are some of the main condition codes:
+<table>
+<thead>
+    <tr>
+        <th>Instruction</th>
+        <th>Condition</th>
+        <th>Example</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td><code>jz</code></td>
+        <td>D = 0</td>
+        <td>Destination equal to Zero</td>
+    </tr>
+        <tr>
+        <td><code>jnz</code></td>
+        <td>D != 0</td>
+        <td>Destination Not equal to Zero</td>
+    </tr>
+        <tr>
+        <td><code>js</code></td>
+        <td>D < 0</td>
+        <td>Destination is Negative</td>
+    </tr>
+        <tr>
+        <td><code>jns</code></td>
+        <td>D >= 0</td>
+        <td>Destination is Not Negative (i.e. 0 or positive)</td>
+    </tr>
+        <tr>
+        <td><code>jg</code></td>
+        <td>D > S</td>
+        <td>Destination Greater than Source</td>
+    </tr>
+    <tr>
+        <td><code>jge</code></td>
+        <td>D >= S</td>
+        <td>Destination Greater than or Equal Source</td>
+    </tr>
+    <tr>
+        <td><code>jl</code></td>
+        <td>D < S</td>
+        <td>Destination Less than Source</td>
+    </tr>
+    <tr>
+        <td><code>jle</code></td>
+        <td>D <= S</td>
+        <td>Destination Less than or Equal Source</td>
+    </tr>
+
+</tbody>
+</table>
+<br>
+
+## RFLAGS Register
+- The RFLAGS register consists of 64-bits like any other register. However, this register does not hold values but holds flag bits instead. 
+- Each bit 'or set of bits' turns to **1** or **0** depending on the value of the last instruction.
