@@ -12,9 +12,6 @@ custom_css: true
   <h1 style="text-align: center;">
      Low-Level Security Engineering
   </h1>
-  <p class="subtitle" style="text-align: center;"><i>
-    "Knowing is not enough; we must apply. Willing is not enough; we must do."</i> -<strong> Johann Wolfgang von Goethe</strong>
-  </p>
 </div>
 
   <div class="ctf-card" >
@@ -33,7 +30,7 @@ custom_css: true
 <h2 style="margin: 0; padding: 0 0 12px 0; padding-bottom: 1px"> Focus Areas</h2>
 <p style="margin: 0; padding: 0 0 12px 0; padding-bottom: 0"><i>Primary expertise:</i></p>
       <ul class="arrow-list">
-        <li><strong>Reverse Engineering</strong>: Specializing in mobile application analysis, uncovering app behaviors, and identifying security vulnerabilities in Android/iOS apps.
+        <li><strong>Reverse Engineering</strong>: Specializing in mobile application analysis, uncovering app behaviors, and identifying security vulnerabilities in Android apps.
         </li>
       </ul>
       <ul class="arrow-list">
@@ -44,6 +41,10 @@ custom_css: true
 <p style="margin: 0; padding: 0 0 12px 0; padding-bottom: 0"><i>Secondary focus:</i></p>
       <ul class="arrow-list">
         <li><strong>Digital Forensics</strong>: Investigation of digital artifacts, memory analysis, and incident response.
+        </li>
+      </ul>
+      <ul class="arrow-list">
+        <li><strong>Artificial Intelligence</strong>: Exploring AI security, model vulnerabilities, and adversarial machine learning.
         </li>
       </ul>
 <br>
