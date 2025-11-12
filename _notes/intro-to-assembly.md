@@ -1086,3 +1086,11 @@ nasm -f elf64 basic.s
 ## RFLAGS Register
 - The RFLAGS register consists of 64-bits like any other register. However, this register does not hold values but holds flag bits instead. 
 - Each bit 'or set of bits' turns to **1** or **0** depending on the value of the last instruction.
+- Just like other registers, the **64-bit RFLAGS register** has a **32-bit sub-register** called **EFLAGS**, and a **16-bit sub-register** called **FLAGS**, which holds the most significant flags we may encounter.
+![eflags](/assets/img/htb-assembly(30).PNG){: .writeup-image}
+
+- The flags we would mostly be interested in are:
+    - The **Carry Flag** <code>CF</code>: Indicates whether we have a float.
+    - The **Parity Flag** <code>PF</code>: Indicates whether a number is odd or even.
+    - The **Zero Flag** <code>ZF</code>: Indicates whether a number is zero.
+    - The **Sign Flag** <code>SF</code>: Indicates whether a register is negative.
