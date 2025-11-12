@@ -1094,3 +1094,43 @@ nasm -f elf64 basic.s
     - The **Parity Flag** <code>PF</code>: Indicates whether a number is odd or even.
     - The **Zero Flag** <code>ZF</code>: Indicates whether a number is zero.
     - The **Sign Flag** <code>SF</code>: Indicates whether a register is negative.
+- **JNZ loopFib**:
+    - Though it is more efficient to use loop, to demonstrate the use of jnz, let's go back to our code and try to use the jnz instruction instead of loop:
+    ```nasm
+    gobal _start
+    section .text
+    _start:
+        mov rax,0
+        mov rbx,0
+        inc rbx
+        mov rcx,10
+    loopFib:
+        add rax,rbx
+        xchg rax,rbx
+        dec rcx
+        jnz loopFib
+    ```
+    - Every time the loop reaches its end, the <code>rcx</code> counter *would decrement by 1*, and the program would jump back to **loopFib** if <code>ZF</code> is not set.
+    - Once <code>rcx</code> reaches **0**, the *Zero Flag ZF would be turned on to 1*, and so <code>jnz</code> would no longer jump (since it's NZ), and *we would exit the loop*.
+<br>
+
+### CMP
+- The Compare instruction <code>cmp</code> simply compares the two operands, *by subtracting the **second operand** from **first operand** (i.e. D1 - S2), and then sets the necessary flags in the **RFLAGS register**.
+- For example, if we use <code>cmp rbx, 10</code>, then the *compare instruction would do* **'rbx - 10'**, and set the flags based on the result.
+<table>
+<head>
+    <tr>
+        <th>Instruction</th>
+        <th>Description</th>
+        <th>Example</th>
+    </tr>
+</head>
+<body>
+    <tr>
+        <td><code>cmp</code></td>
+        <td>Sets RFLAGS by subtracting second operand from first operand (i.e. first - second)</td>
+        <td><code>cmp rax, rbx</code> -> <code>rax</code> - <code>rbx</code></td>
+    </tr>
+</body>
+</table>
+
