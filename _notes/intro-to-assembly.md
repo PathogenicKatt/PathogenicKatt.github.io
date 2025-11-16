@@ -1180,4 +1180,35 @@ nasm -f elf64 basic.s
 - There are many available syscalls provided by the Linux Kernel, and we can find a list of them and the syscall number of each one **by reading the unistd_64.h system file**:
 ![linux syscalls](/assets/img/htb-assembly(31).PNG){: .writeup-image}<br>
 - The above file **sets the syscall number for each syscall** to refer to that syscall using this number.
+- Note: With 32-bit x86 processors, the syscall numbers are in the unistd_32.h file.
+
+### Syscall Function Arguments
+- To use the **write syscall**, we must first know what arguments it accepts.
+- To find the arguments accepted by a syscall, we can use the <code>man -s 2</code> command with the syscall name from the above list:
+![linux write syscall](/assets/img/htb-assembly(32).PNG){: .writeup-image}<br>
+- As we can see from the above output, the write function has the following syntax:
+Code (highlighted part):
+![linux write syscall](/assets/img/htb-assembly(33).PNG){: .writeup-image}<br>
+- We see that the syscall function expects 3 arguments:
+    - **File Descriptor** <code>fd</code> to be printed to (usually **1 for stdout**)
+    - The **address pointer** to the string to be printed.
+    - The **length** we want to print.
+- Once we provide these arguments, we can use the syscall instruction to execute the function and print to screen.
+
+### Syscall Calling Convention
+- Now that we understand how to locate various syscall and their arguments let's start learning how to call them. **To call a syscall**, we have to:
+    - Save registers to stack
+    - Set its syscall number in rax
+    - Set its arguments in the registers
+    - Use the syscall assembly instruction to call it
+- **We usually should save any registers we use to the stack before any function call or syscall.**
+- **Syscall Number**:
+    - Let's start by moving the syscall number to the rax register.
+    - As we saw earlier, the write syscall has a number 1, so we can start with the following command:
+    ```nasm
+    mov rax, 1
+    ```
+
+
+
 
