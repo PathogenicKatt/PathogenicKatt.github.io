@@ -64,6 +64,10 @@ data_page: resources
     <h2>Network Exploitation</h2>
     <li><a href="./tools/bloodhound">BloodHound</a></li>
   </div>
+  <div class="resource-card">
+    <h2>Binary exploitation</h2>
+    <li><a href="./tools/rop-emporium">rop-emporium</a></li>
+  </div>
 
   <div class="resource-card">
     <h2>General</h2>
