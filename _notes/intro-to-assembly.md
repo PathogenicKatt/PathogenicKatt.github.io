@@ -1133,4 +1133,35 @@ nasm -f elf64 basic.s
     </tr>
 </body>
 </table>
+- The main advantage of 'cmp' is that it does not affect the operands.
+- Note: In a **cmp instruction**, the **first operand** (i.e. the Destination) *must be a register*, while the **other** *can be a register, a variable, or an immediate value*.
+
+## Using the Stack
+- Before we discuss Functions, we need to understand how to use the memory Stack.
+- **The Stack**:
+    - The **stack** is a **segment of memory** *allocated for the program to store data in*, and it is usually used to store data and then retrieve them back temporarily. 
+    - The **top of the stack** is referred to by the **Top Stack Pointer** <code>rsp</code>, while the bottom is referred to by the **Base Stack Pointer** <code>rbp</code>.
+    - NB: We can **push** data into the stack, and it will be at the **top of the stack** (i.e. <code>rsp</code>), and then we can **pop** data out of the stack into a register or a memory address, and it will be removed from the **top of the stack**.
+<table>
+<head>
+    <tr>
+        <th>Instruction</th>
+        <th>Description</th>
+        <th>Example</th>
+    </tr>
+</head>
+<body>
+    <tr>
+        <td><code>push</code></td>
+        <td>Copies the specified register/address to the top of the stack</td>
+        <td><code>push rax</code></td>
+    </tr>
+    <tr>
+        <td><code>pop</code></td>
+        <td>Moves the item at the top of the stack to the specified register/address</td>
+        <td><code>pop rax</code></td>
+    </tr>
+</body>
+</table>
+    - The stack has a Last-in First-out (LIFO) design, which means we can only pop out the last element pushed into the stack. 
 
