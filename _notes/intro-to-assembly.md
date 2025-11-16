@@ -1173,3 +1173,11 @@ nasm -f elf64 basic.s
 - So, this way, we would be able to both execute the syscall and retain the value of rax.
 - Using the stack is very simple. The only thing we should keep in mind is the order we push our registers and the state of the stack to safely restore our data and not restore a different value by pop when a different value is at the top of the stack.
 
+## Syscalls
+- A **syscall** is like a *globally available function written in C*, provided by the **Operating System Kernel**.
+- A **syscall** *takes the required arguments in the registers* and *executes the function with the provided arguments*.
+- **For example**, if we wanted to **write something to the screen**, we can use the <code>write</code> **syscall**, provide the string to be printed and other required arguments, and then <code>call</code> the <code>syscall</code> to issue the print.
+- There are many available syscalls provided by the Linux Kernel, and we can find a list of them and the syscall number of each one **by reading the unistd_64.h system file**:
+![linux syscalls](/assets/img/htb-assembly(31).PNG){: .writeup-image}<br>
+- The above file **sets the syscall number for each syscall** to refer to that syscall using this number.
+
