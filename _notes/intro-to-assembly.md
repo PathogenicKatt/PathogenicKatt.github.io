@@ -1163,5 +1163,13 @@ nasm -f elf64 basic.s
     </tr>
 </body>
 </table>
-    - The stack has a Last-in First-out (LIFO) design, which means we can only pop out the last element pushed into the stack. 
+
+- The stack has a Last-in First-out (LIFO) design, which means we can only pop out the last element pushed into the stack. 
+
+### Usage With Functions/Syscalls
+- We will primarily be pushing data from registers into the stack before we call a function or call a syscall, and then restore them after the function and the syscall.
+- For example, if we wanted to **call** a <code>syscall</code> to **print Hello World** to the screen and retain the current value stored in rax, we would <code>push rax</code> into the **stack**.
+-  Then we can execute the <code>syscall</code> and afterward <code>pop</code> the value back to <code>rax</code>. 
+- So, this way, we would be able to both execute the syscall and retain the value of rax.
+- Using the stack is very simple. The only thing we should keep in mind is the order we push our registers and the state of the stack to safely restore our data and not restore a different value by pop when a different value is at the top of the stack.
 
