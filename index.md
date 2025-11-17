@@ -9,9 +9,12 @@ custom_css: true
   <div class="verse-ticker" id="verse-ticker"></div>
 </div>
 <div class="header-animation">
-  <h1 style="text-align: center;">
+  <h1 style="text-align: center; ">
      Low-Level Security Engineering
   </h1>
+  <p style="text-align: center; padding-bottom: 1.5rem; margin: 0.5rem 0 0 0; font-size: 1rem; color: var(--text-secondary, #666); font-weight: 300;">
+     Security research | CTF competitions | Faith
+  </p>
 </div>
 
   <div class="ctf-card" >
@@ -27,32 +30,26 @@ custom_css: true
   </div>
 
 <div class="ctf-card">
-<h2 style="margin: 0; padding: 0 0 12px 0; padding-bottom: 1px"> Focus Areas</h2>
-<p style="margin: 0; padding: 0 0 12px 0; padding-bottom: 0"><i>Primary expertise:</i></p>
-      <ul class="arrow-list">
-        <li><strong>Reverse Engineering</strong>: Specializing in mobile application analysis, uncovering app behaviors, and identifying security vulnerabilities in Android apps.
-        </li>
-      </ul>
-      <ul class="arrow-list">
-        <li><strong>Binary Exploitation</strong>: Discovering and exploiting memory corruption vulnerabilities, buffer overflows, and other low-level security issues in compiled programs.
-        </li>
-      </ul>
-<br>
-<p style="margin: 0; padding: 0 0 12px 0; padding-bottom: 0"><i>Secondary focus:</i></p>
-      <ul class="arrow-list">
-        <li><strong>Digital Forensics</strong>: Investigation of digital artifacts, memory analysis, and incident response.
-        </li>
-      </ul>
-      <ul class="arrow-list">
-        <li><strong>Artificial Intelligence</strong>: Exploring AI security, model vulnerabilities, and adversarial machine learning.
-        </li>
-      </ul>
-<br>
-<p style="margin: 0; padding: 0 0 12px 0; padding-bottom: 0"><i>Additional competencies:</i></p>
-      <ul class="arrow-list">
-        <li><strong>Web Exploitation</strong>: Understanding and identifying security vulnerabilities in web applications.
-        </li>
-      </ul>
+  <div class="expertise-section">
+    <i>Primary Expertise:</i>
+    <p>
+      <strong>Reverse Engineering</strong> — Specializing in mobile application analysis, and identifying security vulnerabilities in Android apps. <br><strong>Binary Exploitation</strong> — Discovering and exploiting memory corruption vulnerabilities, and other low-level security issues in compiled programs.
+    </p>
+  </div>
+
+  <div class="expertise-section">
+    <i >Secondary Focus:</i>
+    <p>
+      <strong>Digital Forensics</strong> — Investigation of digital artifacts, memory analysis, and incident response. <br> <strong>Artificial Intelligence</strong> — AI security, model vulnerabilities, and adversarial machine learning.
+    </p>
+  </div>
+
+  <div class="expertise-section">
+    <i>Additional Competencies:</i>
+    <p>
+      <strong>Web Exploitation</strong> — Understanding and identifying security vulnerabilities in web applications.
+    </p>
+  </div>
 </div>
 
 <h2 class="recent-activity-heading"> Recent Activity</h2>
