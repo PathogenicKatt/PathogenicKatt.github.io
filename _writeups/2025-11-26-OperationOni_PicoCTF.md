@@ -42,6 +42,14 @@ fls -o <startsector> disk.img <inode> # List files and directories in an image f
 - Now we have to use the key to ssh to the remote server:
 ![Challenge screenshot](/assets/img/picoCTF_operationOni(5).PNG){: .writeup-image }<br>
 - The error we getting it is regarding *permission*, currently the file can be **read**(r) by everyone.
+    - So in general the permission are divided into three groups being; Owner(rwx):Workgroup(rwx):Everyone(rwx)
+    - r-read.w-write.x-execute
+    - In this case we have to give the private key access to only the Owner.<br>
+    ![Challenge screenshot](/assets/img/picoCTF_operationOni(6).PNG){: .writeup-image }<br>
+- Hence, we get aunthenticated:<br>
+![Challenge screenshot](/assets/img/picoCTF_operationOni(7).PNG){: .writeup-image }<br>
+
+
 
 
 
