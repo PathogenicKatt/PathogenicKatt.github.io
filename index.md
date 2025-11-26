@@ -8,16 +8,7 @@ custom_css: true
 <div class="verse-ticker-container">
   <div class="verse-ticker" id="verse-ticker"></div>
 </div>
-<div class="header-animation">
-  <h1 style="text-align: center; ">
-     Low-Level Security Engineering
-  </h1>
-  <p style="text-align: center; padding-bottom: 1.5rem; margin: 0.5rem 0 0 0; font-size: 1rem; color: var(--text-secondary, #666); font-weight: 300;">
-     Security research | CTF competitions | Faith
-  </p>
-</div>
-
-  <div class="ctf-card" >
+<div class="ctf-card" >
     <div class="link-bubbles">
       <a href="/about" class="bubble">About Me</a>
       <a href="/notes" class="bubble">Notes</a>
@@ -28,29 +19,19 @@ custom_css: true
       
     </div>
   </div>
-
-<div class="ctf-card">
-  <div class="expertise-section">
-    <i>Primary Expertise:</i>
-    <p>
-      <strong>Reverse Engineering</strong> — Specializing in mobile application analysis, and identifying security vulnerabilities in Android apps. <br><strong>Binary Exploitation</strong> — Discovering and exploiting memory corruption vulnerabilities, and other low-level security issues in compiled programs.
-    </p>
-  </div>
-
-  <div class="expertise-section">
-    <i >Secondary Focus:</i>
-    <p>
-      <strong>Digital Forensics</strong> — Investigation of digital artifacts, memory analysis, and incident response. <br> <strong>Artificial Intelligence</strong> — AI security, model vulnerabilities, and adversarial machine learning.
-    </p>
-  </div>
-
-  <div class="expertise-section">
-    <i>Additional Competencies:</i>
-    <p>
-      <strong>Web Exploitation</strong> — Understanding and identifying security vulnerabilities in web applications.
-    </p>
-  </div>
+<div class="header-animation">
+  <h1 style="text-align: center;">
+     Cybersecurity
+  </h1>
+  <p style="text-align: center; padding-bottom: 1.5rem; margin: 0.5rem 0 0 0; font-size: 1rem; color: var(--text-secondary, #666); font-weight: 300;">
+     Security Researcher | CTF Player | Faith
+  </p>
+  
 </div>
+
+<p><i>This website documents my ongoing cybersecurity journey. My primary focus is on reverse engineering, binary exploitation, and digital forensics, though I regularly explore other areas of security as well. </i>
+  </p>
+
 
 <h2 class="recent-activity-heading"> Recent Activity</h2>
 <div class="post-feed">

@@ -66,10 +66,7 @@ pre, code {
   color: #e2e8f0;
 }
 
-i {
-  border-bottom: 2px solid var(--accent);
-  padding-bottom: 2px;
-}
+
 
 /* ========================================
    CARD STYLES
@@ -323,37 +320,6 @@ body[data-page="christ"] .top-nav-container .theme-button:hover {
   overflow: hidden;
 }
 
-
-
-/* ========================================
-   EXPERTISE SECTION STYLES
-   ======================================== */
-.expertise-section {
-  margin-bottom: 1.5rem;
-}
-
-.expertise-section h3 {
-  margin: 0 0 0.75rem 0;
-  font-size: 1rem;
-  font-weight: 600;
-  font-style: italic;
-}
-
-.expertise-section p {
-  margin: 0;
-  line-height: 1.6;
-  font-size: 0.95rem;
-}
-
-.expertise-section p strong {
-  font-weight: 600;
-}
-
-.subtitle {
-  font-size: 1.2rem;
-  opacity: 0.9;
-  margin-top: 0;
-}
 
 /* ========================================
    LAYOUT CONTAINERS
