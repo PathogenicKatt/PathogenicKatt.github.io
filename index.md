@@ -15,8 +15,7 @@ custom_css: true
       <a href="/writeups" class="bubble">Writeups</a>
       <a href="/resources" class="bubble toolbox-bubble">Toolbox</a>
       <a href="/cves" class="bubble cve-bubble">CVEs</a>
-      <a href="/christ" class="bubble christ-bubble">My Christ's Journey</a>
-      
+      <a href="/christ" class="bubble christ-bubble">My Christ's Journey</a>    
     </div>
   </div>
 <div class="header-animation">
