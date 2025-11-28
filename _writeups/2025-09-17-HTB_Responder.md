@@ -4,7 +4,7 @@ title: "HackTheBox Lab: Responder"
 description: "Remote File Inclusion and how to use Web/Reverse Shells."
 difficulty: easy
 event: "HackTheBox"
-tags: [responder, web, RFI, SSRF]
+tags: [web, RFI, SSRF]
 date: 2025-09-17
 ---
 

@@ -4,7 +4,7 @@ title: "CTF Challenge: flagAreStepic"
 description: "A group of underground hackers might be using this legit site to communicate. Use your forensic techniques to uncover their message"
 difficulty: medium
 event: "PicoCTF"
-tags: [forensics, steganography]
+tags: [forensics, stego]
 date: 2025-05-31
 ---
 

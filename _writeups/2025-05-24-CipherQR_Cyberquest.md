@@ -1,7 +1,7 @@
 ---
 layout: writeup
 title: "CTF Challenge: CipherQR"
-description: "How I solved the CipherQR challenge"
+description: "Scan Me"
 difficulty: easy
 event: "CyberQuest 2025"
 tags: [forensics, crypto]

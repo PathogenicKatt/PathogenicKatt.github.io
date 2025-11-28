@@ -4,7 +4,7 @@ title: "PicoCTF Challenge: More SQLi"
 description: "Can you find the flag on this website."
 difficulty: medium
 event: "PicoCTF"
-tags: [web, slq, login, burpsuite]
+tags: [web, slq, login]
 date: 2025-08-15
 ---
 
