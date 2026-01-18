@@ -1,0 +1,9 @@
+---
+layout: post
+title: "CVE: 2026-23722"
+date: 2026-01-18
+---
+
+- New year...new vulnerabilities. 
+- Reflected Cross-Site Scripting (XSS) vulnerability was discovered this year in the WeGIA system (Web Manager for Charitable Institutions).
+- You will find my own research at <a href="/cves">cves</a>.
