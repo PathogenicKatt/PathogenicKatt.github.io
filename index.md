@@ -25,7 +25,7 @@ custom_css: true
   
 </div>
 
-<p><i>This website documents my ongoing cybersecurity journey. My primary focus is on reverse engineering, binary exploitation, and digital forensics, though I regularly explore other areas of security as well. </i>
+<p><i>This website documents my ongoing cybersecurity journey. My primary focus is on reverse engineering, binary exploitation, and digital forensics.</i>
   </p>
 
 
