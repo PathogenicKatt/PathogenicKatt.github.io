@@ -914,6 +914,62 @@ body[data-page="christ"] .top-nav-container .theme-button:hover {
 }
 
 /* ========================================
+   CERTIFICATES STYLES
+   ======================================== */
+.certificates-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.certificate-item {
+  background: var(--card-bg);
+  border-left: 4px solid var(--accent);
+  padding: 1rem 1.2rem;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.certificate-item:hover {
+  transform: translateX(8px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.certificate-item h3 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  color: var(--accent);
+  font-size: 1.1rem;
+}
+
+.cert-org,
+.cert-year {
+  margin: 0.3rem 0;
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}
+
+.cert-org strong,
+.cert-year strong {
+  color: var(--text-color);
+}
+
+.cert-desc {
+  margin: 0.7rem 0 0 0;
+  color: var(--text-color);
+  line-height: 1.5;
+}
+
+[data-theme="dark"] .certificate-item {
+  background: rgba(0, 255, 136, 0.05);
+  border-left-color: var(--accent);
+}
+
+[data-theme="dark"] .certificate-item:hover {
+  box-shadow: 0 4px 12px rgba(0, 255, 136, 0.2);
+}
+
+/* ========================================
    CHRIST'S JOURNEY STYLES
    ======================================== */
 .christ-header-animation h1, 

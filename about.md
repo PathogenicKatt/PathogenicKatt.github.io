@@ -49,6 +49,35 @@ custom_css: true
         <span>Cloud Computing (Azure)</span>
       </div>   
     </section>
+    <section class="about-card">
+      <h2>Certificates & Achievements</h2>
+      <div class="certificates-list">
+        <div class="certificate-item">
+          <h3>SANReN Cybersecurity Challenge - Finals</h3>
+          <p class="cert-org"><strong>Issuer:</strong> South African National Research and Education Network</p>
+          <p class="cert-year"><strong>Year:</strong> 2025</p>
+          <p class="cert-desc">Qualified for and participated in the SANReN Cybersecurity Challenge finals as part of a talented team. This experience was invaluable—collaborating with teammates, solving complex security challenges under pressure, and learning from top cybersecurity professionals across the nation.</p>
+        </div>
+        <div class="certificate-item">
+          <h3>Professional Internship Certificate</h3>
+          <p class="cert-org"><strong>Issuer:</strong> EarTech Innovations</p>
+          <p class="cert-year"><strong>Year:</strong> 2025</p>
+          <p class="cert-desc">Completed professional internship with hands-on experience in cybersecurity and IT operations.</p>
+        </div>
+        <div class="certificate-item">
+          <h3>IBM Professional Badges</h3>
+          <p class="cert-org"><strong>Issuer:</strong> IBM</p>
+          <p class="cert-year"><strong>Year:</strong> 2024-2025</p>
+          <p class="cert-desc">Earned multiple IBM professional badges demonstrating technical competencies across cloud and security domains.</p>
+        </div>
+        <div class="certificate-item">
+          <h3>Golden Key Honor Society - Top 15%</h3>
+          <p class="cert-org"><strong>Issuer:</strong> Golden Key International Honour Society</p>
+          <p class="cert-year"><strong>Year:</strong> 2024</p>
+          <p class="cert-desc">Selected nomination for academic excellence, recognizing performance among the top 15% of students.</p>
+        </div>
+      </div>
+    </section>
     <section class="about-card connect">
       <h2>Let's Connect</h2>
       <div class="social-links">
