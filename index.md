@@ -5,9 +5,6 @@ description: "Tracking my CTF progress, and growing in spirit."
 custom_css: true
 ---
 
-<div class="verse-ticker-container">
-  <div class="verse-ticker" id="verse-ticker"></div>
-</div>
 <div class="ctf-card" >
     <div class="link-bubbles">
       <a href="/about" class="bubble">About Me</a>
