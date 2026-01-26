@@ -8,17 +8,18 @@ custom_css: true
 <div class="about-container">
   <section class="about-header">
     <h1> Hi, I'm Katleho</h1>
-    <p class="subtitle"> Junior Security Analyst ❤ & AI Security Engineer | CTF Player</p>
+    <p class="subtitle"> Junior Cybersecurity Analyst | CTF Player | Student</p>
   </section>
 
   <div class="about-grid">
     <section class="about-card">
       <h2>Academic Journey</h2>
       <p>My Cybersecurity journey began in 2022 while studying, Bachelor in Information & Communication Technology(BICT) at  University of Mpumalanga (UMP). Seeking deeper technical challenges, I transferred to North West University (NWU) in 2023 to pursue Bsc with Computer Science and Mathematics.</p>
-      <p>Though NWU doesn't offer formal cybersecurity courses, their participation in the <strong> SANReN CSC </strong> program became my hands-on training ground. This competition ignited my passion for security research.</p> 
+      <p>Though NWU doesn't offer formal cybersecurity courses, their participation in the <strong> SANReN CSC </strong> program became my hands-on training ground. This competition ignited my passion for security research. In 2025, I qualified for the <strong>SANReN Cybersecurity Challenge finals</strong>, which validated my technical skills and dedication. Reaching the finals still remains a core goal for 2026 and beyond.</p> 
       <div class="university-logos">
         <img src="{{ '/assets/img/ump-logo.png' | relative_url }}" alt="University of Mpumalanga logo" loading="lazy">
         <img src="{{ '/assets/img/nwu-logo.png' | relative_url }}" alt="North West University logo" loading="lazy">
+        <img src="{{ '/assets/img/sanrencsc.png' | relative_url }}" alt="SANReN logo" loading="lazy">
       </div>
     </section>
     <section class="about-card">
