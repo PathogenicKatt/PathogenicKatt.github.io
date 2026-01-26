@@ -916,6 +916,14 @@ body[data-page="christ"] .top-nav-container .theme-button:hover {
 /* ========================================
    CERTIFICATES STYLES
    ======================================== */
+.certificates-card {
+  grid-column: 1 / -1;
+}
+
+.connect {
+  grid-column: 1 / -1;
+}
+
 .certificates-list {
   display: flex;
   flex-direction: column;

@@ -49,7 +49,7 @@ custom_css: true
         <span>Cloud Computing (Azure)</span>
       </div>   
     </section>
-    <section class="about-card">
+    <section class="about-card certificates-card">
       <h2>Certificates & Achievements</h2>
       <div class="certificates-list">
         <div class="certificate-item">
@@ -79,7 +79,6 @@ custom_css: true
       </div>
     </section>
     <section class="about-card connect">
-      <h2>Let's Connect</h2>
       <div class="social-links">
         <a href="https://github.com/PathogenicKatt" class="social-link github" target="_blank" rel="noopener noreferrer">
           <i class="fab fa-github"></i> GitHub
