@@ -2,29 +2,29 @@
    ROOT VARIABLES & THEME CONFIGURATION
    ======================================== */
 :root {
-  /* Light Theme */
-  --bg-color: #f5f7fa;
-  --text-color: #2d3748;
-  --text-secondary: #666;
-  --card-bg: rgba(255, 255, 255, 0.95);
-  --card-border: 1px solid rgba(0, 0, 0, 0.08);
-  --card-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-  --accent: #4ecdc4;
-  --accent-dark: #3aa89f;
-  --link-color: #3182ce;
+  /* Light Theme - Professional Cool Tones */
+  --bg-color: #f0f4f8;
+  --text-color: #1a2332;
+  --text-secondary: #556b82;
+  --card-bg: rgba(255, 255, 255, 0.98);
+  --card-border: 1px solid rgba(0, 100, 200, 0.12);
+  --card-shadow: 0 4px 6px rgba(0, 0, 0, 0.08);
+  --accent: #0099ff;
+  --accent-dark: #0077cc;
+  --link-color: #0066cc;
 }
 
 [data-theme="dark"] {
-  /* Dark Theme */
-  --bg-color: #121212;
-  --text-color: #e2e8f0;
-  --text-secondary: #a0aec0;
-  --card-bg: rgba(30, 30, 30, 0.95);
-  --card-border: 1px solid rgba(255, 255, 255, 0.08);
-  --card-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-  --accent: #ff6b6b;
-  --accent-dark: #e05555;
-  --link-color: #63b3ed;
+  /* Dark Theme - Cybersecurity Inspired */
+  --bg-color: #0a0e27;
+  --text-color: #e0e8f0;
+  --text-secondary: #8fa3c0;
+  --card-bg: rgba(15, 25, 55, 0.95);
+  --card-border: 1px solid rgba(0, 255, 150, 0.15);
+  --card-shadow: 0 4px 6px rgba(0, 255, 150, 0.1);
+  --accent: #00ff88;
+  --accent-dark: #00dd66;
+  --link-color: #00ffcc;
 }
 
 /* ========================================
@@ -195,7 +195,7 @@ pre, code {
 [data-theme="dark"] .theme-toggle,
 [data-theme="dark"] .back-link {
   background: linear-gradient(90deg, var(--accent) 0%, var(--accent-dark) 100%);
-  color: #fff !important;
+  color: #0a0e27 !important;
   border: 2px solid var(--accent-dark);
 }
 
@@ -205,8 +205,8 @@ pre, code {
 [data-theme="dark"] .social-link:hover,
 [data-theme="dark"] .back-link:hover {
   background: var(--accent-dark);
-  color: #fff !important;
-  box-shadow: 0 0 16px var(--accent)88;
+  color: #0a0e27 !important;
+  box-shadow: 0 0 16px rgba(0, 255, 136, 0.5);
   border-color: var(--accent-dark);
   transform: scale(1.06);
 }
@@ -306,7 +306,7 @@ body[data-page="christ"] .top-nav-container .theme-button:hover {
 }
 
 .link-bubbles {
-  background: linear-gradient(-45deg, var(--accent), #667eea, #764ba2, var(--accent-dark));
+  background: linear-gradient(-45deg, #0099ff, #00ffcc, #00ff88, #0077cc);
   background-size: 400% 400%;
   animation: gradientShift 15s ease infinite;
   border-radius: 12px;
