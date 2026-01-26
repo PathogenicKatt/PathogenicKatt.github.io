@@ -141,6 +141,11 @@ pre, code {
   text-decoration: none;
 }
 
+[data-theme="dark"] .note-preview:hover {
+  background: rgba(0, 255, 136, 0.12);
+  box-shadow: 0 6px 18px rgba(0, 255, 136, 0.15);
+}
+
 /* ========================================
    BUTTON & LINK STYLES
    ======================================== */
@@ -306,7 +311,7 @@ body[data-page="christ"] .top-nav-container .theme-button:hover {
 }
 
 .link-bubbles {
-  background: linear-gradient(-45deg, #0099ff, #00ffcc, #00ff88, #0077cc);
+  background: linear-gradient(-45deg, #0099ff, #00ccff, #0077cc, #0099ff);
   background-size: 400% 400%;
   animation: gradientShift 15s ease infinite;
   border-radius: 12px;
@@ -365,6 +370,13 @@ body[data-page="christ"] .top-nav-container .theme-button:hover {
   border-radius: 50px;
   font-size: 0.9rem;
   transition: transform 0.2s;
+}
+
+[data-theme="dark"] .skill-cloud li,
+[data-theme="dark"] .skill-cloud span,
+[data-theme="dark"] .tag {
+  background: rgba(0, 255, 136, 0.2);
+  color: var(--accent);
 }
 
 .skill-cloud li:hover,
@@ -940,14 +952,20 @@ body[data-page="christ"] .top-nav-container .theme-button:hover {
 }
 
 [data-theme="dark"] .christ-bubble {
-  background: linear-gradient(90deg, var(--accent) 0%, var(--accent-dark) 100%) !important;
-  color: #181818 !important;
+  background: linear-gradient(90deg, #b2f5ea 0%, #7f9cf5 100%) !important;
+  color: #1a2332 !important;
   font-weight: bold;
-  border: 2px solid var(--accent-dark) !important;
+  border: 2px solid #7f9cf5 !important;
 }
 
 [data-theme="dark"] .christ-bubble:hover {
-  background: #ffb3b3 !important;
+  background: #7f9cf5 !important;
+  color: #f7fafc !important;
+  box-shadow: 0 0 16px #7f9cf588 !important;
+}
+
+[data-theme="dark"] .christ-bubble:hover {
+  background: #9ff876 !important;
   color: #181818 !important;
   box-shadow: 0 0 16px var(--accent)88;
   border-color: var(--accent-dark) !important;
