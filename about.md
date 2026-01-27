@@ -54,26 +54,42 @@ custom_css: true
       <div class="certificates-list">
         <div class="certificate-item">
           <h3>SANReN Cybersecurity Challenge - Finals</h3>
+          <div class="cert-images">
+            <img src="{{ '/assets/img/participation_certificate.jpeg' | relative_url }}" alt="SANReN Cybersecurity Challenge Finals Certificate" loading="lazy" class="cert-image">
+            <img src="{{ '/assets/img/us_working.jpeg' | relative_url }}" alt="SANReN Team Collaboration" loading="lazy" class="cert-image">
+            <img src="{{ '/assets/img/scoreboard.jpeg' | relative_url }}" alt="SANReN Competition Scoreboard" loading="lazy" class="cert-image">
+            <img src="{{ '/assets/img/ticket_csc25.jpeg' | relative_url }}" alt="SANReN Team During Competition" loading="lazy" class="cert-image">
+          </div>
           <p class="cert-org"><strong>Issuer:</strong> South African National Research and Education Network</p>
           <p class="cert-year"><strong>Year:</strong> 2025</p>
-          <p class="cert-desc">Qualified for and participated in the SANReN Cybersecurity Challenge finals as part of a talented team. This experience was invaluable—collaborating with teammates, solving complex security challenges under pressure, and learning from top cybersecurity professionals across the nation.</p>
+          <p class="cert-desc">I qualified for and participated in the SANReN Cybersecurity Challenge finals as part of an accomplished team. The SANReN Cybersecurity Challenge is a regional competition that brings together not only South African universities but also leading institutions from neighboring countries, including Namibia, Eswatini, Lesotho, and Zimbabwe. The competition consists of two stages: a qualification round followed by the finals, where participants face diverse cybersecurity challenges spanning Reverse Engineering, Web Exploitation, Forensics, and Mobile Hacking. Over three consecutive days of intensive, continuous competition, my team and I demonstrated strong technical problem-solving abilities and deep cybersecurity expertise. The scoreboard image shown here captures our team's standing just 24 hours before the competition concluded, reflecting the highly competitive and demanding nature of this prestigious regional event.
+          </p>
+          <div class="cert-links">
+            <a href="https://sanren.ac.za" class="cert-link" target="_blank" rel="noopener noreferrer">Visit SANReN</a>
+          </div>
         </div>
         <div class="certificate-item">
-          <h3>Professional Internship Certificate</h3>
+          <h3>Artificial Intelligence & Cybersecurity Bootcamp Internship</h3>
+                    <div class="cert-images">
+            <img src="{{ '/assets/img/internship_certificateEARTech.jpeg' | relative_url }}" alt="Earctech Certificate" loading="lazy" class="cert-image">
+            <img src="{{ '/assets/img/EartechHighlights.jpeg' | relative_url }}" alt="Eartech highlight" loading="lazy" class="cert-image">
+            <img src="{{ '/assets/img/EartechCompletion.jpeg' | relative_url }}" alt="Eartech completion highlight" loading="lazy" class="cert-image">
+          </div>
           <p class="cert-org"><strong>Issuer:</strong> EarTech Innovations</p>
           <p class="cert-year"><strong>Year:</strong> 2025</p>
-          <p class="cert-desc">Completed professional internship with hands-on experience in cybersecurity and IT operations.</p>
+          <p class="cert-desc">During my internship at EarTech Innovations, I gained comprehensive hands-on experience across multiple cybersecurity and cloud technologies. I developed foundational cybersecurity knowledge through practical CTF challenges on HackTheBox and advanced my exploitation skills using Metasploit with vulnerable systems. I explored artificial intelligence fundamentals, including how adversaries leverage AI to evolve their exploit strategies. My Azure cloud experience encompassed configuring firewalls, deploying AI services through Azure AI Foundry to build intelligent chatbots and custom prompt flows with evaluation tools, and implementing Azure AI Search services. I also learned Azure Networking Services, access control implementation frameworks, Azure DevOps practices, and design fundamentals using Figma.</p>
+          <p class="cert-desc">I studied critical organizational resilience concepts including Business Continuity Planning, Disaster Recovery Planning, and Incident Response protocols. Additionally, I gained theoretical knowledge of blockchain technology, understanding its cryptographic foundations, decentralization, and data integrity mechanisms. I developed expertise in prompt engineering and large language models, learning effective prompting techniques including chain-of-thought reasoning and identifying security vulnerabilities. I analyzed malware types, their operational impacts, mitigation strategies, and threat detection methods. Finally, I gained practical knowledge of Agile methodology and Scrum frameworks for effective project management. This internship provided a well-rounded foundation in modern cybersecurity, cloud architecture, and emerging technologies essential for the evolving security landscape.</p>
         </div>
         <div class="certificate-item">
           <h3>IBM Professional Badges</h3>
           <p class="cert-org"><strong>Issuer:</strong> IBM</p>
-          <p class="cert-year"><strong>Year:</strong> 2024-2025</p>
+          <p class="cert-year"><strong>Year:</strong> 2022</p>
           <p class="cert-desc">Earned multiple IBM professional badges demonstrating technical competencies across cloud and security domains.</p>
         </div>
         <div class="certificate-item">
           <h3>Golden Key Honor Society - Top 15%</h3>
           <p class="cert-org"><strong>Issuer:</strong> Golden Key International Honour Society</p>
-          <p class="cert-year"><strong>Year:</strong> 2024</p>
+          <p class="cert-year"><strong>Year:</strong> 2025</p>
           <p class="cert-desc">Selected nomination for academic excellence, recognizing performance among the top 15% of students.</p>
         </div>
       </div>
@@ -96,4 +112,10 @@ custom_css: true
     </section>
  
   </div>
+</div>
+
+<!-- Image Lightbox Modal -->
+<div id="imageModal" class="image-modal">
+  <span class="modal-close">&times;</span>
+  <img class="modal-image" id="modalImage" src="" alt="Fullscreen image">
 </div>

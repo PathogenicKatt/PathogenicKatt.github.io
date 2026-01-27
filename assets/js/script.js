@@ -152,6 +152,48 @@ function setupCVESearchAndFilter() {
   });
 }
 
+// Image Lightbox Functionality
+function setupImageLightbox() {
+  const modal = document.getElementById('imageModal');
+  const modalImg = document.getElementById('modalImage');
+  const closeBtn = document.querySelector('.modal-close');
+  
+  if (!modal) return;
+
+  // Open modal on image click
+  document.querySelectorAll('.cert-image').forEach(img => {
+    img.addEventListener('click', function() {
+      modal.classList.add('active');
+      modalImg.src = this.src;
+      modalImg.alt = this.alt;
+      document.body.style.overflow = 'hidden';
+    });
+  });
+
+  // Close modal functions
+  function closeModal() {
+    modal.classList.remove('active');
+    document.body.style.overflow = 'auto';
+  }
+
+  // Close on X button click
+  closeBtn.addEventListener('click', closeModal);
+
+  // Close on background click
+  modal.addEventListener('click', function(event) {
+    if (event.target === modal) {
+      closeModal();
+    }
+  });
+
+  // Close on ESC key
+  document.addEventListener('keydown', function(event) {
+    if (event.key === 'Escape' && modal.classList.contains('active')) {
+      closeModal();
+    }
+  });
+}
+
 // Initialize everything when DOM loads
 document.addEventListener('DOMContentLoaded', function() {
   initNavigation();
@@ -159,6 +201,7 @@ document.addEventListener('DOMContentLoaded', function() {
   setupWriteupsSearch();
   setupImageZoom();
   setupCVESearchAndFilter();
+  setupImageLightbox();
   
   // Syntax highlighting
   if (typeof hljs !== 'undefined') {
