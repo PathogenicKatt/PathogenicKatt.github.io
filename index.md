@@ -5,16 +5,16 @@ description: "Tracking my CTF progress, and growing in spirit."
 custom_css: true
 ---
 
-<div class="ctf-card" >
-    <div class="link-bubbles">
+
+  <div class="link-bubbles">
       <a href="/about" class="bubble">About Me</a>
       <a href="/notes" class="bubble">Notes</a>
       <a href="/writeups" class="bubble">Writeups</a>
       <a href="/resources" class="bubble toolbox-bubble">Toolbox</a>
       <a href="/cves" class="bubble cve-bubble">CVEs</a>
       <a href="/christ" class="bubble christ-bubble">My Christ's Journey</a>    
-    </div>
   </div>
+
 <div class="header-animation">
   <h1 style="text-align: center;">
      Cybersecurity

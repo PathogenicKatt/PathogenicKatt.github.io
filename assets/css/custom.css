@@ -311,20 +311,18 @@ body[data-page="christ"] .top-nav-container .theme-button:hover {
 }
 
 .link-bubbles {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 1rem 0;
+  justify-content: flex-start;
+}
+
+.link-bubbles .bubble {
   background: linear-gradient(-45deg, #0099ff, #00ccff, #0077cc, #0099ff);
   background-size: 400% 400%;
   animation: gradientShift 15s ease infinite;
-  border-radius: 12px;
-  padding: 0.6rem 1.5rem;
-  display: flex;
-  margin: 1rem 0;
-  flex-wrap: wrap;
-  gap: 0.8rem;
-  justify-content: flex-start;
-  padding-left: 1.5rem;
-  overflow: hidden;
 }
-
 
 /* ========================================
    LAYOUT CONTAINERS
