@@ -68,6 +68,20 @@ custom_css: true
             <a href="https://sanren.ac.za" class="cert-link" target="_blank" rel="noopener noreferrer">Visit SANReN</a>
           </div>
         </div>
+
+        <div class="certificate-item">
+          <h3>TryHackMe — Pre Security</h3>
+          <div class="cert-images">
+            <img src="{{ '/assets/img/TryHackMe_PreSecurityCert.PNG' | relative_url }}" alt="TryHackMe Pre Security Certificate" loading="lazy" class="cert-image">
+          </div>
+          <p class="cert-org"><strong>Issuer:</strong> TryHackMe</p>
+          <p class="cert-year"><strong>Year:</strong> 2026</p>
+          <p class="cert-desc">My first formal step into cybersecurity, the Pre Security course helped me explore how computers really work, and learn networking and web basics while encouraging me to think like both an attacker and a defender. Revisiting these fundamentals strengthened my foundation and ensured I have the right basics to build on.</p>
+          <div class="cert-links">
+            <a href="https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-1SXRGBLL49.pdf" class="cert-link" target="_blank" rel="noopener noreferrer">View Certificate</a>
+            <a href="https://tryhackme.com" class="cert-link" target="_blank" rel="noopener noreferrer">Visit TryHackMe</a>
+          </div>
+        </div>
       </div>
     </section>
     <section class="about-card connect">
@@ -95,3 +109,14 @@ custom_css: true
   <span class="modal-close">&times;</span>
   <img class="modal-image" id="modalImage" src="" alt="Fullscreen image">
 </div>
+
+## Certifications
+
+- **TryHackMe — Pre Security** — Earned: 2026-02-22. Credential: [View on TryHackMe](https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-1SXRGBLL49.pdf)
+
+I completed TryHackMe's Pre Security course as my first formal step into cybersecurity. The course helped me explore how computers really work, write my first lines of code, and learn networking and web basics — all while teaching me to think like both an attacker and a defender.
+
+Revisiting these fundamentals strengthened my foundation. Although I already had some prior knowledge, going back to the basics ensured I have the right fundamentals to build on.
+
+<!-- Optional badge (place image at /assets/img/tryhackme-presecurity.png) -->
+[![TryHackMe Pre Security](/assets/img/TryHackMe_PreSecurityCert.PNG)](https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-1SXRGBLL49.pdf)

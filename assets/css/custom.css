@@ -987,32 +987,27 @@ body[data-page="christ"] .top-nav-container .theme-button:hover {
 }
 
 .cert-images {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 1rem;
-  margin: 1rem 0;
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  align-items: flex-start;
 }
 
-.cert-image {
-  width: 100%;
+
+.cert-images .cert-image {
+  width: 320px;       
+  max-width: 100%;
   height: auto;
-  border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  cursor: pointer;
+  object-fit: contain; /* prevents cropping */
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
 }
 
-.cert-image:hover {
-  transform: scale(1.05);
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
-}
-
-[data-theme="dark"] .cert-image {
-  box-shadow: 0 4px 12px rgba(0, 255, 136, 0.1);
-}
-
-[data-theme="dark"] .cert-image:hover {
-  box-shadow: 0 6px 16px rgba(0, 255, 136, 0.2);
+/* If there's a global img rule forcing cover/height, override it */
+.cert-images .cert-image[loading],
+.cert-images .cert-image {
+  max-height: none !important;
+  object-position: center;
 }
 
 /* ========================================
