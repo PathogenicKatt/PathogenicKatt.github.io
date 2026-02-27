@@ -14,8 +14,8 @@ custom_css: true
   <div class="about-grid">
     <section class="about-card">
       <h2>Academic Journey</h2>
-      <p>My Cybersecurity journey began in 2022 while studying, Bachelor in Information & Communication Technology(BICT) at  University of Mpumalanga (UMP). Seeking deeper technical challenges, I transferred to North West University (NWU) in 2023 to pursue Bsc with Computer Science and Mathematics.</p>
-      <p>Though NWU doesn't offer formal cybersecurity courses, their participation in the <strong> SANReN CSC </strong> program became my hands-on training ground. This competition ignited my passion for security research.</p> 
+      <p>Technology was never my initial dream, it all started when I first tested the power of coding. By my second semester at the University of Mpumalanga (UMP), where I studied Bachelor in Information & Communication Technology (BICT), I was already tutoring programming. Through deep engagement with coding, I discovered cybersecurity and knew I wanted to pursue it further, which led me to transfer to North West University (NWU) in 2023 to pursue a BSc in Computer Science and Mathematics.</p>
+      <p>My real breakthrough came through NWU's participation in the <strong>SANReN Cybersecurity Challenge</strong>. The first two years, I wasn't skilled enough to qualify for the finals, but through perseverance, I finally qualified in my third year. A moment that truly defined my journey.</p> 
       <div class="university-logos">
         <img src="{{ '/assets/img/ump-logo.png' | relative_url }}" alt="University of Mpumalanga logo" loading="lazy">
         <img src="{{ '/assets/img/nwu-logo.png' | relative_url }}" alt="North West University logo" loading="lazy">
@@ -27,10 +27,9 @@ custom_css: true
       <ul class="ctf-skills">
         <li>Regular competitor on <a href="https://ctftime.org/" target="_blank" rel="noopener noreferrer">CTFtime</a> events.</li>
         <br>
-        <li>Comfortable with using the following tools: <i>Wireshark</i>,<i> Ghidra</i>, <i>jadx</i> and <i> GDB(GNU Debugger)</i>.
-        </li>
+        <li>Comfortable with tools such as <i>Wireshark</i>, <i>Ghidra</i>, <i>jadx</i>, and <i>GDB (GNU Debugger)</i>.</li>
         <br>
-        <li>My learning is supported by hands on practice on platforms like TryHackMe, HackTheBox, OverTheWire, PicoCTF and a few ethical hacking books like (<i>Linux Basics for Hackers</i>).</li>
+        <li>My learning is supported by hands-on practice on platforms like TryHackMe, HackTheBox, OverTheWire, and PicoCTF, plus ethical hacking books such as <i>Linux Basics for Hackers</i>.</li>
       </ul>
     </section>
     <section class="about-card">
@@ -62,7 +61,7 @@ custom_css: true
           </div>
           <p class="cert-org"><strong>Issuer:</strong> South African National Research and Education Network</p>
           <p class="cert-year"><strong>Year:</strong> 2025</p>
-          <p class="cert-desc">I qualified for and participated in the SANReN Cybersecurity Challenge finals as part of an accomplished team. Over three consecutive days of intensive, continuous competition, my team and I demonstrated strong technical problem-solving abilities and deep cybersecurity expertise. The scoreboard image shown here captures our team's standing just 24 hours before the competition concluded, reflecting the highly competitive and demanding nature of this prestigious regional event.
+          <p class="cert-desc">I qualified for and participated in the SANReN Cybersecurity Challenge finals as part of an accomplished team. My team divided the work based on individual strengths, and my focus was <strong>Forensics and Reverse Engineering</strong>. The competition spanned 5 days with two distinct challenges: one day for Attack & Defense, where I concentrated on automating defensive scripts in Python to block intruders and prevent them from compromising our flags, and three days for CTF covering Web Exploitation, Forensics, Cryptography, and Reverse Engineering. Over this intensive competition, my team and I demonstrated strong technical problem-solving abilities. The scoreboard image above captures our team's standing just 24 hours before the competition concluded.
           </p>
           <div class="cert-links">
             <a href="https://sanren.ac.za" class="cert-link" target="_blank" rel="noopener noreferrer">Visit SANReN</a>
@@ -76,7 +75,7 @@ custom_css: true
           </div>
           <p class="cert-org"><strong>Issuer:</strong> TryHackMe</p>
           <p class="cert-year"><strong>Year:</strong> 2026</p>
-          <p class="cert-desc">My first formal step into cybersecurity, the Pre Security course helped me explore how computers really work, and learn networking and web basics while encouraging me to think like both an attacker and a defender. Revisiting these fundamentals strengthened my foundation and ensured I have the right basics to build on.</p>
+          <p class="cert-desc"> Revisiting these basics strengthened my foundation and prepared me for deeper cybersecurity work.</p>
           <div class="cert-links">
             <a href="https://tryhackme.com" class="cert-link" target="_blank" rel="noopener noreferrer">Visit TryHackMe</a>
             <a href="https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-1SXRGBLL49.pdf" class="cert-link" target="_blank" rel="noopener noreferrer">View Certificate</a>
