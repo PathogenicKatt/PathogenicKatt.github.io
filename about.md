@@ -15,7 +15,7 @@ custom_css: true
     <section class="about-card">
       <h2>Academic Journey</h2>
       <p>My Cybersecurity journey began in 2022 while studying, Bachelor in Information & Communication Technology(BICT) at  University of Mpumalanga (UMP). Seeking deeper technical challenges, I transferred to North West University (NWU) in 2023 to pursue Bsc with Computer Science and Mathematics.</p>
-      <p>Though NWU doesn't offer formal cybersecurity courses, their participation in the <strong> SANReN CSC </strong> program became my hands-on training ground. This competition ignited my passion for security research. In 2025, I qualified for the <strong>SANReN Cybersecurity Challenge finals</strong>, which validated my technical skills and dedication. Reaching the finals still remains a core goal for 2026 and beyond.</p> 
+      <p>Though NWU doesn't offer formal cybersecurity courses, their participation in the <strong> SANReN CSC </strong> program became my hands-on training ground. This competition ignited my passion for security research.</p> 
       <div class="university-logos">
         <img src="{{ '/assets/img/ump-logo.png' | relative_url }}" alt="University of Mpumalanga logo" loading="lazy">
         <img src="{{ '/assets/img/nwu-logo.png' | relative_url }}" alt="North West University logo" loading="lazy">
@@ -62,7 +62,7 @@ custom_css: true
           </div>
           <p class="cert-org"><strong>Issuer:</strong> South African National Research and Education Network</p>
           <p class="cert-year"><strong>Year:</strong> 2025</p>
-          <p class="cert-desc">I qualified for and participated in the SANReN Cybersecurity Challenge finals as part of an accomplished team. The SANReN Cybersecurity Challenge is a regional competition that brings together not only South African universities but also leading institutions from neighboring countries, including Namibia, Eswatini, Lesotho, and Zimbabwe. The competition consists of two stages: a qualification round followed by the finals, where participants face diverse cybersecurity challenges spanning Reverse Engineering, Web Exploitation, Forensics, and Mobile Hacking. Over three consecutive days of intensive, continuous competition, my team and I demonstrated strong technical problem-solving abilities and deep cybersecurity expertise. The scoreboard image shown here captures our team's standing just 24 hours before the competition concluded, reflecting the highly competitive and demanding nature of this prestigious regional event.
+          <p class="cert-desc">I qualified for and participated in the SANReN Cybersecurity Challenge finals as part of an accomplished team. Over three consecutive days of intensive, continuous competition, my team and I demonstrated strong technical problem-solving abilities and deep cybersecurity expertise. The scoreboard image shown here captures our team's standing just 24 hours before the competition concluded, reflecting the highly competitive and demanding nature of this prestigious regional event.
           </p>
           <div class="cert-links">
             <a href="https://sanren.ac.za" class="cert-link" target="_blank" rel="noopener noreferrer">Visit SANReN</a>

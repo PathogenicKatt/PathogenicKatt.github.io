@@ -11,8 +11,7 @@ custom_css: true
       <a href="/notes" class="bubble">Notes</a>
       <a href="/writeups" class="bubble">Writeups</a>
       <a href="/resources" class="bubble toolbox-bubble">Toolbox</a>
-      <a href="/cves" class="bubble cve-bubble">CVEs</a>
-      <a href="/christ" class="bubble christ-bubble">My Christ's Journey</a>    
+      <a href="/cves" class="bubble cve-bubble">CVEs</a>    
   </div>
 
 <div class="header-animation">
@@ -20,7 +19,7 @@ custom_css: true
      Cybersecurity
   </h1>
   <p style="text-align: center; padding-bottom: 1.5rem; margin: 0.5rem 0 0 0; font-size: 1rem; color: var(--text-secondary, #666); font-weight: 300;">
-     Security Researcher | CTF Player | Faith
+     Junior Cybersecurity Analyst
   </p>
   
 </div>
