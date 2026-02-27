@@ -11,19 +11,6 @@ custom_css: true
   </h1>
 </div>
 
-<div class="ctf-card">
-  <div class="difficulty-filter">
-    <span>Filter by Criticality:</span>
-    <button class="difficulty-btn active" data-criticality="all">All</button>
-    <button class="difficulty-btn" data-criticality="low">Low</button>
-    <button class="difficulty-btn" data-criticality="medium">Medium</button>
-    <button class="difficulty-btn" data-criticality="high">High</button>
-    <button class="difficulty-btn" data-criticality="critical">Critical</button>
-    </div>
-    <div class="search-bar-container" style="text-align:center;">
-    <input type="text" id="cvesSearch" class="writeups-search" placeholder="Search CVEs by ID, keyword, or description...">
-  </div>
-</div>
 
 <div class="writeups-grid" id="cvesGrid">
   {% for cve in site.cves %}
