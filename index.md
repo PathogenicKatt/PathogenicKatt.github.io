@@ -1,7 +1,7 @@
 ---
 layout: default
-title: "home | Cybersec & faith Journey"
-description: "Tracking my CTF progress, and growing in spirit."
+title: "home | Cybersec"
+description: "Tracking my CTF progress"
 custom_css: true
 ---
 
@@ -19,7 +19,7 @@ custom_css: true
      Cybersecurity
   </h1>
   <p style="text-align: center; padding-bottom: 1.5rem; margin: 0.5rem 0 0 0; font-size: 1rem; color: var(--text-secondary, #666); font-weight: 300;">
-     Junior Cybersecurity Analyst | Security Researcher
+     Junior Cybersecurity Analyst
   </p>
   
 </div>
@@ -30,7 +30,7 @@ custom_css: true
 
 <h2 class="recent-activity-heading"> Recent Activity</h2>
 <div class="post-feed">
-  {% for post in site.posts limit:10 %}
+  {% for post in site.posts limit:15 %}
     <article class="post-preview">
       <h3>{{ post.title }}</h3>
       <time>{{ post.date | date: "%b %d" }}</time>
