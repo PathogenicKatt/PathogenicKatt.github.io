@@ -1,4 +1,4 @@
-# My CTF & Bible Study Knowledge Base
+# My CTF Base
 
 ![GitHub Pages](https://img.shields.io/badge/Hosted_on-GitHub_Pages-blue.svg)
 ![Jekyll](https://img.shields.io/badge/Powered_by-Jekyll-red.svg)
@@ -39,5 +39,6 @@ JEKYLL_ENV=production bundle exec jekyll build
 ```
 
 > _"An investment in knowledge pays the best interest."_ — Benjamin Franklin
+
 
 
