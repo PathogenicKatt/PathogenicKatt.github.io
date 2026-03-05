@@ -19,7 +19,7 @@ custom_css: true
      Cybersecurity
   </h1>
   <p style="text-align: center; padding-bottom: 1.5rem; margin: 0.5rem 0 0 0; font-size: 1rem; color: var(--text-secondary, #666); font-weight: 300;">
-     Junior Cybersecurity Analyst
+     Junior Cybersecurity Analyst | Security Researcher
   </p>
   
 </div>
