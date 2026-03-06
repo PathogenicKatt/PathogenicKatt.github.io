@@ -15,16 +15,16 @@
 }
 
 [data-theme="dark"] {
-  /* Dark Theme - Cybersecurity Inspired */
+  /* Dark Theme - Blue tones match light palette */
   --bg-color: #0a0e27;
   --text-color: #e0e8f0;
   --text-secondary: #8fa3c0;
   --card-bg: rgba(15, 25, 55, 0.95);
-  --card-border: 1px solid rgba(0, 255, 150, 0.15);
-  --card-shadow: 0 4px 6px rgba(0, 255, 150, 0.1);
-  --accent: #00ff88;
-  --accent-dark: #00dd66;
-  --link-color: #00ffcc;
+  --card-border: 1px solid rgba(0, 153, 255, 0.15);
+  --card-shadow: 0 4px 6px rgba(0, 153, 255, 0.1);
+  --accent: #0099ff;
+  --accent-dark: #0077cc;
+  --link-color: #0066cc;
 }
 
 /* ========================================
@@ -142,8 +142,8 @@ pre, code {
 }
 
 [data-theme="dark"] .note-preview:hover {
-  background: rgba(0, 255, 136, 0.12);
-  box-shadow: 0 6px 18px rgba(0, 255, 136, 0.15);
+  background: rgba(0, 153, 255, 0.12);
+  box-shadow: 0 6px 18px rgba(0, 153, 255, 0.15);
 }
 
 /* ========================================
@@ -211,7 +211,7 @@ pre, code {
 [data-theme="dark"] .back-link:hover {
   background: var(--accent-dark);
   color: #0a0e27 !important;
-  box-shadow: 0 0 16px rgba(0, 255, 136, 0.5);
+  box-shadow: 0 0 16px rgba(0, 153, 255, 0.5);
   border-color: var(--accent-dark);
   transform: scale(1.06);
 }
@@ -373,7 +373,7 @@ body[data-page="christ"] .top-nav-container .theme-button:hover {
 [data-theme="dark"] .skill-cloud li,
 [data-theme="dark"] .skill-cloud span,
 [data-theme="dark"] .tag {
-  background: rgba(0, 255, 136, 0.2);
+  background: rgba(0, 153, 255, 0.2);
   color: var(--accent);
 }
 
@@ -971,12 +971,12 @@ body[data-page="christ"] .top-nav-container .theme-button:hover {
 }
 
 [data-theme="dark"] .certificate-item {
-  background: rgba(0, 255, 136, 0.05);
+  background: rgba(0, 153, 255, 0.05);
   border-left-color: var(--accent);
 }
 
 [data-theme="dark"] .certificate-item:hover {
-  box-shadow: 0 4px 12px rgba(0, 255, 136, 0.2);
+  box-shadow: 0 4px 12px rgba(0, 153, 255, 0.2);
 }
 
 .cert-links {
@@ -1069,7 +1069,7 @@ body[data-page="christ"] .top-nav-container .theme-button:hover {
 
 .modal-close:hover {
   transform: scale(1.2);
-  color: #00ff88;
+  color: #0099ff;
 }
 
 /* Responsive modal */
@@ -1114,7 +1114,7 @@ body[data-page="christ"] .top-nav-container .theme-button:hover {
 
 [data-theme="dark"] .cert-link:hover {
   background: var(--accent-dark);
-  box-shadow: 0 4px 8px rgba(0, 255, 136, 0.4);
+  box-shadow: 0 4px 8px rgba(0, 153, 255, 0.4);
 }
 
 /* ========================================
