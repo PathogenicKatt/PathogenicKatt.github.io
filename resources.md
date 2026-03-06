@@ -8,15 +8,6 @@ data_page: resources
   <span class="prompt">$</span> <span class="cmd">cat resources.md</span>
 </div>
 
-# <span style="font-family: 'Fira Mono', monospace;">CTF Resources & Tools</span>
-
-<div class="hacker-intro">
-  <p>
-    <span class="hacker-green">Hii</span>! "Just a reminder: Trust in the LORD, in everything you do!".<br>
-    <span class="hacker-blink">Keep pushing. Time is ticking!</span>
-  </p>
-</div>
-
 <div class="resources-grid">
 
   <div class="resource-card">
@@ -75,4 +66,5 @@ data_page: resources
   </div>
 
 </div>
+
 
