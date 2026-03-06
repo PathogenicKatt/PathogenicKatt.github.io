@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "home | Cybersec"
-description: "Tracking my CTF progress"
+description: "Cybersecurity portfolio documenting learning, challenges, and analysis."
 custom_css: true
 ---
 
@@ -24,7 +24,7 @@ custom_css: true
   
 </div>
 
-<p><i>This website documents my ongoing cybersecurity journey. My primary focus is on reverse engineering, binary exploitation, and digital forensics.</i>
+<p><i>This website serves as a portfolio and learning log for my cybersecurity journey, with a focus on reverse engineering, binary exploitation, and digital forensics.</i>
   </p>
 
 
