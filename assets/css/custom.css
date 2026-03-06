@@ -890,6 +890,7 @@ body[data-page="christ"] .top-nav-container .theme-button:hover {
   gap: 2rem;
   margin: 2.5rem 0;
   align-items: stretch;
+  padding-bottom: 2.5rem; /* extra space at bottom */
 }
 
 .resource-card {
