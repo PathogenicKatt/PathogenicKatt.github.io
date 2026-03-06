@@ -662,16 +662,40 @@ body[data-page="christ"] .top-nav-container .theme-button:hover {
 }
 
 .writeups-search {
-  margin: 2rem auto;
-  max-width: 600px;
+  margin: 2rem auto 1rem auto;
   width: 100%;
-  max-width: 400px;
   font-size: 1rem;
   padding: 0.5rem 1rem;
-  margin: 1rem 0;
   border-radius: 8px;
   border: 1px solid #ccc;
   box-sizing: border-box;
+  flex: 1 1 auto;
+  min-width: 200px;
+}
+
+/* ensure the input stays a fixed width and inherits text color */
+#writeupsSearch {
+  width: 100%;
+  max-width: 300px;
+  margin: 0;
+  display: block;
+}
+
+/* container uses flex to position items */
+.search-bar-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.difficulty-filter {
+  margin: 0;
+  width: 100%;
+  max-width: 300px;
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
 }
 
 #writeupsSearch {
@@ -691,6 +715,16 @@ body[data-page="christ"] .top-nav-container .theme-button:hover {
   transition: all 0.3s ease;
   border-left: 4px solid var(--accent);
   box-shadow: var(--card-shadow);
+  /* override link color inheritance so body text stays readable */
+  color: var(--text-color);
+}
+
+.writeup-card h3 {
+  color: var(--accent);
+}
+
+.writeup-card p {
+  color: var(--text-color);
 }
 
 .writeup-card:hover {
