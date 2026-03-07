@@ -14,11 +14,8 @@ custom_css: true
 
 <div class="writeups-grid" id="cvesGrid">
   {% for cve in site.cves %}
-    <div class="writeup-card cve-card" data-criticality="{{ cve.criticality | downcase }}">
+    <div class="writeup-card cve-card">
       <div class="writeup-card-header">
-        <span class="difficulty-badge criticality-badge {{ cve.criticality | downcase }}">
-          {{ cve.criticality | capitalize }}
-        </span>
         <span class="event">{{ cve.cve_id }}</span>
       </div>
       <h3>{{ cve.title }}</h3>

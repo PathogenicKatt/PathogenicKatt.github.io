@@ -67,4 +67,3 @@ data_page: resources
 
 </div>
 
-
