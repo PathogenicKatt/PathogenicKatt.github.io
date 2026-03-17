@@ -16,7 +16,7 @@ date: 2025-07-22
     - Data exfiltration
 
 ## Popular Template Engines
-- **Jinja2** (Python/Flask): Uses `{{ }}` syntax.
+- **Jinja2** (Python/Flask): Uses `{% raw %}{{ }}{% endraw %}` syntax.
 - **Twig** (PHP) Inspired by Jinja, used in Symfony and Drupal.
 - **Thymeleaf** (Java) Used with Spring, integrates well with HTML5: uses `${ }` syntax.
 - **Handlebars** (JavaScript): Focuses on logic-less templates.
@@ -27,7 +27,7 @@ date: 2025-07-22
 ```text
 template = "Hello " + user_input + "!"
 render_template(template)
-If user_input = “{{ 7*7 }}”, this may get evaluated to 49 on the server.
+If user_input = "{% raw %}{{ 7*7 }}{% endraw %}", this may get evaluated to 49 on the server.
 ```
 
 ## Tool
