@@ -1,5 +1,6 @@
-title: Cybersecurity & Purposeful Living Hub
-description: CTFs, notes, and reflections for mind, skill, and spirit
+title: Cybersecurity
+description: CTFs, notes, CVEs, and writeups related to cybersecurity.
+url: https://pathogenickatt.github.io 
 theme: minima
 plugins:
   - jekyll-feed
@@ -35,15 +36,10 @@ collections:
     permalink: /writeups/:path/
     sort_by: date
     sort_order: descending
-  biblestudy:
-    output: true
-    permalink: /biblestudy/:title/
   cves:
     output: true
     permalink: /cves/:name/
   
-
-
 
 defaults:
   - scope:
