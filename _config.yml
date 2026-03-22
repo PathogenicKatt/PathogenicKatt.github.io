@@ -16,6 +16,11 @@ kramdown:
 
 future: true
 
+# Sass configuration to suppress deprecation warnings
+sass:
+  quiet_deps: true
+  style: compressed
+
 collections:
   notes:
     output: true

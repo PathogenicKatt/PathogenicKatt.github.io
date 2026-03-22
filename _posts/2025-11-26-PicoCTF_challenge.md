@@ -2,6 +2,7 @@
 layout: post
 title: "Attempting PicoCTF: Operation Oni"
 date: 2025-11-26
+slug: picoctf-operation-oni
 ---
 
 # Operation Oni

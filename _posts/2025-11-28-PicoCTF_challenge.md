@@ -2,6 +2,7 @@
 layout: post
 title: "Attempting PicoCTF: ARMssembly 2"
 date: 2025-11-28
+slug: picoctf-armssembly-2
 ---
 
 # ARMssembly 2
