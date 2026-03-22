@@ -21,10 +21,10 @@ collections:
     output: true
     permalink: /notes/:path/
     sort_by: date
-    sort_order: descending
+    sort_order: ascending
   posts:
     output: true
-    permalink: /:year/:month/:title/
+    permalink: /posts/:year/:month/:day/:slug/
   writeups:
     output: true
     permalink: /writeups/:path/
