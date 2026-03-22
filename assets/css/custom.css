@@ -1,6 +1,4 @@
-/* ========================================
-   ROOT VARIABLES & THEME CONFIGURATION
-   ======================================== */
+/* ROOT VARIABLES & THEME CONFIGURATION */
 :root {
   /* Light Theme - Professional Cool Tones */
   --bg-color: #f0f4f8;
@@ -27,9 +25,7 @@
   --link-color: #0066cc;
 }
 
-/* ========================================
-   BASE STYLES
-   ======================================== */
+/* BASE STYLES */
 html, body {
   height: 100%;
   margin: 0;
@@ -68,9 +64,7 @@ pre, code {
 
 
 
-/* ========================================
-   CARD STYLES
-   ======================================== */
+/* CARD STYLES */
 .ctf-card,
 .about-card,
 .construction-card,
@@ -101,9 +95,7 @@ pre, code {
   padding: 2rem;
 }
 
-/* ========================================
-   NOTE PREVIEW STYLES
-   ======================================== */
+/* NOTE PREVIEW STYLE */
 .note-preview {
   display: block;
   background: var(--card-bg);
@@ -146,9 +138,7 @@ pre, code {
   box-shadow: 0 6px 18px rgba(0, 153, 255, 0.15);
 }
 
-/* ========================================
-   BUTTON & LINK STYLES
-   ======================================== */
+/* BUTTON & LINK STYLES */
 .bubble,
 .nav-button,
 .theme-toggle,
@@ -225,9 +215,7 @@ pre, code {
   border: none !important;
 }
 
-/* ========================================
-   NAVIGATION & HEADER STYLES
-   ======================================== */
+/* NAVIGATION & HEADER STYLES */
 .top-nav-container {
   position: fixed;
   top: 20px;
@@ -270,9 +258,7 @@ pre, code {
 }
 
 
-/* ========================================
-   ANIMATED NAVIGATION BUBBLES
-   ======================================== */
+/* ANIMATED NAVIGATION BUBBLES */
 @keyframes gradientShift {
   0% { background-position: 0% 50%; }
   50% { background-position: 100% 50%; }
@@ -293,9 +279,7 @@ pre, code {
   animation: gradientShift 15s ease infinite;
 }
 
-/* ========================================
-   LAYOUT CONTAINERS
-   ======================================== */
+/* LAYOUT CONTAINERS */
 .about-container,
 .construction-container,
 .note-content {
@@ -312,9 +296,7 @@ pre, code {
   margin: 1.5rem 0;    
 }
 
-/* ========================================
-   LIST STYLES
-   ======================================== */
+/* LIST STYLES */
 .skill-cloud,
 .construction-links,
 .social-links,
@@ -375,9 +357,7 @@ pre, code {
   transform: scale(1.1);
 }
 
-/* ========================================
-   NOTES SYSTEM STYLES
-   ======================================== */
+/* NOTES SYSTEM STYLES */
 .notes-header {
   text-align: center;
   margin-bottom: 2rem;
@@ -408,9 +388,7 @@ pre, code {
   display: none !important;
 }
 
-/* ========================================
-   INDIVIDUAL NOTE PAGE STYLES
-   ======================================== */
+/* INDIVIDUAL NOTE PAGE STYLES */
 .note-content {
   max-width: 100vw;        
   overflow-x: auto;        
@@ -531,9 +509,7 @@ pre, code {
   transform: translateX(-4px) scale(1.03);
 }
 
-/* ========================================
-   TABLE STYLES
-   ======================================== */
+/* TABLE STYLES */
 .note-body table {
   width: 100%;
   border-collapse: collapse;
@@ -573,9 +549,7 @@ pre, code {
   background-color: rgba(255, 107, 107, 0.1);
 }
 
-/* ========================================
-   RECENT ACTIVITY STYLES
-   ======================================== */
+/* RECENT ACTIVITY STYLES */
 .recent-activity-heading {
   padding-left: 1rem;
   margin-bottom: 0.3rem;
@@ -615,9 +589,7 @@ pre, code {
   text-decoration: none;
 }
 
-/* ========================================
-   WRITEUPS STYLES
-   ======================================== */
+/* WRITEUPS STYLES */
 .writeups-header {
   text-align: center;
   margin-bottom: 2rem;
@@ -850,9 +822,7 @@ pre, code {
   padding-right: 1.5rem;
 }
 
-/* ========================================
-   RESOURCES STYLES
-   ======================================== */
+/* RESOURCES STYLES */
 .resources-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
@@ -915,9 +885,7 @@ pre, code {
   border-color: var(--accent);
 }
 
-/* ========================================
-   CERTIFICATES STYLES
-   ======================================== */
+/* CERTIFICATES STYLES */
 .about-card {
   grid-column: 1 / -1;
 }
@@ -1014,9 +982,7 @@ pre, code {
   object-position: center;
 }
 
-/* ========================================
-   LIGHTBOX MODAL STYLES
-   ======================================== */
+/* LIGHTBOX MODAL STYLE */
 .image-modal {
   display: none;
   position: fixed;
@@ -1123,59 +1089,11 @@ pre, code {
 
 
 
-/* ========================================
-   TERMINAL & HACKER STYLES
-   ======================================== */
-.terminal-header {
-  background: #232526;
-  color: #b2f5ea;
-  font-family: 'Fira Mono', monospace;
-  padding: 0.7rem 1.2rem;
-  border-radius: 8px 8px 0 0;
-  margin-bottom: 1.2rem;
-  font-size: 1.08rem;
-  letter-spacing: 0.01em;
-  display: flex;
-  align-items: center;
-  gap: 0.7em;
-}
-
-.terminal-header .prompt {
-  color: #4ecdc4;
-  font-weight: bold;
-}
-
-.terminal-header .cmd {
-  color: #fff;
-  font-weight: 500;
-}
-
-.hacker-intro {
-  background: var(--card-bg);
-  border-radius: 8px;
-  padding: 1.2rem 1.5rem;
-  margin-bottom: 2rem;
-  font-size: 1.08rem;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
-  font-family: 'Fira Mono', monospace;
-}
-
-.hacker-green {
-  color: var(--accent-dark);
-  font-weight: bold;
-}
-
-.hacker-blink {
-  animation: blink 1.2s steps(2, start) infinite;
-}
-
 @keyframes blink {
   to { opacity: 0; }
 }
 
-/* ========================================
-   CODE BLOCK STYLES
-   ======================================== */
+/* CODE BLOCK STYLES */
 .copy-btn {
   position: absolute;
   top: 0.5rem;
@@ -1193,9 +1111,7 @@ pre, code {
   color: white;
 }
 
-/* ========================================
-   BADGE STYLES
-   ======================================== */
+/* BADGE STYLES */
 .criticality-badge.low {
   background: rgba(52, 199, 89, 0.18);
   color: #34c759;
@@ -1217,10 +1133,7 @@ pre, code {
   font-weight: bold;
 }
 
-/* ========================================
-   RESPONSIVE ADJUSTMENTS
-   ======================================== */
-
+/* RESPONSIVE ADJUSTMENTS */
 @media (max-width: 768px) {
   .header-animation h1,
   .about-header h1,
