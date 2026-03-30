@@ -2,8 +2,6 @@
 @use "sass:color";
 
 // Global function overrides
-$lighten: color.adjust;
-$darken: color.adjust;
 
 // Import Minima theme
-@import "minima";
+@use "minima";

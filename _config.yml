@@ -33,9 +33,10 @@ collections:
     permalink: /posts/:year/:month/:day/:slug/
   writeups:
     output: true
-    permalink: /writeups/:path/
+    permalink: /writeups/:name/
     sort_by: date
     sort_order: descending
+    publish: true
   cves:
     output: true
     permalink: /cves/:name/
