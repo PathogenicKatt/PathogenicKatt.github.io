@@ -5,6 +5,22 @@ description: "About Katleho - Computer Science & Mathematics student | CTF Enthu
 custom_css: true
 ---
 
+<style>
+.about-container {
+  margin: 2rem 0;
+  text-align: left;
+  max-width: none;
+  width: 100%;
+}
+.about-grid {
+  justify-content: flex-start;
+}
+.about-header .subtitle {
+  margin-top: 0.5rem;
+}
+
+</style>
+
 <div class="about-container">
   <section class="about-header">
     <h1> Hi, I'm Katleho</h1>
@@ -13,86 +29,32 @@ custom_css: true
 
   <div class="about-grid">
     <section class="about-card">
-      <h2>Academic Journey</h2>
-      <p>Technology was never my initial dream, it all started when I first tested the power of coding. By my second semester at the University of Mpumalanga (UMP), where I studied Bachelor in Information & Communication Technology (BICT), I was already tutoring programming. Through deep engagement with coding, I discovered cybersecurity and knew I wanted to pursue it further, which led me to transfer to North West University (NWU) in 2023 to pursue a BSc in Computer Science and Mathematics.</p>
-      <p>My real breakthrough came through NWU's participation in the <strong>SANReN Cybersecurity Challenge</strong>. The first two years, I wasn't skilled enough to qualify for the finals, but through perseverance, I finally qualified in my third year. A moment that truly defined my journey.</p> 
+      <h2>About</h2>
+      <p>This website is a collection of my cybersecurity knowledge, experiences, and documentation. It includes writeups of CTF challenges, vulnerability research, technical notes on various security topics, and records of my learning journey in cybersecurity.</p>
+      <p>As a junior cybersecurity analyst and CTF player from South Africa, I am passionate about exploring the depths of digital security. My interest in cybersecurity began with coding, which led me to discover the thrill of solving security puzzles and understanding vulnerabilities. I participate in CTF competitions to hone my skills and stay updated with the latest threats.</p>
+      <p>I use this site to document my findings, solutions, and insights. The content covers areas such as binary exploitation, network security, forensics, cryptography, active directory, malware analysis, and more. I share this information to track my progress and contribute to the cybersecurity community.</p>
       <div class="university-logos">
         <img src="{{ '/assets/img/ump-logo.png' | relative_url }}" alt="University of Mpumalanga logo" loading="lazy">
         <img src="{{ '/assets/img/nwu-logo.png' | relative_url }}" alt="North West University logo" loading="lazy">
         <img src="{{ '/assets/img/sanrencsc.png' | relative_url }}" alt="SANReN logo" loading="lazy">
       </div>
     </section>
-    <section class="about-card">
-      <h2>Technical Skills</h2>
-      <div class="skill-cloud">
-        <span>Python</span>
-        <span>C</span>
-        <span>C++</span>
-        <span>Java</span>
-        <span>SQL</span>
-        <span>Assembly</span>
-        <span>Linux</span>
-        <span>Web development</span>
-        <span>Windows</span>
-        <span>Git</span>
-        <span>Cloud Computing (Azure)</span>
-      </div>   
-    </section>
-    <section class="about-card certificates-card">
-      <h2>Certificates & Achievements</h2>
-      <div class="certificates-list">
-        <div class="certificate-item">
-          <h3>SANReN Cybersecurity Challenge - Finals</h3>
-          <div class="cert-images">
-            <img src="{{ '/assets/img/participation_certificate.jpeg' | relative_url }}" alt="SANReN Cybersecurity Challenge Finals Certificate" loading="lazy" class="cert-image">
-            <img src="{{ '/assets/img/us_working.jpeg' | relative_url }}" alt="SANReN Team Collaboration" loading="lazy" class="cert-image">
-            <img src="{{ '/assets/img/scoreboard.jpeg' | relative_url }}" alt="SANReN Competition Scoreboard" loading="lazy" class="cert-image">
-            <img src="{{ '/assets/img/ticket_csc25.jpeg' | relative_url }}" alt="SANReN Team During Competition" loading="lazy" class="cert-image">
-          </div>
-          <p class="cert-org"><strong>Issuer:</strong> South African National Research and Education Network</p>
-          <p class="cert-year"><strong>Year:</strong> 2025</p>
-          <p class="cert-desc">I qualified for and participated in the SANReN Cybersecurity Challenge finals as part of an accomplished team. My team divided the work based on individual strengths, and my focus was <strong>Forensics and Reverse Engineering</strong>. The competition spanned 5 days with two distinct challenges: one day for Attack & Defense, where I concentrated on automating defensive scripts in Python to block intruders and prevent them from compromising our flags, and three days for CTF covering Web Exploitation, Forensics, Cryptography, and Reverse Engineering. Over this intensive competition, my team and I demonstrated strong technical problem-solving abilities. The scoreboard image above captures our team's standing just 24 hours before the competition concluded.
-          </p>
-          <div class="cert-links">
-            <a href="https://sanren.ac.za" class="cert-link" target="_blank" rel="noopener noreferrer">Visit SANReN</a>
-          </div>
-        </div>
-
-        <div class="certificate-item">
-          <h3>TryHackMe — Pre Security</h3>
-          <div class="cert-images">
-            <img src="{{ '/assets/img/TryHackMe_PreSecurityCert.PNG' | relative_url }}" alt="TryHackMe Pre Security Certificate" loading="lazy" class="cert-image">
-          </div>
-          <p class="cert-org"><strong>Issuer:</strong> TryHackMe</p>
-          <p class="cert-year"><strong>Year:</strong> 2026</p>
-          <p class="cert-desc"> Revisiting these basics strengthened my foundation and prepared me for deeper cybersecurity work.</p>
-          <div class="cert-links">
-            <a href="https://tryhackme.com" class="cert-link" target="_blank" rel="noopener noreferrer">Visit TryHackMe</a>
-            <a href="https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-1SXRGBLL49.pdf" class="cert-link" target="_blank" rel="noopener noreferrer">View Certificate</a>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="about-card connect">
-      <div class="social-links">
-        <a href="https://github.com/PathogenicKatt" class="social-link github" target="_blank" rel="noopener noreferrer">
-          <i class="fab fa-github"></i> GitHub
-        </a>
-        <a href="https://ctftime.org/team/299988" class="social-link ctftime" target="_blank" rel="noopener noreferrer">
-          <i class="fas fa-flag"></i> CTFTime
-        </a>
-        <a href="mailto:katlehom814@gmail.com" class="social-link email">
-          <i class="fas fa-envelope"></i> Email
-        </a>
-        <a href="https://www.linkedin.com/in/katleho-mofokeng" class="social-link linkedin" target="_blank" rel="noopener noreferrer">
-          <i class="fab fa-linkedin"></i> LinkedIn
-        </a>
-      </div>
-    </section>
- 
   </div>
 </div>
-
+<div class="social-links">
+  <a href="https://github.com/PathogenicKatt" class="social-link github" target="_blank" rel="noopener noreferrer">
+    <i class="fab fa-github"></i> GitHub
+  </a>
+  <a href="https://ctftime.org/team/299988" class="social-link ctftime" target="_blank" rel="noopener noreferrer">
+    <i class="fas fa-flag"></i> CTFTime
+  </a>
+  <a href="mailto:katlehom814@gmail.com" class="social-link email">
+    <i class="fas fa-envelope"></i> Email
+  </a>
+  <a href="https://www.linkedin.com/in/katleho-mofokeng" class="social-link linkedin" target="_blank" rel="noopener noreferrer">
+    <i class="fab fa-linkedin"></i> LinkedIn
+  </a>
+</div>
 <!-- Image Lightbox Modal -->
 <div id="imageModal" class="image-modal">
   <span class="modal-close">&times;</span>
