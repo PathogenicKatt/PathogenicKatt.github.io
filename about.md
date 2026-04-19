@@ -23,16 +23,6 @@ custom_css: true
       </div>
     </section>
     <section class="about-card">
-      <h2>CTF Experience</h2>
-      <ul class="ctf-skills">
-        <li>Regular competitor on <a href="https://ctftime.org/" target="_blank" rel="noopener noreferrer">CTFtime</a> events.</li>
-        <br>
-        <li>Comfortable with tools such as <i>Wireshark</i>, <i>Ghidra</i>, <i>jadx</i>, and <i>GDB (GNU Debugger)</i>.</li>
-        <br>
-        <li>My learning is supported by hands-on practice on platforms like TryHackMe, HackTheBox, OverTheWire, and PicoCTF, plus ethical hacking books such as <i>Linux Basics for Hackers</i>.</li>
-      </ul>
-    </section>
-    <section class="about-card">
       <h2>Technical Skills</h2>
       <div class="skill-cloud">
         <span>Python</span>
