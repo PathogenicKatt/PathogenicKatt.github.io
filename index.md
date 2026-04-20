@@ -7,7 +7,7 @@ custom_css: true
 
 
   <div class="link-bubbles">
-      <a href="/about" class="bubble">About Me</a>
+      <a href="/about" class="bubble">About</a>
       <a href="/notes" class="bubble">Notes</a>
       <a href="/writeups" class="bubble">Writeups</a>
       <a href="/resources" class="bubble toolbox-bubble">Toolbox</a>
