@@ -23,16 +23,17 @@ custom_css: true
 
 <div class="about-container">
   <section class="about-header">
-    <h1> Hi, I'm Katleho</h1>
-    <p class="subtitle"> Junior Cybersecurity Analyst | CTF Player | Student</p>
+    <h1>Hi, I'm Katleho</h1>
+    <p class="subtitle">Junior Cybersecurity Analyst | CTF Player | Student</p>
   </section>
 
   <div class="about-grid">
     <section class="about-card">
       <h2>About</h2>
-      <p>This website is a collection of my cybersecurity knowledge, experiences, and documentation. It includes writeups of CTF challenges, vulnerability research, technical notes on various security topics, and records of my learning journey in cybersecurity.</p>
-      <p>As a junior cybersecurity analyst and CTF player from South Africa, I am passionate about exploring the depths of digital security. My interest in cybersecurity began with coding, which led me to discover the thrill of solving security puzzles and understanding vulnerabilities. I participate in CTF competitions to hone my skills and stay updated with the latest threats.</p>
-      <p>I use this site to document my findings, solutions, and insights. The content covers areas such as binary exploitation, network security, forensics, cryptography, active directory, malware analysis, and more. I share this information to track my progress and contribute to the cybersecurity community.</p>
+      <p>This website is where I share my cybersecurity knowledge, experiences, and work. You will find writeups of CTF challenges, vulnerability research, technical notes on security topics, and documentation of my learning journey.</p>
+      <p>I started in cybersecurity through coding in 2022, which led me to solving security puzzles and understanding vulnerabilities. Today, I participate in CTF competitions to improve my skills and stay updated with the latest threats. In 2025, I represented North West University at the SANREN National Cybersecurity Final Challenge, competing among the top 10 teams in the country.</p>
+      <p>I actively sharpen my skills across multiple platforms, including TryHackMe, Hack The Box, OverTheWire, and PicoCTF. I also participate in international CTF competitions through CTFTime, testing my abilities against teams from around the world. To deepen my understanding, I study books such as "Hacking: The Art of Exploitation" and "Linux for Beginners", and I practice on vulnerable machines like Mr-Robot and others from VulnHub. My deepest interest lies in reverse engineering, binary exploitation, and firmware analysis.</p>
+      <p>If you would like to know more about me, feel free to visit my LinkedIn profile linked below.</p>
       <div class="university-logos">
         <img src="{{ '/assets/img/ump-logo.png' | relative_url }}" alt="University of Mpumalanga logo" loading="lazy">
         <img src="{{ '/assets/img/nwu-logo.png' | relative_url }}" alt="North West University logo" loading="lazy">
