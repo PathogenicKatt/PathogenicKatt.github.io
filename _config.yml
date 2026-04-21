@@ -31,6 +31,8 @@ collections:
   posts:
     output: true
     permalink: /posts/:year/:month/:day/:slug/
+    sort_by: date
+    sort_order: descending
   writeups:
     output: true
     permalink: /writeups/:name/
