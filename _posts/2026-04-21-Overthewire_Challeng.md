@@ -14,30 +14,29 @@ OverTheWire is a collection of wargames, CTFs, and security challenges that teac
 
 ## The Series
 
-### **Bandit** (Easiest)
-- **Focus**: Linux command line and basic system administration
+### Bandit (Easiest)
+- Linux command line and basic system administration
 
-### **Natas** (Web Security)
-- **Focus**: Web application security vulnerabilities
+### Natas (Web Security)
+- Web application security vulnerabilities
 
-### **Leviathan** (Linux Privilege Escalation)
-- **Focus**: Exploiting Linux system vulnerabilities to escalate privileges
+### Leviathan (Linux Privilege Escalation)
+- Exploiting Linux system vulnerabilities to escalate privileges
 
-### **Krypton** (Cryptography)
-- **Focus**: Cryptographic concepts and breaking weak encryption
+### Krypton (Cryptography)
+- Cryptographic concepts and breaking weak encryption
 
-### **Narnia** (Binary Exploitation)
-- **Focus**: C programming vulnerabilities and exploitation
+### Narnia (Binary Exploitation)
+- C programming vulnerabilities and exploitation
 
-### **Behemoth** (Advanced Exploitation)
-- **Focus**: More complex binary exploitation challenges
+### Behemoth (Advanced Exploitation)
+- More complex binary exploitation challenges
 
-### **Utumno** (Advanced)
-- **Focus**: Complex challenges combining multiple concepts
+### Utumno (Advanced)
+- Complex challenges combining multiple concepts
 
-### **Maze** (Reverse Engineering)
-- **Focus**: Reverse engineering and understanding compiled programs
-
+### Maze (Reverse Engineering)
+- Reverse engineering and understanding compiled programs
 
 *I'll be documenting my progress here and creating writeups for all the challenges. Each write-up will break down the vulnerability, the exploitation technique, and the lessons learned.*
 <br>
