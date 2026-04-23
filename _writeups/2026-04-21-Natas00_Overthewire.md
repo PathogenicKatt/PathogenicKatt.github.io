@@ -9,9 +9,11 @@ date: 2026-04-21
 ---
 
 ## Challenge Overview:
-- This was the following description for the challenge.
+- This was the following description for the challenge. Also note that level 0 and level 1 are combined for this challenge.
 
 ![Challenge screenshot](/assets/img/OverthewireNatas0.PNG){: .writeup-image }<br>
+
+![Challenge screenshot](/assets/img/OverthewireNatas0(3).PNG){: .writeup-image }<br>
 
 ## What is SSH?
 
