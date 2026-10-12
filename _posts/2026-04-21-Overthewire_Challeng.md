@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "30 Days Challenge: OverTheWire"
-date: 2026-04-21
+date: 2026-04-21 10:00:00 +0200
 ---
 
 # The Challenge
