@@ -4,7 +4,7 @@ title: "PicoCTF Challenge: EvenRsaCanBeBroken"
 description: "This service provides you an encrypted flag. Can you decrypt it with just N & e?"
 difficulty: easy
 event: "PicoCTF"
-tags: [crypto, asymmetric, rsa]
+tags: [crypto, asymmetric]
 date: 2025-08-02
 ---
 

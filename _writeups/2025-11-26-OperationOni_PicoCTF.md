@@ -4,7 +4,7 @@ title: "CTF Challenge: Operation Oni"
 description: "Download this disk image, find the key and log into the remote machine."
 difficulty: medium
 event: "PicoCTF"
-tags: [forensics, disk, ssh]
+tags: [forensics, ssh]
 date: 2025-11-26
 ---
 

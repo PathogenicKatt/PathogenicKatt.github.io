@@ -4,7 +4,7 @@ title: "CTF Challenge: Information"
 description: "Files can always be changed in a secret way. Can you find the flag?"
 difficulty: easy
 event: "PicoCTF"
-tags: [forensics, cryptography]
+tags: [forensics, crypto]
 date: 2025-05-30
 ---
 

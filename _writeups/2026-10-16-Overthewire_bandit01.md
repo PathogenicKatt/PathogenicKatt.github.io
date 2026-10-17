@@ -4,7 +4,7 @@ title: "OverTheWire: Bandit 01"
 description: "The password for the next level is stored in a file called - located in the home directory"
 difficulty: easy
 event: "OverTheWire"
-tags: [ ssh, bandit]
+tags: [ dash, bandit]
 date: 2026-10-16 03:08:00 +0200
 permalink: /writeups/2026-10-16-Overthewire_bandit01/
 ---

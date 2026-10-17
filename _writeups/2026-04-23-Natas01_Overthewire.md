@@ -11,4 +11,4 @@ date: 2026-04-23
 ## Challenge Overview:
 - This was the following description for the challenge.
 
-![Challenge screenshot](/assets/img/OverthewireNatas1.PNG){: .writeup-image }<br>
+![Challenge screenshot](/assets/img/OverthewireNatas01.PNG){: .writeup-image }<br>
