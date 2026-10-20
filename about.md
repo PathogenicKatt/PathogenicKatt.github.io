@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "About Me"
-description: "About Katleho - Computer Science & Mathematics student | CTF Enthusiast from South Africa"
+description: "About Katleho - Computer Science & Mathematics student"
 custom_css: true
 ---
 
@@ -24,14 +24,14 @@ custom_css: true
 <div class="about-container">
   <section class="about-header">
     <h1>Hi, I'm Katleho</h1>
-    <p class="subtitle">Junior Cybersecurity Analyst | CTF Player | Student</p>
+    <p class="subtitle">Junior Cybersecurity Analyst | CTF Player | Top 4% TryHackMe</p>
   </section>
 
   <div class="about-grid">
     <section class="about-card">
       <h2>About</h2>
       <p>This website is where I share my cybersecurity knowledge, experiences, and work. You will find writeups of CTF challenges, vulnerability research, technical notes on security topics, and documentation of my learning journey.</p>
-      <p>I started in cybersecurity through coding in 2022, which led me to solving security puzzles and understanding vulnerabilities. Today, I participate in CTF competitions to improve my skills and stay updated with the latest threats. In 2025, I represented North West University at the SANREN National Cybersecurity Final Challenge, competing among the top 10 teams in the country.</p>
+      <p>My journey in this field started in 2022. Today, I participate in CTF competitions to improve my skills and stay updated with the latest threats. In 2025, I represented North West University at the SANReN National Cybersecurity Final Challenge, competing among the top 10 teams in the country.</p>
       <p>I actively sharpen my skills across multiple platforms, including TryHackMe, Hack The Box, OverTheWire, and PicoCTF. I also participate in international CTF competitions through CTFTime, testing my abilities against teams from around the world. To deepen my understanding, I study books such as "Hacking: The Art of Exploitation" and "Linux for Beginners", and I practice on vulnerable machines like Mr-Robot and others from VulnHub. My deepest interest lies in reverse engineering, binary exploitation, and firmware analysis.</p>
       <p>If you would like to know more about me, feel free to visit my LinkedIn profile linked below.</p>
       <div class="university-logos">
