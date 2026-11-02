@@ -40,12 +40,11 @@ The filename contains both a leading double dash and embedded spaces, which mean
    ambiguity.
 4. Validation: Confirm the password is printed.
 
-## Tools Used
-| Tool  | Purpose                              |
-|-------|--------------------------------------|
-| `ssh` | Remote shell access                  |
-| `ls`  | Directory listing                    |
-| `cat` | File content display                 |
+## Commands Used                             |
+
+- `ssh` -> Remote shell access                  
+- `ls`  -> Directory listing                    
+- `cat` -> File content display                
 
 ## Key Findings
 - The shell splits unquoted arguments on whitespace, so filenames with
@@ -98,7 +97,7 @@ argument. There are three standard ways:
 Each space is escaped with `\`, and the `./` prefix removes the leading-
 dash ambiguity.
 
-**Option 2 — Double quotes:**
+**Option 2 - Double quotes:**
 
 ```bash
 cat "./--spaces in this filename--"
