@@ -18,8 +18,8 @@ custom_css: true
 .about-header .subtitle {
   margin-top: 0.5rem;
 }
-.social-link.youtube { color: #ff0000; }
-.social-link.youtube:hover { color: #cc0000; }
+.social-link.youtube { background: #d44638; }
+
 
 </style>
 
