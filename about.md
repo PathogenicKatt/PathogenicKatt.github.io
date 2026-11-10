@@ -33,8 +33,9 @@ custom_css: true
     <section class="about-card">
       <h2>About</h2>
       <p>This website is where I share my cybersecurity knowledge, experiences, and work. You will find writeups of CTF challenges, vulnerability research, technical notes on security topics, and documentation of my learning journey.</p>
-      <p>My journey in this field started in 2022. Today, I participate in CTF competitions to improve my skills and stay updated with the latest threats. In 2025, I represented North West University at the SANReN National Cybersecurity Final Challenge, competing among the top 10 teams in the country.</p>
+      <p>My journey in this field started in 2022 through self-learning. Today, I participate in CTF competitions to improve my skills and stay updated with the latest threats. In 2025, I represented North West University at the SANReN National Cybersecurity Final Challenge, competing among the top 10 teams in the country.</p>
       <p>I actively sharpen my skills across multiple platforms, including TryHackMe, Hack The Box, OverTheWire, and PicoCTF. I also participate in international CTF competitions through CTFTime, testing my abilities against teams from around the world. To deepen my understanding, I study books such as "Hacking: The Art of Exploitation" and "Linux for Beginners", and I practice on vulnerable machines like Mr-Robot and others from VulnHub. My deepest interest lies in reverse engineering, binary exploitation, and firmware analysis.</p>
+      <p>I also share my journey on YouTube, where I document CTF walkthroughs and break down the concepts behind them. Teaching has become an important part of how I learn, and it keeps me accountable to the community I'm learning from.</p>
       <p>If you would like to know more about me, feel free to visit my LinkedIn profile linked below.</p>
       <div class="university-logos">
         <img src="{{ '/assets/img/ump-logo.png' | relative_url }}" alt="University of Mpumalanga logo" loading="lazy">
