@@ -1,6 +1,6 @@
 ---
 layout: writeup
-title: "OverTheWire: Bandit Level 2"
+title: "OverTheWire: Bandit Level 02"
 description: "Handling filenames with spaces using quoting and escaping."
 difficulty: easy
 event: "OverTheWire"
