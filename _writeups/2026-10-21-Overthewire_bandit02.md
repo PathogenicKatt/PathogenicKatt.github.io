@@ -6,7 +6,7 @@ difficulty: easy
 event: "OverTheWire"
 tags: [spaces, bandit]
 date: 2026-10-21 
-permalink: /writeups/2026-04-21-OverTheWire_Bandit2/
+permalink: /writeups/2026-04-21-OverTheWire_bandit2/
 ---
 
 ## Executive Summary
