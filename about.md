@@ -18,6 +18,8 @@ custom_css: true
 .about-header .subtitle {
   margin-top: 0.5rem;
 }
+.social-link.youtube { color: #ff0000; }
+.social-link.youtube:hover { color: #cc0000; }
 
 </style>
 
@@ -54,6 +56,9 @@ custom_css: true
   </a>
   <a href="https://www.linkedin.com/in/katleho-mofokeng" class="social-link linkedin" target="_blank" rel="noopener noreferrer">
     <i class="fab fa-linkedin"></i> LinkedIn
+  </a>
+  <a href="https://www.youtube.com/@k4ttt-in-Cyb3r" class="social-link youtube" target="_blank" rel="noopener noreferrer">
+      <i class="fab fa-youtube"></i> YouTube
   </a>
 </div>
 <!-- Image Lightbox Modal -->
